@@ -2,6 +2,7 @@
      Revision 2: Converted all unrolled versions from Java to C++
      Revision 3: Used generic multipliers in unrolled versions
      Revision 4: Used different version of generic multipliers in unrolled versions
+     Revision 5: Replaced test code to run just once
   */
 
 #include <cassert>
@@ -346,17 +347,13 @@ void measure (const Demux & demux)
 {
     check (demux);
 
-    cout << typeid (demux).name() << ":";
 
-    for (unsigned loop = 0; loop < REPETITIONS; loop ++) {
-        uint64_t t0 = currentTimeMillis ();
-        for (int i = 0; i < ITERATIONS; i++) {
-            demux.demux (src, SRC_SIZE, dst);
-        }
-        uint64_t t = currentTimeMillis () - t0;
-        cout << " " << t;
+    uint64_t t0 = currentTimeMillis ();
+    for (int i = 0; i < ITERATIONS; i++) {
+        demux.demux (src, SRC_SIZE, dst);
     }
-    cout << endl;
+    uint64_t t = currentTimeMillis () - t0;
+    cout << typeid (demux).name() << ": " << t << endl;
 }
 
 int main (void)
