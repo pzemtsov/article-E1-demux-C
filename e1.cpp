@@ -1,6 +1,7 @@
 /**  Revision 1: Created. Converted all non-inlined versions from Java to C++
      Revision 2: Converted all unrolled versions from Java to C++
      Revision 3: Used generic multipliers in unrolled versions
+     Revision 4: Used different version of generic multipliers in unrolled versions
   */
 
 #include <cassert>
@@ -166,6 +167,8 @@ public:
     }
 };
 
+#define MOVE_TIMESLOT_J(offset) MOVE_TIMESLOT (j + offset)
+
 class Unrolled_1_2 : public Demux
 {
 public:
@@ -176,7 +179,7 @@ public:
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
 
         for (unsigned j = 0; j < NUM_TIMESLOTS; j+=2) {
-            DUP_2_ (MOVE_TIMESLOT, j);
+            DUP_2 (MOVE_TIMESLOT_J);
         }
     }
 };
@@ -190,7 +193,7 @@ public:
         assert (DST_SIZE == 64);
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
         for (unsigned j = 0; j < NUM_TIMESLOTS; j+=4) {
-            DUP_4_ (MOVE_TIMESLOT, j);
+            DUP_4 (MOVE_TIMESLOT_J);
         }
     }
 };
@@ -204,7 +207,7 @@ public:
         assert (DST_SIZE == 64);
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
         for (unsigned j = 0; j < NUM_TIMESLOTS; j+=8) {
-            DUP_8_ (MOVE_TIMESLOT, j);
+            DUP_8 (MOVE_TIMESLOT_J);
         }
     }
 };
@@ -218,10 +221,12 @@ public:
         assert (DST_SIZE == 64);
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
         for (unsigned j = 0; j < NUM_TIMESLOTS; j+=16) {
-            DUP_16_ (MOVE_TIMESLOT, j);
+            DUP_16 (MOVE_TIMESLOT_J);
         }
     }
 };
+
+#undef MOVE_TIMESLOT_J
     
 class Unrolled_2_Full : public Demux
 {
@@ -244,15 +249,7 @@ public:
         assert (src_length % NUM_TIMESLOTS == 0);
 
 #define CALL_DEMUX(i) demux_##i (src, dst[i])
-
-        CALL_DEMUX ( 0); CALL_DEMUX ( 1); CALL_DEMUX ( 2); CALL_DEMUX ( 3);
-        CALL_DEMUX ( 4); CALL_DEMUX ( 5); CALL_DEMUX ( 6); CALL_DEMUX ( 7);
-        CALL_DEMUX ( 8); CALL_DEMUX ( 9); CALL_DEMUX (10); CALL_DEMUX (11);
-        CALL_DEMUX (12); CALL_DEMUX (13); CALL_DEMUX (14); CALL_DEMUX (15);
-        CALL_DEMUX (16); CALL_DEMUX (17); CALL_DEMUX (18); CALL_DEMUX (19);
-        CALL_DEMUX (20); CALL_DEMUX (21); CALL_DEMUX (22); CALL_DEMUX (23);
-        CALL_DEMUX (24); CALL_DEMUX (25); CALL_DEMUX (26); CALL_DEMUX (27);
-        CALL_DEMUX (28); CALL_DEMUX (29); CALL_DEMUX (30); CALL_DEMUX (31);
+        DUP_32 (CALL_DEMUX);
 #undef CALL_DEMUX
     }
 
