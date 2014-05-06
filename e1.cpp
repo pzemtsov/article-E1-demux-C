@@ -1,5 +1,6 @@
 /**  Revision 1: Created. Converted all non-inlined versions from Java to C++
      Revision 2: Converted all unrolled versions from Java to C++
+     Revision 3: Used generic multipliers in unrolled versions
   */
 
 #include <cassert>
@@ -9,6 +10,7 @@
 #include <typeinfo>
 
 #include "timer.h"
+#include "mymacros.h"
 
 typedef unsigned char byte;
 
@@ -142,24 +144,7 @@ public:
 
 #define MOVE_BYTE(i,j) d[i] = src [(j)+(i)*32]
 
-#define MOVE_BYTES_64(j) do {\
-        MOVE_BYTE ( 0, j); MOVE_BYTE ( 1, j); MOVE_BYTE ( 2, j); MOVE_BYTE ( 3, j);\
-        MOVE_BYTE ( 4, j); MOVE_BYTE ( 5, j); MOVE_BYTE ( 6, j); MOVE_BYTE ( 7, j);\
-        MOVE_BYTE ( 8, j); MOVE_BYTE ( 9, j); MOVE_BYTE (10, j); MOVE_BYTE (11, j);\
-        MOVE_BYTE (12, j); MOVE_BYTE (13, j); MOVE_BYTE (14, j); MOVE_BYTE (15, j);\
-        MOVE_BYTE (16, j); MOVE_BYTE (17, j); MOVE_BYTE (18, j); MOVE_BYTE (19, j);\
-        MOVE_BYTE (20, j); MOVE_BYTE (21, j); MOVE_BYTE (22, j); MOVE_BYTE (23, j);\
-        MOVE_BYTE (24, j); MOVE_BYTE (25, j); MOVE_BYTE (26, j); MOVE_BYTE (27, j);\
-        MOVE_BYTE (28, j); MOVE_BYTE (29, j); MOVE_BYTE (30, j); MOVE_BYTE (31, j);\
-        MOVE_BYTE (32, j); MOVE_BYTE (33, j); MOVE_BYTE (34, j); MOVE_BYTE (35, j);\
-        MOVE_BYTE (36, j); MOVE_BYTE (37, j); MOVE_BYTE (38, j); MOVE_BYTE (39, j);\
-        MOVE_BYTE (40, j); MOVE_BYTE (41, j); MOVE_BYTE (42, j); MOVE_BYTE (43, j);\
-        MOVE_BYTE (44, j); MOVE_BYTE (45, j); MOVE_BYTE (46, j); MOVE_BYTE (47, j);\
-        MOVE_BYTE (48, j); MOVE_BYTE (49, j); MOVE_BYTE (50, j); MOVE_BYTE (51, j);\
-        MOVE_BYTE (52, j); MOVE_BYTE (53, j); MOVE_BYTE (54, j); MOVE_BYTE (55, j);\
-        MOVE_BYTE (56, j); MOVE_BYTE (57, j); MOVE_BYTE (58, j); MOVE_BYTE (59, j);\
-        MOVE_BYTE (60, j); MOVE_BYTE (61, j); MOVE_BYTE (62, j); MOVE_BYTE (63, j);\
-    } while (0)
+#define MOVE_BYTES_64(j) DUP2_64 (MOVE_BYTE,j)
 
 #define MOVE_TIMESLOT(j) do {\
         byte * const d = dst[j];\
@@ -191,8 +176,7 @@ public:
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
 
         for (unsigned j = 0; j < NUM_TIMESLOTS; j+=2) {
-            MOVE_TIMESLOT (j);
-            MOVE_TIMESLOT (j+1);
+            DUP_2_ (MOVE_TIMESLOT, j);
         }
     }
 };
@@ -206,10 +190,7 @@ public:
         assert (DST_SIZE == 64);
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
         for (unsigned j = 0; j < NUM_TIMESLOTS; j+=4) {
-            MOVE_TIMESLOT (j);
-            MOVE_TIMESLOT (j+1);
-            MOVE_TIMESLOT (j+2);
-            MOVE_TIMESLOT (j+3);
+            DUP_4_ (MOVE_TIMESLOT, j);
         }
     }
 };
@@ -223,14 +204,7 @@ public:
         assert (DST_SIZE == 64);
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
         for (unsigned j = 0; j < NUM_TIMESLOTS; j+=8) {
-            MOVE_TIMESLOT (j);
-            MOVE_TIMESLOT (j+1);
-            MOVE_TIMESLOT (j+2);
-            MOVE_TIMESLOT (j+3);
-            MOVE_TIMESLOT (j+4);
-            MOVE_TIMESLOT (j+5);
-            MOVE_TIMESLOT (j+6);
-            MOVE_TIMESLOT (j+7);
+            DUP_8_ (MOVE_TIMESLOT, j);
         }
     }
 };
@@ -244,22 +218,7 @@ public:
         assert (DST_SIZE == 64);
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
         for (unsigned j = 0; j < NUM_TIMESLOTS; j+=16) {
-            MOVE_TIMESLOT (j);
-            MOVE_TIMESLOT (j+1);
-            MOVE_TIMESLOT (j+2);
-            MOVE_TIMESLOT (j+3);
-            MOVE_TIMESLOT (j+4);
-            MOVE_TIMESLOT (j+5);
-            MOVE_TIMESLOT (j+6);
-            MOVE_TIMESLOT (j+7);
-            MOVE_TIMESLOT (j+8);
-            MOVE_TIMESLOT (j+9);
-            MOVE_TIMESLOT (j+10);
-            MOVE_TIMESLOT (j+11);
-            MOVE_TIMESLOT (j+12);
-            MOVE_TIMESLOT (j+13);
-            MOVE_TIMESLOT (j+14);
-            MOVE_TIMESLOT (j+15);
+            DUP_16_ (MOVE_TIMESLOT, j);
         }
     }
 };
@@ -273,14 +232,7 @@ public:
         assert (DST_SIZE == 64);
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
 
-        MOVE_TIMESLOT ( 0); MOVE_TIMESLOT ( 1); MOVE_TIMESLOT ( 2); MOVE_TIMESLOT ( 3);
-        MOVE_TIMESLOT ( 4); MOVE_TIMESLOT ( 5); MOVE_TIMESLOT ( 6); MOVE_TIMESLOT ( 7);
-        MOVE_TIMESLOT ( 8); MOVE_TIMESLOT ( 9); MOVE_TIMESLOT (10); MOVE_TIMESLOT (11);
-        MOVE_TIMESLOT (12); MOVE_TIMESLOT (13); MOVE_TIMESLOT (14); MOVE_TIMESLOT (15);
-        MOVE_TIMESLOT (16); MOVE_TIMESLOT (17); MOVE_TIMESLOT (18); MOVE_TIMESLOT (19);
-        MOVE_TIMESLOT (20); MOVE_TIMESLOT (21); MOVE_TIMESLOT (22); MOVE_TIMESLOT (23);
-        MOVE_TIMESLOT (24); MOVE_TIMESLOT (25); MOVE_TIMESLOT (26); MOVE_TIMESLOT (27);
-        MOVE_TIMESLOT (28); MOVE_TIMESLOT (29); MOVE_TIMESLOT (30); MOVE_TIMESLOT (31);
+        DUP_32 (MOVE_TIMESLOT);
     }
 };
 
@@ -333,14 +285,9 @@ public:
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
 
 #define DEMUX(i) demux_0 (src, dst[i], i)
-        DEMUX ( 0); DEMUX ( 1); DEMUX ( 2); DEMUX ( 3);
-        DEMUX ( 4); DEMUX ( 5); DEMUX ( 6); DEMUX ( 7);
-        DEMUX ( 8); DEMUX ( 9); DEMUX (10); DEMUX (11);
-        DEMUX (12); DEMUX (13); DEMUX (14); DEMUX (15);
-        DEMUX (16); DEMUX (17); DEMUX (18); DEMUX (19);
-        DEMUX (20); DEMUX (21); DEMUX (22); DEMUX (23);
-        DEMUX (24); DEMUX (25); DEMUX (26); DEMUX (27);
-        DEMUX (28); DEMUX (29); DEMUX (30); DEMUX (31);
+
+        DUP_32 (DEMUX);
+
 #undef DEMUX
     }
 
