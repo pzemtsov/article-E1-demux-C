@@ -3,6 +3,7 @@
      Revision 3: Used generic multipliers in unrolled versions
      Revision 4: Used different version of generic multipliers in unrolled versions
      Revision 5: Replaced test code to run just once
+     Revision 6: Removed Unrolled_3 and Unrolled_4
   */
 
 #include <cassert>
@@ -242,61 +243,6 @@ public:
     }
 };
 
-class Unrolled_3 : public Demux
-{
-public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
-    {
-        assert (src_length % NUM_TIMESLOTS == 0);
-
-#define CALL_DEMUX(i) demux_##i (src, dst[i])
-        DUP_32 (CALL_DEMUX);
-#undef CALL_DEMUX
-    }
-
-private:
-
-#define DEF_DEMUX(i) \
-    inline void demux_##i (const byte * src, byte * d) const\
-    {\
-        MOVE_BYTES_64 (i);\
-    }
-
-    DEF_DEMUX ( 0) DEF_DEMUX ( 1) DEF_DEMUX ( 2) DEF_DEMUX ( 3)
-    DEF_DEMUX ( 4) DEF_DEMUX ( 5) DEF_DEMUX ( 6) DEF_DEMUX ( 7)
-    DEF_DEMUX ( 8) DEF_DEMUX ( 9) DEF_DEMUX (10) DEF_DEMUX (11)
-    DEF_DEMUX (12) DEF_DEMUX (13) DEF_DEMUX (14) DEF_DEMUX (15)
-    DEF_DEMUX (16) DEF_DEMUX (17) DEF_DEMUX (18) DEF_DEMUX (19)
-    DEF_DEMUX (20) DEF_DEMUX (21) DEF_DEMUX (22) DEF_DEMUX (23)
-    DEF_DEMUX (24) DEF_DEMUX (25) DEF_DEMUX (26) DEF_DEMUX (27)
-    DEF_DEMUX (28) DEF_DEMUX (29) DEF_DEMUX (30) DEF_DEMUX (31)
-#undef DEF_DEMUX
-};
-
-class Unrolled_4 : public Demux
-{
-public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
-    {
-        assert (NUM_TIMESLOTS == 32);
-        assert (DST_SIZE == 64);
-        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
-
-#define DEMUX(i) demux_0 (src, dst[i], i)
-
-        DUP_32 (DEMUX);
-
-#undef DEMUX
-    }
-
-private:
-    inline void demux_0 (const byte * src, byte * d, unsigned i) const
-    {
-        MOVE_BYTES_64 (i);
-    }
-
-};
-
 byte * generate ()
 {
     byte * buf = new byte [SRC_SIZE];
@@ -374,8 +320,6 @@ int main (void)
     measure (Unrolled_1_8 ());
     measure (Unrolled_1_16 ());
     measure (Unrolled_2_Full ());
-    measure (Unrolled_3 ());
-    measure (Unrolled_4 ());
 
     return 0;
 }
