@@ -145,6 +145,38 @@ public:
     }
 };
 
+class Dst_First_1a : public Demux
+{
+public:
+    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    {
+        assert (src_length % NUM_TIMESLOTS == 0);
+
+        for (unsigned dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
+            byte * d = dst [dst_num];
+            for (unsigned dst_pos = 0; dst_pos < src_length / NUM_TIMESLOTS; ++ dst_pos) {
+                d [dst_pos] = src [dst_pos * NUM_TIMESLOTS + dst_num];
+            }
+        }
+    }
+};
+
+class Dst_First_3a : public Demux
+{
+public:
+    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    {
+        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
+
+        for (unsigned dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
+            byte * d = dst [dst_num];
+            for (unsigned dst_pos = 0; dst_pos < DST_SIZE; ++ dst_pos) {
+                d [dst_pos] = src [dst_pos * NUM_TIMESLOTS + dst_num];
+            }
+        }
+    }
+};
+
 #define MOVE_BYTE(i,j) d[i] = src [(j)+(i)*32]
 
 #define MOVE_BYTES_64(j) DUP2_64 (MOVE_BYTE,j)
@@ -314,6 +346,8 @@ int main (void)
     measure (Dst_First_1 ());
     measure (Dst_First_2 ());
     measure (Dst_First_3 ());
+    measure (Dst_First_1a ());
+    measure (Dst_First_3a ());
     measure (Unrolled_1 ());
     measure (Unrolled_1_2 ());
     measure (Unrolled_1_4 ());

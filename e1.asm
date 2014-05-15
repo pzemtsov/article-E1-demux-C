@@ -12,7 +12,7 @@
 	.weak	_ZNK15Unrolled_2_Full5demuxEPKhjPPh
 	.type	_ZNK15Unrolled_2_Full5demuxEPKhjPPh, @function
 _ZNK15Unrolled_2_Full5demuxEPKhjPPh:
-.LFB1021:
+.LFB1023:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
@@ -4153,12 +4153,12 @@ _ZNK15Unrolled_2_Full5demuxEPKhjPPh:
 .L4:
 	.cfi_restore_state
 	movl	$_ZZNK15Unrolled_2_Full5demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
-	movl	$239, %edx
+	movl	$272, %edx
 	movl	$.LC0, %esi
 	movl	$.LC1, %edi
 	call	__assert_fail
 	.cfi_endproc
-.LFE1021:
+.LFE1023:
 	.size	_ZNK15Unrolled_2_Full5demuxEPKhjPPh, .-_ZNK15Unrolled_2_Full5demuxEPKhjPPh
 	.section	.text._ZNK13Unrolled_1_165demuxEPKhjPPh,"axG",@progbits,_ZNK13Unrolled_1_165demuxEPKhjPPh,comdat
 	.align 2
@@ -4166,7 +4166,7 @@ _ZNK15Unrolled_2_Full5demuxEPKhjPPh:
 	.weak	_ZNK13Unrolled_1_165demuxEPKhjPPh
 	.type	_ZNK13Unrolled_1_165demuxEPKhjPPh, @function
 _ZNK13Unrolled_1_165demuxEPKhjPPh:
-.LFB1020:
+.LFB1022:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
@@ -8307,12 +8307,12 @@ _ZNK13Unrolled_1_165demuxEPKhjPPh:
 .L6:
 	.cfi_restore_state
 	movl	$_ZZNK13Unrolled_1_165demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
-	movl	$223, %edx
+	movl	$256, %edx
 	movl	$.LC0, %esi
 	movl	$.LC1, %edi
 	call	__assert_fail
 	.cfi_endproc
-.LFE1020:
+.LFE1022:
 	.size	_ZNK13Unrolled_1_165demuxEPKhjPPh, .-_ZNK13Unrolled_1_165demuxEPKhjPPh
 	.section	.text._ZNK12Unrolled_1_85demuxEPKhjPPh,"axG",@progbits,_ZNK12Unrolled_1_85demuxEPKhjPPh,comdat
 	.align 2
@@ -8320,7 +8320,7 @@ _ZNK13Unrolled_1_165demuxEPKhjPPh:
 	.weak	_ZNK12Unrolled_1_85demuxEPKhjPPh
 	.type	_ZNK12Unrolled_1_85demuxEPKhjPPh, @function
 _ZNK12Unrolled_1_85demuxEPKhjPPh:
-.LFB1019:
+.LFB1021:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
@@ -9883,12 +9883,12 @@ _ZNK12Unrolled_1_85demuxEPKhjPPh:
 .L11:
 	.cfi_restore_state
 	movl	$_ZZNK12Unrolled_1_85demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
-	movl	$209, %edx
+	movl	$242, %edx
 	movl	$.LC0, %esi
 	movl	$.LC1, %edi
 	call	__assert_fail
 	.cfi_endproc
-.LFE1019:
+.LFE1021:
 	.size	_ZNK12Unrolled_1_85demuxEPKhjPPh, .-_ZNK12Unrolled_1_85demuxEPKhjPPh
 	.section	.text._ZNK12Unrolled_1_45demuxEPKhjPPh,"axG",@progbits,_ZNK12Unrolled_1_45demuxEPKhjPPh,comdat
 	.align 2
@@ -9896,7 +9896,7 @@ _ZNK12Unrolled_1_85demuxEPKhjPPh:
 	.weak	_ZNK12Unrolled_1_45demuxEPKhjPPh
 	.type	_ZNK12Unrolled_1_45demuxEPKhjPPh, @function
 _ZNK12Unrolled_1_45demuxEPKhjPPh:
-.LFB1018:
+.LFB1020:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
@@ -10688,12 +10688,12 @@ _ZNK12Unrolled_1_45demuxEPKhjPPh:
 .L16:
 	.cfi_restore_state
 	movl	$_ZZNK12Unrolled_1_45demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
-	movl	$195, %edx
+	movl	$228, %edx
 	movl	$.LC0, %esi
 	movl	$.LC1, %edi
 	call	__assert_fail
 	.cfi_endproc
-.LFE1018:
+.LFE1020:
 	.size	_ZNK12Unrolled_1_45demuxEPKhjPPh, .-_ZNK12Unrolled_1_45demuxEPKhjPPh
 	.section	.text._ZNK12Unrolled_1_25demuxEPKhjPPh,"axG",@progbits,_ZNK12Unrolled_1_25demuxEPKhjPPh,comdat
 	.align 2
@@ -10701,7 +10701,7 @@ _ZNK12Unrolled_1_45demuxEPKhjPPh:
 	.weak	_ZNK12Unrolled_1_25demuxEPKhjPPh
 	.type	_ZNK12Unrolled_1_25demuxEPKhjPPh, @function
 _ZNK12Unrolled_1_25demuxEPKhjPPh:
-.LFB1017:
+.LFB1019:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
@@ -10979,4186 +10979,28 @@ _ZNK12Unrolled_1_25demuxEPKhjPPh:
 .L21:
 	.cfi_restore_state
 	movl	$_ZZNK12Unrolled_1_25demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
-	movl	$180, %edx
+	movl	$213, %edx
 	movl	$.LC0, %esi
 	movl	$.LC1, %edi
 	call	__assert_fail
 	.cfi_endproc
-.LFE1017:
+.LFE1019:
 	.size	_ZNK12Unrolled_1_25demuxEPKhjPPh, .-_ZNK12Unrolled_1_25demuxEPKhjPPh
-	.section	.rodata.str1.8
-	.align 8
-.LC2:
-	.string	"src_length % NUM_TIMESLOTS == 0"
-	.section	.text._ZNK10Unrolled_35demuxEPKhjPPh,"axG",@progbits,_ZNK10Unrolled_35demuxEPKhjPPh,comdat
-	.align 2
-	.p2align 5,,31
-	.weak	_ZNK10Unrolled_35demuxEPKhjPPh
-	.type	_ZNK10Unrolled_35demuxEPKhjPPh, @function
-_ZNK10Unrolled_35demuxEPKhjPPh:
-.LFB1022:
-	.cfi_startproc
-	subq	$8, %rsp
-	.cfi_def_cfa_offset 16
-	andl	$31, %edx
-	jne	.L24
-	movzbl	(%rsi), %edx
-	movq	(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	32(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	64(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	96(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	128(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	160(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	192(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	224(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	256(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	288(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	320(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	352(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	384(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	416(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	448(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	480(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	512(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	544(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	576(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	608(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	640(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	672(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	704(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	736(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	768(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	800(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	832(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	864(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	896(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	928(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	960(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	992(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1024(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1056(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1088(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1120(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1152(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1184(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1216(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1248(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1280(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1312(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1344(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1376(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1408(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1440(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1472(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1504(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1536(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1568(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1600(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1632(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1664(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1696(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1728(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1760(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1792(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1824(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1856(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1888(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1920(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1952(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1984(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2016(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	1(%rsi), %edx
-	movq	8(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	33(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	65(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	97(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	129(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	161(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	193(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	225(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	257(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	289(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	321(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	353(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	385(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	417(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	449(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	481(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	513(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	545(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	577(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	609(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	641(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	673(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	705(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	737(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	769(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	801(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	833(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	865(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	897(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	929(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	961(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	993(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1025(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1057(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1089(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1121(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1153(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1185(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1217(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1249(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1281(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1313(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1345(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1377(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1409(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1441(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1473(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1505(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1537(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1569(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1601(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1633(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1665(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1697(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1729(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1761(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1793(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1825(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1857(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1889(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1921(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1953(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1985(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2017(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	2(%rsi), %edx
-	movq	16(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	34(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	66(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	98(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	130(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	162(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	194(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	226(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	258(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	290(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	322(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	354(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	386(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	418(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	450(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	482(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	514(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	546(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	578(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	610(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	642(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	674(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	706(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	738(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	770(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	802(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	834(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	866(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	898(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	930(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	962(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	994(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1026(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1058(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1090(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1122(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1154(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1186(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1218(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1250(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1282(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1314(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1346(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1378(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1410(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1442(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1474(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1506(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1538(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1570(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1602(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1634(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1666(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1698(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1730(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1762(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1794(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1826(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1858(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1890(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1922(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1954(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1986(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2018(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	3(%rsi), %edx
-	movq	24(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	35(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	67(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	99(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	131(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	163(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	195(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	227(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	259(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	291(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	323(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	355(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	387(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	419(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	451(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	483(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	515(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	547(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	579(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	611(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	643(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	675(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	707(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	739(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	771(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	803(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	835(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	867(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	899(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	931(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	963(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	995(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1027(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1059(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1091(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1123(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1155(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1187(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1219(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1251(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1283(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1315(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1347(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1379(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1411(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1443(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1475(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1507(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1539(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1571(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1603(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1635(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1667(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1699(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1731(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1763(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1795(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1827(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1859(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1891(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1923(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1955(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1987(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2019(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	4(%rsi), %edx
-	movq	32(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	36(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	68(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	100(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	132(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	164(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	196(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	228(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	260(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	292(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	324(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	356(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	388(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	420(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	452(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	484(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	516(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	548(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	580(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	612(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	644(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	676(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	708(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	740(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	772(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	804(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	836(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	868(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	900(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	932(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	964(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	996(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1028(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1060(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1092(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1124(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1156(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1188(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1220(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1252(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1284(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1316(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1348(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1380(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1412(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1444(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1476(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1508(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1540(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1572(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1604(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1636(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1668(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1700(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1732(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1764(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1796(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1828(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1860(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1892(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1924(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1956(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1988(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2020(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	5(%rsi), %edx
-	movq	40(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	37(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	69(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	101(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	133(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	165(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	197(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	229(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	261(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	293(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	325(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	357(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	389(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	421(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	453(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	485(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	517(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	549(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	581(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	613(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	645(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	677(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	709(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	741(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	773(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	805(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	837(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	869(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	901(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	933(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	965(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	997(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1029(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1061(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1093(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1125(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1157(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1189(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1221(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1253(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1285(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1317(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1349(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1381(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1413(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1445(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1477(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1509(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1541(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1573(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1605(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1637(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1669(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1701(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1733(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1765(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1797(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1829(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1861(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1893(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1925(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1957(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1989(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2021(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	6(%rsi), %edx
-	movq	48(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	38(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	70(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	102(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	134(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	166(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	198(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	230(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	262(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	294(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	326(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	358(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	390(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	422(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	454(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	486(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	518(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	550(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	582(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	614(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	646(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	678(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	710(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	742(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	774(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	806(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	838(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	870(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	902(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	934(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	966(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	998(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1030(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1062(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1094(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1126(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1158(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1190(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1222(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1254(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1286(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1318(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1350(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1382(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1414(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1446(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1478(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1510(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1542(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1574(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1606(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1638(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1670(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1702(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1734(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1766(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1798(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1830(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1862(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1894(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1926(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1958(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1990(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2022(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	7(%rsi), %edx
-	movq	56(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	39(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	71(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	103(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	135(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	167(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	199(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	231(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	263(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	295(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	327(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	359(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	391(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	423(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	455(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	487(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	519(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	551(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	583(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	615(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	647(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	679(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	711(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	743(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	775(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	807(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	839(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	871(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	903(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	935(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	967(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	999(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1031(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1063(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1095(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1127(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1159(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1191(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1223(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1255(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1287(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1319(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1351(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1383(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1415(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1447(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1479(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1511(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1543(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1575(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1607(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1639(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1671(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1703(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1735(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1767(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1799(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1831(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1863(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1895(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1927(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1959(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1991(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2023(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	8(%rsi), %edx
-	movq	64(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	40(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	72(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	104(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	136(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	168(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	200(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	232(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	264(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	296(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	328(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	360(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	392(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	424(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	456(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	488(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	520(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	552(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	584(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	616(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	648(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	680(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	712(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	744(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	776(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	808(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	840(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	872(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	904(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	936(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	968(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1000(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1032(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1064(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1096(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1128(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1160(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1192(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1224(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1256(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1288(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1320(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1352(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1384(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1416(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1448(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1480(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1512(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1544(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1576(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1608(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1640(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1672(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1704(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1736(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1768(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1800(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1832(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1864(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1896(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1928(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1960(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1992(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2024(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	9(%rsi), %edx
-	movq	72(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	41(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	73(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	105(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	137(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	169(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	201(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	233(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	265(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	297(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	329(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	361(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	393(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	425(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	457(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	489(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	521(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	553(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	585(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	617(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	649(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	681(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	713(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	745(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	777(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	809(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	841(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	873(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	905(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	937(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	969(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1001(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1033(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1065(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1097(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1129(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1161(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1193(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1225(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1257(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1289(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1321(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1353(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1385(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1417(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1449(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1481(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1513(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1545(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1577(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1609(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1641(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1673(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1705(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1737(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1769(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1801(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1833(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1865(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1897(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1929(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1961(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1993(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2025(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	10(%rsi), %edx
-	movq	80(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	42(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	74(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	106(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	138(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	170(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	202(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	234(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	266(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	298(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	330(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	362(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	394(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	426(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	458(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	490(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	522(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	554(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	586(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	618(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	650(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	682(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	714(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	746(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	778(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	810(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	842(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	874(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	906(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	938(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	970(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1002(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1034(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1066(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1098(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1130(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1162(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1194(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1226(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1258(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1290(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1322(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1354(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1386(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1418(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1450(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1482(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1514(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1546(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1578(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1610(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1642(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1674(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1706(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1738(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1770(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1802(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1834(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1866(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1898(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1930(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1962(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1994(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2026(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	11(%rsi), %edx
-	movq	88(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	43(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	75(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	107(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	139(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	171(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	203(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	235(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	267(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	299(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	331(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	363(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	395(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	427(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	459(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	491(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	523(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	555(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	587(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	619(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	651(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	683(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	715(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	747(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	779(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	811(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	843(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	875(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	907(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	939(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	971(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1003(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1035(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1067(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1099(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1131(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1163(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1195(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1227(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1259(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1291(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1323(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1355(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1387(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1419(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1451(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1483(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1515(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1547(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1579(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1611(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1643(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1675(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1707(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1739(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1771(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1803(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1835(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1867(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1899(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1931(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1963(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1995(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2027(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	12(%rsi), %edx
-	movq	96(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	44(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	76(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	108(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	140(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	172(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	204(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	236(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	268(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	300(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	332(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	364(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	396(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	428(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	460(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	492(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	524(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	556(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	588(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	620(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	652(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	684(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	716(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	748(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	780(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	812(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	844(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	876(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	908(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	940(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	972(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1004(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1036(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1068(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1100(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1132(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1164(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1196(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1228(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1260(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1292(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1324(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1356(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1388(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1420(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1452(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1484(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1516(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1548(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1580(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1612(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1644(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1676(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1708(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1740(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1772(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1804(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1836(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1868(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1900(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1932(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1964(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1996(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2028(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	13(%rsi), %edx
-	movq	104(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	45(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	77(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	109(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	141(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	173(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	205(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	237(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	269(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	301(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	333(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	365(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	397(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	429(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	461(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	493(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	525(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	557(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	589(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	621(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	653(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	685(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	717(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	749(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	781(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	813(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	845(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	877(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	909(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	941(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	973(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1005(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1037(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1069(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1101(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1133(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1165(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1197(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1229(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1261(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1293(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1325(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1357(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1389(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1421(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1453(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1485(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1517(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1549(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1581(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1613(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1645(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1677(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1709(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1741(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1773(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1805(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1837(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1869(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1901(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1933(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1965(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1997(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2029(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	14(%rsi), %edx
-	movq	112(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	46(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	78(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	110(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	142(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	174(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	206(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	238(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	270(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	302(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	334(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	366(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	398(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	430(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	462(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	494(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	526(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	558(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	590(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	622(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	654(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	686(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	718(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	750(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	782(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	814(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	846(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	878(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	910(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	942(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	974(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1006(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1038(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1070(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1102(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1134(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1166(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1198(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1230(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1262(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1294(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1326(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1358(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1390(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1422(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1454(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1486(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1518(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1550(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1582(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1614(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1646(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1678(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1710(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1742(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1774(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1806(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1838(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1870(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1902(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1934(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1966(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1998(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2030(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	15(%rsi), %edx
-	movq	120(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	47(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	79(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	111(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	143(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	175(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	207(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	239(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	271(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	303(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	335(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	367(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	399(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	431(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	463(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	495(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	527(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	559(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	591(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	623(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	655(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	687(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	719(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	751(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	783(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	815(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	847(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	879(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	911(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	943(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	975(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1007(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1039(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1071(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1103(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1135(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1167(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1199(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1231(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1263(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1295(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1327(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1359(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1391(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1423(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1455(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1487(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1519(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1551(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1583(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1615(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1647(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1679(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1711(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1743(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1775(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1807(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1839(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1871(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1903(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1935(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1967(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1999(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2031(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	16(%rsi), %edx
-	movq	128(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	48(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	80(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	112(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	144(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	176(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	208(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	240(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	272(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	304(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	336(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	368(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	400(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	432(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	464(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	496(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	528(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	560(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	592(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	624(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	656(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	688(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	720(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	752(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	784(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	816(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	848(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	880(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	912(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	944(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	976(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1008(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1040(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1072(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1104(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1136(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1168(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1200(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1232(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1264(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1296(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1328(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1360(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1392(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1424(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1456(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1488(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1520(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1552(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1584(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1616(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1648(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1680(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1712(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1744(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1776(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1808(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1840(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1872(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1904(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1936(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1968(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2000(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2032(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	17(%rsi), %edx
-	movq	136(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	49(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	81(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	113(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	145(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	177(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	209(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	241(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	273(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	305(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	337(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	369(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	401(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	433(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	465(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	497(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	529(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	561(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	593(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	625(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	657(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	689(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	721(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	753(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	785(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	817(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	849(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	881(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	913(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	945(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	977(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1009(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1041(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1073(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1105(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1137(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1169(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1201(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1233(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1265(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1297(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1329(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1361(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1393(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1425(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1457(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1489(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1521(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1553(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1585(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1617(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1649(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1681(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1713(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1745(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1777(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1809(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1841(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1873(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1905(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1937(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1969(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2001(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2033(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	18(%rsi), %edx
-	movq	144(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	50(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	82(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	114(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	146(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	178(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	210(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	242(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	274(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	306(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	338(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	370(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	402(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	434(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	466(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	498(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	530(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	562(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	594(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	626(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	658(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	690(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	722(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	754(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	786(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	818(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	850(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	882(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	914(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	946(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	978(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1010(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1042(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1074(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1106(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1138(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1170(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1202(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1234(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1266(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1298(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1330(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1362(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1394(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1426(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1458(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1490(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1522(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1554(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1586(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1618(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1650(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1682(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1714(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1746(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1778(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1810(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1842(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1874(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1906(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1938(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1970(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2002(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2034(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	19(%rsi), %edx
-	movq	152(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	51(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	83(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	115(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	147(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	179(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	211(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	243(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	275(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	307(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	339(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	371(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	403(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	435(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	467(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	499(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	531(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	563(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	595(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	627(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	659(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	691(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	723(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	755(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	787(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	819(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	851(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	883(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	915(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	947(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	979(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1011(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1043(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1075(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1107(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1139(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1171(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1203(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1235(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1267(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1299(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1331(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1363(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1395(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1427(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1459(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1491(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1523(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1555(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1587(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1619(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1651(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1683(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1715(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1747(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1779(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1811(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1843(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1875(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1907(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1939(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1971(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2003(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2035(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	20(%rsi), %edx
-	movq	160(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	52(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	84(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	116(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	148(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	180(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	212(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	244(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	276(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	308(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	340(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	372(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	404(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	436(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	468(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	500(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	532(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	564(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	596(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	628(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	660(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	692(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	724(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	756(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	788(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	820(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	852(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	884(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	916(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	948(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	980(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1012(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1044(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1076(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1108(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1140(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1172(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1204(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1236(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1268(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1300(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1332(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1364(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1396(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1428(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1460(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1492(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1524(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1556(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1588(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1620(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1652(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1684(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1716(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1748(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1780(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1812(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1844(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1876(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1908(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1940(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1972(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2004(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2036(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	21(%rsi), %edx
-	movq	168(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	53(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	85(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	117(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	149(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	181(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	213(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	245(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	277(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	309(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	341(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	373(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	405(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	437(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	469(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	501(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	533(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	565(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	597(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	629(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	661(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	693(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	725(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	757(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	789(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	821(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	853(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	885(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	917(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	949(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	981(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1013(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1045(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1077(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1109(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1141(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1173(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1205(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1237(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1269(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1301(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1333(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1365(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1397(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1429(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1461(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1493(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1525(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1557(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1589(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1621(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1653(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1685(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1717(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1749(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1781(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1813(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1845(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1877(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1909(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1941(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1973(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2005(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2037(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	22(%rsi), %edx
-	movq	176(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	54(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	86(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	118(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	150(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	182(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	214(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	246(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	278(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	310(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	342(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	374(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	406(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	438(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	470(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	502(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	534(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	566(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	598(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	630(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	662(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	694(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	726(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	758(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	790(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	822(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	854(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	886(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	918(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	950(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	982(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1014(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1046(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1078(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1110(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1142(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1174(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1206(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1238(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1270(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1302(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1334(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1366(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1398(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1430(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1462(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1494(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1526(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1558(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1590(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1622(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1654(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1686(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1718(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1750(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1782(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1814(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1846(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1878(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1910(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1942(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1974(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2006(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2038(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	23(%rsi), %edx
-	movq	184(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	55(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	87(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	119(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	151(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	183(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	215(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	247(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	279(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	311(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	343(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	375(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	407(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	439(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	471(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	503(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	535(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	567(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	599(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	631(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	663(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	695(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	727(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	759(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	791(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	823(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	855(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	887(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	919(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	951(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	983(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1015(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1047(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1079(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1111(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1143(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1175(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1207(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1239(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1271(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1303(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1335(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1367(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1399(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1431(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1463(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1495(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1527(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1559(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1591(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1623(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1655(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1687(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1719(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1751(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1783(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1815(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1847(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1879(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1911(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1943(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1975(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2007(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2039(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	24(%rsi), %edx
-	movq	192(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	56(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	88(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	120(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	152(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	184(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	216(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	248(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	280(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	312(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	344(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	376(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	408(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	440(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	472(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	504(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	536(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	568(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	600(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	632(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	664(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	696(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	728(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	760(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	792(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	824(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	856(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	888(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	920(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	952(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	984(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1016(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1048(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1080(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1112(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1144(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1176(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1208(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1240(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1272(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1304(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1336(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1368(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1400(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1432(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1464(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1496(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1528(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1560(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1592(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1624(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1656(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1688(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1720(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1752(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1784(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1816(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1848(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1880(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1912(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1944(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1976(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2008(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2040(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	25(%rsi), %edx
-	movq	200(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	57(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	89(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	121(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	153(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	185(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	217(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	249(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	281(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	313(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	345(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	377(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	409(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	441(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	473(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	505(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	537(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	569(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	601(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	633(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	665(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	697(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	729(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	761(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	793(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	825(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	857(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	889(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	921(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	953(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	985(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1017(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1049(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1081(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1113(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1145(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1177(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1209(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1241(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1273(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1305(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1337(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1369(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1401(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1433(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1465(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1497(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1529(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1561(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1593(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1625(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1657(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1689(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1721(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1753(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1785(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1817(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1849(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1881(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1913(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1945(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1977(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2009(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2041(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	26(%rsi), %edx
-	movq	208(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	58(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	90(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	122(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	154(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	186(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	218(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	250(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	282(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	314(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	346(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	378(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	410(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	442(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	474(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	506(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	538(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	570(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	602(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	634(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	666(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	698(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	730(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	762(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	794(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	826(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	858(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	890(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	922(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	954(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	986(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1018(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1050(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1082(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1114(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1146(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1178(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1210(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1242(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1274(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1306(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1338(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1370(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1402(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1434(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1466(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1498(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1530(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1562(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1594(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1626(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1658(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1690(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1722(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1754(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1786(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1818(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1850(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1882(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1914(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1946(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1978(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2010(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2042(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	27(%rsi), %edx
-	movq	216(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	59(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	91(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	123(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	155(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	187(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	219(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	251(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	283(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	315(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	347(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	379(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	411(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	443(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	475(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	507(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	539(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	571(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	603(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	635(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	667(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	699(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	731(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	763(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	795(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	827(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	859(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	891(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	923(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	955(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	987(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1019(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1051(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1083(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1115(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1147(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1179(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1211(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1243(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1275(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1307(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1339(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1371(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1403(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1435(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1467(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1499(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1531(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1563(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1595(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1627(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1659(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1691(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1723(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1755(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1787(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1819(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1851(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1883(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1915(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1947(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1979(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2011(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2043(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	28(%rsi), %edx
-	movq	224(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	60(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	92(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	124(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	156(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	188(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	220(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	252(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	284(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	316(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	348(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	380(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	412(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	444(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	476(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	508(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	540(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	572(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	604(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	636(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	668(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	700(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	732(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	764(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	796(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	828(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	860(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	892(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	924(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	956(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	988(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1020(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1052(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1084(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1116(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1148(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1180(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1212(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1244(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1276(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1308(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1340(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1372(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1404(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1436(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1468(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1500(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1532(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1564(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1596(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1628(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1660(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1692(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1724(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1756(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1788(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1820(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1852(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1884(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1916(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1948(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1980(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2012(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2044(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	29(%rsi), %edx
-	movq	232(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	61(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	93(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	125(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	157(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	189(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	221(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	253(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	285(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	317(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	349(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	381(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	413(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	445(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	477(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	509(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	541(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	573(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	605(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	637(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	669(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	701(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	733(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	765(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	797(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	829(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	861(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	893(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	925(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	957(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	989(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1021(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1053(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1085(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1117(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1149(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1181(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1213(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1245(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1277(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1309(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1341(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1373(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1405(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1437(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1469(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1501(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1533(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1565(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1597(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1629(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1661(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1693(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1725(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1757(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1789(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1821(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1853(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1885(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1917(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1949(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1981(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2013(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2045(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	30(%rsi), %edx
-	movq	240(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	62(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	94(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	126(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	158(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	190(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	222(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	254(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	286(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	318(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	350(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	382(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	414(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	446(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	478(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	510(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	542(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	574(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	606(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	638(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	670(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	702(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	734(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	766(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	798(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	830(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	862(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	894(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	926(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	958(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	990(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1022(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1054(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1086(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1118(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1150(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1182(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1214(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1246(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1278(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1310(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1342(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1374(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1406(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1438(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1470(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1502(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1534(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1566(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1598(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1630(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1662(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1694(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1726(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1758(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1790(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1822(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1854(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1886(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1918(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1950(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1982(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2014(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2046(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	31(%rsi), %edx
-	movq	248(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	63(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	95(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	127(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	159(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	191(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	223(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	255(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	287(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	319(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	351(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	383(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	415(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	447(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	479(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	511(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	543(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	575(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	607(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	639(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	671(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	703(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	735(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	767(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	799(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	831(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	863(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	895(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	927(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	959(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	991(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1023(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1055(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1087(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1119(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1151(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1183(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1215(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1247(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1279(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1311(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1343(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1375(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1407(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1439(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1471(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1503(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1535(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1567(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1599(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1631(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1663(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1695(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1727(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1759(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1791(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1823(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1855(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1887(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1919(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1951(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1983(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	2015(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2047(%rsi), %edx
-	movb	%dl, 63(%rax)
-	addq	$8, %rsp
-	.cfi_remember_state
-	.cfi_def_cfa_offset 8
-	ret
-.L24:
-	.cfi_restore_state
-	movl	$_ZZNK10Unrolled_35demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
-	movl	$250, %edx
-	movl	$.LC0, %esi
-	movl	$.LC2, %edi
-	call	__assert_fail
-	.cfi_endproc
-.LFE1022:
-	.size	_ZNK10Unrolled_35demuxEPKhjPPh, .-_ZNK10Unrolled_35demuxEPKhjPPh
 	.section	.text._ZNK10Unrolled_15demuxEPKhjPPh,"axG",@progbits,_ZNK10Unrolled_15demuxEPKhjPPh,comdat
 	.align 2
 	.p2align 5,,31
 	.weak	_ZNK10Unrolled_15demuxEPKhjPPh
 	.type	_ZNK10Unrolled_15demuxEPKhjPPh, @function
 _ZNK10Unrolled_15demuxEPKhjPPh:
-.LFB1016:
+.LFB1018:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
 	cmpl	$2048, %edx
-	jne	.L29
+	jne	.L26
 	xorl	%edx, %edx
 	.p2align 5
-.L27:
+.L24:
 	movzbl	(%rsi), %edi
 	movq	(%rcx,%rdx), %rax
 	addq	$8, %rdx
@@ -15291,21 +11133,117 @@ _ZNK10Unrolled_15demuxEPKhjPPh:
 	addq	$1, %rsi
 	cmpq	$256, %rdx
 	movb	%dil, 63(%rax)
-	jne	.L27
+	jne	.L24
 	addq	$8, %rsp
 	.cfi_remember_state
 	.cfi_def_cfa_offset 8
 	ret
-.L29:
+.L26:
 	.cfi_restore_state
 	movl	$_ZZNK10Unrolled_15demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
-	movl	$163, %edx
+	movl	$196, %edx
 	movl	$.LC0, %esi
 	movl	$.LC1, %edi
 	call	__assert_fail
 	.cfi_endproc
-.LFE1016:
+.LFE1018:
 	.size	_ZNK10Unrolled_15demuxEPKhjPPh, .-_ZNK10Unrolled_15demuxEPKhjPPh
+	.section	.text._ZNK12Dst_First_3a5demuxEPKhjPPh,"axG",@progbits,_ZNK12Dst_First_3a5demuxEPKhjPPh,comdat
+	.align 2
+	.p2align 5,,31
+	.weak	_ZNK12Dst_First_3a5demuxEPKhjPPh
+	.type	_ZNK12Dst_First_3a5demuxEPKhjPPh, @function
+_ZNK12Dst_First_3a5demuxEPKhjPPh:
+.LFB1017:
+	.cfi_startproc
+	subq	$8, %rsp
+	.cfi_def_cfa_offset 16
+	cmpl	$2048, %edx
+	jne	.L33
+	xorl	%r9d, %r9d
+	.p2align 5
+.L28:
+	movq	(%rcx,%r9,8), %r8
+	movl	%r9d, %edx
+	xorl	%eax, %eax
+	.p2align 5
+.L29:
+	movl	%edx, %edi
+	addl	$32, %edx
+	movzbl	(%rsi,%rdi), %edi
+	movb	%dil, (%r8,%rax)
+	addq	$1, %rax
+	cmpq	$64, %rax
+	jne	.L29
+	addq	$1, %r9
+	cmpq	$32, %r9
+	jne	.L28
+	addq	$8, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 8
+	ret
+.L33:
+	.cfi_restore_state
+	movl	$_ZZNK12Dst_First_3a5demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$169, %edx
+	movl	$.LC0, %esi
+	movl	$.LC1, %edi
+	call	__assert_fail
+	.cfi_endproc
+.LFE1017:
+	.size	_ZNK12Dst_First_3a5demuxEPKhjPPh, .-_ZNK12Dst_First_3a5demuxEPKhjPPh
+	.section	.rodata.str1.8
+	.align 8
+.LC2:
+	.string	"src_length % NUM_TIMESLOTS == 0"
+	.section	.text._ZNK12Dst_First_1a5demuxEPKhjPPh,"axG",@progbits,_ZNK12Dst_First_1a5demuxEPKhjPPh,comdat
+	.align 2
+	.p2align 5,,31
+	.weak	_ZNK12Dst_First_1a5demuxEPKhjPPh
+	.type	_ZNK12Dst_First_1a5demuxEPKhjPPh, @function
+_ZNK12Dst_First_1a5demuxEPKhjPPh:
+.LFB1016:
+	.cfi_startproc
+	subq	$8, %rsp
+	.cfi_def_cfa_offset 16
+	testb	$31, %dl
+	jne	.L41
+	shrl	$5, %edx
+	xorl	%r10d, %r10d
+	.p2align 5
+.L38:
+	testl	%edx, %edx
+	movl	%r10d, %edi
+	movq	(%rcx,%r10,8), %r9
+	je	.L36
+	xorl	%eax, %eax
+	.p2align 5
+.L37:
+	movl	%edi, %r8d
+	addl	$32, %edi
+	movzbl	(%rsi,%r8), %r8d
+	movb	%r8b, (%r9,%rax)
+	addq	$1, %rax
+	cmpl	%eax, %edx
+	ja	.L37
+.L36:
+	addq	$1, %r10
+	cmpq	$32, %r10
+	jne	.L38
+	addq	$8, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 8
+	ret
+.L41:
+	.cfi_restore_state
+	movl	$_ZZNK12Dst_First_1a5demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$153, %edx
+	movl	$.LC0, %esi
+	movl	$.LC2, %edi
+	call	__assert_fail
+	.cfi_endproc
+.LFE1016:
+	.size	_ZNK12Dst_First_1a5demuxEPKhjPPh, .-_ZNK12Dst_First_1a5demuxEPKhjPPh
 	.section	.text._ZNK11Dst_First_35demuxEPKhjPPh,"axG",@progbits,_ZNK11Dst_First_35demuxEPKhjPPh,comdat
 	.align 2
 	.p2align 5,,31
@@ -15317,14 +11255,14 @@ _ZNK11Dst_First_35demuxEPKhjPPh:
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
 	cmpl	$2048, %edx
-	jne	.L36
+	jne	.L48
 	xorl	%r9d, %r9d
 	.p2align 5
-.L31:
+.L43:
 	movl	%r9d, %edx
 	xorl	%eax, %eax
 	.p2align 5
-.L32:
+.L44:
 	movl	%edx, %edi
 	addl	$32, %edx
 	movzbl	(%rsi,%rdi), %r8d
@@ -15332,18 +11270,18 @@ _ZNK11Dst_First_35demuxEPKhjPPh:
 	movb	%r8b, (%rdi,%rax)
 	addq	$1, %rax
 	cmpq	$64, %rax
-	jne	.L32
+	jne	.L44
 	addq	$1, %r9
 	cmpq	$32, %r9
-	jne	.L31
+	jne	.L43
 	addq	$8, %rsp
 	.cfi_remember_state
 	.cfi_def_cfa_offset 8
 	ret
-.L36:
+.L48:
 	.cfi_restore_state
 	movl	$_ZZNK11Dst_First_35demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
-	movl	$137, %edx
+	movl	$138, %edx
 	movl	$.LC0, %esi
 	movl	$.LC1, %edi
 	call	__assert_fail
@@ -15361,37 +11299,37 @@ _ZNK11Dst_First_25demuxEPKhjPPh:
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
 	testb	$31, %dl
-	jne	.L44
+	jne	.L56
 	shrl	$5, %edx
 	xorl	%r10d, %r10d
 	.p2align 5
-.L41:
+.L53:
 	testl	%edx, %edx
 	movq	(%rcx,%r10,8), %r9
-	je	.L39
+	je	.L51
 	movl	%r10d, %edi
 	xorl	%eax, %eax
 	.p2align 5
-.L40:
+.L52:
 	movl	%edi, %r8d
 	addl	$32, %edi
 	movzbl	(%rsi,%r8), %r8d
 	movb	%r8b, (%r9,%rax)
 	addq	$1, %rax
 	cmpl	%eax, %edx
-	ja	.L40
-.L39:
+	ja	.L52
+.L51:
 	addq	$1, %r10
 	cmpq	$32, %r10
-	jne	.L41
+	jne	.L53
 	addq	$8, %rsp
 	.cfi_remember_state
 	.cfi_def_cfa_offset 8
 	ret
-.L44:
+.L56:
 	.cfi_restore_state
 	movl	$_ZZNK11Dst_First_25demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
-	movl	$118, %edx
+	movl	$119, %edx
 	movl	$.LC0, %esi
 	movl	$.LC2, %edi
 	call	__assert_fail
@@ -15409,17 +11347,17 @@ _ZNK11Dst_First_15demuxEPKhjPPh:
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
 	testb	$31, %dl
-	jne	.L46
+	jne	.L58
 	shrl	$5, %edx
 	xorl	%r10d, %r10d
 	.p2align 5
-.L47:
+.L59:
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	movl	%r10d, %edi
-	je	.L50
+	je	.L62
 	.p2align 5
-.L52:
+.L64:
 	movl	%edi, %r8d
 	addl	$32, %edi
 	movzbl	(%rsi,%r8), %r9d
@@ -15427,19 +11365,19 @@ _ZNK11Dst_First_15demuxEPKhjPPh:
 	movb	%r9b, (%r8,%rax)
 	addq	$1, %rax
 	cmpl	%eax, %edx
-	ja	.L52
-.L50:
+	ja	.L64
+.L62:
 	addq	$1, %r10
 	cmpq	$32, %r10
-	jne	.L47
+	jne	.L59
 	addq	$8, %rsp
 	.cfi_remember_state
 	.cfi_def_cfa_offset 8
 	ret
-.L46:
+.L58:
 	.cfi_restore_state
 	movl	$_ZZNK11Dst_First_15demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
-	movl	$103, %edx
+	movl	$104, %edx
 	movl	$.LC0, %esi
 	movl	$.LC2, %edi
 	call	__assert_fail
@@ -15457,12 +11395,12 @@ _ZNK11Src_First_35demuxEPKhjPPh:
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
 	testb	$31, %dl
-	jne	.L55
+	jne	.L67
 	xorl	%eax, %eax
 	testl	%edx, %edx
-	je	.L54
+	je	.L66
 	.p2align 5
-.L59:
+.L71:
 	movq	%rax, %r8
 	movzbl	(%rsi,%rax), %r9d
 	movl	%eax, %edi
@@ -15472,16 +11410,16 @@ _ZNK11Src_First_35demuxEPKhjPPh:
 	movq	(%rcx,%r8,8), %r8
 	cmpl	%eax, %edx
 	movb	%r9b, (%r8,%rdi)
-	ja	.L59
-.L54:
+	ja	.L71
+.L66:
 	addq	$8, %rsp
 	.cfi_remember_state
 	.cfi_def_cfa_offset 8
 	ret
-.L55:
+.L67:
 	.cfi_restore_state
 	movl	$_ZZNK11Src_First_35demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
-	movl	$90, %edx
+	movl	$91, %edx
 	movl	$.LC0, %esi
 	movl	$.LC2, %edi
 	call	__assert_fail
@@ -15499,37 +11437,37 @@ _ZNK11Src_First_25demuxEPKhjPPh:
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
 	testb	$31, %dl
-	jne	.L62
+	jne	.L74
 	shrl	$5, %edx
 	xorl	%r9d, %r9d
 	testl	%edx, %edx
-	je	.L61
+	je	.L73
 	.p2align 5
-.L67:
+.L79:
 	movl	%r9d, %r10d
 	xorl	%eax, %eax
 	sall	$5, %r10d
 	.p2align 5
-.L65:
+.L77:
 	leal	(%r10,%rax), %edi
 	movzbl	(%rsi,%rdi), %r8d
 	movq	(%rcx,%rax,8), %rdi
 	addq	$1, %rax
 	cmpq	$32, %rax
 	movb	%r8b, (%rdi,%r9)
-	jne	.L65
+	jne	.L77
 	addq	$1, %r9
 	cmpl	%r9d, %edx
-	ja	.L67
-.L61:
+	ja	.L79
+.L73:
 	addq	$8, %rsp
 	.cfi_remember_state
 	.cfi_def_cfa_offset 8
 	ret
-.L62:
+.L74:
 	.cfi_restore_state
 	movl	$_ZZNK11Src_First_25demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
-	movl	$75, %edx
+	movl	$76, %edx
 	movl	$.LC0, %esi
 	movl	$.LC2, %edi
 	call	__assert_fail
@@ -15547,37 +11485,37 @@ _ZNK11Src_First_15demuxEPKhjPPh:
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
 	testb	$31, %dl
-	jne	.L71
+	jne	.L83
 	xorl	%r11d, %r11d
 	xorl	%r9d, %r9d
 	testl	%edx, %edx
-	je	.L70
+	je	.L82
 	.p2align 5
-.L77:
+.L89:
 	movl	%r11d, %r10d
 	xorl	%eax, %eax
 	.p2align 5
-.L74:
+.L86:
 	leal	(%r9,%rax), %edi
 	movzbl	(%rsi,%rdi), %r8d
 	movq	(%rcx,%rax,8), %rdi
 	addq	$1, %rax
 	cmpq	$32, %rax
 	movb	%r8b, (%rdi,%r10)
-	jne	.L74
+	jne	.L86
 	addl	$32, %r9d
 	addl	$1, %r11d
 	cmpl	%r9d, %edx
-	ja	.L77
-.L70:
+	ja	.L89
+.L82:
 	addq	$8, %rsp
 	.cfi_remember_state
 	.cfi_def_cfa_offset 8
 	ret
-.L71:
+.L83:
 	.cfi_restore_state
 	movl	$_ZZNK11Src_First_15demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
-	movl	$57, %edx
+	movl	$58, %edx
 	movl	$.LC0, %esi
 	movl	$.LC2, %edi
 	call	__assert_fail
@@ -15595,9 +11533,9 @@ _ZNK9Reference5demuxEPKhjPPh:
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
 	testb	$31, %dl
-	jne	.L79
+	jne	.L91
 	testl	%edx, %edx
-	je	.L78
+	je	.L90
 	movzbl	(%rsi), %edi
 	movq	(%rcx), %rax
 	subl	$1, %edx
@@ -15605,14 +11543,14 @@ _ZNK9Reference5demuxEPKhjPPh:
 	movb	%dil, (%rax)
 	xorl	%edi, %edi
 	movl	$1, %eax
-	jmp	.L84
+	jmp	.L96
 	.p2align 4,,10
 	.p2align 3
-.L82:
+.L94:
 	addq	$1, %rdi
-.L84:
+.L96:
 	cmpq	%rdx, %rdi
-	je	.L78
+	je	.L90
 	movl	%eax, %r9d
 	movzbl	1(%rsi,%rdi), %r10d
 	addl	$1, %eax
@@ -15620,1798 +11558,33 @@ _ZNK9Reference5demuxEPKhjPPh:
 	movl	%r11d, %r8d
 	cmpl	$32, %eax
 	movb	%r10b, (%r9,%r8)
-	jne	.L82
+	jne	.L94
 	addl	$1, %r11d
 	xorb	%al, %al
-	jmp	.L82
+	jmp	.L94
 	.p2align 4,,10
 	.p2align 3
-.L78:
+.L90:
 	addq	$8, %rsp
 	.cfi_remember_state
 	.cfi_def_cfa_offset 8
 	ret
-.L79:
+.L91:
 	.cfi_restore_state
 	movl	$_ZZNK9Reference5demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
-	movl	$38, %edx
+	movl	$39, %edx
 	movl	$.LC0, %esi
 	movl	$.LC2, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1009:
 	.size	_ZNK9Reference5demuxEPKhjPPh, .-_ZNK9Reference5demuxEPKhjPPh
-	.section	.text._ZNK10Unrolled_47demux_0EPKhPhj,"axG",@progbits,_ZNK10Unrolled_47demux_0EPKhPhj,comdat
-	.align 2
-	.p2align 5,,31
-	.weak	_ZNK10Unrolled_47demux_0EPKhPhj
-	.type	_ZNK10Unrolled_47demux_0EPKhPhj, @function
-_ZNK10Unrolled_47demux_0EPKhPhj:
-.LFB1056:
-	.cfi_startproc
-	movl	%ecx, %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, (%rdx)
-	leal	32(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 1(%rdx)
-	leal	64(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 2(%rdx)
-	leal	96(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 3(%rdx)
-	leal	128(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 4(%rdx)
-	leal	160(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 5(%rdx)
-	leal	192(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 6(%rdx)
-	leal	224(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 7(%rdx)
-	leal	256(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 8(%rdx)
-	leal	288(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 9(%rdx)
-	leal	320(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 10(%rdx)
-	leal	352(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 11(%rdx)
-	leal	384(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 12(%rdx)
-	leal	416(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 13(%rdx)
-	leal	448(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 14(%rdx)
-	leal	480(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 15(%rdx)
-	leal	512(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 16(%rdx)
-	leal	544(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 17(%rdx)
-	leal	576(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 18(%rdx)
-	leal	608(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 19(%rdx)
-	leal	640(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 20(%rdx)
-	leal	672(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 21(%rdx)
-	leal	704(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 22(%rdx)
-	leal	736(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 23(%rdx)
-	leal	768(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 24(%rdx)
-	leal	800(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 25(%rdx)
-	leal	832(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 26(%rdx)
-	leal	864(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 27(%rdx)
-	leal	896(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 28(%rdx)
-	leal	928(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 29(%rdx)
-	leal	960(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 30(%rdx)
-	leal	992(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 31(%rdx)
-	leal	1024(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 32(%rdx)
-	leal	1056(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 33(%rdx)
-	leal	1088(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 34(%rdx)
-	leal	1120(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 35(%rdx)
-	leal	1152(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 36(%rdx)
-	leal	1184(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 37(%rdx)
-	leal	1216(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 38(%rdx)
-	leal	1248(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 39(%rdx)
-	leal	1280(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 40(%rdx)
-	leal	1312(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 41(%rdx)
-	leal	1344(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 42(%rdx)
-	leal	1376(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 43(%rdx)
-	leal	1408(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 44(%rdx)
-	leal	1440(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 45(%rdx)
-	leal	1472(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 46(%rdx)
-	leal	1504(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 47(%rdx)
-	leal	1536(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 48(%rdx)
-	leal	1568(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 49(%rdx)
-	leal	1600(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 50(%rdx)
-	leal	1632(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 51(%rdx)
-	leal	1664(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 52(%rdx)
-	leal	1696(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 53(%rdx)
-	leal	1728(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 54(%rdx)
-	leal	1760(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 55(%rdx)
-	leal	1792(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 56(%rdx)
-	leal	1824(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 57(%rdx)
-	leal	1856(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 58(%rdx)
-	leal	1888(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 59(%rdx)
-	leal	1920(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 60(%rdx)
-	leal	1952(%rcx), %eax
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 61(%rdx)
-	leal	1984(%rcx), %eax
-	addl	$2016, %ecx
-	movzbl	(%rsi,%rax), %eax
-	movb	%al, 62(%rdx)
-	movzbl	(%rsi,%rcx), %eax
-	movb	%al, 63(%rdx)
-	ret
-	.cfi_endproc
-.LFE1056:
-	.size	_ZNK10Unrolled_47demux_0EPKhPhj, .-_ZNK10Unrolled_47demux_0EPKhPhj
-	.section	.text._ZNK10Unrolled_45demuxEPKhjPPh,"axG",@progbits,_ZNK10Unrolled_45demuxEPKhjPPh,comdat
-	.align 2
-	.p2align 5,,31
-	.weak	_ZNK10Unrolled_45demuxEPKhjPPh
-	.type	_ZNK10Unrolled_45demuxEPKhjPPh, @function
-_ZNK10Unrolled_45demuxEPKhjPPh:
-.LFB1055:
-	.cfi_startproc
-	pushq	%r12
-	.cfi_def_cfa_offset 16
-	.cfi_offset 12, -16
-	cmpl	$2048, %edx
-	movq	%rdi, %r12
-	pushq	%rbp
-	.cfi_def_cfa_offset 24
-	.cfi_offset 6, -24
-	movq	%rcx, %rbp
-	pushq	%rbx
-	.cfi_def_cfa_offset 32
-	.cfi_offset 3, -32
-	movq	%rsi, %rbx
-	jne	.L88
-	movzbl	(%rsi), %edx
-	movq	(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	32(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	64(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	96(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	128(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	160(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	192(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	224(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	256(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	288(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	320(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	352(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	384(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	416(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	448(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	480(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	512(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	544(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	576(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	608(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	640(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	672(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	704(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	736(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	768(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	800(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	832(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	864(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	896(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	928(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	960(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	992(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1024(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1056(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1088(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1120(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1152(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1184(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1216(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1248(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1280(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1312(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1344(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1376(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1408(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1440(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1472(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1504(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1536(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1568(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1600(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1632(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1664(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1696(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1728(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1760(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1792(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1824(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1856(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1888(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1920(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1952(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1984(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2016(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	1(%rsi), %edx
-	movq	8(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	33(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	65(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	97(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	129(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	161(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	193(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	225(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	257(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	289(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	321(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	353(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	385(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	417(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	449(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	481(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	513(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	545(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	577(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	609(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	641(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	673(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	705(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	737(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	769(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	801(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	833(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	865(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	897(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	929(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	961(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	993(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1025(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1057(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1089(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1121(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1153(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1185(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1217(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1249(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1281(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1313(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1345(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1377(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1409(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1441(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1473(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1505(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1537(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1569(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1601(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1633(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1665(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1697(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1729(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1761(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1793(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1825(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1857(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1889(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1921(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1953(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1985(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2017(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	2(%rsi), %edx
-	movq	16(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	34(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	66(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	98(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	130(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	162(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	194(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	226(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	258(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	290(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	322(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	354(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	386(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	418(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	450(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	482(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	514(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	546(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	578(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	610(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	642(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	674(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	706(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	738(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	770(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	802(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	834(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	866(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	898(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	930(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	962(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	994(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1026(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1058(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1090(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1122(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1154(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1186(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1218(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1250(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1282(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1314(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1346(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1378(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1410(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1442(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1474(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1506(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1538(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1570(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1602(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1634(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1666(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1698(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1730(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1762(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1794(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1826(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1858(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1890(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1922(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1954(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1986(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2018(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	3(%rsi), %edx
-	movq	24(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	35(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	67(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	99(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	131(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	163(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	195(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	227(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	259(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	291(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	323(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	355(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	387(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	419(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	451(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	483(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	515(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	547(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	579(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	611(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	643(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	675(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	707(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	739(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	771(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	803(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	835(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	867(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	899(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	931(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	963(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	995(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1027(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1059(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1091(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1123(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1155(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1187(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1219(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1251(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1283(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1315(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1347(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1379(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1411(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1443(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1475(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1507(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1539(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1571(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1603(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1635(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1667(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1699(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1731(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1763(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1795(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1827(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1859(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1891(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1923(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1955(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1987(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2019(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	4(%rsi), %edx
-	movq	32(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	36(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	68(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	100(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	132(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	164(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	196(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	228(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	260(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	292(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	324(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	356(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	388(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	420(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	452(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	484(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	516(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	548(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	580(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	612(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	644(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	676(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	708(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	740(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	772(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	804(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	836(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	868(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	900(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	932(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	964(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	996(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1028(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1060(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1092(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1124(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1156(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1188(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1220(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1252(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1284(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1316(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1348(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1380(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1412(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1444(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1476(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1508(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1540(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1572(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1604(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1636(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1668(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1700(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1732(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1764(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1796(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1828(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1860(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1892(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1924(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1956(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1988(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2020(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	5(%rsi), %edx
-	movq	40(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	37(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	69(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	101(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	133(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	165(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	197(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	229(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	261(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	293(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	325(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	357(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	389(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	421(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	453(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	485(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	517(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	549(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	581(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	613(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	645(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	677(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	709(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	741(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	773(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	805(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	837(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	869(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	901(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	933(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	965(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	997(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1029(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1061(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1093(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1125(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1157(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1189(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1221(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1253(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1285(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1317(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1349(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1381(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1413(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1445(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1477(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1509(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1541(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1573(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1605(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1637(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1669(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1701(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1733(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1765(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1797(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1829(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1861(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1893(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1925(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1957(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1989(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2021(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	6(%rsi), %edx
-	movq	48(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	38(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	70(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	102(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	134(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	166(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	198(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	230(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	262(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	294(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	326(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	358(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	390(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	422(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	454(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	486(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	518(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	550(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	582(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	614(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	646(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	678(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	710(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	742(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	774(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	806(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	838(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	870(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	902(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	934(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	966(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	998(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1030(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1062(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1094(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1126(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1158(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1190(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1222(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1254(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1286(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1318(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1350(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1382(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1414(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1446(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1478(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1510(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1542(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1574(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1606(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1638(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1670(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1702(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1734(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1766(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1798(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1830(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1862(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1894(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1926(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1958(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1990(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2022(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	7(%rsi), %edx
-	movq	56(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	39(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	71(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	103(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	135(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	167(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	199(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	231(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	263(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	295(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	327(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	359(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	391(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	423(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	455(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	487(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	519(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	551(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	583(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	615(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	647(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	679(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	711(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	743(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	775(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	807(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	839(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	871(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	903(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	935(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	967(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	999(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1031(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1063(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1095(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1127(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1159(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1191(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1223(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1255(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1287(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1319(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1351(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1383(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1415(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1447(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1479(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1511(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1543(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1575(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1607(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1639(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1671(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1703(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1735(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1767(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1799(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1831(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1863(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1895(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1927(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1959(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1991(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2023(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	8(%rsi), %edx
-	movq	64(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	40(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	72(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	104(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	136(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	168(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	200(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	232(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	264(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	296(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	328(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	360(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	392(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	424(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	456(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	488(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	520(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	552(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	584(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	616(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	648(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	680(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	712(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	744(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	776(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	808(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	840(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	872(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	904(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	936(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	968(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1000(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1032(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1064(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1096(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1128(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1160(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1192(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1224(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1256(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1288(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1320(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1352(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1384(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1416(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1448(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1480(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1512(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1544(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1576(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1608(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1640(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1672(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1704(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1736(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1768(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1800(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1832(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1864(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1896(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1928(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1960(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1992(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2024(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	9(%rsi), %edx
-	movq	72(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	41(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	73(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	105(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	137(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	169(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	201(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	233(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	265(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	297(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	329(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	361(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	393(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	425(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	457(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	489(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	521(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	553(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	585(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	617(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	649(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	681(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	713(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	745(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	777(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	809(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	841(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	873(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	905(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	937(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	969(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1001(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1033(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1065(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1097(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1129(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1161(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1193(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1225(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1257(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1289(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1321(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1353(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1385(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1417(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1449(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1481(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1513(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1545(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1577(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1609(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1641(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1673(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1705(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1737(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1769(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1801(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1833(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1865(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1897(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1929(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1961(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1993(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2025(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movzbl	10(%rsi), %edx
-	movq	80(%rcx), %rax
-	movb	%dl, (%rax)
-	movzbl	42(%rsi), %edx
-	movb	%dl, 1(%rax)
-	movzbl	74(%rsi), %edx
-	movb	%dl, 2(%rax)
-	movzbl	106(%rsi), %edx
-	movb	%dl, 3(%rax)
-	movzbl	138(%rsi), %edx
-	movb	%dl, 4(%rax)
-	movzbl	170(%rsi), %edx
-	movb	%dl, 5(%rax)
-	movzbl	202(%rsi), %edx
-	movb	%dl, 6(%rax)
-	movzbl	234(%rsi), %edx
-	movb	%dl, 7(%rax)
-	movzbl	266(%rsi), %edx
-	movb	%dl, 8(%rax)
-	movzbl	298(%rsi), %edx
-	movb	%dl, 9(%rax)
-	movzbl	330(%rsi), %edx
-	movb	%dl, 10(%rax)
-	movzbl	362(%rsi), %edx
-	movb	%dl, 11(%rax)
-	movzbl	394(%rsi), %edx
-	movb	%dl, 12(%rax)
-	movzbl	426(%rsi), %edx
-	movb	%dl, 13(%rax)
-	movzbl	458(%rsi), %edx
-	movb	%dl, 14(%rax)
-	movzbl	490(%rsi), %edx
-	movb	%dl, 15(%rax)
-	movzbl	522(%rsi), %edx
-	movb	%dl, 16(%rax)
-	movzbl	554(%rsi), %edx
-	movb	%dl, 17(%rax)
-	movzbl	586(%rsi), %edx
-	movb	%dl, 18(%rax)
-	movzbl	618(%rsi), %edx
-	movb	%dl, 19(%rax)
-	movzbl	650(%rsi), %edx
-	movb	%dl, 20(%rax)
-	movzbl	682(%rsi), %edx
-	movb	%dl, 21(%rax)
-	movzbl	714(%rsi), %edx
-	movb	%dl, 22(%rax)
-	movzbl	746(%rsi), %edx
-	movb	%dl, 23(%rax)
-	movzbl	778(%rsi), %edx
-	movb	%dl, 24(%rax)
-	movzbl	810(%rsi), %edx
-	movb	%dl, 25(%rax)
-	movzbl	842(%rsi), %edx
-	movb	%dl, 26(%rax)
-	movzbl	874(%rsi), %edx
-	movb	%dl, 27(%rax)
-	movzbl	906(%rsi), %edx
-	movb	%dl, 28(%rax)
-	movzbl	938(%rsi), %edx
-	movb	%dl, 29(%rax)
-	movzbl	970(%rsi), %edx
-	movb	%dl, 30(%rax)
-	movzbl	1002(%rsi), %edx
-	movb	%dl, 31(%rax)
-	movzbl	1034(%rsi), %edx
-	movb	%dl, 32(%rax)
-	movzbl	1066(%rsi), %edx
-	movb	%dl, 33(%rax)
-	movzbl	1098(%rsi), %edx
-	movb	%dl, 34(%rax)
-	movzbl	1130(%rsi), %edx
-	movb	%dl, 35(%rax)
-	movzbl	1162(%rsi), %edx
-	movb	%dl, 36(%rax)
-	movzbl	1194(%rsi), %edx
-	movb	%dl, 37(%rax)
-	movzbl	1226(%rsi), %edx
-	movb	%dl, 38(%rax)
-	movzbl	1258(%rsi), %edx
-	movb	%dl, 39(%rax)
-	movzbl	1290(%rsi), %edx
-	movb	%dl, 40(%rax)
-	movzbl	1322(%rsi), %edx
-	movb	%dl, 41(%rax)
-	movzbl	1354(%rsi), %edx
-	movb	%dl, 42(%rax)
-	movzbl	1386(%rsi), %edx
-	movb	%dl, 43(%rax)
-	movzbl	1418(%rsi), %edx
-	movb	%dl, 44(%rax)
-	movzbl	1450(%rsi), %edx
-	movb	%dl, 45(%rax)
-	movzbl	1482(%rsi), %edx
-	movb	%dl, 46(%rax)
-	movzbl	1514(%rsi), %edx
-	movb	%dl, 47(%rax)
-	movzbl	1546(%rsi), %edx
-	movb	%dl, 48(%rax)
-	movzbl	1578(%rsi), %edx
-	movb	%dl, 49(%rax)
-	movzbl	1610(%rsi), %edx
-	movb	%dl, 50(%rax)
-	movzbl	1642(%rsi), %edx
-	movb	%dl, 51(%rax)
-	movzbl	1674(%rsi), %edx
-	movb	%dl, 52(%rax)
-	movzbl	1706(%rsi), %edx
-	movb	%dl, 53(%rax)
-	movzbl	1738(%rsi), %edx
-	movb	%dl, 54(%rax)
-	movzbl	1770(%rsi), %edx
-	movb	%dl, 55(%rax)
-	movzbl	1802(%rsi), %edx
-	movb	%dl, 56(%rax)
-	movzbl	1834(%rsi), %edx
-	movb	%dl, 57(%rax)
-	movzbl	1866(%rsi), %edx
-	movb	%dl, 58(%rax)
-	movzbl	1898(%rsi), %edx
-	movb	%dl, 59(%rax)
-	movzbl	1930(%rsi), %edx
-	movb	%dl, 60(%rax)
-	movzbl	1962(%rsi), %edx
-	movb	%dl, 61(%rax)
-	movzbl	1994(%rsi), %edx
-	movb	%dl, 62(%rax)
-	movzbl	2026(%rsi), %edx
-	movb	%dl, 63(%rax)
-	movq	88(%rcx), %rdx
-	movl	$11, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	96(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$12, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	104(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$13, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	112(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$14, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	120(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$15, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	128(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$16, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	136(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$17, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	144(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$18, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	152(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$19, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	160(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$20, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	168(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$21, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	176(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$22, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	184(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$23, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	192(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$24, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	200(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$25, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	208(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$26, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	216(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$27, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	224(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$28, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	232(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$29, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	240(%rbp), %rdx
-	movq	%rbx, %rsi
-	movq	%r12, %rdi
-	movl	$30, %ecx
-	call	_ZNK10Unrolled_47demux_0EPKhPhj
-	movq	%rbx, %rsi
-	movq	248(%rbp), %rdx
-	movq	%r12, %rdi
-	popq	%rbx
-	.cfi_remember_state
-	.cfi_def_cfa_offset 24
-	popq	%rbp
-	.cfi_def_cfa_offset 16
-	popq	%r12
-	.cfi_def_cfa_offset 8
-	movl	$31, %ecx
-	jmp	_ZNK10Unrolled_47demux_0EPKhPhj
-.L88:
-	.cfi_restore_state
-	movl	$_ZZNK10Unrolled_45demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
-	movl	$283, %edx
-	movl	$.LC0, %esi
-	movl	$.LC1, %edi
-	call	__assert_fail
-	.cfi_endproc
-.LFE1055:
-	.size	_ZNK10Unrolled_45demuxEPKhjPPh, .-_ZNK10Unrolled_45demuxEPKhjPPh
 	.text
 	.p2align 5,,31
 	.globl	_Z8generatev
 	.type	_Z8generatev, @function
 _Z8generatev:
-.LFB1057:
+.LFB1024:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -17428,7 +11601,7 @@ _Z8generatev:
 	movq	%rax, %rbx
 	call	srand
 	.p2align 5
-.L90:
+.L98:
 	call	rand
 	movl	%eax, %edx
 	sarl	$31, %edx
@@ -17439,7 +11612,7 @@ _Z8generatev:
 	movb	%al, (%rbx,%rbp)
 	addq	$1, %rbp
 	cmpq	$2048, %rbp
-	jne	.L90
+	jne	.L98
 	addq	$8, %rsp
 	.cfi_def_cfa_offset 24
 	movq	%rbx, %rax
@@ -17449,13 +11622,13 @@ _Z8generatev:
 	.cfi_def_cfa_offset 8
 	ret
 	.cfi_endproc
-.LFE1057:
+.LFE1024:
 	.size	_Z8generatev, .-_Z8generatev
 	.p2align 5,,31
 	.globl	_Z12allocate_dstv
 	.type	_Z12allocate_dstv, @function
 _Z12allocate_dstv:
-.LFB1058:
+.LFB1025:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -17470,13 +11643,13 @@ _Z12allocate_dstv:
 	call	_Znam
 	movq	%rax, %rbp
 	.p2align 5
-.L93:
+.L101:
 	movl	$64, %edi
 	call	_Znam
 	movq	%rax, 0(%rbp,%rbx)
 	addq	$8, %rbx
 	cmpq	$256, %rbx
-	jne	.L93
+	jne	.L101
 	addq	$8, %rsp
 	.cfi_def_cfa_offset 24
 	movq	%rbp, %rax
@@ -17486,13 +11659,13 @@ _Z12allocate_dstv:
 	.cfi_def_cfa_offset 8
 	ret
 	.cfi_endproc
-.LFE1058:
+.LFE1025:
 	.size	_Z12allocate_dstv, .-_Z12allocate_dstv
 	.p2align 5,,31
 	.globl	_Z10delete_dstPPh
 	.type	_Z10delete_dstPPh, @function
 _Z10delete_dstPPh:
-.LFB1059:
+.LFB1026:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -17505,12 +11678,12 @@ _Z10delete_dstPPh:
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 32
 	.p2align 5
-.L96:
+.L104:
 	movq	0(%rbp,%rbx), %rdi
 	addq	$8, %rbx
 	call	_ZdlPv
 	cmpq	$256, %rbx
-	jne	.L96
+	jne	.L104
 	addq	$8, %rsp
 	.cfi_def_cfa_offset 24
 	movq	%rbp, %rdi
@@ -17520,7 +11693,7 @@ _Z10delete_dstPPh:
 	.cfi_def_cfa_offset 8
 	jmp	_ZdlPv
 	.cfi_endproc
-.LFE1059:
+.LFE1026:
 	.size	_Z10delete_dstPPh, .-_Z10delete_dstPPh
 	.section	.rodata.str1.1
 .LC3:
@@ -17530,7 +11703,7 @@ _Z10delete_dstPPh:
 	.globl	_Z5checkRK5Demux
 	.type	_Z5checkRK5Demux, @function
 _Z5checkRK5Demux:
-.LFB1060:
+.LFB1027:
 	.cfi_startproc
 	pushq	%r14
 	.cfi_def_cfa_offset 16
@@ -17555,7 +11728,7 @@ _Z5checkRK5Demux:
 	movq	%rax, %rbx
 	call	srand
 	.p2align 5
-.L99:
+.L107:
 	call	rand
 	movl	%eax, %edx
 	sarl	$31, %edx
@@ -17566,45 +11739,45 @@ _Z5checkRK5Demux:
 	movb	%al, (%rbx,%rbp)
 	addq	$1, %rbp
 	cmpq	$2048, %rbp
-	jne	.L99
+	jne	.L107
 	movl	$256, %edi
 	xorl	%r12d, %r12d
 	call	_Znam
 	movq	%rax, %rbp
 	.p2align 5
-.L100:
+.L108:
 	movl	$64, %edi
 	call	_Znam
 	movq	%rax, 0(%rbp,%r12)
 	addq	$8, %r12
 	cmpq	$256, %r12
-	jne	.L100
+	jne	.L108
 	movl	$256, %edi
 	xorl	%r14d, %r14d
 	call	_Znam
 	movq	%rax, %r12
 	.p2align 5
-.L101:
+.L109:
 	movl	$64, %edi
 	call	_Znam
 	movq	%rax, (%r12,%r14)
 	addq	$8, %r14
 	cmpq	$256, %r14
-	jne	.L101
+	jne	.L109
 	movzbl	(%rbx), %edx
 	movq	0(%rbp), %rax
 	xorl	%r8d, %r8d
 	movb	%dl, (%rax)
 	xorl	%edx, %edx
 	movl	$1, %eax
-	jmp	.L104
+	jmp	.L112
 	.p2align 4,,10
 	.p2align 3
-.L103:
+.L111:
 	addq	$1, %rdx
 	cmpq	$2047, %rdx
-	je	.L117
-.L104:
+	je	.L125
+.L112:
 	movl	%eax, %esi
 	movzbl	1(%rbx,%rdx), %edi
 	addl	$1, %eax
@@ -17612,13 +11785,13 @@ _Z5checkRK5Demux:
 	movl	%r8d, %ecx
 	cmpl	$32, %eax
 	movb	%dil, (%rsi,%rcx)
-	jne	.L103
+	jne	.L111
 	addq	$1, %rdx
 	addl	$1, %r8d
 	xorb	%al, %al
 	cmpq	$2047, %rdx
-	jne	.L104
-.L117:
+	jne	.L112
+.L125:
 	movq	0(%r13), %rax
 	movq	%r13, %rdi
 	xorl	%r13d, %r13d
@@ -17627,36 +11800,36 @@ _Z5checkRK5Demux:
 	movq	%rbx, %rsi
 	call	*(%rax)
 	.p2align 5
-.L106:
+.L114:
 	movq	(%r12,%r13), %rsi
 	movq	0(%rbp,%r13), %rdi
 	movl	$64, %edx
 	call	memcmp
 	testl	%eax, %eax
-	jne	.L118
+	jne	.L126
 	addq	$8, %r13
 	cmpq	$256, %r13
-	jne	.L106
+	jne	.L114
 	movq	%rbx, %rdi
 	xorl	%ebx, %ebx
 	call	_ZdlPv
 	.p2align 5
-.L107:
+.L115:
 	movq	0(%rbp,%rbx), %rdi
 	addq	$8, %rbx
 	call	_ZdlPv
 	cmpq	$256, %rbx
-	jne	.L107
+	jne	.L115
 	movq	%rbp, %rdi
 	xorw	%bx, %bx
 	call	_ZdlPv
 	.p2align 5
-.L108:
+.L116:
 	movq	(%r12,%rbx), %rdi
 	addq	$8, %rbx
 	call	_ZdlPv
 	cmpq	$256, %rbx
-	jne	.L108
+	jne	.L116
 	popq	%rbx
 	.cfi_remember_state
 	.cfi_def_cfa_offset 40
@@ -17670,7 +11843,7 @@ _Z5checkRK5Demux:
 	popq	%r14
 	.cfi_def_cfa_offset 8
 	jmp	_ZdlPv
-.L118:
+.L126:
 	.cfi_restore_state
 	movl	$_ZSt4cout, %edi
 	movl	$18, %edx
@@ -17679,7 +11852,7 @@ _Z5checkRK5Demux:
 	movl	$1, %edi
 	call	exit
 	.cfi_endproc
-.LFE1060:
+.LFE1027:
 	.size	_Z5checkRK5Demux, .-_Z5checkRK5Demux
 	.section	.rodata.str1.1
 .LC6:
@@ -17689,7 +11862,7 @@ _Z5checkRK5Demux:
 	.globl	_Z7measureRK5Demux
 	.type	_Z7measureRK5Demux, @function
 _Z7measureRK5Demux:
-.LFB1067:
+.LFB1034:
 	.cfi_startproc
 	pushq	%r12
 	.cfi_def_cfa_offset 16
@@ -17714,12 +11887,12 @@ _Z7measureRK5Demux:
 	cvtsi2sdq	%rax, %xmm0
 	addsd	%xmm1, %xmm0
 	ucomisd	.LC5(%rip), %xmm0
-	jae	.L120
+	jae	.L128
 	cvttsd2siq	%xmm0, %rbp
-.L121:
+.L129:
 	movl	$1000000, %r12d
 	.p2align 5
-.L122:
+.L130:
 	movq	(%rbx), %rax
 	movq	dst(%rip), %rcx
 	movl	$2048, %edx
@@ -17727,7 +11900,7 @@ _Z7measureRK5Demux:
 	movq	%rbx, %rdi
 	call	*(%rax)
 	subl	$1, %r12d
-	jne	.L122
+	jne	.L130
 	xorl	%edi, %edi
 	movq	%rsp, %rsi
 	call	clock_gettime
@@ -17738,9 +11911,9 @@ _Z7measureRK5Demux:
 	cvtsi2sdq	%rax, %xmm0
 	addsd	%xmm1, %xmm0
 	ucomisd	.LC5(%rip), %xmm0
-	jae	.L123
+	jae	.L131
 	cvttsd2siq	%xmm0, %rax
-.L124:
+.L132:
 	subq	%rbp, %rax
 	movq	%rax, %rbp
 	movq	(%rbx), %rax
@@ -17750,14 +11923,14 @@ _Z7measureRK5Demux:
 	cmpb	$42, (%rbx)
 	sete	%al
 	addq	%rax, %rbx
-	je	.L132
+	je	.L140
 	movq	%rbx, %rdi
 	call	strlen
 	movq	%rbx, %rsi
 	movq	%rax, %rdx
 	movl	$_ZSt4cout, %edi
 	call	_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
-.L127:
+.L135:
 	movl	$2, %edx
 	movl	$.LC6, %esi
 	movl	$_ZSt4cout, %edi
@@ -17770,11 +11943,11 @@ _Z7measureRK5Demux:
 	movq	-24(%rax), %rax
 	movq	240(%rbx,%rax), %rbp
 	testq	%rbp, %rbp
-	je	.L133
+	je	.L141
 	cmpb	$0, 56(%rbp)
-	je	.L129
+	je	.L137
 	movzbl	67(%rbp), %eax
-.L130:
+.L138:
 	movq	%rbx, %rdi
 	movsbl	%al, %esi
 	call	_ZNSo3putEc
@@ -17790,46 +11963,46 @@ _Z7measureRK5Demux:
 	popq	%r12
 	.cfi_def_cfa_offset 8
 	ret
-.L120:
+.L128:
 	.cfi_restore_state
 	subsd	.LC5(%rip), %xmm0
 	movabsq	$-9223372036854775808, %rax
 	cvttsd2siq	%xmm0, %rbp
 	xorq	%rax, %rbp
-	jmp	.L121
-.L123:
+	jmp	.L129
+.L131:
 	subsd	.LC5(%rip), %xmm0
 	movabsq	$-9223372036854775808, %rdx
 	cvttsd2siq	%xmm0, %rax
 	xorq	%rdx, %rax
-	jmp	.L124
-.L129:
+	jmp	.L132
+.L137:
 	movq	%rbp, %rdi
 	call	_ZNKSt5ctypeIcE13_M_widen_initEv
 	movq	0(%rbp), %rax
 	movl	$10, %esi
 	movq	%rbp, %rdi
 	call	*48(%rax)
-	jmp	.L130
-.L132:
+	jmp	.L138
+.L140:
 	movq	_ZSt4cout(%rip), %rax
 	movq	-24(%rax), %rdi
 	addq	$_ZSt4cout, %rdi
 	movl	32(%rdi), %esi
 	orl	$1, %esi
 	call	_ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate
-	jmp	.L127
-.L133:
+	jmp	.L135
+.L141:
 	call	_ZSt16__throw_bad_castv
 	.cfi_endproc
-.LFE1067:
+.LFE1034:
 	.size	_Z7measureRK5Demux, .-_Z7measureRK5Demux
 	.section	.text.startup,"ax",@progbits
 	.p2align 5,,31
 	.globl	main
 	.type	main, @function
 main:
-.LFB1068:
+.LFB1035:
 	.cfi_startproc
 	subq	$248, %rsp
 	.cfi_def_cfa_offset 256
@@ -17859,40 +12032,40 @@ main:
 	movq	$_ZTV11Dst_First_3+16, 96(%rsp)
 	call	_Z7measureRK5Demux
 	leaq	112(%rsp), %rdi
-	movq	$_ZTV10Unrolled_1+16, 112(%rsp)
+	movq	$_ZTV12Dst_First_1a+16, 112(%rsp)
 	call	_Z7measureRK5Demux
 	leaq	128(%rsp), %rdi
-	movq	$_ZTV12Unrolled_1_2+16, 128(%rsp)
+	movq	$_ZTV12Dst_First_3a+16, 128(%rsp)
 	call	_Z7measureRK5Demux
 	leaq	144(%rsp), %rdi
-	movq	$_ZTV12Unrolled_1_4+16, 144(%rsp)
+	movq	$_ZTV10Unrolled_1+16, 144(%rsp)
 	call	_Z7measureRK5Demux
 	leaq	160(%rsp), %rdi
-	movq	$_ZTV12Unrolled_1_8+16, 160(%rsp)
+	movq	$_ZTV12Unrolled_1_2+16, 160(%rsp)
 	call	_Z7measureRK5Demux
 	leaq	176(%rsp), %rdi
-	movq	$_ZTV13Unrolled_1_16+16, 176(%rsp)
+	movq	$_ZTV12Unrolled_1_4+16, 176(%rsp)
 	call	_Z7measureRK5Demux
 	leaq	192(%rsp), %rdi
-	movq	$_ZTV15Unrolled_2_Full+16, 192(%rsp)
+	movq	$_ZTV12Unrolled_1_8+16, 192(%rsp)
 	call	_Z7measureRK5Demux
 	leaq	208(%rsp), %rdi
-	movq	$_ZTV10Unrolled_3+16, 208(%rsp)
+	movq	$_ZTV13Unrolled_1_16+16, 208(%rsp)
 	call	_Z7measureRK5Demux
 	leaq	224(%rsp), %rdi
-	movq	$_ZTV10Unrolled_4+16, 224(%rsp)
+	movq	$_ZTV15Unrolled_2_Full+16, 224(%rsp)
 	call	_Z7measureRK5Demux
 	xorl	%eax, %eax
 	addq	$248, %rsp
 	.cfi_def_cfa_offset 8
 	ret
 	.cfi_endproc
-.LFE1068:
+.LFE1035:
 	.size	main, .-main
 	.p2align 5,,31
 	.type	_GLOBAL__sub_I__Z8generatev, @function
 _GLOBAL__sub_I__Z8generatev:
-.LFB1121:
+.LFB1088:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
@@ -17905,7 +12078,7 @@ _GLOBAL__sub_I__Z8generatev:
 	.cfi_def_cfa_offset 8
 	jmp	__cxa_atexit
 	.cfi_endproc
-.LFE1121:
+.LFE1088:
 	.size	_GLOBAL__sub_I__Z8generatev, .-_GLOBAL__sub_I__Z8generatev
 	.section	.ctors,"aw",@progbits
 	.align 8
@@ -17992,6 +12165,24 @@ _ZTV11Dst_First_3:
 	.quad	0
 	.quad	_ZTI11Dst_First_3
 	.quad	_ZNK11Dst_First_35demuxEPKhjPPh
+	.weak	_ZTV12Dst_First_1a
+	.section	.rodata._ZTV12Dst_First_1a,"aG",@progbits,_ZTV12Dst_First_1a,comdat
+	.align 16
+	.type	_ZTV12Dst_First_1a, @object
+	.size	_ZTV12Dst_First_1a, 24
+_ZTV12Dst_First_1a:
+	.quad	0
+	.quad	_ZTI12Dst_First_1a
+	.quad	_ZNK12Dst_First_1a5demuxEPKhjPPh
+	.weak	_ZTV12Dst_First_3a
+	.section	.rodata._ZTV12Dst_First_3a,"aG",@progbits,_ZTV12Dst_First_3a,comdat
+	.align 16
+	.type	_ZTV12Dst_First_3a, @object
+	.size	_ZTV12Dst_First_3a, 24
+_ZTV12Dst_First_3a:
+	.quad	0
+	.quad	_ZTI12Dst_First_3a
+	.quad	_ZNK12Dst_First_3a5demuxEPKhjPPh
 	.weak	_ZTV10Unrolled_1
 	.section	.rodata._ZTV10Unrolled_1,"aG",@progbits,_ZTV10Unrolled_1,comdat
 	.align 16
@@ -18046,40 +12237,14 @@ _ZTV15Unrolled_2_Full:
 	.quad	0
 	.quad	_ZTI15Unrolled_2_Full
 	.quad	_ZNK15Unrolled_2_Full5demuxEPKhjPPh
-	.weak	_ZTV10Unrolled_3
-	.section	.rodata._ZTV10Unrolled_3,"aG",@progbits,_ZTV10Unrolled_3,comdat
-	.align 16
-	.type	_ZTV10Unrolled_3, @object
-	.size	_ZTV10Unrolled_3, 24
-_ZTV10Unrolled_3:
-	.quad	0
-	.quad	_ZTI10Unrolled_3
-	.quad	_ZNK10Unrolled_35demuxEPKhjPPh
-	.weak	_ZTV10Unrolled_4
-	.section	.rodata._ZTV10Unrolled_4,"aG",@progbits,_ZTV10Unrolled_4,comdat
-	.align 16
-	.type	_ZTV10Unrolled_4, @object
-	.size	_ZTV10Unrolled_4, 24
-_ZTV10Unrolled_4:
-	.quad	0
-	.quad	_ZTI10Unrolled_4
-	.quad	_ZNK10Unrolled_45demuxEPKhjPPh
 	.section	.rodata
-	.align 32
-	.type	_ZZNK10Unrolled_45demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK10Unrolled_45demuxEPKhjPPhE19__PRETTY_FUNCTION__, 72
-_ZZNK10Unrolled_45demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Unrolled_4::demux(const byte*, unsigned int, byte**) const"
-	.align 32
-	.type	_ZZNK10Unrolled_35demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK10Unrolled_35demuxEPKhjPPhE19__PRETTY_FUNCTION__, 72
-_ZZNK10Unrolled_35demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Unrolled_3::demux(const byte*, unsigned int, byte**) const"
 	.align 32
 	.type	_ZZNK15Unrolled_2_Full5demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
 	.size	_ZZNK15Unrolled_2_Full5demuxEPKhjPPhE19__PRETTY_FUNCTION__, 77
 _ZZNK15Unrolled_2_Full5demuxEPKhjPPhE19__PRETTY_FUNCTION__:
 	.string	"virtual void Unrolled_2_Full::demux(const byte*, unsigned int, byte**) const"
+	.local	_ZStL8__ioinit
+	.comm	_ZStL8__ioinit,1,1
 	.align 32
 	.type	_ZZNK13Unrolled_1_165demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
 	.size	_ZZNK13Unrolled_1_165demuxEPKhjPPhE19__PRETTY_FUNCTION__, 75
@@ -18090,8 +12255,6 @@ _ZZNK13Unrolled_1_165demuxEPKhjPPhE19__PRETTY_FUNCTION__:
 	.size	_ZZNK12Unrolled_1_85demuxEPKhjPPhE19__PRETTY_FUNCTION__, 74
 _ZZNK12Unrolled_1_85demuxEPKhjPPhE19__PRETTY_FUNCTION__:
 	.string	"virtual void Unrolled_1_8::demux(const byte*, unsigned int, byte**) const"
-	.local	_ZStL8__ioinit
-	.comm	_ZStL8__ioinit,1,1
 	.align 32
 	.type	_ZZNK12Unrolled_1_45demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
 	.size	_ZZNK12Unrolled_1_45demuxEPKhjPPhE19__PRETTY_FUNCTION__, 74
@@ -18107,6 +12270,16 @@ _ZZNK12Unrolled_1_25demuxEPKhjPPhE19__PRETTY_FUNCTION__:
 	.size	_ZZNK10Unrolled_15demuxEPKhjPPhE19__PRETTY_FUNCTION__, 72
 _ZZNK10Unrolled_15demuxEPKhjPPhE19__PRETTY_FUNCTION__:
 	.string	"virtual void Unrolled_1::demux(const byte*, unsigned int, byte**) const"
+	.align 32
+	.type	_ZZNK12Dst_First_3a5demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK12Dst_First_3a5demuxEPKhjPPhE19__PRETTY_FUNCTION__, 74
+_ZZNK12Dst_First_3a5demuxEPKhjPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Dst_First_3a::demux(const byte*, unsigned int, byte**) const"
+	.align 32
+	.type	_ZZNK12Dst_First_1a5demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK12Dst_First_1a5demuxEPKhjPPhE19__PRETTY_FUNCTION__, 74
+_ZZNK12Dst_First_1a5demuxEPKhjPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Dst_First_1a::demux(const byte*, unsigned int, byte**) const"
 	.align 32
 	.type	_ZZNK11Dst_First_35demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
 	.size	_ZZNK11Dst_First_35demuxEPKhjPPhE19__PRETTY_FUNCTION__, 73
@@ -18200,6 +12373,24 @@ _ZTI11Dst_First_3:
 	.quad	_ZTVN10__cxxabiv120__si_class_type_infoE+16
 	.quad	_ZTS11Dst_First_3
 	.quad	_ZTI5Demux
+	.weak	_ZTI12Dst_First_1a
+	.section	.rodata._ZTI12Dst_First_1a,"aG",@progbits,_ZTI12Dst_First_1a,comdat
+	.align 16
+	.type	_ZTI12Dst_First_1a, @object
+	.size	_ZTI12Dst_First_1a, 24
+_ZTI12Dst_First_1a:
+	.quad	_ZTVN10__cxxabiv120__si_class_type_infoE+16
+	.quad	_ZTS12Dst_First_1a
+	.quad	_ZTI5Demux
+	.weak	_ZTI12Dst_First_3a
+	.section	.rodata._ZTI12Dst_First_3a,"aG",@progbits,_ZTI12Dst_First_3a,comdat
+	.align 16
+	.type	_ZTI12Dst_First_3a, @object
+	.size	_ZTI12Dst_First_3a, 24
+_ZTI12Dst_First_3a:
+	.quad	_ZTVN10__cxxabiv120__si_class_type_infoE+16
+	.quad	_ZTS12Dst_First_3a
+	.quad	_ZTI5Demux
 	.weak	_ZTI10Unrolled_1
 	.section	.rodata._ZTI10Unrolled_1,"aG",@progbits,_ZTI10Unrolled_1,comdat
 	.align 16
@@ -18254,24 +12445,6 @@ _ZTI15Unrolled_2_Full:
 	.quad	_ZTVN10__cxxabiv120__si_class_type_infoE+16
 	.quad	_ZTS15Unrolled_2_Full
 	.quad	_ZTI5Demux
-	.weak	_ZTI10Unrolled_3
-	.section	.rodata._ZTI10Unrolled_3,"aG",@progbits,_ZTI10Unrolled_3,comdat
-	.align 16
-	.type	_ZTI10Unrolled_3, @object
-	.size	_ZTI10Unrolled_3, 24
-_ZTI10Unrolled_3:
-	.quad	_ZTVN10__cxxabiv120__si_class_type_infoE+16
-	.quad	_ZTS10Unrolled_3
-	.quad	_ZTI5Demux
-	.weak	_ZTI10Unrolled_4
-	.section	.rodata._ZTI10Unrolled_4,"aG",@progbits,_ZTI10Unrolled_4,comdat
-	.align 16
-	.type	_ZTI10Unrolled_4, @object
-	.size	_ZTI10Unrolled_4, 24
-_ZTI10Unrolled_4:
-	.quad	_ZTVN10__cxxabiv120__si_class_type_infoE+16
-	.quad	_ZTS10Unrolled_4
-	.quad	_ZTI5Demux
 	.weak	_ZTS9Reference
 	.section	.rodata._ZTS9Reference,"aG",@progbits,_ZTS9Reference,comdat
 	.type	_ZTS9Reference, @object
@@ -18322,6 +12495,18 @@ _ZTS11Dst_First_2:
 	.size	_ZTS11Dst_First_3, 14
 _ZTS11Dst_First_3:
 	.string	"11Dst_First_3"
+	.weak	_ZTS12Dst_First_1a
+	.section	.rodata._ZTS12Dst_First_1a,"aG",@progbits,_ZTS12Dst_First_1a,comdat
+	.type	_ZTS12Dst_First_1a, @object
+	.size	_ZTS12Dst_First_1a, 15
+_ZTS12Dst_First_1a:
+	.string	"12Dst_First_1a"
+	.weak	_ZTS12Dst_First_3a
+	.section	.rodata._ZTS12Dst_First_3a,"aG",@progbits,_ZTS12Dst_First_3a,comdat
+	.type	_ZTS12Dst_First_3a, @object
+	.size	_ZTS12Dst_First_3a, 15
+_ZTS12Dst_First_3a:
+	.string	"12Dst_First_3a"
 	.weak	_ZTS10Unrolled_1
 	.section	.rodata._ZTS10Unrolled_1,"aG",@progbits,_ZTS10Unrolled_1,comdat
 	.type	_ZTS10Unrolled_1, @object
@@ -18360,18 +12545,6 @@ _ZTS13Unrolled_1_16:
 	.size	_ZTS15Unrolled_2_Full, 18
 _ZTS15Unrolled_2_Full:
 	.string	"15Unrolled_2_Full"
-	.weak	_ZTS10Unrolled_3
-	.section	.rodata._ZTS10Unrolled_3,"aG",@progbits,_ZTS10Unrolled_3,comdat
-	.type	_ZTS10Unrolled_3, @object
-	.size	_ZTS10Unrolled_3, 13
-_ZTS10Unrolled_3:
-	.string	"10Unrolled_3"
-	.weak	_ZTS10Unrolled_4
-	.section	.rodata._ZTS10Unrolled_4,"aG",@progbits,_ZTS10Unrolled_4,comdat
-	.type	_ZTS10Unrolled_4, @object
-	.size	_ZTS10Unrolled_4, 13
-_ZTS10Unrolled_4:
-	.string	"10Unrolled_4"
 	.weak	_ZTS5Demux
 	.section	.rodata._ZTS5Demux,"aG",@progbits,_ZTS5Demux,comdat
 	.type	_ZTS5Demux, @object
