@@ -4,6 +4,7 @@
      Revision 4: Used different version of generic multipliers in unrolled versions
      Revision 5: Replaced test code to run just once
      Revision 6: Removed Unrolled_3 and Unrolled_4
+     Revision 7: Replaced 'unsigned' with 'size_t'
   */
 
 #include <cassert>
@@ -17,9 +18,9 @@
 
 typedef unsigned char byte;
 
-static const unsigned NUM_TIMESLOTS = 32;
-static const unsigned DST_SIZE = 64;
-static const unsigned SRC_SIZE = NUM_TIMESLOTS * DST_SIZE;
+static const size_t NUM_TIMESLOTS = 32;
+static const size_t DST_SIZE = 64;
+static const size_t SRC_SIZE = NUM_TIMESLOTS * DST_SIZE;
 static const unsigned ITERATIONS = 1000000;
 static const unsigned REPETITIONS = 2;
 
@@ -28,19 +29,19 @@ using namespace std;
 class Demux
 {
 public:
-    virtual void demux (const byte * src, unsigned src_length, byte ** dst) const = 0;
+    virtual void demux (const byte * src, size_t src_length, byte ** dst) const = 0;
 };
 
 class Reference : public Demux
 {
 public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    void demux (const byte * src, size_t src_length, byte ** dst) const
     {
         assert (src_length % NUM_TIMESLOTS == 0);
 
-        unsigned dst_pos = 0;
-        unsigned dst_num = 0;
-        for (unsigned src_pos = 0; src_pos < src_length; src_pos++) {
+        size_t dst_pos = 0;
+        size_t dst_num = 0;
+        for (size_t src_pos = 0; src_pos < src_length; src_pos++) {
             dst [dst_num][dst_pos] = src [src_pos];
             if (++ dst_num == NUM_TIMESLOTS) {
                 dst_num = 0;
@@ -53,14 +54,14 @@ public:
 class Src_First_1 : public Demux
 {
 public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    void demux (const byte * src, size_t src_length, byte ** dst) const
     {
         assert (src_length % NUM_TIMESLOTS == 0);
 
-        unsigned src_pos = 0;
-        unsigned dst_pos = 0;
+        size_t src_pos = 0;
+        size_t dst_pos = 0;
         while (src_pos < src_length) {
-            for (unsigned dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
+            for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
                 dst [dst_num][dst_pos] = src [src_pos ++];
             }
             ++ dst_pos;
@@ -71,12 +72,12 @@ public:
 class Src_First_2 : public Demux
 {
 public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    void demux (const byte * src, size_t src_length, byte ** dst) const
     {
         assert (src_length % NUM_TIMESLOTS == 0);
             
-        for (unsigned dst_pos = 0; dst_pos < src_length / NUM_TIMESLOTS; ++ dst_pos) {
-            for (unsigned dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
+        for (size_t dst_pos = 0; dst_pos < src_length / NUM_TIMESLOTS; ++ dst_pos) {
+            for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
                 dst [dst_num][dst_pos] = src [dst_pos * NUM_TIMESLOTS + dst_num];
             }
         }
@@ -86,11 +87,11 @@ public:
 class Src_First_3 : public Demux
 {
 public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    void demux (const byte * src, size_t src_length, byte ** dst) const
     {
         assert (src_length % NUM_TIMESLOTS == 0);
 
-        for (unsigned i = 0; i < src_length; i++) {
+        for (size_t i = 0; i < src_length; i++) {
             dst [i % NUM_TIMESLOTS][i / NUM_TIMESLOTS] = src [i];
         }
     }
@@ -99,12 +100,12 @@ public:
 class Dst_First_1 : public Demux
 {
 public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    void demux (const byte * src, size_t src_length, byte ** dst) const
     {
         assert (src_length % NUM_TIMESLOTS == 0);
 
-        for (unsigned dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
-            for (unsigned dst_pos = 0; dst_pos < src_length / NUM_TIMESLOTS; ++ dst_pos) {
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
+            for (size_t dst_pos = 0; dst_pos < src_length / NUM_TIMESLOTS; ++ dst_pos) {
                 dst [dst_num][dst_pos] = src [dst_pos * NUM_TIMESLOTS + dst_num];
             }
         }
@@ -114,15 +115,15 @@ public:
 class Dst_First_2 : public Demux
 {
 public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    void demux (const byte * src, size_t src_length, byte ** dst) const
     {
         assert (src_length % NUM_TIMESLOTS == 0);
 
-        unsigned dst_size = src_length / NUM_TIMESLOTS;
-        for (unsigned dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
+        size_t dst_size = src_length / NUM_TIMESLOTS;
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
             byte * d = dst [dst_num];
-            unsigned src_pos = dst_num;
-            for (unsigned dst_pos = 0; dst_pos < dst_size; ++ dst_pos) {
+            size_t src_pos = dst_num;
+            for (size_t dst_pos = 0; dst_pos < dst_size; ++ dst_pos) {
                 d[dst_pos] = src[src_pos];
                 src_pos += NUM_TIMESLOTS;
             }
@@ -133,12 +134,12 @@ public:
 class Dst_First_3 : public Demux
 {
 public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    void demux (const byte * src, size_t src_length, byte ** dst) const
     {
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
 
-        for (unsigned dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
-            for (unsigned dst_pos = 0; dst_pos < DST_SIZE; ++ dst_pos) {
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
+            for (size_t dst_pos = 0; dst_pos < DST_SIZE; ++ dst_pos) {
                 dst [dst_num][dst_pos] = src [dst_pos * NUM_TIMESLOTS + dst_num];
             }
         }
@@ -148,13 +149,13 @@ public:
 class Dst_First_1a : public Demux
 {
 public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    void demux (const byte * src, size_t src_length, byte ** dst) const
     {
         assert (src_length % NUM_TIMESLOTS == 0);
 
-        for (unsigned dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
             byte * d = dst [dst_num];
-            for (unsigned dst_pos = 0; dst_pos < src_length / NUM_TIMESLOTS; ++ dst_pos) {
+            for (size_t dst_pos = 0; dst_pos < src_length / NUM_TIMESLOTS; ++ dst_pos) {
                 d [dst_pos] = src [dst_pos * NUM_TIMESLOTS + dst_num];
             }
         }
@@ -164,13 +165,13 @@ public:
 class Dst_First_3a : public Demux
 {
 public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    void demux (const byte * src, size_t src_length, byte ** dst) const
     {
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
 
-        for (unsigned dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
             byte * d = dst [dst_num];
-            for (unsigned dst_pos = 0; dst_pos < DST_SIZE; ++ dst_pos) {
+            for (size_t dst_pos = 0; dst_pos < DST_SIZE; ++ dst_pos) {
                 d [dst_pos] = src [dst_pos * NUM_TIMESLOTS + dst_num];
             }
         }
@@ -189,13 +190,13 @@ public:
 class Unrolled_1 : public Demux
 {
 public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    void demux (const byte * src, size_t src_length, byte ** dst) const
     {
         assert (NUM_TIMESLOTS == 32);
         assert (DST_SIZE == 64);
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
 
-        for (unsigned j = 0; j < NUM_TIMESLOTS; j++) {
+        for (size_t j = 0; j < NUM_TIMESLOTS; j++) {
             MOVE_TIMESLOT (j);
         }
     }
@@ -206,13 +207,13 @@ public:
 class Unrolled_1_2 : public Demux
 {
 public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    void demux (const byte * src, size_t src_length, byte ** dst) const
     {
         assert (NUM_TIMESLOTS == 32);
         assert (DST_SIZE == 64);
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
 
-        for (unsigned j = 0; j < NUM_TIMESLOTS; j+=2) {
+        for (size_t j = 0; j < NUM_TIMESLOTS; j+=2) {
             DUP_2 (MOVE_TIMESLOT_J);
         }
     }
@@ -221,12 +222,12 @@ public:
 class Unrolled_1_4 : public Demux
 {
 public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    void demux (const byte * src, size_t src_length, byte ** dst) const
     {
         assert (NUM_TIMESLOTS == 32);
         assert (DST_SIZE == 64);
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
-        for (unsigned j = 0; j < NUM_TIMESLOTS; j+=4) {
+        for (size_t j = 0; j < NUM_TIMESLOTS; j+=4) {
             DUP_4 (MOVE_TIMESLOT_J);
         }
     }
@@ -235,12 +236,12 @@ public:
 class Unrolled_1_8 : public Demux
 {
 public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    void demux (const byte * src, size_t src_length, byte ** dst) const
     {
         assert (NUM_TIMESLOTS == 32);
         assert (DST_SIZE == 64);
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
-        for (unsigned j = 0; j < NUM_TIMESLOTS; j+=8) {
+        for (size_t j = 0; j < NUM_TIMESLOTS; j+=8) {
             DUP_8 (MOVE_TIMESLOT_J);
         }
     }
@@ -249,12 +250,12 @@ public:
 class Unrolled_1_16 : public Demux
 {
 public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    void demux (const byte * src, size_t src_length, byte ** dst) const
     {
         assert (NUM_TIMESLOTS == 32);
         assert (DST_SIZE == 64);
         assert (src_length == NUM_TIMESLOTS * DST_SIZE);
-        for (unsigned j = 0; j < NUM_TIMESLOTS; j+=16) {
+        for (size_t j = 0; j < NUM_TIMESLOTS; j+=16) {
             DUP_16 (MOVE_TIMESLOT_J);
         }
     }
@@ -265,7 +266,7 @@ public:
 class Unrolled_2_Full : public Demux
 {
 public:
-    void demux (const byte * src, unsigned src_length, byte ** dst) const
+    void demux (const byte * src, size_t src_length, byte ** dst) const
     {
         assert (NUM_TIMESLOTS == 32);
         assert (DST_SIZE == 64);
@@ -279,14 +280,14 @@ byte * generate ()
 {
     byte * buf = new byte [SRC_SIZE];
     srand (0);
-    for (unsigned i = 0; i < SRC_SIZE; i++) buf[i] = (byte) (rand () % 256);
+    for (size_t i = 0; i < SRC_SIZE; i++) buf[i] = (byte) (rand () % 256);
     return buf;
 }
     
 byte ** allocate_dst ()
 {
     byte ** result = new byte * [NUM_TIMESLOTS];
-    for (unsigned i = 0; i < NUM_TIMESLOTS; i++) {
+    for (size_t i = 0; i < NUM_TIMESLOTS; i++) {
         result [i] = new byte [DST_SIZE];
     }
     return result;
@@ -294,7 +295,7 @@ byte ** allocate_dst ()
 
 void delete_dst (byte ** dst)
 {
-    for (unsigned i = 0; i < NUM_TIMESLOTS; i++) {
+    for (size_t i = 0; i < NUM_TIMESLOTS; i++) {
         delete dst [i];
     }
     delete dst;

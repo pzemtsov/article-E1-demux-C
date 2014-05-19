@@ -6,17 +6,17 @@
 	.align 8
 .LC1:
 	.string	"src_length == NUM_TIMESLOTS * DST_SIZE"
-	.section	.text._ZNK15Unrolled_2_Full5demuxEPKhjPPh,"axG",@progbits,_ZNK15Unrolled_2_Full5demuxEPKhjPPh,comdat
+	.section	.text._ZNK15Unrolled_2_Full5demuxEPKhmPPh,"axG",@progbits,_ZNK15Unrolled_2_Full5demuxEPKhmPPh,comdat
 	.align 2
 	.p2align 5,,31
-	.weak	_ZNK15Unrolled_2_Full5demuxEPKhjPPh
-	.type	_ZNK15Unrolled_2_Full5demuxEPKhjPPh, @function
-_ZNK15Unrolled_2_Full5demuxEPKhjPPh:
+	.weak	_ZNK15Unrolled_2_Full5demuxEPKhmPPh
+	.type	_ZNK15Unrolled_2_Full5demuxEPKhmPPh, @function
+_ZNK15Unrolled_2_Full5demuxEPKhmPPh:
 .LFB1023:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
-	cmpl	$2048, %edx
+	cmpq	$2048, %rdx
 	jne	.L4
 	movzbl	(%rsi), %r10d
 	movq	(%rcx), %rax
@@ -4152,25 +4152,25 @@ _ZNK15Unrolled_2_Full5demuxEPKhjPPh:
 	ret
 .L4:
 	.cfi_restore_state
-	movl	$_ZZNK15Unrolled_2_Full5demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$_ZZNK15Unrolled_2_Full5demuxEPKhmPPhE19__PRETTY_FUNCTION__, %ecx
 	movl	$272, %edx
 	movl	$.LC0, %esi
 	movl	$.LC1, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1023:
-	.size	_ZNK15Unrolled_2_Full5demuxEPKhjPPh, .-_ZNK15Unrolled_2_Full5demuxEPKhjPPh
-	.section	.text._ZNK13Unrolled_1_165demuxEPKhjPPh,"axG",@progbits,_ZNK13Unrolled_1_165demuxEPKhjPPh,comdat
+	.size	_ZNK15Unrolled_2_Full5demuxEPKhmPPh, .-_ZNK15Unrolled_2_Full5demuxEPKhmPPh
+	.section	.text._ZNK13Unrolled_1_165demuxEPKhmPPh,"axG",@progbits,_ZNK13Unrolled_1_165demuxEPKhmPPh,comdat
 	.align 2
 	.p2align 5,,31
-	.weak	_ZNK13Unrolled_1_165demuxEPKhjPPh
-	.type	_ZNK13Unrolled_1_165demuxEPKhjPPh, @function
-_ZNK13Unrolled_1_165demuxEPKhjPPh:
+	.weak	_ZNK13Unrolled_1_165demuxEPKhmPPh
+	.type	_ZNK13Unrolled_1_165demuxEPKhmPPh, @function
+_ZNK13Unrolled_1_165demuxEPKhmPPh:
 .LFB1022:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
-	cmpl	$2048, %edx
+	cmpq	$2048, %rdx
 	jne	.L6
 	movzbl	(%rsi), %r10d
 	movq	(%rcx), %rax
@@ -8306,1574 +8306,1062 @@ _ZNK13Unrolled_1_165demuxEPKhjPPh:
 	ret
 .L6:
 	.cfi_restore_state
-	movl	$_ZZNK13Unrolled_1_165demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$_ZZNK13Unrolled_1_165demuxEPKhmPPhE19__PRETTY_FUNCTION__, %ecx
 	movl	$256, %edx
 	movl	$.LC0, %esi
 	movl	$.LC1, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1022:
-	.size	_ZNK13Unrolled_1_165demuxEPKhjPPh, .-_ZNK13Unrolled_1_165demuxEPKhjPPh
-	.section	.text._ZNK12Unrolled_1_85demuxEPKhjPPh,"axG",@progbits,_ZNK12Unrolled_1_85demuxEPKhjPPh,comdat
+	.size	_ZNK13Unrolled_1_165demuxEPKhmPPh, .-_ZNK13Unrolled_1_165demuxEPKhmPPh
+	.section	.text._ZNK12Unrolled_1_85demuxEPKhmPPh,"axG",@progbits,_ZNK12Unrolled_1_85demuxEPKhmPPh,comdat
 	.align 2
 	.p2align 5,,31
-	.weak	_ZNK12Unrolled_1_85demuxEPKhjPPh
-	.type	_ZNK12Unrolled_1_85demuxEPKhjPPh, @function
-_ZNK12Unrolled_1_85demuxEPKhjPPh:
+	.weak	_ZNK12Unrolled_1_85demuxEPKhmPPh
+	.type	_ZNK12Unrolled_1_85demuxEPKhmPPh, @function
+_ZNK12Unrolled_1_85demuxEPKhmPPh:
 .LFB1021:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
-	cmpl	$2048, %edx
+	cmpq	$2048, %rdx
 	jne	.L11
 	movl	$4, %edi
 	xorl	%eax, %eax
 .L8:
-	movl	%eax, %r11d
-	leal	32(%rax), %r9d
-	movzbl	(%rsi,%r11), %r10d
-	movq	(%rcx,%r11,8), %rdx
-	leal	64(%rax), %r11d
-	movb	%r10b, (%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	96(%rax), %r9d
-	movb	%r8b, 1(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	128(%rax), %r11d
-	movb	%r10b, 2(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	160(%rax), %r9d
+	movzbl	(%rsi,%rax), %r11d
+	movq	(%rcx,%rax,8), %rdx
+	movb	%r11b, (%rdx)
+	movzbl	32(%rsi,%rax), %r10d
+	movb	%r10b, 1(%rdx)
+	movzbl	64(%rsi,%rax), %r9d
+	movb	%r9b, 2(%rdx)
+	movzbl	96(%rsi,%rax), %r8d
 	movb	%r8b, 3(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	192(%rax), %r11d
-	movb	%r10b, 4(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	224(%rax), %r9d
-	movb	%r8b, 5(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	256(%rax), %r11d
-	movb	%r10b, 6(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	288(%rax), %r9d
+	movzbl	128(%rsi,%rax), %r11d
+	movb	%r11b, 4(%rdx)
+	movzbl	160(%rsi,%rax), %r10d
+	movb	%r10b, 5(%rdx)
+	movzbl	192(%rsi,%rax), %r9d
+	movb	%r9b, 6(%rdx)
+	movzbl	224(%rsi,%rax), %r8d
 	movb	%r8b, 7(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	320(%rax), %r11d
-	movb	%r10b, 8(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	352(%rax), %r9d
-	movb	%r8b, 9(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	384(%rax), %r11d
-	movb	%r10b, 10(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	416(%rax), %r9d
+	movzbl	256(%rsi,%rax), %r11d
+	movb	%r11b, 8(%rdx)
+	movzbl	288(%rsi,%rax), %r10d
+	movb	%r10b, 9(%rdx)
+	movzbl	320(%rsi,%rax), %r9d
+	movb	%r9b, 10(%rdx)
+	movzbl	352(%rsi,%rax), %r8d
 	movb	%r8b, 11(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	448(%rax), %r11d
-	movb	%r10b, 12(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	480(%rax), %r9d
-	movb	%r8b, 13(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	512(%rax), %r11d
-	movb	%r10b, 14(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	544(%rax), %r9d
+	movzbl	384(%rsi,%rax), %r11d
+	movb	%r11b, 12(%rdx)
+	movzbl	416(%rsi,%rax), %r10d
+	movb	%r10b, 13(%rdx)
+	movzbl	448(%rsi,%rax), %r9d
+	movb	%r9b, 14(%rdx)
+	movzbl	480(%rsi,%rax), %r8d
 	movb	%r8b, 15(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	576(%rax), %r11d
-	movb	%r10b, 16(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	608(%rax), %r9d
-	movb	%r8b, 17(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	640(%rax), %r11d
-	movb	%r10b, 18(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	672(%rax), %r9d
+	movzbl	512(%rsi,%rax), %r11d
+	movb	%r11b, 16(%rdx)
+	movzbl	544(%rsi,%rax), %r10d
+	movb	%r10b, 17(%rdx)
+	movzbl	576(%rsi,%rax), %r9d
+	movb	%r9b, 18(%rdx)
+	movzbl	608(%rsi,%rax), %r8d
 	movb	%r8b, 19(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	704(%rax), %r11d
-	movb	%r10b, 20(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	736(%rax), %r9d
-	movb	%r8b, 21(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	768(%rax), %r11d
-	movb	%r10b, 22(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	800(%rax), %r9d
+	movzbl	640(%rsi,%rax), %r11d
+	movb	%r11b, 20(%rdx)
+	movzbl	672(%rsi,%rax), %r10d
+	movb	%r10b, 21(%rdx)
+	movzbl	704(%rsi,%rax), %r9d
+	movb	%r9b, 22(%rdx)
+	movzbl	736(%rsi,%rax), %r8d
 	movb	%r8b, 23(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	832(%rax), %r11d
-	movb	%r10b, 24(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	864(%rax), %r9d
-	movb	%r8b, 25(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	896(%rax), %r11d
-	movb	%r10b, 26(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	928(%rax), %r9d
+	movzbl	768(%rsi,%rax), %r11d
+	movb	%r11b, 24(%rdx)
+	movzbl	800(%rsi,%rax), %r10d
+	movb	%r10b, 25(%rdx)
+	movzbl	832(%rsi,%rax), %r9d
+	movb	%r9b, 26(%rdx)
+	movzbl	864(%rsi,%rax), %r8d
 	movb	%r8b, 27(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	960(%rax), %r11d
-	movb	%r10b, 28(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	992(%rax), %r9d
-	movb	%r8b, 29(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1024(%rax), %r11d
-	movb	%r10b, 30(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1056(%rax), %r9d
+	movzbl	896(%rsi,%rax), %r11d
+	movb	%r11b, 28(%rdx)
+	movzbl	928(%rsi,%rax), %r10d
+	movb	%r10b, 29(%rdx)
+	movzbl	960(%rsi,%rax), %r9d
+	movb	%r9b, 30(%rdx)
+	movzbl	992(%rsi,%rax), %r8d
 	movb	%r8b, 31(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1088(%rax), %r11d
-	movb	%r10b, 32(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1120(%rax), %r9d
-	movb	%r8b, 33(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1152(%rax), %r11d
-	movb	%r10b, 34(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1184(%rax), %r9d
+	movzbl	1024(%rsi,%rax), %r11d
+	movb	%r11b, 32(%rdx)
+	movzbl	1056(%rsi,%rax), %r10d
+	movb	%r10b, 33(%rdx)
+	movzbl	1088(%rsi,%rax), %r9d
+	movb	%r9b, 34(%rdx)
+	movzbl	1120(%rsi,%rax), %r8d
 	movb	%r8b, 35(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1216(%rax), %r11d
-	movb	%r10b, 36(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1248(%rax), %r9d
-	movb	%r8b, 37(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1280(%rax), %r11d
-	movb	%r10b, 38(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1312(%rax), %r9d
+	movzbl	1152(%rsi,%rax), %r11d
+	movb	%r11b, 36(%rdx)
+	movzbl	1184(%rsi,%rax), %r10d
+	movb	%r10b, 37(%rdx)
+	movzbl	1216(%rsi,%rax), %r9d
+	movb	%r9b, 38(%rdx)
+	movzbl	1248(%rsi,%rax), %r8d
 	movb	%r8b, 39(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1344(%rax), %r11d
-	movb	%r10b, 40(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1376(%rax), %r9d
-	movb	%r8b, 41(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1408(%rax), %r11d
-	movb	%r10b, 42(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1440(%rax), %r9d
+	movzbl	1280(%rsi,%rax), %r11d
+	movb	%r11b, 40(%rdx)
+	movzbl	1312(%rsi,%rax), %r10d
+	movb	%r10b, 41(%rdx)
+	movzbl	1344(%rsi,%rax), %r9d
+	movb	%r9b, 42(%rdx)
+	movzbl	1376(%rsi,%rax), %r8d
 	movb	%r8b, 43(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1472(%rax), %r11d
-	movb	%r10b, 44(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1504(%rax), %r9d
-	movb	%r8b, 45(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1536(%rax), %r11d
-	movb	%r10b, 46(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1568(%rax), %r9d
+	movzbl	1408(%rsi,%rax), %r11d
+	movb	%r11b, 44(%rdx)
+	movzbl	1440(%rsi,%rax), %r10d
+	movb	%r10b, 45(%rdx)
+	movzbl	1472(%rsi,%rax), %r9d
+	movb	%r9b, 46(%rdx)
+	movzbl	1504(%rsi,%rax), %r8d
 	movb	%r8b, 47(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1600(%rax), %r11d
-	movb	%r10b, 48(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1632(%rax), %r9d
-	movb	%r8b, 49(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1664(%rax), %r11d
-	movb	%r10b, 50(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1696(%rax), %r9d
+	movzbl	1536(%rsi,%rax), %r11d
+	movb	%r11b, 48(%rdx)
+	movzbl	1568(%rsi,%rax), %r10d
+	movb	%r10b, 49(%rdx)
+	movzbl	1600(%rsi,%rax), %r9d
+	movb	%r9b, 50(%rdx)
+	movzbl	1632(%rsi,%rax), %r8d
 	movb	%r8b, 51(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1728(%rax), %r11d
-	movb	%r10b, 52(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1760(%rax), %r9d
-	movb	%r8b, 53(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1792(%rax), %r11d
-	movb	%r10b, 54(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1824(%rax), %r9d
+	movzbl	1664(%rsi,%rax), %r11d
+	movb	%r11b, 52(%rdx)
+	movzbl	1696(%rsi,%rax), %r10d
+	movb	%r10b, 53(%rdx)
+	movzbl	1728(%rsi,%rax), %r9d
+	movb	%r9b, 54(%rdx)
+	movzbl	1760(%rsi,%rax), %r8d
 	movb	%r8b, 55(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1856(%rax), %r11d
-	movb	%r10b, 56(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1888(%rax), %r9d
-	movb	%r8b, 57(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1920(%rax), %r11d
-	movb	%r10b, 58(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1952(%rax), %r9d
+	movzbl	1792(%rsi,%rax), %r11d
+	movb	%r11b, 56(%rdx)
+	movzbl	1824(%rsi,%rax), %r10d
+	movb	%r10b, 57(%rdx)
+	movzbl	1856(%rsi,%rax), %r9d
+	movb	%r9b, 58(%rdx)
+	movzbl	1888(%rsi,%rax), %r8d
 	movb	%r8b, 59(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1984(%rax), %r11d
-	movb	%r10b, 60(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	2016(%rax), %r9d
-	movb	%r8b, 61(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1(%rax), %r11d
-	movb	%r10b, 62(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	33(%rax), %r9d
+	movzbl	1920(%rsi,%rax), %r11d
+	movb	%r11b, 60(%rdx)
+	movzbl	1952(%rsi,%rax), %r10d
+	movb	%r10b, 61(%rdx)
+	movzbl	1984(%rsi,%rax), %r9d
+	movb	%r9b, 62(%rdx)
+	movzbl	2016(%rsi,%rax), %r8d
 	movb	%r8b, 63(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	movq	(%rcx,%r11,8), %rdx
-	leal	65(%rax), %r11d
-	movb	%r10b, (%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	97(%rax), %r9d
-	movb	%r8b, 1(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	129(%rax), %r11d
-	movb	%r10b, 2(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	161(%rax), %r9d
+	movzbl	1(%rsi,%rax), %r11d
+	movq	8(%rcx,%rax,8), %rdx
+	movb	%r11b, (%rdx)
+	movzbl	33(%rsi,%rax), %r10d
+	movb	%r10b, 1(%rdx)
+	movzbl	65(%rsi,%rax), %r9d
+	movb	%r9b, 2(%rdx)
+	movzbl	97(%rsi,%rax), %r8d
 	movb	%r8b, 3(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	193(%rax), %r11d
-	movb	%r10b, 4(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	225(%rax), %r9d
-	movb	%r8b, 5(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	257(%rax), %r11d
-	movb	%r10b, 6(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	289(%rax), %r9d
+	movzbl	129(%rsi,%rax), %r11d
+	movb	%r11b, 4(%rdx)
+	movzbl	161(%rsi,%rax), %r10d
+	movb	%r10b, 5(%rdx)
+	movzbl	193(%rsi,%rax), %r9d
+	movb	%r9b, 6(%rdx)
+	movzbl	225(%rsi,%rax), %r8d
 	movb	%r8b, 7(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	321(%rax), %r11d
-	movb	%r10b, 8(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	353(%rax), %r9d
-	movb	%r8b, 9(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	385(%rax), %r11d
-	movb	%r10b, 10(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	417(%rax), %r9d
+	movzbl	257(%rsi,%rax), %r11d
+	movb	%r11b, 8(%rdx)
+	movzbl	289(%rsi,%rax), %r10d
+	movb	%r10b, 9(%rdx)
+	movzbl	321(%rsi,%rax), %r9d
+	movb	%r9b, 10(%rdx)
+	movzbl	353(%rsi,%rax), %r8d
 	movb	%r8b, 11(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	449(%rax), %r11d
-	movb	%r10b, 12(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	481(%rax), %r9d
-	movb	%r8b, 13(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	513(%rax), %r11d
-	movb	%r10b, 14(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	545(%rax), %r9d
+	movzbl	385(%rsi,%rax), %r11d
+	movb	%r11b, 12(%rdx)
+	movzbl	417(%rsi,%rax), %r10d
+	movb	%r10b, 13(%rdx)
+	movzbl	449(%rsi,%rax), %r9d
+	movb	%r9b, 14(%rdx)
+	movzbl	481(%rsi,%rax), %r8d
 	movb	%r8b, 15(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	577(%rax), %r11d
-	movb	%r10b, 16(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	609(%rax), %r9d
-	movb	%r8b, 17(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	641(%rax), %r11d
-	movb	%r10b, 18(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	673(%rax), %r9d
+	movzbl	513(%rsi,%rax), %r11d
+	movb	%r11b, 16(%rdx)
+	movzbl	545(%rsi,%rax), %r10d
+	movb	%r10b, 17(%rdx)
+	movzbl	577(%rsi,%rax), %r9d
+	movb	%r9b, 18(%rdx)
+	movzbl	609(%rsi,%rax), %r8d
 	movb	%r8b, 19(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	705(%rax), %r11d
-	movb	%r10b, 20(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	737(%rax), %r9d
-	movb	%r8b, 21(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	769(%rax), %r11d
-	movb	%r10b, 22(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	801(%rax), %r9d
+	movzbl	641(%rsi,%rax), %r11d
+	movb	%r11b, 20(%rdx)
+	movzbl	673(%rsi,%rax), %r10d
+	movb	%r10b, 21(%rdx)
+	movzbl	705(%rsi,%rax), %r9d
+	movb	%r9b, 22(%rdx)
+	movzbl	737(%rsi,%rax), %r8d
 	movb	%r8b, 23(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	833(%rax), %r11d
-	movb	%r10b, 24(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	865(%rax), %r9d
-	movb	%r8b, 25(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	897(%rax), %r11d
-	movb	%r10b, 26(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	929(%rax), %r9d
+	movzbl	769(%rsi,%rax), %r11d
+	movb	%r11b, 24(%rdx)
+	movzbl	801(%rsi,%rax), %r10d
+	movb	%r10b, 25(%rdx)
+	movzbl	833(%rsi,%rax), %r9d
+	movb	%r9b, 26(%rdx)
+	movzbl	865(%rsi,%rax), %r8d
 	movb	%r8b, 27(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	961(%rax), %r11d
-	movb	%r10b, 28(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	993(%rax), %r9d
-	movb	%r8b, 29(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1025(%rax), %r11d
-	movb	%r10b, 30(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1057(%rax), %r9d
+	movzbl	897(%rsi,%rax), %r11d
+	movb	%r11b, 28(%rdx)
+	movzbl	929(%rsi,%rax), %r10d
+	movb	%r10b, 29(%rdx)
+	movzbl	961(%rsi,%rax), %r9d
+	movb	%r9b, 30(%rdx)
+	movzbl	993(%rsi,%rax), %r8d
 	movb	%r8b, 31(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1089(%rax), %r11d
-	movb	%r10b, 32(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1121(%rax), %r9d
-	movb	%r8b, 33(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1153(%rax), %r11d
-	movb	%r10b, 34(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1185(%rax), %r9d
+	movzbl	1025(%rsi,%rax), %r11d
+	movb	%r11b, 32(%rdx)
+	movzbl	1057(%rsi,%rax), %r10d
+	movb	%r10b, 33(%rdx)
+	movzbl	1089(%rsi,%rax), %r9d
+	movb	%r9b, 34(%rdx)
+	movzbl	1121(%rsi,%rax), %r8d
 	movb	%r8b, 35(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1217(%rax), %r11d
-	movb	%r10b, 36(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1249(%rax), %r9d
-	movb	%r8b, 37(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1281(%rax), %r11d
-	movb	%r10b, 38(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1313(%rax), %r9d
+	movzbl	1153(%rsi,%rax), %r11d
+	movb	%r11b, 36(%rdx)
+	movzbl	1185(%rsi,%rax), %r10d
+	movb	%r10b, 37(%rdx)
+	movzbl	1217(%rsi,%rax), %r9d
+	movb	%r9b, 38(%rdx)
+	movzbl	1249(%rsi,%rax), %r8d
 	movb	%r8b, 39(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1345(%rax), %r11d
-	movb	%r10b, 40(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1377(%rax), %r9d
-	movb	%r8b, 41(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1409(%rax), %r11d
-	movb	%r10b, 42(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1441(%rax), %r9d
+	movzbl	1281(%rsi,%rax), %r11d
+	movb	%r11b, 40(%rdx)
+	movzbl	1313(%rsi,%rax), %r10d
+	movb	%r10b, 41(%rdx)
+	movzbl	1345(%rsi,%rax), %r9d
+	movb	%r9b, 42(%rdx)
+	movzbl	1377(%rsi,%rax), %r8d
 	movb	%r8b, 43(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1473(%rax), %r11d
-	movb	%r10b, 44(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1505(%rax), %r9d
-	movb	%r8b, 45(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1537(%rax), %r11d
-	movb	%r10b, 46(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1569(%rax), %r9d
+	movzbl	1409(%rsi,%rax), %r11d
+	movb	%r11b, 44(%rdx)
+	movzbl	1441(%rsi,%rax), %r10d
+	movb	%r10b, 45(%rdx)
+	movzbl	1473(%rsi,%rax), %r9d
+	movb	%r9b, 46(%rdx)
+	movzbl	1505(%rsi,%rax), %r8d
 	movb	%r8b, 47(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1601(%rax), %r11d
-	movb	%r10b, 48(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1633(%rax), %r9d
-	movb	%r8b, 49(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1665(%rax), %r11d
-	movb	%r10b, 50(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1697(%rax), %r9d
+	movzbl	1537(%rsi,%rax), %r11d
+	movb	%r11b, 48(%rdx)
+	movzbl	1569(%rsi,%rax), %r10d
+	movb	%r10b, 49(%rdx)
+	movzbl	1601(%rsi,%rax), %r9d
+	movb	%r9b, 50(%rdx)
+	movzbl	1633(%rsi,%rax), %r8d
 	movb	%r8b, 51(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1729(%rax), %r11d
-	movb	%r10b, 52(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1761(%rax), %r9d
-	movb	%r8b, 53(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1793(%rax), %r11d
-	movb	%r10b, 54(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1825(%rax), %r9d
+	movzbl	1665(%rsi,%rax), %r11d
+	movb	%r11b, 52(%rdx)
+	movzbl	1697(%rsi,%rax), %r10d
+	movb	%r10b, 53(%rdx)
+	movzbl	1729(%rsi,%rax), %r9d
+	movb	%r9b, 54(%rdx)
+	movzbl	1761(%rsi,%rax), %r8d
 	movb	%r8b, 55(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1857(%rax), %r11d
-	movb	%r10b, 56(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1889(%rax), %r9d
-	movb	%r8b, 57(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1921(%rax), %r11d
-	movb	%r10b, 58(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1953(%rax), %r9d
+	movzbl	1793(%rsi,%rax), %r11d
+	movb	%r11b, 56(%rdx)
+	movzbl	1825(%rsi,%rax), %r10d
+	movb	%r10b, 57(%rdx)
+	movzbl	1857(%rsi,%rax), %r9d
+	movb	%r9b, 58(%rdx)
+	movzbl	1889(%rsi,%rax), %r8d
 	movb	%r8b, 59(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1985(%rax), %r11d
-	movb	%r10b, 60(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	2017(%rax), %r9d
-	movb	%r8b, 61(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	2(%rax), %r11d
-	movb	%r10b, 62(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	34(%rax), %r9d
+	movzbl	1921(%rsi,%rax), %r11d
+	movb	%r11b, 60(%rdx)
+	movzbl	1953(%rsi,%rax), %r10d
+	movb	%r10b, 61(%rdx)
+	movzbl	1985(%rsi,%rax), %r9d
+	movb	%r9b, 62(%rdx)
+	movzbl	2017(%rsi,%rax), %r8d
 	movb	%r8b, 63(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	movq	(%rcx,%r11,8), %rdx
-	leal	66(%rax), %r11d
-	movb	%r10b, (%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	98(%rax), %r9d
-	movb	%r8b, 1(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	130(%rax), %r11d
-	movb	%r10b, 2(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	162(%rax), %r9d
+	movzbl	2(%rsi,%rax), %r11d
+	movq	16(%rcx,%rax,8), %rdx
+	movb	%r11b, (%rdx)
+	movzbl	34(%rsi,%rax), %r10d
+	movb	%r10b, 1(%rdx)
+	movzbl	66(%rsi,%rax), %r9d
+	movb	%r9b, 2(%rdx)
+	movzbl	98(%rsi,%rax), %r8d
 	movb	%r8b, 3(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	194(%rax), %r11d
-	movb	%r10b, 4(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	226(%rax), %r9d
-	movb	%r8b, 5(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	258(%rax), %r11d
-	movb	%r10b, 6(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	290(%rax), %r9d
+	movzbl	130(%rsi,%rax), %r11d
+	movb	%r11b, 4(%rdx)
+	movzbl	162(%rsi,%rax), %r10d
+	movb	%r10b, 5(%rdx)
+	movzbl	194(%rsi,%rax), %r9d
+	movb	%r9b, 6(%rdx)
+	movzbl	226(%rsi,%rax), %r8d
 	movb	%r8b, 7(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	322(%rax), %r11d
-	movb	%r10b, 8(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	354(%rax), %r9d
-	movb	%r8b, 9(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	386(%rax), %r11d
-	movb	%r10b, 10(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	418(%rax), %r9d
+	movzbl	258(%rsi,%rax), %r11d
+	movb	%r11b, 8(%rdx)
+	movzbl	290(%rsi,%rax), %r10d
+	movb	%r10b, 9(%rdx)
+	movzbl	322(%rsi,%rax), %r9d
+	movb	%r9b, 10(%rdx)
+	movzbl	354(%rsi,%rax), %r8d
 	movb	%r8b, 11(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	450(%rax), %r11d
-	movb	%r10b, 12(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	482(%rax), %r9d
-	movb	%r8b, 13(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	514(%rax), %r11d
-	movb	%r10b, 14(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	546(%rax), %r9d
+	movzbl	386(%rsi,%rax), %r11d
+	movb	%r11b, 12(%rdx)
+	movzbl	418(%rsi,%rax), %r10d
+	movb	%r10b, 13(%rdx)
+	movzbl	450(%rsi,%rax), %r9d
+	movb	%r9b, 14(%rdx)
+	movzbl	482(%rsi,%rax), %r8d
 	movb	%r8b, 15(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	578(%rax), %r11d
-	movb	%r10b, 16(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	610(%rax), %r9d
-	movb	%r8b, 17(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	642(%rax), %r11d
-	movb	%r10b, 18(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	674(%rax), %r9d
+	movzbl	514(%rsi,%rax), %r11d
+	movb	%r11b, 16(%rdx)
+	movzbl	546(%rsi,%rax), %r10d
+	movb	%r10b, 17(%rdx)
+	movzbl	578(%rsi,%rax), %r9d
+	movb	%r9b, 18(%rdx)
+	movzbl	610(%rsi,%rax), %r8d
 	movb	%r8b, 19(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	706(%rax), %r11d
-	movb	%r10b, 20(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	738(%rax), %r9d
-	movb	%r8b, 21(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	770(%rax), %r11d
-	movb	%r10b, 22(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	802(%rax), %r9d
+	movzbl	642(%rsi,%rax), %r11d
+	movb	%r11b, 20(%rdx)
+	movzbl	674(%rsi,%rax), %r10d
+	movb	%r10b, 21(%rdx)
+	movzbl	706(%rsi,%rax), %r9d
+	movb	%r9b, 22(%rdx)
+	movzbl	738(%rsi,%rax), %r8d
 	movb	%r8b, 23(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	834(%rax), %r11d
-	movb	%r10b, 24(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	866(%rax), %r9d
-	movb	%r8b, 25(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	898(%rax), %r11d
-	movb	%r10b, 26(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	930(%rax), %r9d
+	movzbl	770(%rsi,%rax), %r11d
+	movb	%r11b, 24(%rdx)
+	movzbl	802(%rsi,%rax), %r10d
+	movb	%r10b, 25(%rdx)
+	movzbl	834(%rsi,%rax), %r9d
+	movb	%r9b, 26(%rdx)
+	movzbl	866(%rsi,%rax), %r8d
 	movb	%r8b, 27(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	962(%rax), %r11d
-	movb	%r10b, 28(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	994(%rax), %r9d
-	movb	%r8b, 29(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1026(%rax), %r11d
-	movb	%r10b, 30(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1058(%rax), %r9d
+	movzbl	898(%rsi,%rax), %r11d
+	movb	%r11b, 28(%rdx)
+	movzbl	930(%rsi,%rax), %r10d
+	movb	%r10b, 29(%rdx)
+	movzbl	962(%rsi,%rax), %r9d
+	movb	%r9b, 30(%rdx)
+	movzbl	994(%rsi,%rax), %r8d
 	movb	%r8b, 31(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1090(%rax), %r11d
-	movb	%r10b, 32(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1122(%rax), %r9d
-	movb	%r8b, 33(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1154(%rax), %r11d
-	movb	%r10b, 34(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1186(%rax), %r9d
+	movzbl	1026(%rsi,%rax), %r11d
+	movb	%r11b, 32(%rdx)
+	movzbl	1058(%rsi,%rax), %r10d
+	movb	%r10b, 33(%rdx)
+	movzbl	1090(%rsi,%rax), %r9d
+	movb	%r9b, 34(%rdx)
+	movzbl	1122(%rsi,%rax), %r8d
 	movb	%r8b, 35(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1218(%rax), %r11d
-	movb	%r10b, 36(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1250(%rax), %r9d
-	movb	%r8b, 37(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1282(%rax), %r11d
-	movb	%r10b, 38(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1314(%rax), %r9d
+	movzbl	1154(%rsi,%rax), %r11d
+	movb	%r11b, 36(%rdx)
+	movzbl	1186(%rsi,%rax), %r10d
+	movb	%r10b, 37(%rdx)
+	movzbl	1218(%rsi,%rax), %r9d
+	movb	%r9b, 38(%rdx)
+	movzbl	1250(%rsi,%rax), %r8d
 	movb	%r8b, 39(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1346(%rax), %r11d
-	movb	%r10b, 40(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1378(%rax), %r9d
-	movb	%r8b, 41(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1410(%rax), %r11d
-	movb	%r10b, 42(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1442(%rax), %r9d
+	movzbl	1282(%rsi,%rax), %r11d
+	movb	%r11b, 40(%rdx)
+	movzbl	1314(%rsi,%rax), %r10d
+	movb	%r10b, 41(%rdx)
+	movzbl	1346(%rsi,%rax), %r9d
+	movb	%r9b, 42(%rdx)
+	movzbl	1378(%rsi,%rax), %r8d
 	movb	%r8b, 43(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1474(%rax), %r11d
-	movb	%r10b, 44(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1506(%rax), %r9d
-	movb	%r8b, 45(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1538(%rax), %r11d
-	movb	%r10b, 46(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1570(%rax), %r9d
+	movzbl	1410(%rsi,%rax), %r11d
+	movb	%r11b, 44(%rdx)
+	movzbl	1442(%rsi,%rax), %r10d
+	movb	%r10b, 45(%rdx)
+	movzbl	1474(%rsi,%rax), %r9d
+	movb	%r9b, 46(%rdx)
+	movzbl	1506(%rsi,%rax), %r8d
 	movb	%r8b, 47(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1602(%rax), %r11d
-	movb	%r10b, 48(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1634(%rax), %r9d
-	movb	%r8b, 49(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1666(%rax), %r11d
-	movb	%r10b, 50(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1698(%rax), %r9d
+	movzbl	1538(%rsi,%rax), %r11d
+	movb	%r11b, 48(%rdx)
+	movzbl	1570(%rsi,%rax), %r10d
+	movb	%r10b, 49(%rdx)
+	movzbl	1602(%rsi,%rax), %r9d
+	movb	%r9b, 50(%rdx)
+	movzbl	1634(%rsi,%rax), %r8d
 	movb	%r8b, 51(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1730(%rax), %r11d
-	movb	%r10b, 52(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1762(%rax), %r9d
-	movb	%r8b, 53(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1794(%rax), %r11d
-	movb	%r10b, 54(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1826(%rax), %r9d
+	movzbl	1666(%rsi,%rax), %r11d
+	movb	%r11b, 52(%rdx)
+	movzbl	1698(%rsi,%rax), %r10d
+	movb	%r10b, 53(%rdx)
+	movzbl	1730(%rsi,%rax), %r9d
+	movb	%r9b, 54(%rdx)
+	movzbl	1762(%rsi,%rax), %r8d
 	movb	%r8b, 55(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1858(%rax), %r11d
-	movb	%r10b, 56(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1890(%rax), %r9d
-	movb	%r8b, 57(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1922(%rax), %r11d
-	movb	%r10b, 58(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1954(%rax), %r9d
+	movzbl	1794(%rsi,%rax), %r11d
+	movb	%r11b, 56(%rdx)
+	movzbl	1826(%rsi,%rax), %r10d
+	movb	%r10b, 57(%rdx)
+	movzbl	1858(%rsi,%rax), %r9d
+	movb	%r9b, 58(%rdx)
+	movzbl	1890(%rsi,%rax), %r8d
 	movb	%r8b, 59(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1986(%rax), %r11d
-	movb	%r10b, 60(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	2018(%rax), %r9d
-	movb	%r8b, 61(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	3(%rax), %r11d
-	movb	%r10b, 62(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	35(%rax), %r9d
+	movzbl	1922(%rsi,%rax), %r11d
+	movb	%r11b, 60(%rdx)
+	movzbl	1954(%rsi,%rax), %r10d
+	movb	%r10b, 61(%rdx)
+	movzbl	1986(%rsi,%rax), %r9d
+	movb	%r9b, 62(%rdx)
+	movzbl	2018(%rsi,%rax), %r8d
 	movb	%r8b, 63(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	movq	(%rcx,%r11,8), %rdx
-	leal	67(%rax), %r11d
-	movb	%r10b, (%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	99(%rax), %r9d
-	movb	%r8b, 1(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	131(%rax), %r11d
-	movb	%r10b, 2(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	163(%rax), %r9d
+	movzbl	3(%rsi,%rax), %r11d
+	movq	24(%rcx,%rax,8), %rdx
+	movb	%r11b, (%rdx)
+	movzbl	35(%rsi,%rax), %r10d
+	movb	%r10b, 1(%rdx)
+	movzbl	67(%rsi,%rax), %r9d
+	movb	%r9b, 2(%rdx)
+	movzbl	99(%rsi,%rax), %r8d
 	movb	%r8b, 3(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	195(%rax), %r11d
-	movb	%r10b, 4(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	227(%rax), %r9d
-	movb	%r8b, 5(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	259(%rax), %r11d
-	movb	%r10b, 6(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	291(%rax), %r9d
+	movzbl	131(%rsi,%rax), %r11d
+	movb	%r11b, 4(%rdx)
+	movzbl	163(%rsi,%rax), %r10d
+	movb	%r10b, 5(%rdx)
+	movzbl	195(%rsi,%rax), %r9d
+	movb	%r9b, 6(%rdx)
+	movzbl	227(%rsi,%rax), %r8d
 	movb	%r8b, 7(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	323(%rax), %r11d
-	movb	%r10b, 8(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	355(%rax), %r9d
-	movb	%r8b, 9(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	387(%rax), %r11d
-	movb	%r10b, 10(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	419(%rax), %r9d
+	movzbl	259(%rsi,%rax), %r11d
+	movb	%r11b, 8(%rdx)
+	movzbl	291(%rsi,%rax), %r10d
+	movb	%r10b, 9(%rdx)
+	movzbl	323(%rsi,%rax), %r9d
+	movb	%r9b, 10(%rdx)
+	movzbl	355(%rsi,%rax), %r8d
 	movb	%r8b, 11(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	451(%rax), %r11d
-	movb	%r10b, 12(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	483(%rax), %r9d
-	movb	%r8b, 13(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	515(%rax), %r11d
-	movb	%r10b, 14(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	547(%rax), %r9d
+	movzbl	387(%rsi,%rax), %r11d
+	movb	%r11b, 12(%rdx)
+	movzbl	419(%rsi,%rax), %r10d
+	movb	%r10b, 13(%rdx)
+	movzbl	451(%rsi,%rax), %r9d
+	movb	%r9b, 14(%rdx)
+	movzbl	483(%rsi,%rax), %r8d
 	movb	%r8b, 15(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	579(%rax), %r11d
-	movb	%r10b, 16(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	611(%rax), %r9d
-	movb	%r8b, 17(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	643(%rax), %r11d
-	movb	%r10b, 18(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	675(%rax), %r9d
+	movzbl	515(%rsi,%rax), %r11d
+	movb	%r11b, 16(%rdx)
+	movzbl	547(%rsi,%rax), %r10d
+	movb	%r10b, 17(%rdx)
+	movzbl	579(%rsi,%rax), %r9d
+	movb	%r9b, 18(%rdx)
+	movzbl	611(%rsi,%rax), %r8d
 	movb	%r8b, 19(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	707(%rax), %r11d
-	movb	%r10b, 20(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	739(%rax), %r9d
-	movb	%r8b, 21(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	771(%rax), %r11d
-	movb	%r10b, 22(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	803(%rax), %r9d
+	movzbl	643(%rsi,%rax), %r11d
+	movb	%r11b, 20(%rdx)
+	movzbl	675(%rsi,%rax), %r10d
+	movb	%r10b, 21(%rdx)
+	movzbl	707(%rsi,%rax), %r9d
+	movb	%r9b, 22(%rdx)
+	movzbl	739(%rsi,%rax), %r8d
 	movb	%r8b, 23(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	835(%rax), %r11d
-	movb	%r10b, 24(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	867(%rax), %r9d
-	movb	%r8b, 25(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	899(%rax), %r11d
-	movb	%r10b, 26(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	931(%rax), %r9d
+	movzbl	771(%rsi,%rax), %r11d
+	movb	%r11b, 24(%rdx)
+	movzbl	803(%rsi,%rax), %r10d
+	movb	%r10b, 25(%rdx)
+	movzbl	835(%rsi,%rax), %r9d
+	movb	%r9b, 26(%rdx)
+	movzbl	867(%rsi,%rax), %r8d
 	movb	%r8b, 27(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	963(%rax), %r11d
-	movb	%r10b, 28(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	995(%rax), %r9d
-	movb	%r8b, 29(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1027(%rax), %r11d
-	movb	%r10b, 30(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1059(%rax), %r9d
+	movzbl	899(%rsi,%rax), %r11d
+	movb	%r11b, 28(%rdx)
+	movzbl	931(%rsi,%rax), %r10d
+	movb	%r10b, 29(%rdx)
+	movzbl	963(%rsi,%rax), %r9d
+	movb	%r9b, 30(%rdx)
+	movzbl	995(%rsi,%rax), %r8d
 	movb	%r8b, 31(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1091(%rax), %r11d
-	movb	%r10b, 32(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1123(%rax), %r9d
-	movb	%r8b, 33(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1155(%rax), %r11d
-	movb	%r10b, 34(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1187(%rax), %r9d
+	movzbl	1027(%rsi,%rax), %r11d
+	movb	%r11b, 32(%rdx)
+	movzbl	1059(%rsi,%rax), %r10d
+	movb	%r10b, 33(%rdx)
+	movzbl	1091(%rsi,%rax), %r9d
+	movb	%r9b, 34(%rdx)
+	movzbl	1123(%rsi,%rax), %r8d
 	movb	%r8b, 35(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1219(%rax), %r11d
-	movb	%r10b, 36(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1251(%rax), %r9d
-	movb	%r8b, 37(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1283(%rax), %r11d
-	movb	%r10b, 38(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1315(%rax), %r9d
+	movzbl	1155(%rsi,%rax), %r11d
+	movb	%r11b, 36(%rdx)
+	movzbl	1187(%rsi,%rax), %r10d
+	movb	%r10b, 37(%rdx)
+	movzbl	1219(%rsi,%rax), %r9d
+	movb	%r9b, 38(%rdx)
+	movzbl	1251(%rsi,%rax), %r8d
 	movb	%r8b, 39(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1347(%rax), %r11d
-	movb	%r10b, 40(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1379(%rax), %r9d
-	movb	%r8b, 41(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1411(%rax), %r11d
-	movb	%r10b, 42(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1443(%rax), %r9d
+	movzbl	1283(%rsi,%rax), %r11d
+	movb	%r11b, 40(%rdx)
+	movzbl	1315(%rsi,%rax), %r10d
+	movb	%r10b, 41(%rdx)
+	movzbl	1347(%rsi,%rax), %r9d
+	movb	%r9b, 42(%rdx)
+	movzbl	1379(%rsi,%rax), %r8d
 	movb	%r8b, 43(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1475(%rax), %r11d
-	movb	%r10b, 44(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1507(%rax), %r9d
-	movb	%r8b, 45(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1539(%rax), %r11d
-	movb	%r10b, 46(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1571(%rax), %r9d
+	movzbl	1411(%rsi,%rax), %r11d
+	movb	%r11b, 44(%rdx)
+	movzbl	1443(%rsi,%rax), %r10d
+	movb	%r10b, 45(%rdx)
+	movzbl	1475(%rsi,%rax), %r9d
+	movb	%r9b, 46(%rdx)
+	movzbl	1507(%rsi,%rax), %r8d
 	movb	%r8b, 47(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1603(%rax), %r11d
-	movb	%r10b, 48(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1635(%rax), %r9d
-	movb	%r8b, 49(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1667(%rax), %r11d
-	movb	%r10b, 50(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1699(%rax), %r9d
+	movzbl	1539(%rsi,%rax), %r11d
+	movb	%r11b, 48(%rdx)
+	movzbl	1571(%rsi,%rax), %r10d
+	movb	%r10b, 49(%rdx)
+	movzbl	1603(%rsi,%rax), %r9d
+	movb	%r9b, 50(%rdx)
+	movzbl	1635(%rsi,%rax), %r8d
 	movb	%r8b, 51(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1731(%rax), %r11d
-	movb	%r10b, 52(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1763(%rax), %r9d
-	movb	%r8b, 53(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1795(%rax), %r11d
-	movb	%r10b, 54(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1827(%rax), %r9d
+	movzbl	1667(%rsi,%rax), %r11d
+	movb	%r11b, 52(%rdx)
+	movzbl	1699(%rsi,%rax), %r10d
+	movb	%r10b, 53(%rdx)
+	movzbl	1731(%rsi,%rax), %r9d
+	movb	%r9b, 54(%rdx)
+	movzbl	1763(%rsi,%rax), %r8d
 	movb	%r8b, 55(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1859(%rax), %r11d
-	movb	%r10b, 56(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1891(%rax), %r9d
-	movb	%r8b, 57(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1923(%rax), %r11d
-	movb	%r10b, 58(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1955(%rax), %r9d
+	movzbl	1795(%rsi,%rax), %r11d
+	movb	%r11b, 56(%rdx)
+	movzbl	1827(%rsi,%rax), %r10d
+	movb	%r10b, 57(%rdx)
+	movzbl	1859(%rsi,%rax), %r9d
+	movb	%r9b, 58(%rdx)
+	movzbl	1891(%rsi,%rax), %r8d
 	movb	%r8b, 59(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1987(%rax), %r11d
-	movb	%r10b, 60(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	2019(%rax), %r9d
-	movb	%r8b, 61(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	4(%rax), %r11d
-	movb	%r10b, 62(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	36(%rax), %r9d
+	movzbl	1923(%rsi,%rax), %r11d
+	movb	%r11b, 60(%rdx)
+	movzbl	1955(%rsi,%rax), %r10d
+	movb	%r10b, 61(%rdx)
+	movzbl	1987(%rsi,%rax), %r9d
+	movb	%r9b, 62(%rdx)
+	movzbl	2019(%rsi,%rax), %r8d
 	movb	%r8b, 63(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	movq	(%rcx,%r11,8), %rdx
-	leal	68(%rax), %r11d
-	movb	%r10b, (%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	100(%rax), %r9d
-	movb	%r8b, 1(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	132(%rax), %r11d
-	movb	%r10b, 2(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	164(%rax), %r9d
+	movzbl	4(%rsi,%rax), %r11d
+	movq	32(%rcx,%rax,8), %rdx
+	movb	%r11b, (%rdx)
+	movzbl	36(%rsi,%rax), %r10d
+	movb	%r10b, 1(%rdx)
+	movzbl	68(%rsi,%rax), %r9d
+	movb	%r9b, 2(%rdx)
+	movzbl	100(%rsi,%rax), %r8d
 	movb	%r8b, 3(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	196(%rax), %r11d
-	movb	%r10b, 4(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	228(%rax), %r9d
-	movb	%r8b, 5(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	260(%rax), %r11d
-	movb	%r10b, 6(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	292(%rax), %r9d
+	movzbl	132(%rsi,%rax), %r11d
+	movb	%r11b, 4(%rdx)
+	movzbl	164(%rsi,%rax), %r10d
+	movb	%r10b, 5(%rdx)
+	movzbl	196(%rsi,%rax), %r9d
+	movb	%r9b, 6(%rdx)
+	movzbl	228(%rsi,%rax), %r8d
 	movb	%r8b, 7(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	324(%rax), %r11d
-	movb	%r10b, 8(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	356(%rax), %r9d
-	movb	%r8b, 9(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	388(%rax), %r11d
-	movb	%r10b, 10(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	420(%rax), %r9d
+	movzbl	260(%rsi,%rax), %r11d
+	movb	%r11b, 8(%rdx)
+	movzbl	292(%rsi,%rax), %r10d
+	movb	%r10b, 9(%rdx)
+	movzbl	324(%rsi,%rax), %r9d
+	movb	%r9b, 10(%rdx)
+	movzbl	356(%rsi,%rax), %r8d
 	movb	%r8b, 11(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	452(%rax), %r11d
-	movb	%r10b, 12(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	484(%rax), %r9d
-	movb	%r8b, 13(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	516(%rax), %r11d
-	movb	%r10b, 14(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	548(%rax), %r9d
+	movzbl	388(%rsi,%rax), %r11d
+	movb	%r11b, 12(%rdx)
+	movzbl	420(%rsi,%rax), %r10d
+	movb	%r10b, 13(%rdx)
+	movzbl	452(%rsi,%rax), %r9d
+	movb	%r9b, 14(%rdx)
+	movzbl	484(%rsi,%rax), %r8d
 	movb	%r8b, 15(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	580(%rax), %r11d
-	movb	%r10b, 16(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	612(%rax), %r9d
-	movb	%r8b, 17(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	644(%rax), %r11d
-	movb	%r10b, 18(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	676(%rax), %r9d
+	movzbl	516(%rsi,%rax), %r11d
+	movb	%r11b, 16(%rdx)
+	movzbl	548(%rsi,%rax), %r10d
+	movb	%r10b, 17(%rdx)
+	movzbl	580(%rsi,%rax), %r9d
+	movb	%r9b, 18(%rdx)
+	movzbl	612(%rsi,%rax), %r8d
 	movb	%r8b, 19(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	708(%rax), %r11d
-	movb	%r10b, 20(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	740(%rax), %r9d
-	movb	%r8b, 21(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	772(%rax), %r11d
-	movb	%r10b, 22(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	804(%rax), %r9d
+	movzbl	644(%rsi,%rax), %r11d
+	movb	%r11b, 20(%rdx)
+	movzbl	676(%rsi,%rax), %r10d
+	movb	%r10b, 21(%rdx)
+	movzbl	708(%rsi,%rax), %r9d
+	movb	%r9b, 22(%rdx)
+	movzbl	740(%rsi,%rax), %r8d
 	movb	%r8b, 23(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	836(%rax), %r11d
-	movb	%r10b, 24(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	868(%rax), %r9d
-	movb	%r8b, 25(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	900(%rax), %r11d
-	movb	%r10b, 26(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	932(%rax), %r9d
+	movzbl	772(%rsi,%rax), %r11d
+	movb	%r11b, 24(%rdx)
+	movzbl	804(%rsi,%rax), %r10d
+	movb	%r10b, 25(%rdx)
+	movzbl	836(%rsi,%rax), %r9d
+	movb	%r9b, 26(%rdx)
+	movzbl	868(%rsi,%rax), %r8d
 	movb	%r8b, 27(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	964(%rax), %r11d
-	movb	%r10b, 28(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	996(%rax), %r9d
-	movb	%r8b, 29(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1028(%rax), %r11d
-	movb	%r10b, 30(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1060(%rax), %r9d
+	movzbl	900(%rsi,%rax), %r11d
+	movb	%r11b, 28(%rdx)
+	movzbl	932(%rsi,%rax), %r10d
+	movb	%r10b, 29(%rdx)
+	movzbl	964(%rsi,%rax), %r9d
+	movb	%r9b, 30(%rdx)
+	movzbl	996(%rsi,%rax), %r8d
 	movb	%r8b, 31(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1092(%rax), %r11d
-	movb	%r10b, 32(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1124(%rax), %r9d
-	movb	%r8b, 33(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1156(%rax), %r11d
-	movb	%r10b, 34(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1188(%rax), %r9d
+	movzbl	1028(%rsi,%rax), %r11d
+	movb	%r11b, 32(%rdx)
+	movzbl	1060(%rsi,%rax), %r10d
+	movb	%r10b, 33(%rdx)
+	movzbl	1092(%rsi,%rax), %r9d
+	movb	%r9b, 34(%rdx)
+	movzbl	1124(%rsi,%rax), %r8d
 	movb	%r8b, 35(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1220(%rax), %r11d
-	movb	%r10b, 36(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1252(%rax), %r9d
-	movb	%r8b, 37(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1284(%rax), %r11d
-	movb	%r10b, 38(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1316(%rax), %r9d
+	movzbl	1156(%rsi,%rax), %r11d
+	movb	%r11b, 36(%rdx)
+	movzbl	1188(%rsi,%rax), %r10d
+	movb	%r10b, 37(%rdx)
+	movzbl	1220(%rsi,%rax), %r9d
+	movb	%r9b, 38(%rdx)
+	movzbl	1252(%rsi,%rax), %r8d
 	movb	%r8b, 39(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1348(%rax), %r11d
-	movb	%r10b, 40(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1380(%rax), %r9d
-	movb	%r8b, 41(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1412(%rax), %r11d
-	movb	%r10b, 42(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1444(%rax), %r9d
+	movzbl	1284(%rsi,%rax), %r11d
+	movb	%r11b, 40(%rdx)
+	movzbl	1316(%rsi,%rax), %r10d
+	movb	%r10b, 41(%rdx)
+	movzbl	1348(%rsi,%rax), %r9d
+	movb	%r9b, 42(%rdx)
+	movzbl	1380(%rsi,%rax), %r8d
 	movb	%r8b, 43(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1476(%rax), %r11d
-	movb	%r10b, 44(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1508(%rax), %r9d
-	movb	%r8b, 45(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1540(%rax), %r11d
-	movb	%r10b, 46(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1572(%rax), %r9d
+	movzbl	1412(%rsi,%rax), %r11d
+	movb	%r11b, 44(%rdx)
+	movzbl	1444(%rsi,%rax), %r10d
+	movb	%r10b, 45(%rdx)
+	movzbl	1476(%rsi,%rax), %r9d
+	movb	%r9b, 46(%rdx)
+	movzbl	1508(%rsi,%rax), %r8d
 	movb	%r8b, 47(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1604(%rax), %r11d
-	movb	%r10b, 48(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1636(%rax), %r9d
-	movb	%r8b, 49(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1668(%rax), %r11d
-	movb	%r10b, 50(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1700(%rax), %r9d
+	movzbl	1540(%rsi,%rax), %r11d
+	movb	%r11b, 48(%rdx)
+	movzbl	1572(%rsi,%rax), %r10d
+	movb	%r10b, 49(%rdx)
+	movzbl	1604(%rsi,%rax), %r9d
+	movb	%r9b, 50(%rdx)
+	movzbl	1636(%rsi,%rax), %r8d
 	movb	%r8b, 51(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1732(%rax), %r11d
-	movb	%r10b, 52(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1764(%rax), %r9d
-	movb	%r8b, 53(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1796(%rax), %r11d
-	movb	%r10b, 54(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1828(%rax), %r9d
+	movzbl	1668(%rsi,%rax), %r11d
+	movb	%r11b, 52(%rdx)
+	movzbl	1700(%rsi,%rax), %r10d
+	movb	%r10b, 53(%rdx)
+	movzbl	1732(%rsi,%rax), %r9d
+	movb	%r9b, 54(%rdx)
+	movzbl	1764(%rsi,%rax), %r8d
 	movb	%r8b, 55(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1860(%rax), %r11d
-	movb	%r10b, 56(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1892(%rax), %r9d
-	movb	%r8b, 57(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1924(%rax), %r11d
-	movb	%r10b, 58(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1956(%rax), %r9d
+	movzbl	1796(%rsi,%rax), %r11d
+	movb	%r11b, 56(%rdx)
+	movzbl	1828(%rsi,%rax), %r10d
+	movb	%r10b, 57(%rdx)
+	movzbl	1860(%rsi,%rax), %r9d
+	movb	%r9b, 58(%rdx)
+	movzbl	1892(%rsi,%rax), %r8d
 	movb	%r8b, 59(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1988(%rax), %r11d
-	movb	%r10b, 60(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	2020(%rax), %r9d
-	movb	%r8b, 61(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	5(%rax), %r11d
-	movb	%r10b, 62(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	37(%rax), %r9d
+	movzbl	1924(%rsi,%rax), %r11d
+	movb	%r11b, 60(%rdx)
+	movzbl	1956(%rsi,%rax), %r10d
+	movb	%r10b, 61(%rdx)
+	movzbl	1988(%rsi,%rax), %r9d
+	movb	%r9b, 62(%rdx)
+	movzbl	2020(%rsi,%rax), %r8d
 	movb	%r8b, 63(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	movq	(%rcx,%r11,8), %rdx
-	leal	69(%rax), %r11d
-	movb	%r10b, (%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	101(%rax), %r9d
-	movb	%r8b, 1(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	133(%rax), %r11d
-	movb	%r10b, 2(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	165(%rax), %r9d
+	movzbl	5(%rsi,%rax), %r11d
+	movq	40(%rcx,%rax,8), %rdx
+	movb	%r11b, (%rdx)
+	movzbl	37(%rsi,%rax), %r10d
+	movb	%r10b, 1(%rdx)
+	movzbl	69(%rsi,%rax), %r9d
+	movb	%r9b, 2(%rdx)
+	movzbl	101(%rsi,%rax), %r8d
 	movb	%r8b, 3(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	197(%rax), %r11d
-	movb	%r10b, 4(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	229(%rax), %r9d
-	movb	%r8b, 5(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	261(%rax), %r11d
-	movb	%r10b, 6(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	293(%rax), %r9d
+	movzbl	133(%rsi,%rax), %r11d
+	movb	%r11b, 4(%rdx)
+	movzbl	165(%rsi,%rax), %r10d
+	movb	%r10b, 5(%rdx)
+	movzbl	197(%rsi,%rax), %r9d
+	movb	%r9b, 6(%rdx)
+	movzbl	229(%rsi,%rax), %r8d
 	movb	%r8b, 7(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	325(%rax), %r11d
-	movb	%r10b, 8(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	357(%rax), %r9d
-	movb	%r8b, 9(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	389(%rax), %r11d
-	movb	%r10b, 10(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	421(%rax), %r9d
+	movzbl	261(%rsi,%rax), %r11d
+	movb	%r11b, 8(%rdx)
+	movzbl	293(%rsi,%rax), %r10d
+	movb	%r10b, 9(%rdx)
+	movzbl	325(%rsi,%rax), %r9d
+	movb	%r9b, 10(%rdx)
+	movzbl	357(%rsi,%rax), %r8d
 	movb	%r8b, 11(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	453(%rax), %r11d
-	movb	%r10b, 12(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	485(%rax), %r9d
-	movb	%r8b, 13(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	517(%rax), %r11d
-	movb	%r10b, 14(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	549(%rax), %r9d
+	movzbl	389(%rsi,%rax), %r11d
+	movb	%r11b, 12(%rdx)
+	movzbl	421(%rsi,%rax), %r10d
+	movb	%r10b, 13(%rdx)
+	movzbl	453(%rsi,%rax), %r9d
+	movb	%r9b, 14(%rdx)
+	movzbl	485(%rsi,%rax), %r8d
 	movb	%r8b, 15(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	581(%rax), %r11d
-	movb	%r10b, 16(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	613(%rax), %r9d
-	movb	%r8b, 17(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	645(%rax), %r11d
-	movb	%r10b, 18(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	677(%rax), %r9d
+	movzbl	517(%rsi,%rax), %r11d
+	movb	%r11b, 16(%rdx)
+	movzbl	549(%rsi,%rax), %r10d
+	movb	%r10b, 17(%rdx)
+	movzbl	581(%rsi,%rax), %r9d
+	movb	%r9b, 18(%rdx)
+	movzbl	613(%rsi,%rax), %r8d
 	movb	%r8b, 19(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	709(%rax), %r11d
-	movb	%r10b, 20(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	741(%rax), %r9d
-	movb	%r8b, 21(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	773(%rax), %r11d
-	movb	%r10b, 22(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	805(%rax), %r9d
+	movzbl	645(%rsi,%rax), %r11d
+	movb	%r11b, 20(%rdx)
+	movzbl	677(%rsi,%rax), %r10d
+	movb	%r10b, 21(%rdx)
+	movzbl	709(%rsi,%rax), %r9d
+	movb	%r9b, 22(%rdx)
+	movzbl	741(%rsi,%rax), %r8d
 	movb	%r8b, 23(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	837(%rax), %r11d
-	movb	%r10b, 24(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	869(%rax), %r9d
-	movb	%r8b, 25(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	901(%rax), %r11d
-	movb	%r10b, 26(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	933(%rax), %r9d
+	movzbl	773(%rsi,%rax), %r11d
+	movb	%r11b, 24(%rdx)
+	movzbl	805(%rsi,%rax), %r10d
+	movb	%r10b, 25(%rdx)
+	movzbl	837(%rsi,%rax), %r9d
+	movb	%r9b, 26(%rdx)
+	movzbl	869(%rsi,%rax), %r8d
 	movb	%r8b, 27(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	965(%rax), %r11d
-	movb	%r10b, 28(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	997(%rax), %r9d
-	movb	%r8b, 29(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1029(%rax), %r11d
-	movb	%r10b, 30(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1061(%rax), %r9d
+	movzbl	901(%rsi,%rax), %r11d
+	movb	%r11b, 28(%rdx)
+	movzbl	933(%rsi,%rax), %r10d
+	movb	%r10b, 29(%rdx)
+	movzbl	965(%rsi,%rax), %r9d
+	movb	%r9b, 30(%rdx)
+	movzbl	997(%rsi,%rax), %r8d
 	movb	%r8b, 31(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1093(%rax), %r11d
-	movb	%r10b, 32(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1125(%rax), %r9d
-	movb	%r8b, 33(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1157(%rax), %r11d
-	movb	%r10b, 34(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1189(%rax), %r9d
+	movzbl	1029(%rsi,%rax), %r11d
+	movb	%r11b, 32(%rdx)
+	movzbl	1061(%rsi,%rax), %r10d
+	movb	%r10b, 33(%rdx)
+	movzbl	1093(%rsi,%rax), %r9d
+	movb	%r9b, 34(%rdx)
+	movzbl	1125(%rsi,%rax), %r8d
 	movb	%r8b, 35(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1221(%rax), %r11d
-	movb	%r10b, 36(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1253(%rax), %r9d
-	movb	%r8b, 37(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1285(%rax), %r11d
-	movb	%r10b, 38(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1317(%rax), %r9d
+	movzbl	1157(%rsi,%rax), %r11d
+	movb	%r11b, 36(%rdx)
+	movzbl	1189(%rsi,%rax), %r10d
+	movb	%r10b, 37(%rdx)
+	movzbl	1221(%rsi,%rax), %r9d
+	movb	%r9b, 38(%rdx)
+	movzbl	1253(%rsi,%rax), %r8d
 	movb	%r8b, 39(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1349(%rax), %r11d
-	movb	%r10b, 40(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1381(%rax), %r9d
-	movb	%r8b, 41(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1413(%rax), %r11d
-	movb	%r10b, 42(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1445(%rax), %r9d
+	movzbl	1285(%rsi,%rax), %r11d
+	movb	%r11b, 40(%rdx)
+	movzbl	1317(%rsi,%rax), %r10d
+	movb	%r10b, 41(%rdx)
+	movzbl	1349(%rsi,%rax), %r9d
+	movb	%r9b, 42(%rdx)
+	movzbl	1381(%rsi,%rax), %r8d
 	movb	%r8b, 43(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1477(%rax), %r11d
-	movb	%r10b, 44(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1509(%rax), %r9d
-	movb	%r8b, 45(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1541(%rax), %r11d
-	movb	%r10b, 46(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1573(%rax), %r9d
+	movzbl	1413(%rsi,%rax), %r11d
+	movb	%r11b, 44(%rdx)
+	movzbl	1445(%rsi,%rax), %r10d
+	movb	%r10b, 45(%rdx)
+	movzbl	1477(%rsi,%rax), %r9d
+	movb	%r9b, 46(%rdx)
+	movzbl	1509(%rsi,%rax), %r8d
 	movb	%r8b, 47(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1605(%rax), %r11d
-	movb	%r10b, 48(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1637(%rax), %r9d
-	movb	%r8b, 49(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1669(%rax), %r11d
-	movb	%r10b, 50(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1701(%rax), %r9d
+	movzbl	1541(%rsi,%rax), %r11d
+	movb	%r11b, 48(%rdx)
+	movzbl	1573(%rsi,%rax), %r10d
+	movb	%r10b, 49(%rdx)
+	movzbl	1605(%rsi,%rax), %r9d
+	movb	%r9b, 50(%rdx)
+	movzbl	1637(%rsi,%rax), %r8d
 	movb	%r8b, 51(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1733(%rax), %r11d
-	movb	%r10b, 52(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1765(%rax), %r9d
-	movb	%r8b, 53(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1797(%rax), %r11d
-	movb	%r10b, 54(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1829(%rax), %r9d
+	movzbl	1669(%rsi,%rax), %r11d
+	movb	%r11b, 52(%rdx)
+	movzbl	1701(%rsi,%rax), %r10d
+	movb	%r10b, 53(%rdx)
+	movzbl	1733(%rsi,%rax), %r9d
+	movb	%r9b, 54(%rdx)
+	movzbl	1765(%rsi,%rax), %r8d
 	movb	%r8b, 55(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1861(%rax), %r11d
-	movb	%r10b, 56(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1893(%rax), %r9d
-	movb	%r8b, 57(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1925(%rax), %r11d
-	movb	%r10b, 58(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1957(%rax), %r9d
+	movzbl	1797(%rsi,%rax), %r11d
+	movb	%r11b, 56(%rdx)
+	movzbl	1829(%rsi,%rax), %r10d
+	movb	%r10b, 57(%rdx)
+	movzbl	1861(%rsi,%rax), %r9d
+	movb	%r9b, 58(%rdx)
+	movzbl	1893(%rsi,%rax), %r8d
 	movb	%r8b, 59(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1989(%rax), %r11d
-	movb	%r10b, 60(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	2021(%rax), %r9d
-	movb	%r8b, 61(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	6(%rax), %r11d
-	movb	%r10b, 62(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	38(%rax), %r9d
+	movzbl	1925(%rsi,%rax), %r11d
+	movb	%r11b, 60(%rdx)
+	movzbl	1957(%rsi,%rax), %r10d
+	movb	%r10b, 61(%rdx)
+	movzbl	1989(%rsi,%rax), %r9d
+	movb	%r9b, 62(%rdx)
+	movzbl	2021(%rsi,%rax), %r8d
 	movb	%r8b, 63(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	movq	(%rcx,%r11,8), %rdx
-	leal	70(%rax), %r11d
-	movb	%r10b, (%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	102(%rax), %r9d
-	movb	%r8b, 1(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	134(%rax), %r11d
-	movb	%r10b, 2(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	166(%rax), %r9d
+	movzbl	6(%rsi,%rax), %r11d
+	movq	48(%rcx,%rax,8), %rdx
+	movb	%r11b, (%rdx)
+	movzbl	38(%rsi,%rax), %r10d
+	movb	%r10b, 1(%rdx)
+	movzbl	70(%rsi,%rax), %r9d
+	movb	%r9b, 2(%rdx)
+	movzbl	102(%rsi,%rax), %r8d
 	movb	%r8b, 3(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	198(%rax), %r11d
-	movb	%r10b, 4(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	230(%rax), %r9d
-	movb	%r8b, 5(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	262(%rax), %r11d
-	movb	%r10b, 6(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	294(%rax), %r9d
+	movzbl	134(%rsi,%rax), %r11d
+	movb	%r11b, 4(%rdx)
+	movzbl	166(%rsi,%rax), %r10d
+	movb	%r10b, 5(%rdx)
+	movzbl	198(%rsi,%rax), %r9d
+	movb	%r9b, 6(%rdx)
+	movzbl	230(%rsi,%rax), %r8d
 	movb	%r8b, 7(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	326(%rax), %r11d
-	movb	%r10b, 8(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	358(%rax), %r9d
-	movb	%r8b, 9(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	390(%rax), %r11d
-	movb	%r10b, 10(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	422(%rax), %r9d
+	movzbl	262(%rsi,%rax), %r11d
+	movb	%r11b, 8(%rdx)
+	movzbl	294(%rsi,%rax), %r10d
+	movb	%r10b, 9(%rdx)
+	movzbl	326(%rsi,%rax), %r9d
+	movb	%r9b, 10(%rdx)
+	movzbl	358(%rsi,%rax), %r8d
 	movb	%r8b, 11(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	454(%rax), %r11d
-	movb	%r10b, 12(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	486(%rax), %r9d
-	movb	%r8b, 13(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	518(%rax), %r11d
-	movb	%r10b, 14(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	550(%rax), %r9d
+	movzbl	390(%rsi,%rax), %r11d
+	movb	%r11b, 12(%rdx)
+	movzbl	422(%rsi,%rax), %r10d
+	movb	%r10b, 13(%rdx)
+	movzbl	454(%rsi,%rax), %r9d
+	movb	%r9b, 14(%rdx)
+	movzbl	486(%rsi,%rax), %r8d
 	movb	%r8b, 15(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	582(%rax), %r11d
-	movb	%r10b, 16(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	614(%rax), %r9d
-	movb	%r8b, 17(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	646(%rax), %r11d
-	movb	%r10b, 18(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	678(%rax), %r9d
+	movzbl	518(%rsi,%rax), %r11d
+	movb	%r11b, 16(%rdx)
+	movzbl	550(%rsi,%rax), %r10d
+	movb	%r10b, 17(%rdx)
+	movzbl	582(%rsi,%rax), %r9d
+	movb	%r9b, 18(%rdx)
+	movzbl	614(%rsi,%rax), %r8d
 	movb	%r8b, 19(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	710(%rax), %r11d
-	movb	%r10b, 20(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	742(%rax), %r9d
-	movb	%r8b, 21(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	774(%rax), %r11d
-	movb	%r10b, 22(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	806(%rax), %r9d
+	movzbl	646(%rsi,%rax), %r11d
+	movb	%r11b, 20(%rdx)
+	movzbl	678(%rsi,%rax), %r10d
+	movb	%r10b, 21(%rdx)
+	movzbl	710(%rsi,%rax), %r9d
+	movb	%r9b, 22(%rdx)
+	movzbl	742(%rsi,%rax), %r8d
 	movb	%r8b, 23(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	838(%rax), %r11d
-	movb	%r10b, 24(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	870(%rax), %r9d
-	movb	%r8b, 25(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	902(%rax), %r11d
-	movb	%r10b, 26(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	934(%rax), %r9d
+	movzbl	774(%rsi,%rax), %r11d
+	movb	%r11b, 24(%rdx)
+	movzbl	806(%rsi,%rax), %r10d
+	movb	%r10b, 25(%rdx)
+	movzbl	838(%rsi,%rax), %r9d
+	movb	%r9b, 26(%rdx)
+	movzbl	870(%rsi,%rax), %r8d
 	movb	%r8b, 27(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	966(%rax), %r11d
-	movb	%r10b, 28(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	998(%rax), %r9d
-	movb	%r8b, 29(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1030(%rax), %r11d
-	movb	%r10b, 30(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1062(%rax), %r9d
+	movzbl	902(%rsi,%rax), %r11d
+	movb	%r11b, 28(%rdx)
+	movzbl	934(%rsi,%rax), %r10d
+	movb	%r10b, 29(%rdx)
+	movzbl	966(%rsi,%rax), %r9d
+	movb	%r9b, 30(%rdx)
+	movzbl	998(%rsi,%rax), %r8d
 	movb	%r8b, 31(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1094(%rax), %r11d
-	movb	%r10b, 32(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1126(%rax), %r9d
-	movb	%r8b, 33(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1158(%rax), %r11d
-	movb	%r10b, 34(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1190(%rax), %r9d
+	movzbl	1030(%rsi,%rax), %r11d
+	movb	%r11b, 32(%rdx)
+	movzbl	1062(%rsi,%rax), %r10d
+	movb	%r10b, 33(%rdx)
+	movzbl	1094(%rsi,%rax), %r9d
+	movb	%r9b, 34(%rdx)
+	movzbl	1126(%rsi,%rax), %r8d
 	movb	%r8b, 35(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1222(%rax), %r11d
-	movb	%r10b, 36(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1254(%rax), %r9d
-	movb	%r8b, 37(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1286(%rax), %r11d
-	movb	%r10b, 38(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1318(%rax), %r9d
+	movzbl	1158(%rsi,%rax), %r11d
+	movb	%r11b, 36(%rdx)
+	movzbl	1190(%rsi,%rax), %r10d
+	movb	%r10b, 37(%rdx)
+	movzbl	1222(%rsi,%rax), %r9d
+	movb	%r9b, 38(%rdx)
+	movzbl	1254(%rsi,%rax), %r8d
 	movb	%r8b, 39(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1350(%rax), %r11d
-	movb	%r10b, 40(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1382(%rax), %r9d
-	movb	%r8b, 41(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1414(%rax), %r11d
-	movb	%r10b, 42(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1446(%rax), %r9d
+	movzbl	1286(%rsi,%rax), %r11d
+	movb	%r11b, 40(%rdx)
+	movzbl	1318(%rsi,%rax), %r10d
+	movb	%r10b, 41(%rdx)
+	movzbl	1350(%rsi,%rax), %r9d
+	movb	%r9b, 42(%rdx)
+	movzbl	1382(%rsi,%rax), %r8d
 	movb	%r8b, 43(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1478(%rax), %r11d
-	movb	%r10b, 44(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1510(%rax), %r9d
-	movb	%r8b, 45(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1542(%rax), %r11d
-	movb	%r10b, 46(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1574(%rax), %r9d
+	movzbl	1414(%rsi,%rax), %r11d
+	movb	%r11b, 44(%rdx)
+	movzbl	1446(%rsi,%rax), %r10d
+	movb	%r10b, 45(%rdx)
+	movzbl	1478(%rsi,%rax), %r9d
+	movb	%r9b, 46(%rdx)
+	movzbl	1510(%rsi,%rax), %r8d
 	movb	%r8b, 47(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1606(%rax), %r11d
-	movb	%r10b, 48(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1638(%rax), %r9d
-	movb	%r8b, 49(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1670(%rax), %r11d
-	movb	%r10b, 50(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1702(%rax), %r9d
+	movzbl	1542(%rsi,%rax), %r11d
+	movb	%r11b, 48(%rdx)
+	movzbl	1574(%rsi,%rax), %r10d
+	movb	%r10b, 49(%rdx)
+	movzbl	1606(%rsi,%rax), %r9d
+	movb	%r9b, 50(%rdx)
+	movzbl	1638(%rsi,%rax), %r8d
 	movb	%r8b, 51(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1734(%rax), %r11d
-	movb	%r10b, 52(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1766(%rax), %r9d
-	movb	%r8b, 53(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1798(%rax), %r11d
-	movb	%r10b, 54(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1830(%rax), %r9d
+	movzbl	1670(%rsi,%rax), %r11d
+	movb	%r11b, 52(%rdx)
+	movzbl	1702(%rsi,%rax), %r10d
+	movb	%r10b, 53(%rdx)
+	movzbl	1734(%rsi,%rax), %r9d
+	movb	%r9b, 54(%rdx)
+	movzbl	1766(%rsi,%rax), %r8d
 	movb	%r8b, 55(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1862(%rax), %r11d
-	movb	%r10b, 56(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1894(%rax), %r9d
-	movb	%r8b, 57(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1926(%rax), %r11d
-	movb	%r10b, 58(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1958(%rax), %r9d
+	movzbl	1798(%rsi,%rax), %r11d
+	movb	%r11b, 56(%rdx)
+	movzbl	1830(%rsi,%rax), %r10d
+	movb	%r10b, 57(%rdx)
+	movzbl	1862(%rsi,%rax), %r9d
+	movb	%r9b, 58(%rdx)
+	movzbl	1894(%rsi,%rax), %r8d
 	movb	%r8b, 59(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1990(%rax), %r11d
-	movb	%r10b, 60(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	2022(%rax), %r9d
-	movb	%r8b, 61(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	7(%rax), %r11d
-	movb	%r10b, 62(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	39(%rax), %r9d
+	movzbl	1926(%rsi,%rax), %r11d
+	movb	%r11b, 60(%rdx)
+	movzbl	1958(%rsi,%rax), %r10d
+	movb	%r10b, 61(%rdx)
+	movzbl	1990(%rsi,%rax), %r9d
+	movb	%r9b, 62(%rdx)
+	movzbl	2022(%rsi,%rax), %r8d
 	movb	%r8b, 63(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	movq	(%rcx,%r11,8), %rdx
-	leal	71(%rax), %r11d
-	movb	%r10b, (%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	103(%rax), %r9d
-	movb	%r8b, 1(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	135(%rax), %r11d
-	movb	%r10b, 2(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	167(%rax), %r9d
+	movzbl	7(%rsi,%rax), %r11d
+	movq	56(%rcx,%rax,8), %rdx
+	movb	%r11b, (%rdx)
+	movzbl	39(%rsi,%rax), %r10d
+	movb	%r10b, 1(%rdx)
+	movzbl	71(%rsi,%rax), %r9d
+	movb	%r9b, 2(%rdx)
+	movzbl	103(%rsi,%rax), %r8d
 	movb	%r8b, 3(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	199(%rax), %r11d
-	movb	%r10b, 4(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	231(%rax), %r9d
-	movb	%r8b, 5(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	263(%rax), %r11d
-	movb	%r10b, 6(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	295(%rax), %r9d
+	movzbl	135(%rsi,%rax), %r11d
+	movb	%r11b, 4(%rdx)
+	movzbl	167(%rsi,%rax), %r10d
+	movb	%r10b, 5(%rdx)
+	movzbl	199(%rsi,%rax), %r9d
+	movb	%r9b, 6(%rdx)
+	movzbl	231(%rsi,%rax), %r8d
 	movb	%r8b, 7(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	327(%rax), %r11d
-	movb	%r10b, 8(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	359(%rax), %r9d
-	movb	%r8b, 9(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	391(%rax), %r11d
-	movb	%r10b, 10(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	423(%rax), %r9d
+	movzbl	263(%rsi,%rax), %r11d
+	movb	%r11b, 8(%rdx)
+	movzbl	295(%rsi,%rax), %r10d
+	movb	%r10b, 9(%rdx)
+	movzbl	327(%rsi,%rax), %r9d
+	movb	%r9b, 10(%rdx)
+	movzbl	359(%rsi,%rax), %r8d
 	movb	%r8b, 11(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	455(%rax), %r11d
-	movb	%r10b, 12(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	487(%rax), %r9d
-	movb	%r8b, 13(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	519(%rax), %r11d
-	movb	%r10b, 14(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	551(%rax), %r9d
+	movzbl	391(%rsi,%rax), %r11d
+	movb	%r11b, 12(%rdx)
+	movzbl	423(%rsi,%rax), %r10d
+	movb	%r10b, 13(%rdx)
+	movzbl	455(%rsi,%rax), %r9d
+	movb	%r9b, 14(%rdx)
+	movzbl	487(%rsi,%rax), %r8d
 	movb	%r8b, 15(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	583(%rax), %r11d
-	movb	%r10b, 16(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	615(%rax), %r9d
-	movb	%r8b, 17(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	647(%rax), %r11d
-	movb	%r10b, 18(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	679(%rax), %r9d
+	movzbl	519(%rsi,%rax), %r11d
+	movb	%r11b, 16(%rdx)
+	movzbl	551(%rsi,%rax), %r10d
+	movb	%r10b, 17(%rdx)
+	movzbl	583(%rsi,%rax), %r9d
+	movb	%r9b, 18(%rdx)
+	movzbl	615(%rsi,%rax), %r8d
 	movb	%r8b, 19(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	711(%rax), %r11d
-	movb	%r10b, 20(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	743(%rax), %r9d
-	movb	%r8b, 21(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	775(%rax), %r11d
-	movb	%r10b, 22(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	807(%rax), %r9d
+	movzbl	647(%rsi,%rax), %r11d
+	movb	%r11b, 20(%rdx)
+	movzbl	679(%rsi,%rax), %r10d
+	movb	%r10b, 21(%rdx)
+	movzbl	711(%rsi,%rax), %r9d
+	movb	%r9b, 22(%rdx)
+	movzbl	743(%rsi,%rax), %r8d
 	movb	%r8b, 23(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	839(%rax), %r11d
-	movb	%r10b, 24(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	871(%rax), %r9d
-	movb	%r8b, 25(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	903(%rax), %r11d
-	movb	%r10b, 26(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	935(%rax), %r9d
+	movzbl	775(%rsi,%rax), %r11d
+	movb	%r11b, 24(%rdx)
+	movzbl	807(%rsi,%rax), %r10d
+	movb	%r10b, 25(%rdx)
+	movzbl	839(%rsi,%rax), %r9d
+	movb	%r9b, 26(%rdx)
+	movzbl	871(%rsi,%rax), %r8d
 	movb	%r8b, 27(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	967(%rax), %r11d
-	movb	%r10b, 28(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	999(%rax), %r9d
-	movb	%r8b, 29(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1031(%rax), %r11d
-	movb	%r10b, 30(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1063(%rax), %r9d
+	movzbl	903(%rsi,%rax), %r11d
+	movb	%r11b, 28(%rdx)
+	movzbl	935(%rsi,%rax), %r10d
+	movb	%r10b, 29(%rdx)
+	movzbl	967(%rsi,%rax), %r9d
+	movb	%r9b, 30(%rdx)
+	movzbl	999(%rsi,%rax), %r8d
 	movb	%r8b, 31(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1095(%rax), %r11d
-	movb	%r10b, 32(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1127(%rax), %r9d
-	movb	%r8b, 33(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1159(%rax), %r11d
-	movb	%r10b, 34(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1191(%rax), %r9d
+	movzbl	1031(%rsi,%rax), %r11d
+	movb	%r11b, 32(%rdx)
+	movzbl	1063(%rsi,%rax), %r10d
+	movb	%r10b, 33(%rdx)
+	movzbl	1095(%rsi,%rax), %r9d
+	movb	%r9b, 34(%rdx)
+	movzbl	1127(%rsi,%rax), %r8d
 	movb	%r8b, 35(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1223(%rax), %r11d
-	movb	%r10b, 36(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1255(%rax), %r9d
-	movb	%r8b, 37(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1287(%rax), %r11d
-	movb	%r10b, 38(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1319(%rax), %r9d
+	movzbl	1159(%rsi,%rax), %r11d
+	movb	%r11b, 36(%rdx)
+	movzbl	1191(%rsi,%rax), %r10d
+	movb	%r10b, 37(%rdx)
+	movzbl	1223(%rsi,%rax), %r9d
+	movb	%r9b, 38(%rdx)
+	movzbl	1255(%rsi,%rax), %r8d
 	movb	%r8b, 39(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1351(%rax), %r11d
-	movb	%r10b, 40(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1383(%rax), %r9d
-	movb	%r8b, 41(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1415(%rax), %r11d
-	movb	%r10b, 42(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1447(%rax), %r9d
+	movzbl	1287(%rsi,%rax), %r11d
+	movb	%r11b, 40(%rdx)
+	movzbl	1319(%rsi,%rax), %r10d
+	movb	%r10b, 41(%rdx)
+	movzbl	1351(%rsi,%rax), %r9d
+	movb	%r9b, 42(%rdx)
+	movzbl	1383(%rsi,%rax), %r8d
 	movb	%r8b, 43(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1479(%rax), %r11d
-	movb	%r10b, 44(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1511(%rax), %r9d
-	movb	%r8b, 45(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1543(%rax), %r11d
-	movb	%r10b, 46(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1575(%rax), %r9d
+	movzbl	1415(%rsi,%rax), %r11d
+	movb	%r11b, 44(%rdx)
+	movzbl	1447(%rsi,%rax), %r10d
+	movb	%r10b, 45(%rdx)
+	movzbl	1479(%rsi,%rax), %r9d
+	movb	%r9b, 46(%rdx)
+	movzbl	1511(%rsi,%rax), %r8d
 	movb	%r8b, 47(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1607(%rax), %r11d
-	movb	%r10b, 48(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1639(%rax), %r9d
-	movb	%r8b, 49(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1671(%rax), %r11d
-	movb	%r10b, 50(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1703(%rax), %r9d
+	movzbl	1543(%rsi,%rax), %r11d
+	movb	%r11b, 48(%rdx)
+	movzbl	1575(%rsi,%rax), %r10d
+	movb	%r10b, 49(%rdx)
+	movzbl	1607(%rsi,%rax), %r9d
+	movb	%r9b, 50(%rdx)
+	movzbl	1639(%rsi,%rax), %r8d
 	movb	%r8b, 51(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1735(%rax), %r11d
-	movb	%r10b, 52(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1767(%rax), %r9d
-	movb	%r8b, 53(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1799(%rax), %r11d
-	movb	%r10b, 54(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1831(%rax), %r9d
+	movzbl	1671(%rsi,%rax), %r11d
+	movb	%r11b, 52(%rdx)
+	movzbl	1703(%rsi,%rax), %r10d
+	movb	%r10b, 53(%rdx)
+	movzbl	1735(%rsi,%rax), %r9d
+	movb	%r9b, 54(%rdx)
+	movzbl	1767(%rsi,%rax), %r8d
 	movb	%r8b, 55(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1863(%rax), %r11d
-	movb	%r10b, 56(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1895(%rax), %r9d
-	movb	%r8b, 57(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1927(%rax), %r11d
-	movb	%r10b, 58(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1959(%rax), %r9d
+	movzbl	1799(%rsi,%rax), %r11d
+	movb	%r11b, 56(%rdx)
+	movzbl	1831(%rsi,%rax), %r10d
+	movb	%r10b, 57(%rdx)
+	movzbl	1863(%rsi,%rax), %r9d
+	movb	%r9b, 58(%rdx)
+	movzbl	1895(%rsi,%rax), %r8d
 	movb	%r8b, 59(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1991(%rax), %r11d
-	movb	%r10b, 60(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	2023(%rax), %r9d
-	addl	$8, %eax
-	subl	$1, %edi
-	movb	%r8b, 61(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	movb	%r10b, 62(%rdx)
-	movzbl	(%rsi,%r9), %r8d
+	movzbl	1927(%rsi,%rax), %r11d
+	movb	%r11b, 60(%rdx)
+	movzbl	1959(%rsi,%rax), %r10d
+	movb	%r10b, 61(%rdx)
+	movzbl	1991(%rsi,%rax), %r9d
+	movb	%r9b, 62(%rdx)
+	movzbl	2023(%rsi,%rax), %r8d
+	addq	$8, %rax
+	subq	$1, %rdi
 	movb	%r8b, 63(%rdx)
 	jne	.L8
 	addq	$8, %rsp
@@ -9882,803 +9370,547 @@ _ZNK12Unrolled_1_85demuxEPKhjPPh:
 	ret
 .L11:
 	.cfi_restore_state
-	movl	$_ZZNK12Unrolled_1_85demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$_ZZNK12Unrolled_1_85demuxEPKhmPPhE19__PRETTY_FUNCTION__, %ecx
 	movl	$242, %edx
 	movl	$.LC0, %esi
 	movl	$.LC1, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1021:
-	.size	_ZNK12Unrolled_1_85demuxEPKhjPPh, .-_ZNK12Unrolled_1_85demuxEPKhjPPh
-	.section	.text._ZNK12Unrolled_1_45demuxEPKhjPPh,"axG",@progbits,_ZNK12Unrolled_1_45demuxEPKhjPPh,comdat
+	.size	_ZNK12Unrolled_1_85demuxEPKhmPPh, .-_ZNK12Unrolled_1_85demuxEPKhmPPh
+	.section	.text._ZNK12Unrolled_1_45demuxEPKhmPPh,"axG",@progbits,_ZNK12Unrolled_1_45demuxEPKhmPPh,comdat
 	.align 2
 	.p2align 5,,31
-	.weak	_ZNK12Unrolled_1_45demuxEPKhjPPh
-	.type	_ZNK12Unrolled_1_45demuxEPKhjPPh, @function
-_ZNK12Unrolled_1_45demuxEPKhjPPh:
+	.weak	_ZNK12Unrolled_1_45demuxEPKhmPPh
+	.type	_ZNK12Unrolled_1_45demuxEPKhmPPh, @function
+_ZNK12Unrolled_1_45demuxEPKhmPPh:
 .LFB1020:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
-	cmpl	$2048, %edx
+	cmpq	$2048, %rdx
 	jne	.L16
 	movl	$8, %edi
 	xorl	%eax, %eax
 	.p2align 5
 .L13:
-	movl	%eax, %r11d
-	leal	32(%rax), %r9d
-	movzbl	(%rsi,%r11), %r10d
-	movq	(%rcx,%r11,8), %rdx
-	leal	64(%rax), %r11d
-	movb	%r10b, (%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	96(%rax), %r9d
-	movb	%r8b, 1(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	128(%rax), %r11d
-	movb	%r10b, 2(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	160(%rax), %r9d
+	movzbl	(%rsi,%rax), %r11d
+	movq	(%rcx,%rax,8), %rdx
+	movb	%r11b, (%rdx)
+	movzbl	32(%rsi,%rax), %r10d
+	movb	%r10b, 1(%rdx)
+	movzbl	64(%rsi,%rax), %r9d
+	movb	%r9b, 2(%rdx)
+	movzbl	96(%rsi,%rax), %r8d
 	movb	%r8b, 3(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	192(%rax), %r11d
-	movb	%r10b, 4(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	224(%rax), %r9d
-	movb	%r8b, 5(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	256(%rax), %r11d
-	movb	%r10b, 6(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	288(%rax), %r9d
+	movzbl	128(%rsi,%rax), %r11d
+	movb	%r11b, 4(%rdx)
+	movzbl	160(%rsi,%rax), %r10d
+	movb	%r10b, 5(%rdx)
+	movzbl	192(%rsi,%rax), %r9d
+	movb	%r9b, 6(%rdx)
+	movzbl	224(%rsi,%rax), %r8d
 	movb	%r8b, 7(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	320(%rax), %r11d
-	movb	%r10b, 8(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	352(%rax), %r9d
-	movb	%r8b, 9(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	384(%rax), %r11d
-	movb	%r10b, 10(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	416(%rax), %r9d
+	movzbl	256(%rsi,%rax), %r11d
+	movb	%r11b, 8(%rdx)
+	movzbl	288(%rsi,%rax), %r10d
+	movb	%r10b, 9(%rdx)
+	movzbl	320(%rsi,%rax), %r9d
+	movb	%r9b, 10(%rdx)
+	movzbl	352(%rsi,%rax), %r8d
 	movb	%r8b, 11(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	448(%rax), %r11d
-	movb	%r10b, 12(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	480(%rax), %r9d
-	movb	%r8b, 13(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	512(%rax), %r11d
-	movb	%r10b, 14(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	544(%rax), %r9d
+	movzbl	384(%rsi,%rax), %r11d
+	movb	%r11b, 12(%rdx)
+	movzbl	416(%rsi,%rax), %r10d
+	movb	%r10b, 13(%rdx)
+	movzbl	448(%rsi,%rax), %r9d
+	movb	%r9b, 14(%rdx)
+	movzbl	480(%rsi,%rax), %r8d
 	movb	%r8b, 15(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	576(%rax), %r11d
-	movb	%r10b, 16(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	608(%rax), %r9d
-	movb	%r8b, 17(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	640(%rax), %r11d
-	movb	%r10b, 18(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	672(%rax), %r9d
+	movzbl	512(%rsi,%rax), %r11d
+	movb	%r11b, 16(%rdx)
+	movzbl	544(%rsi,%rax), %r10d
+	movb	%r10b, 17(%rdx)
+	movzbl	576(%rsi,%rax), %r9d
+	movb	%r9b, 18(%rdx)
+	movzbl	608(%rsi,%rax), %r8d
 	movb	%r8b, 19(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	704(%rax), %r11d
-	movb	%r10b, 20(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	736(%rax), %r9d
-	movb	%r8b, 21(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	768(%rax), %r11d
-	movb	%r10b, 22(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	800(%rax), %r9d
+	movzbl	640(%rsi,%rax), %r11d
+	movb	%r11b, 20(%rdx)
+	movzbl	672(%rsi,%rax), %r10d
+	movb	%r10b, 21(%rdx)
+	movzbl	704(%rsi,%rax), %r9d
+	movb	%r9b, 22(%rdx)
+	movzbl	736(%rsi,%rax), %r8d
 	movb	%r8b, 23(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	832(%rax), %r11d
-	movb	%r10b, 24(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	864(%rax), %r9d
-	movb	%r8b, 25(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	896(%rax), %r11d
-	movb	%r10b, 26(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	928(%rax), %r9d
+	movzbl	768(%rsi,%rax), %r11d
+	movb	%r11b, 24(%rdx)
+	movzbl	800(%rsi,%rax), %r10d
+	movb	%r10b, 25(%rdx)
+	movzbl	832(%rsi,%rax), %r9d
+	movb	%r9b, 26(%rdx)
+	movzbl	864(%rsi,%rax), %r8d
 	movb	%r8b, 27(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	960(%rax), %r11d
-	movb	%r10b, 28(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	992(%rax), %r9d
-	movb	%r8b, 29(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1024(%rax), %r11d
-	movb	%r10b, 30(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1056(%rax), %r9d
+	movzbl	896(%rsi,%rax), %r11d
+	movb	%r11b, 28(%rdx)
+	movzbl	928(%rsi,%rax), %r10d
+	movb	%r10b, 29(%rdx)
+	movzbl	960(%rsi,%rax), %r9d
+	movb	%r9b, 30(%rdx)
+	movzbl	992(%rsi,%rax), %r8d
 	movb	%r8b, 31(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1088(%rax), %r11d
-	movb	%r10b, 32(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1120(%rax), %r9d
-	movb	%r8b, 33(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1152(%rax), %r11d
-	movb	%r10b, 34(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1184(%rax), %r9d
+	movzbl	1024(%rsi,%rax), %r11d
+	movb	%r11b, 32(%rdx)
+	movzbl	1056(%rsi,%rax), %r10d
+	movb	%r10b, 33(%rdx)
+	movzbl	1088(%rsi,%rax), %r9d
+	movb	%r9b, 34(%rdx)
+	movzbl	1120(%rsi,%rax), %r8d
 	movb	%r8b, 35(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1216(%rax), %r11d
-	movb	%r10b, 36(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1248(%rax), %r9d
-	movb	%r8b, 37(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1280(%rax), %r11d
-	movb	%r10b, 38(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1312(%rax), %r9d
+	movzbl	1152(%rsi,%rax), %r11d
+	movb	%r11b, 36(%rdx)
+	movzbl	1184(%rsi,%rax), %r10d
+	movb	%r10b, 37(%rdx)
+	movzbl	1216(%rsi,%rax), %r9d
+	movb	%r9b, 38(%rdx)
+	movzbl	1248(%rsi,%rax), %r8d
 	movb	%r8b, 39(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1344(%rax), %r11d
-	movb	%r10b, 40(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1376(%rax), %r9d
-	movb	%r8b, 41(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1408(%rax), %r11d
-	movb	%r10b, 42(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1440(%rax), %r9d
+	movzbl	1280(%rsi,%rax), %r11d
+	movb	%r11b, 40(%rdx)
+	movzbl	1312(%rsi,%rax), %r10d
+	movb	%r10b, 41(%rdx)
+	movzbl	1344(%rsi,%rax), %r9d
+	movb	%r9b, 42(%rdx)
+	movzbl	1376(%rsi,%rax), %r8d
 	movb	%r8b, 43(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1472(%rax), %r11d
-	movb	%r10b, 44(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1504(%rax), %r9d
-	movb	%r8b, 45(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1536(%rax), %r11d
-	movb	%r10b, 46(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1568(%rax), %r9d
+	movzbl	1408(%rsi,%rax), %r11d
+	movb	%r11b, 44(%rdx)
+	movzbl	1440(%rsi,%rax), %r10d
+	movb	%r10b, 45(%rdx)
+	movzbl	1472(%rsi,%rax), %r9d
+	movb	%r9b, 46(%rdx)
+	movzbl	1504(%rsi,%rax), %r8d
 	movb	%r8b, 47(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1600(%rax), %r11d
-	movb	%r10b, 48(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1632(%rax), %r9d
-	movb	%r8b, 49(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1664(%rax), %r11d
-	movb	%r10b, 50(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1696(%rax), %r9d
+	movzbl	1536(%rsi,%rax), %r11d
+	movb	%r11b, 48(%rdx)
+	movzbl	1568(%rsi,%rax), %r10d
+	movb	%r10b, 49(%rdx)
+	movzbl	1600(%rsi,%rax), %r9d
+	movb	%r9b, 50(%rdx)
+	movzbl	1632(%rsi,%rax), %r8d
 	movb	%r8b, 51(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1728(%rax), %r11d
-	movb	%r10b, 52(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1760(%rax), %r9d
-	movb	%r8b, 53(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1792(%rax), %r11d
-	movb	%r10b, 54(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1824(%rax), %r9d
+	movzbl	1664(%rsi,%rax), %r11d
+	movb	%r11b, 52(%rdx)
+	movzbl	1696(%rsi,%rax), %r10d
+	movb	%r10b, 53(%rdx)
+	movzbl	1728(%rsi,%rax), %r9d
+	movb	%r9b, 54(%rdx)
+	movzbl	1760(%rsi,%rax), %r8d
 	movb	%r8b, 55(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1856(%rax), %r11d
-	movb	%r10b, 56(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1888(%rax), %r9d
-	movb	%r8b, 57(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1920(%rax), %r11d
-	movb	%r10b, 58(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1952(%rax), %r9d
+	movzbl	1792(%rsi,%rax), %r11d
+	movb	%r11b, 56(%rdx)
+	movzbl	1824(%rsi,%rax), %r10d
+	movb	%r10b, 57(%rdx)
+	movzbl	1856(%rsi,%rax), %r9d
+	movb	%r9b, 58(%rdx)
+	movzbl	1888(%rsi,%rax), %r8d
 	movb	%r8b, 59(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1984(%rax), %r11d
-	movb	%r10b, 60(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	2016(%rax), %r9d
-	movb	%r8b, 61(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1(%rax), %r11d
-	movb	%r10b, 62(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	33(%rax), %r9d
+	movzbl	1920(%rsi,%rax), %r11d
+	movb	%r11b, 60(%rdx)
+	movzbl	1952(%rsi,%rax), %r10d
+	movb	%r10b, 61(%rdx)
+	movzbl	1984(%rsi,%rax), %r9d
+	movb	%r9b, 62(%rdx)
+	movzbl	2016(%rsi,%rax), %r8d
 	movb	%r8b, 63(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	movq	(%rcx,%r11,8), %rdx
-	leal	65(%rax), %r11d
-	movb	%r10b, (%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	97(%rax), %r9d
-	movb	%r8b, 1(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	129(%rax), %r11d
-	movb	%r10b, 2(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	161(%rax), %r9d
+	movzbl	1(%rsi,%rax), %r11d
+	movq	8(%rcx,%rax,8), %rdx
+	movb	%r11b, (%rdx)
+	movzbl	33(%rsi,%rax), %r10d
+	movb	%r10b, 1(%rdx)
+	movzbl	65(%rsi,%rax), %r9d
+	movb	%r9b, 2(%rdx)
+	movzbl	97(%rsi,%rax), %r8d
 	movb	%r8b, 3(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	193(%rax), %r11d
-	movb	%r10b, 4(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	225(%rax), %r9d
-	movb	%r8b, 5(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	257(%rax), %r11d
-	movb	%r10b, 6(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	289(%rax), %r9d
+	movzbl	129(%rsi,%rax), %r11d
+	movb	%r11b, 4(%rdx)
+	movzbl	161(%rsi,%rax), %r10d
+	movb	%r10b, 5(%rdx)
+	movzbl	193(%rsi,%rax), %r9d
+	movb	%r9b, 6(%rdx)
+	movzbl	225(%rsi,%rax), %r8d
 	movb	%r8b, 7(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	321(%rax), %r11d
-	movb	%r10b, 8(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	353(%rax), %r9d
-	movb	%r8b, 9(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	385(%rax), %r11d
-	movb	%r10b, 10(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	417(%rax), %r9d
+	movzbl	257(%rsi,%rax), %r11d
+	movb	%r11b, 8(%rdx)
+	movzbl	289(%rsi,%rax), %r10d
+	movb	%r10b, 9(%rdx)
+	movzbl	321(%rsi,%rax), %r9d
+	movb	%r9b, 10(%rdx)
+	movzbl	353(%rsi,%rax), %r8d
 	movb	%r8b, 11(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	449(%rax), %r11d
-	movb	%r10b, 12(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	481(%rax), %r9d
-	movb	%r8b, 13(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	513(%rax), %r11d
-	movb	%r10b, 14(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	545(%rax), %r9d
+	movzbl	385(%rsi,%rax), %r11d
+	movb	%r11b, 12(%rdx)
+	movzbl	417(%rsi,%rax), %r10d
+	movb	%r10b, 13(%rdx)
+	movzbl	449(%rsi,%rax), %r9d
+	movb	%r9b, 14(%rdx)
+	movzbl	481(%rsi,%rax), %r8d
 	movb	%r8b, 15(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	577(%rax), %r11d
-	movb	%r10b, 16(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	609(%rax), %r9d
-	movb	%r8b, 17(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	641(%rax), %r11d
-	movb	%r10b, 18(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	673(%rax), %r9d
+	movzbl	513(%rsi,%rax), %r11d
+	movb	%r11b, 16(%rdx)
+	movzbl	545(%rsi,%rax), %r10d
+	movb	%r10b, 17(%rdx)
+	movzbl	577(%rsi,%rax), %r9d
+	movb	%r9b, 18(%rdx)
+	movzbl	609(%rsi,%rax), %r8d
 	movb	%r8b, 19(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	705(%rax), %r11d
-	movb	%r10b, 20(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	737(%rax), %r9d
-	movb	%r8b, 21(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	769(%rax), %r11d
-	movb	%r10b, 22(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	801(%rax), %r9d
+	movzbl	641(%rsi,%rax), %r11d
+	movb	%r11b, 20(%rdx)
+	movzbl	673(%rsi,%rax), %r10d
+	movb	%r10b, 21(%rdx)
+	movzbl	705(%rsi,%rax), %r9d
+	movb	%r9b, 22(%rdx)
+	movzbl	737(%rsi,%rax), %r8d
 	movb	%r8b, 23(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	833(%rax), %r11d
-	movb	%r10b, 24(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	865(%rax), %r9d
-	movb	%r8b, 25(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	897(%rax), %r11d
-	movb	%r10b, 26(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	929(%rax), %r9d
+	movzbl	769(%rsi,%rax), %r11d
+	movb	%r11b, 24(%rdx)
+	movzbl	801(%rsi,%rax), %r10d
+	movb	%r10b, 25(%rdx)
+	movzbl	833(%rsi,%rax), %r9d
+	movb	%r9b, 26(%rdx)
+	movzbl	865(%rsi,%rax), %r8d
 	movb	%r8b, 27(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	961(%rax), %r11d
-	movb	%r10b, 28(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	993(%rax), %r9d
-	movb	%r8b, 29(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1025(%rax), %r11d
-	movb	%r10b, 30(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1057(%rax), %r9d
+	movzbl	897(%rsi,%rax), %r11d
+	movb	%r11b, 28(%rdx)
+	movzbl	929(%rsi,%rax), %r10d
+	movb	%r10b, 29(%rdx)
+	movzbl	961(%rsi,%rax), %r9d
+	movb	%r9b, 30(%rdx)
+	movzbl	993(%rsi,%rax), %r8d
 	movb	%r8b, 31(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1089(%rax), %r11d
-	movb	%r10b, 32(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1121(%rax), %r9d
-	movb	%r8b, 33(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1153(%rax), %r11d
-	movb	%r10b, 34(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1185(%rax), %r9d
+	movzbl	1025(%rsi,%rax), %r11d
+	movb	%r11b, 32(%rdx)
+	movzbl	1057(%rsi,%rax), %r10d
+	movb	%r10b, 33(%rdx)
+	movzbl	1089(%rsi,%rax), %r9d
+	movb	%r9b, 34(%rdx)
+	movzbl	1121(%rsi,%rax), %r8d
 	movb	%r8b, 35(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1217(%rax), %r11d
-	movb	%r10b, 36(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1249(%rax), %r9d
-	movb	%r8b, 37(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1281(%rax), %r11d
-	movb	%r10b, 38(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1313(%rax), %r9d
+	movzbl	1153(%rsi,%rax), %r11d
+	movb	%r11b, 36(%rdx)
+	movzbl	1185(%rsi,%rax), %r10d
+	movb	%r10b, 37(%rdx)
+	movzbl	1217(%rsi,%rax), %r9d
+	movb	%r9b, 38(%rdx)
+	movzbl	1249(%rsi,%rax), %r8d
 	movb	%r8b, 39(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1345(%rax), %r11d
-	movb	%r10b, 40(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1377(%rax), %r9d
-	movb	%r8b, 41(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1409(%rax), %r11d
-	movb	%r10b, 42(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1441(%rax), %r9d
+	movzbl	1281(%rsi,%rax), %r11d
+	movb	%r11b, 40(%rdx)
+	movzbl	1313(%rsi,%rax), %r10d
+	movb	%r10b, 41(%rdx)
+	movzbl	1345(%rsi,%rax), %r9d
+	movb	%r9b, 42(%rdx)
+	movzbl	1377(%rsi,%rax), %r8d
 	movb	%r8b, 43(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1473(%rax), %r11d
-	movb	%r10b, 44(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1505(%rax), %r9d
-	movb	%r8b, 45(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1537(%rax), %r11d
-	movb	%r10b, 46(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1569(%rax), %r9d
+	movzbl	1409(%rsi,%rax), %r11d
+	movb	%r11b, 44(%rdx)
+	movzbl	1441(%rsi,%rax), %r10d
+	movb	%r10b, 45(%rdx)
+	movzbl	1473(%rsi,%rax), %r9d
+	movb	%r9b, 46(%rdx)
+	movzbl	1505(%rsi,%rax), %r8d
 	movb	%r8b, 47(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1601(%rax), %r11d
-	movb	%r10b, 48(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1633(%rax), %r9d
-	movb	%r8b, 49(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1665(%rax), %r11d
-	movb	%r10b, 50(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1697(%rax), %r9d
+	movzbl	1537(%rsi,%rax), %r11d
+	movb	%r11b, 48(%rdx)
+	movzbl	1569(%rsi,%rax), %r10d
+	movb	%r10b, 49(%rdx)
+	movzbl	1601(%rsi,%rax), %r9d
+	movb	%r9b, 50(%rdx)
+	movzbl	1633(%rsi,%rax), %r8d
 	movb	%r8b, 51(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1729(%rax), %r11d
-	movb	%r10b, 52(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1761(%rax), %r9d
-	movb	%r8b, 53(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1793(%rax), %r11d
-	movb	%r10b, 54(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1825(%rax), %r9d
+	movzbl	1665(%rsi,%rax), %r11d
+	movb	%r11b, 52(%rdx)
+	movzbl	1697(%rsi,%rax), %r10d
+	movb	%r10b, 53(%rdx)
+	movzbl	1729(%rsi,%rax), %r9d
+	movb	%r9b, 54(%rdx)
+	movzbl	1761(%rsi,%rax), %r8d
 	movb	%r8b, 55(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1857(%rax), %r11d
-	movb	%r10b, 56(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1889(%rax), %r9d
-	movb	%r8b, 57(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1921(%rax), %r11d
-	movb	%r10b, 58(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1953(%rax), %r9d
+	movzbl	1793(%rsi,%rax), %r11d
+	movb	%r11b, 56(%rdx)
+	movzbl	1825(%rsi,%rax), %r10d
+	movb	%r10b, 57(%rdx)
+	movzbl	1857(%rsi,%rax), %r9d
+	movb	%r9b, 58(%rdx)
+	movzbl	1889(%rsi,%rax), %r8d
 	movb	%r8b, 59(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1985(%rax), %r11d
-	movb	%r10b, 60(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	2017(%rax), %r9d
-	movb	%r8b, 61(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	2(%rax), %r11d
-	movb	%r10b, 62(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	34(%rax), %r9d
+	movzbl	1921(%rsi,%rax), %r11d
+	movb	%r11b, 60(%rdx)
+	movzbl	1953(%rsi,%rax), %r10d
+	movb	%r10b, 61(%rdx)
+	movzbl	1985(%rsi,%rax), %r9d
+	movb	%r9b, 62(%rdx)
+	movzbl	2017(%rsi,%rax), %r8d
 	movb	%r8b, 63(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	movq	(%rcx,%r11,8), %rdx
-	leal	66(%rax), %r11d
-	movb	%r10b, (%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	98(%rax), %r9d
-	movb	%r8b, 1(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	130(%rax), %r11d
-	movb	%r10b, 2(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	162(%rax), %r9d
+	movzbl	2(%rsi,%rax), %r11d
+	movq	16(%rcx,%rax,8), %rdx
+	movb	%r11b, (%rdx)
+	movzbl	34(%rsi,%rax), %r10d
+	movb	%r10b, 1(%rdx)
+	movzbl	66(%rsi,%rax), %r9d
+	movb	%r9b, 2(%rdx)
+	movzbl	98(%rsi,%rax), %r8d
 	movb	%r8b, 3(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	194(%rax), %r11d
-	movb	%r10b, 4(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	226(%rax), %r9d
-	movb	%r8b, 5(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	258(%rax), %r11d
-	movb	%r10b, 6(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	290(%rax), %r9d
+	movzbl	130(%rsi,%rax), %r11d
+	movb	%r11b, 4(%rdx)
+	movzbl	162(%rsi,%rax), %r10d
+	movb	%r10b, 5(%rdx)
+	movzbl	194(%rsi,%rax), %r9d
+	movb	%r9b, 6(%rdx)
+	movzbl	226(%rsi,%rax), %r8d
 	movb	%r8b, 7(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	322(%rax), %r11d
-	movb	%r10b, 8(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	354(%rax), %r9d
-	movb	%r8b, 9(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	386(%rax), %r11d
-	movb	%r10b, 10(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	418(%rax), %r9d
+	movzbl	258(%rsi,%rax), %r11d
+	movb	%r11b, 8(%rdx)
+	movzbl	290(%rsi,%rax), %r10d
+	movb	%r10b, 9(%rdx)
+	movzbl	322(%rsi,%rax), %r9d
+	movb	%r9b, 10(%rdx)
+	movzbl	354(%rsi,%rax), %r8d
 	movb	%r8b, 11(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	450(%rax), %r11d
-	movb	%r10b, 12(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	482(%rax), %r9d
-	movb	%r8b, 13(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	514(%rax), %r11d
-	movb	%r10b, 14(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	546(%rax), %r9d
+	movzbl	386(%rsi,%rax), %r11d
+	movb	%r11b, 12(%rdx)
+	movzbl	418(%rsi,%rax), %r10d
+	movb	%r10b, 13(%rdx)
+	movzbl	450(%rsi,%rax), %r9d
+	movb	%r9b, 14(%rdx)
+	movzbl	482(%rsi,%rax), %r8d
 	movb	%r8b, 15(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	578(%rax), %r11d
-	movb	%r10b, 16(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	610(%rax), %r9d
-	movb	%r8b, 17(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	642(%rax), %r11d
-	movb	%r10b, 18(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	674(%rax), %r9d
+	movzbl	514(%rsi,%rax), %r11d
+	movb	%r11b, 16(%rdx)
+	movzbl	546(%rsi,%rax), %r10d
+	movb	%r10b, 17(%rdx)
+	movzbl	578(%rsi,%rax), %r9d
+	movb	%r9b, 18(%rdx)
+	movzbl	610(%rsi,%rax), %r8d
 	movb	%r8b, 19(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	706(%rax), %r11d
-	movb	%r10b, 20(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	738(%rax), %r9d
-	movb	%r8b, 21(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	770(%rax), %r11d
-	movb	%r10b, 22(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	802(%rax), %r9d
+	movzbl	642(%rsi,%rax), %r11d
+	movb	%r11b, 20(%rdx)
+	movzbl	674(%rsi,%rax), %r10d
+	movb	%r10b, 21(%rdx)
+	movzbl	706(%rsi,%rax), %r9d
+	movb	%r9b, 22(%rdx)
+	movzbl	738(%rsi,%rax), %r8d
 	movb	%r8b, 23(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	834(%rax), %r11d
-	movb	%r10b, 24(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	866(%rax), %r9d
-	movb	%r8b, 25(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	898(%rax), %r11d
-	movb	%r10b, 26(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	930(%rax), %r9d
+	movzbl	770(%rsi,%rax), %r11d
+	movb	%r11b, 24(%rdx)
+	movzbl	802(%rsi,%rax), %r10d
+	movb	%r10b, 25(%rdx)
+	movzbl	834(%rsi,%rax), %r9d
+	movb	%r9b, 26(%rdx)
+	movzbl	866(%rsi,%rax), %r8d
 	movb	%r8b, 27(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	962(%rax), %r11d
-	movb	%r10b, 28(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	994(%rax), %r9d
-	movb	%r8b, 29(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1026(%rax), %r11d
-	movb	%r10b, 30(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1058(%rax), %r9d
+	movzbl	898(%rsi,%rax), %r11d
+	movb	%r11b, 28(%rdx)
+	movzbl	930(%rsi,%rax), %r10d
+	movb	%r10b, 29(%rdx)
+	movzbl	962(%rsi,%rax), %r9d
+	movb	%r9b, 30(%rdx)
+	movzbl	994(%rsi,%rax), %r8d
 	movb	%r8b, 31(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1090(%rax), %r11d
-	movb	%r10b, 32(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1122(%rax), %r9d
-	movb	%r8b, 33(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1154(%rax), %r11d
-	movb	%r10b, 34(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1186(%rax), %r9d
+	movzbl	1026(%rsi,%rax), %r11d
+	movb	%r11b, 32(%rdx)
+	movzbl	1058(%rsi,%rax), %r10d
+	movb	%r10b, 33(%rdx)
+	movzbl	1090(%rsi,%rax), %r9d
+	movb	%r9b, 34(%rdx)
+	movzbl	1122(%rsi,%rax), %r8d
 	movb	%r8b, 35(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1218(%rax), %r11d
-	movb	%r10b, 36(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1250(%rax), %r9d
-	movb	%r8b, 37(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1282(%rax), %r11d
-	movb	%r10b, 38(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1314(%rax), %r9d
+	movzbl	1154(%rsi,%rax), %r11d
+	movb	%r11b, 36(%rdx)
+	movzbl	1186(%rsi,%rax), %r10d
+	movb	%r10b, 37(%rdx)
+	movzbl	1218(%rsi,%rax), %r9d
+	movb	%r9b, 38(%rdx)
+	movzbl	1250(%rsi,%rax), %r8d
 	movb	%r8b, 39(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1346(%rax), %r11d
-	movb	%r10b, 40(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1378(%rax), %r9d
-	movb	%r8b, 41(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1410(%rax), %r11d
-	movb	%r10b, 42(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1442(%rax), %r9d
+	movzbl	1282(%rsi,%rax), %r11d
+	movb	%r11b, 40(%rdx)
+	movzbl	1314(%rsi,%rax), %r10d
+	movb	%r10b, 41(%rdx)
+	movzbl	1346(%rsi,%rax), %r9d
+	movb	%r9b, 42(%rdx)
+	movzbl	1378(%rsi,%rax), %r8d
 	movb	%r8b, 43(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1474(%rax), %r11d
-	movb	%r10b, 44(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1506(%rax), %r9d
-	movb	%r8b, 45(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1538(%rax), %r11d
-	movb	%r10b, 46(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1570(%rax), %r9d
+	movzbl	1410(%rsi,%rax), %r11d
+	movb	%r11b, 44(%rdx)
+	movzbl	1442(%rsi,%rax), %r10d
+	movb	%r10b, 45(%rdx)
+	movzbl	1474(%rsi,%rax), %r9d
+	movb	%r9b, 46(%rdx)
+	movzbl	1506(%rsi,%rax), %r8d
 	movb	%r8b, 47(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1602(%rax), %r11d
-	movb	%r10b, 48(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1634(%rax), %r9d
-	movb	%r8b, 49(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1666(%rax), %r11d
-	movb	%r10b, 50(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1698(%rax), %r9d
+	movzbl	1538(%rsi,%rax), %r11d
+	movb	%r11b, 48(%rdx)
+	movzbl	1570(%rsi,%rax), %r10d
+	movb	%r10b, 49(%rdx)
+	movzbl	1602(%rsi,%rax), %r9d
+	movb	%r9b, 50(%rdx)
+	movzbl	1634(%rsi,%rax), %r8d
 	movb	%r8b, 51(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1730(%rax), %r11d
-	movb	%r10b, 52(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1762(%rax), %r9d
-	movb	%r8b, 53(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1794(%rax), %r11d
-	movb	%r10b, 54(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1826(%rax), %r9d
+	movzbl	1666(%rsi,%rax), %r11d
+	movb	%r11b, 52(%rdx)
+	movzbl	1698(%rsi,%rax), %r10d
+	movb	%r10b, 53(%rdx)
+	movzbl	1730(%rsi,%rax), %r9d
+	movb	%r9b, 54(%rdx)
+	movzbl	1762(%rsi,%rax), %r8d
 	movb	%r8b, 55(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1858(%rax), %r11d
-	movb	%r10b, 56(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1890(%rax), %r9d
-	movb	%r8b, 57(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1922(%rax), %r11d
-	movb	%r10b, 58(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1954(%rax), %r9d
+	movzbl	1794(%rsi,%rax), %r11d
+	movb	%r11b, 56(%rdx)
+	movzbl	1826(%rsi,%rax), %r10d
+	movb	%r10b, 57(%rdx)
+	movzbl	1858(%rsi,%rax), %r9d
+	movb	%r9b, 58(%rdx)
+	movzbl	1890(%rsi,%rax), %r8d
 	movb	%r8b, 59(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1986(%rax), %r11d
-	movb	%r10b, 60(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	2018(%rax), %r9d
-	movb	%r8b, 61(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	3(%rax), %r11d
-	movb	%r10b, 62(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	35(%rax), %r9d
+	movzbl	1922(%rsi,%rax), %r11d
+	movb	%r11b, 60(%rdx)
+	movzbl	1954(%rsi,%rax), %r10d
+	movb	%r10b, 61(%rdx)
+	movzbl	1986(%rsi,%rax), %r9d
+	movb	%r9b, 62(%rdx)
+	movzbl	2018(%rsi,%rax), %r8d
 	movb	%r8b, 63(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	movq	(%rcx,%r11,8), %rdx
-	leal	67(%rax), %r11d
-	movb	%r10b, (%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	99(%rax), %r9d
-	movb	%r8b, 1(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	131(%rax), %r11d
-	movb	%r10b, 2(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	163(%rax), %r9d
+	movzbl	3(%rsi,%rax), %r11d
+	movq	24(%rcx,%rax,8), %rdx
+	movb	%r11b, (%rdx)
+	movzbl	35(%rsi,%rax), %r10d
+	movb	%r10b, 1(%rdx)
+	movzbl	67(%rsi,%rax), %r9d
+	movb	%r9b, 2(%rdx)
+	movzbl	99(%rsi,%rax), %r8d
 	movb	%r8b, 3(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	195(%rax), %r11d
-	movb	%r10b, 4(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	227(%rax), %r9d
-	movb	%r8b, 5(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	259(%rax), %r11d
-	movb	%r10b, 6(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	291(%rax), %r9d
+	movzbl	131(%rsi,%rax), %r11d
+	movb	%r11b, 4(%rdx)
+	movzbl	163(%rsi,%rax), %r10d
+	movb	%r10b, 5(%rdx)
+	movzbl	195(%rsi,%rax), %r9d
+	movb	%r9b, 6(%rdx)
+	movzbl	227(%rsi,%rax), %r8d
 	movb	%r8b, 7(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	323(%rax), %r11d
-	movb	%r10b, 8(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	355(%rax), %r9d
-	movb	%r8b, 9(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	387(%rax), %r11d
-	movb	%r10b, 10(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	419(%rax), %r9d
+	movzbl	259(%rsi,%rax), %r11d
+	movb	%r11b, 8(%rdx)
+	movzbl	291(%rsi,%rax), %r10d
+	movb	%r10b, 9(%rdx)
+	movzbl	323(%rsi,%rax), %r9d
+	movb	%r9b, 10(%rdx)
+	movzbl	355(%rsi,%rax), %r8d
 	movb	%r8b, 11(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	451(%rax), %r11d
-	movb	%r10b, 12(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	483(%rax), %r9d
-	movb	%r8b, 13(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	515(%rax), %r11d
-	movb	%r10b, 14(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	547(%rax), %r9d
+	movzbl	387(%rsi,%rax), %r11d
+	movb	%r11b, 12(%rdx)
+	movzbl	419(%rsi,%rax), %r10d
+	movb	%r10b, 13(%rdx)
+	movzbl	451(%rsi,%rax), %r9d
+	movb	%r9b, 14(%rdx)
+	movzbl	483(%rsi,%rax), %r8d
 	movb	%r8b, 15(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	579(%rax), %r11d
-	movb	%r10b, 16(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	611(%rax), %r9d
-	movb	%r8b, 17(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	643(%rax), %r11d
-	movb	%r10b, 18(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	675(%rax), %r9d
+	movzbl	515(%rsi,%rax), %r11d
+	movb	%r11b, 16(%rdx)
+	movzbl	547(%rsi,%rax), %r10d
+	movb	%r10b, 17(%rdx)
+	movzbl	579(%rsi,%rax), %r9d
+	movb	%r9b, 18(%rdx)
+	movzbl	611(%rsi,%rax), %r8d
 	movb	%r8b, 19(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	707(%rax), %r11d
-	movb	%r10b, 20(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	739(%rax), %r9d
-	movb	%r8b, 21(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	771(%rax), %r11d
-	movb	%r10b, 22(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	803(%rax), %r9d
+	movzbl	643(%rsi,%rax), %r11d
+	movb	%r11b, 20(%rdx)
+	movzbl	675(%rsi,%rax), %r10d
+	movb	%r10b, 21(%rdx)
+	movzbl	707(%rsi,%rax), %r9d
+	movb	%r9b, 22(%rdx)
+	movzbl	739(%rsi,%rax), %r8d
 	movb	%r8b, 23(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	835(%rax), %r11d
-	movb	%r10b, 24(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	867(%rax), %r9d
-	movb	%r8b, 25(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	899(%rax), %r11d
-	movb	%r10b, 26(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	931(%rax), %r9d
+	movzbl	771(%rsi,%rax), %r11d
+	movb	%r11b, 24(%rdx)
+	movzbl	803(%rsi,%rax), %r10d
+	movb	%r10b, 25(%rdx)
+	movzbl	835(%rsi,%rax), %r9d
+	movb	%r9b, 26(%rdx)
+	movzbl	867(%rsi,%rax), %r8d
 	movb	%r8b, 27(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	963(%rax), %r11d
-	movb	%r10b, 28(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	995(%rax), %r9d
-	movb	%r8b, 29(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1027(%rax), %r11d
-	movb	%r10b, 30(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1059(%rax), %r9d
+	movzbl	899(%rsi,%rax), %r11d
+	movb	%r11b, 28(%rdx)
+	movzbl	931(%rsi,%rax), %r10d
+	movb	%r10b, 29(%rdx)
+	movzbl	963(%rsi,%rax), %r9d
+	movb	%r9b, 30(%rdx)
+	movzbl	995(%rsi,%rax), %r8d
 	movb	%r8b, 31(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1091(%rax), %r11d
-	movb	%r10b, 32(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1123(%rax), %r9d
-	movb	%r8b, 33(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1155(%rax), %r11d
-	movb	%r10b, 34(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1187(%rax), %r9d
+	movzbl	1027(%rsi,%rax), %r11d
+	movb	%r11b, 32(%rdx)
+	movzbl	1059(%rsi,%rax), %r10d
+	movb	%r10b, 33(%rdx)
+	movzbl	1091(%rsi,%rax), %r9d
+	movb	%r9b, 34(%rdx)
+	movzbl	1123(%rsi,%rax), %r8d
 	movb	%r8b, 35(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1219(%rax), %r11d
-	movb	%r10b, 36(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1251(%rax), %r9d
-	movb	%r8b, 37(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1283(%rax), %r11d
-	movb	%r10b, 38(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1315(%rax), %r9d
+	movzbl	1155(%rsi,%rax), %r11d
+	movb	%r11b, 36(%rdx)
+	movzbl	1187(%rsi,%rax), %r10d
+	movb	%r10b, 37(%rdx)
+	movzbl	1219(%rsi,%rax), %r9d
+	movb	%r9b, 38(%rdx)
+	movzbl	1251(%rsi,%rax), %r8d
 	movb	%r8b, 39(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1347(%rax), %r11d
-	movb	%r10b, 40(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1379(%rax), %r9d
-	movb	%r8b, 41(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1411(%rax), %r11d
-	movb	%r10b, 42(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1443(%rax), %r9d
+	movzbl	1283(%rsi,%rax), %r11d
+	movb	%r11b, 40(%rdx)
+	movzbl	1315(%rsi,%rax), %r10d
+	movb	%r10b, 41(%rdx)
+	movzbl	1347(%rsi,%rax), %r9d
+	movb	%r9b, 42(%rdx)
+	movzbl	1379(%rsi,%rax), %r8d
 	movb	%r8b, 43(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1475(%rax), %r11d
-	movb	%r10b, 44(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1507(%rax), %r9d
-	movb	%r8b, 45(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1539(%rax), %r11d
-	movb	%r10b, 46(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1571(%rax), %r9d
+	movzbl	1411(%rsi,%rax), %r11d
+	movb	%r11b, 44(%rdx)
+	movzbl	1443(%rsi,%rax), %r10d
+	movb	%r10b, 45(%rdx)
+	movzbl	1475(%rsi,%rax), %r9d
+	movb	%r9b, 46(%rdx)
+	movzbl	1507(%rsi,%rax), %r8d
 	movb	%r8b, 47(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1603(%rax), %r11d
-	movb	%r10b, 48(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1635(%rax), %r9d
-	movb	%r8b, 49(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1667(%rax), %r11d
-	movb	%r10b, 50(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1699(%rax), %r9d
+	movzbl	1539(%rsi,%rax), %r11d
+	movb	%r11b, 48(%rdx)
+	movzbl	1571(%rsi,%rax), %r10d
+	movb	%r10b, 49(%rdx)
+	movzbl	1603(%rsi,%rax), %r9d
+	movb	%r9b, 50(%rdx)
+	movzbl	1635(%rsi,%rax), %r8d
 	movb	%r8b, 51(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1731(%rax), %r11d
-	movb	%r10b, 52(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1763(%rax), %r9d
-	movb	%r8b, 53(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1795(%rax), %r11d
-	movb	%r10b, 54(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1827(%rax), %r9d
+	movzbl	1667(%rsi,%rax), %r11d
+	movb	%r11b, 52(%rdx)
+	movzbl	1699(%rsi,%rax), %r10d
+	movb	%r10b, 53(%rdx)
+	movzbl	1731(%rsi,%rax), %r9d
+	movb	%r9b, 54(%rdx)
+	movzbl	1763(%rsi,%rax), %r8d
 	movb	%r8b, 55(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1859(%rax), %r11d
-	movb	%r10b, 56(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1891(%rax), %r9d
-	movb	%r8b, 57(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1923(%rax), %r11d
-	movb	%r10b, 58(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	1955(%rax), %r9d
+	movzbl	1795(%rsi,%rax), %r11d
+	movb	%r11b, 56(%rdx)
+	movzbl	1827(%rsi,%rax), %r10d
+	movb	%r10b, 57(%rdx)
+	movzbl	1859(%rsi,%rax), %r9d
+	movb	%r9b, 58(%rdx)
+	movzbl	1891(%rsi,%rax), %r8d
 	movb	%r8b, 59(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	leal	1987(%rax), %r11d
-	movb	%r10b, 60(%rdx)
-	movzbl	(%rsi,%r9), %r8d
-	leal	2019(%rax), %r9d
-	addl	$4, %eax
-	subl	$1, %edi
-	movb	%r8b, 61(%rdx)
-	movzbl	(%rsi,%r11), %r10d
-	movb	%r10b, 62(%rdx)
-	movzbl	(%rsi,%r9), %r8d
+	movzbl	1923(%rsi,%rax), %r11d
+	movb	%r11b, 60(%rdx)
+	movzbl	1955(%rsi,%rax), %r10d
+	movb	%r10b, 61(%rdx)
+	movzbl	1987(%rsi,%rax), %r9d
+	movb	%r9b, 62(%rdx)
+	movzbl	2019(%rsi,%rax), %r8d
+	addq	$4, %rax
+	subq	$1, %rdi
 	movb	%r8b, 63(%rdx)
 	jne	.L13
 	addq	$8, %rsp
@@ -10687,31 +9919,31 @@ _ZNK12Unrolled_1_45demuxEPKhjPPh:
 	ret
 .L16:
 	.cfi_restore_state
-	movl	$_ZZNK12Unrolled_1_45demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$_ZZNK12Unrolled_1_45demuxEPKhmPPhE19__PRETTY_FUNCTION__, %ecx
 	movl	$228, %edx
 	movl	$.LC0, %esi
 	movl	$.LC1, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1020:
-	.size	_ZNK12Unrolled_1_45demuxEPKhjPPh, .-_ZNK12Unrolled_1_45demuxEPKhjPPh
-	.section	.text._ZNK12Unrolled_1_25demuxEPKhjPPh,"axG",@progbits,_ZNK12Unrolled_1_25demuxEPKhjPPh,comdat
+	.size	_ZNK12Unrolled_1_45demuxEPKhmPPh, .-_ZNK12Unrolled_1_45demuxEPKhmPPh
+	.section	.text._ZNK12Unrolled_1_25demuxEPKhmPPh,"axG",@progbits,_ZNK12Unrolled_1_25demuxEPKhmPPh,comdat
 	.align 2
 	.p2align 5,,31
-	.weak	_ZNK12Unrolled_1_25demuxEPKhjPPh
-	.type	_ZNK12Unrolled_1_25demuxEPKhjPPh, @function
-_ZNK12Unrolled_1_25demuxEPKhjPPh:
+	.weak	_ZNK12Unrolled_1_25demuxEPKhmPPh
+	.type	_ZNK12Unrolled_1_25demuxEPKhmPPh, @function
+_ZNK12Unrolled_1_25demuxEPKhmPPh:
 .LFB1019:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
-	cmpl	$2048, %edx
+	cmpq	$2048, %rdx
 	jne	.L21
 	xorl	%edx, %edx
 	.p2align 5
 .L19:
 	movzbl	(%rsi), %r9d
-	movq	(%rcx,%rdx), %rax
+	movq	(%rcx,%rdx,8), %rax
 	movb	%r9b, (%rax)
 	movzbl	32(%rsi), %r8d
 	movb	%r8b, 1(%rax)
@@ -10840,8 +10072,8 @@ _ZNK12Unrolled_1_25demuxEPKhjPPh:
 	movzbl	2016(%rsi), %r11d
 	movb	%r11b, 63(%rax)
 	movzbl	1(%rsi), %r10d
-	movq	8(%rcx,%rdx), %rax
-	addq	$16, %rdx
+	movq	8(%rcx,%rdx,8), %rax
+	addq	$2, %rdx
 	movb	%r10b, (%rax)
 	movzbl	33(%rsi), %r9d
 	movb	%r9b, 1(%rax)
@@ -10969,7 +10201,7 @@ _ZNK12Unrolled_1_25demuxEPKhjPPh:
 	movb	%r8b, 62(%rax)
 	movzbl	2017(%rsi), %edi
 	addq	$2, %rsi
-	cmpq	$256, %rdx
+	cmpq	$32, %rdx
 	movb	%dil, 63(%rax)
 	jne	.L19
 	addq	$8, %rsp
@@ -10978,32 +10210,32 @@ _ZNK12Unrolled_1_25demuxEPKhjPPh:
 	ret
 .L21:
 	.cfi_restore_state
-	movl	$_ZZNK12Unrolled_1_25demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$_ZZNK12Unrolled_1_25demuxEPKhmPPhE19__PRETTY_FUNCTION__, %ecx
 	movl	$213, %edx
 	movl	$.LC0, %esi
 	movl	$.LC1, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1019:
-	.size	_ZNK12Unrolled_1_25demuxEPKhjPPh, .-_ZNK12Unrolled_1_25demuxEPKhjPPh
-	.section	.text._ZNK10Unrolled_15demuxEPKhjPPh,"axG",@progbits,_ZNK10Unrolled_15demuxEPKhjPPh,comdat
+	.size	_ZNK12Unrolled_1_25demuxEPKhmPPh, .-_ZNK12Unrolled_1_25demuxEPKhmPPh
+	.section	.text._ZNK10Unrolled_15demuxEPKhmPPh,"axG",@progbits,_ZNK10Unrolled_15demuxEPKhmPPh,comdat
 	.align 2
 	.p2align 5,,31
-	.weak	_ZNK10Unrolled_15demuxEPKhjPPh
-	.type	_ZNK10Unrolled_15demuxEPKhjPPh, @function
-_ZNK10Unrolled_15demuxEPKhjPPh:
+	.weak	_ZNK10Unrolled_15demuxEPKhmPPh
+	.type	_ZNK10Unrolled_15demuxEPKhmPPh, @function
+_ZNK10Unrolled_15demuxEPKhmPPh:
 .LFB1018:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
-	cmpl	$2048, %edx
+	cmpq	$2048, %rdx
 	jne	.L26
 	xorl	%edx, %edx
 	.p2align 5
 .L24:
 	movzbl	(%rsi), %r10d
-	movq	(%rcx,%rdx), %rax
-	addq	$8, %rdx
+	movq	(%rcx,%rdx,8), %rax
+	addq	$1, %rdx
 	movb	%r10b, (%rax)
 	movzbl	32(%rsi), %r9d
 	movb	%r9b, 1(%rax)
@@ -11131,7 +10363,7 @@ _ZNK10Unrolled_15demuxEPKhjPPh:
 	movb	%r8b, 62(%rax)
 	movzbl	2016(%rsi), %edi
 	addq	$1, %rsi
-	cmpq	$256, %rdx
+	cmpq	$32, %rdx
 	movb	%dil, 63(%rax)
 	jne	.L24
 	addq	$8, %rsp
@@ -11140,58 +10372,50 @@ _ZNK10Unrolled_15demuxEPKhjPPh:
 	ret
 .L26:
 	.cfi_restore_state
-	movl	$_ZZNK10Unrolled_15demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$_ZZNK10Unrolled_15demuxEPKhmPPhE19__PRETTY_FUNCTION__, %ecx
 	movl	$196, %edx
 	movl	$.LC0, %esi
 	movl	$.LC1, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1018:
-	.size	_ZNK10Unrolled_15demuxEPKhjPPh, .-_ZNK10Unrolled_15demuxEPKhjPPh
-	.section	.text._ZNK12Dst_First_3a5demuxEPKhjPPh,"axG",@progbits,_ZNK12Dst_First_3a5demuxEPKhjPPh,comdat
+	.size	_ZNK10Unrolled_15demuxEPKhmPPh, .-_ZNK10Unrolled_15demuxEPKhmPPh
+	.section	.text._ZNK12Dst_First_3a5demuxEPKhmPPh,"axG",@progbits,_ZNK12Dst_First_3a5demuxEPKhmPPh,comdat
 	.align 2
 	.p2align 5,,31
-	.weak	_ZNK12Dst_First_3a5demuxEPKhjPPh
-	.type	_ZNK12Dst_First_3a5demuxEPKhjPPh, @function
-_ZNK12Dst_First_3a5demuxEPKhjPPh:
+	.weak	_ZNK12Dst_First_3a5demuxEPKhmPPh
+	.type	_ZNK12Dst_First_3a5demuxEPKhmPPh, @function
+_ZNK12Dst_First_3a5demuxEPKhmPPh:
 .LFB1017:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
-	cmpl	$2048, %edx
+	cmpq	$2048, %rdx
 	jne	.L40
 	xorl	%r9d, %r9d
 	.p2align 5
 .L28:
 	movq	(%rcx,%r9,8), %rdi
-	movl	%r9d, %edx
+	leaq	(%rsi,%r9), %rdx
 	xorl	%eax, %eax
 	.p2align 5
 .L29:
-	movl	%edx, %r8d
-	leal	32(%rdx), %r10d
-	movzbl	(%rsi,%r8), %r11d
-	movb	%r11b, (%rdi,%rax)
-	movzbl	(%rsi,%r10), %r8d
-	leal	64(%rdx), %r11d
+	movzbl	(%rdx), %r10d
+	movb	%r10b, (%rdi,%rax)
+	movzbl	32(%rdx), %r8d
 	movb	%r8b, 1(%rdi,%rax)
-	movzbl	(%rsi,%r11), %r10d
-	leal	96(%rdx), %r8d
-	movb	%r10b, 2(%rdi,%rax)
-	movzbl	(%rsi,%r8), %r11d
-	leal	128(%rdx), %r10d
-	movb	%r11b, 3(%rdi,%rax)
-	movzbl	(%rsi,%r10), %r8d
-	leal	160(%rdx), %r11d
+	movzbl	64(%rdx), %r11d
+	movb	%r11b, 2(%rdi,%rax)
+	movzbl	96(%rdx), %r10d
+	movb	%r10b, 3(%rdi,%rax)
+	movzbl	128(%rdx), %r8d
 	movb	%r8b, 4(%rdi,%rax)
-	movzbl	(%rsi,%r11), %r10d
-	leal	192(%rdx), %r8d
-	movb	%r10b, 5(%rdi,%rax)
-	movzbl	(%rsi,%r8), %r11d
-	leal	224(%rdx), %r10d
-	addl	$256, %edx
-	movb	%r11b, 6(%rdi,%rax)
-	movzbl	(%rsi,%r10), %r8d
+	movzbl	160(%rdx), %r11d
+	movb	%r11b, 5(%rdi,%rax)
+	movzbl	192(%rdx), %r10d
+	movb	%r10b, 6(%rdi,%rax)
+	movzbl	224(%rdx), %r8d
+	addq	$256, %rdx
 	movb	%r8b, 7(%rdi,%rax)
 	addq	$8, %rax
 	cmpq	$64, %rax
@@ -11205,132 +10429,117 @@ _ZNK12Dst_First_3a5demuxEPKhjPPh:
 	ret
 .L40:
 	.cfi_restore_state
-	movl	$_ZZNK12Dst_First_3a5demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$_ZZNK12Dst_First_3a5demuxEPKhmPPhE19__PRETTY_FUNCTION__, %ecx
 	movl	$169, %edx
 	movl	$.LC0, %esi
 	movl	$.LC1, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1017:
-	.size	_ZNK12Dst_First_3a5demuxEPKhjPPh, .-_ZNK12Dst_First_3a5demuxEPKhjPPh
+	.size	_ZNK12Dst_First_3a5demuxEPKhmPPh, .-_ZNK12Dst_First_3a5demuxEPKhmPPh
 	.section	.rodata.str1.8
 	.align 8
 .LC2:
 	.string	"src_length % NUM_TIMESLOTS == 0"
-	.section	.text._ZNK12Dst_First_1a5demuxEPKhjPPh,"axG",@progbits,_ZNK12Dst_First_1a5demuxEPKhjPPh,comdat
+	.section	.text._ZNK12Dst_First_1a5demuxEPKhmPPh,"axG",@progbits,_ZNK12Dst_First_1a5demuxEPKhmPPh,comdat
 	.align 2
 	.p2align 5,,31
-	.weak	_ZNK12Dst_First_1a5demuxEPKhjPPh
-	.type	_ZNK12Dst_First_1a5demuxEPKhjPPh, @function
-_ZNK12Dst_First_1a5demuxEPKhjPPh:
+	.weak	_ZNK12Dst_First_1a5demuxEPKhmPPh
+	.type	_ZNK12Dst_First_1a5demuxEPKhmPPh, @function
+_ZNK12Dst_First_1a5demuxEPKhmPPh:
 .LFB1016:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
 	testb	$31, %dl
 	jne	.L77
-	shrl	$5, %edx
+	shrq	$5, %rdx
 	xorl	%r10d, %r10d
 	.p2align 5
 .L45:
-	testl	%edx, %edx
-	movl	%r10d, %r11d
+	testq	%rdx, %rdx
 	movq	(%rcx,%r10,8), %r8
 	je	.L43
-	movl	%r10d, %edi
-	leal	-1(%rdx), %r9d
-	movzbl	(%rsi,%rdi), %eax
-	leal	32(%r11), %edi
+	leaq	(%rsi,%r10), %r11
+	leaq	-1(%rdx), %r9
+	movzbl	(%r11), %eax
 	andl	$7, %r9d
-	cmpl	$1, %edx
+	leaq	32(%r11), %rdi
 	movb	%al, (%r8)
 	movl	$1, %eax
-	jbe	.L43
-	testl	%r9d, %r9d
+	cmpq	%rdx, %rax
+	je	.L43
+	testq	%r9, %r9
 	je	.L44
-	cmpl	$1, %r9d
+	cmpq	$1, %r9
 	je	.L71
-	cmpl	$2, %r9d
+	cmpq	$2, %r9
 	je	.L72
-	cmpl	$3, %r9d
+	cmpq	$3, %r9
 	je	.L73
-	cmpl	$4, %r9d
+	cmpq	$4, %r9
 	je	.L74
-	cmpl	$5, %r9d
+	cmpq	$5, %r9
 	je	.L75
-	cmpl	$6, %r9d
+	cmpq	$6, %r9
 	je	.L76
-	movzbl	(%rsi,%rdi), %eax
-	leal	64(%r11), %edi
-	movb	%al, 1(%r8)
+	movzbl	32(%r11), %edi
 	movl	$2, %eax
+	movb	%dil, 1(%r8)
+	leaq	64(%r11), %rdi
 .L76:
-	movl	%edi, %r11d
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r9d
+	movzbl	(%rdi), %r9d
+	addq	$32, %rdi
 	movb	%r9b, (%r8,%rax)
 	addq	$1, %rax
 .L75:
-	movl	%edi, %r11d
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r9d
-	movb	%r9b, (%r8,%rax)
+	movzbl	(%rdi), %r11d
+	addq	$32, %rdi
+	movb	%r11b, (%r8,%rax)
 	addq	$1, %rax
 .L74:
-	movl	%edi, %r11d
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r9d
+	movzbl	(%rdi), %r9d
+	addq	$32, %rdi
 	movb	%r9b, (%r8,%rax)
 	addq	$1, %rax
 .L73:
-	movl	%edi, %r11d
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r9d
-	movb	%r9b, (%r8,%rax)
+	movzbl	(%rdi), %r11d
+	addq	$32, %rdi
+	movb	%r11b, (%r8,%rax)
 	addq	$1, %rax
 .L72:
-	movl	%edi, %r11d
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r9d
+	movzbl	(%rdi), %r9d
+	addq	$32, %rdi
 	movb	%r9b, (%r8,%rax)
 	addq	$1, %rax
 .L71:
-	movl	%edi, %r11d
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r9d
-	movb	%r9b, (%r8,%rax)
+	movzbl	(%rdi), %r11d
+	addq	$32, %rdi
+	movb	%r11b, (%r8,%rax)
 	addq	$1, %rax
-	cmpl	%eax, %edx
-	jbe	.L43
+	cmpq	%rdx, %rax
+	je	.L43
 .L44:
-	movl	%edi, %r11d
-	movzbl	(%rsi,%r11), %r9d
-	leal	32(%rdi), %r11d
-	movb	%r9b, (%r8,%rax)
-	movzbl	(%rsi,%r11), %r9d
-	leal	64(%rdi), %r11d
+	movzbl	(%rdi), %r11d
+	movb	%r11b, (%r8,%rax)
+	movzbl	32(%rdi), %r9d
 	movb	%r9b, 1(%r8,%rax)
-	movzbl	(%rsi,%r11), %r9d
-	leal	96(%rdi), %r11d
-	movb	%r9b, 2(%r8,%rax)
-	movzbl	(%rsi,%r11), %r9d
-	leal	128(%rdi), %r11d
+	movzbl	64(%rdi), %r11d
+	movb	%r11b, 2(%r8,%rax)
+	movzbl	96(%rdi), %r9d
 	movb	%r9b, 3(%r8,%rax)
-	movzbl	(%rsi,%r11), %r9d
-	leal	160(%rdi), %r11d
-	movb	%r9b, 4(%r8,%rax)
-	movzbl	(%rsi,%r11), %r9d
-	leal	192(%rdi), %r11d
+	movzbl	128(%rdi), %r11d
+	movb	%r11b, 4(%r8,%rax)
+	movzbl	160(%rdi), %r9d
 	movb	%r9b, 5(%r8,%rax)
-	movzbl	(%rsi,%r11), %r9d
-	leal	224(%rdi), %r11d
-	addl	$256, %edi
-	movb	%r9b, 6(%r8,%rax)
-	movzbl	(%rsi,%r11), %r9d
+	movzbl	192(%rdi), %r11d
+	movb	%r11b, 6(%r8,%rax)
+	movzbl	224(%rdi), %r9d
+	addq	$256, %rdi
 	movb	%r9b, 7(%r8,%rax)
 	addq	$8, %rax
-	cmpl	%eax, %edx
-	ja	.L44
+	cmpq	%rdx, %rax
+	jne	.L44
 .L43:
 	addq	$1, %r10
 	cmpq	$32, %r10
@@ -11341,64 +10550,56 @@ _ZNK12Dst_First_1a5demuxEPKhjPPh:
 	ret
 .L77:
 	.cfi_restore_state
-	movl	$_ZZNK12Dst_First_1a5demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$_ZZNK12Dst_First_1a5demuxEPKhmPPhE19__PRETTY_FUNCTION__, %ecx
 	movl	$153, %edx
 	movl	$.LC0, %esi
 	movl	$.LC2, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1016:
-	.size	_ZNK12Dst_First_1a5demuxEPKhjPPh, .-_ZNK12Dst_First_1a5demuxEPKhjPPh
-	.section	.text._ZNK11Dst_First_35demuxEPKhjPPh,"axG",@progbits,_ZNK11Dst_First_35demuxEPKhjPPh,comdat
+	.size	_ZNK12Dst_First_1a5demuxEPKhmPPh, .-_ZNK12Dst_First_1a5demuxEPKhmPPh
+	.section	.text._ZNK11Dst_First_35demuxEPKhmPPh,"axG",@progbits,_ZNK11Dst_First_35demuxEPKhmPPh,comdat
 	.align 2
 	.p2align 5,,31
-	.weak	_ZNK11Dst_First_35demuxEPKhjPPh
-	.type	_ZNK11Dst_First_35demuxEPKhjPPh, @function
-_ZNK11Dst_First_35demuxEPKhjPPh:
+	.weak	_ZNK11Dst_First_35demuxEPKhmPPh
+	.type	_ZNK11Dst_First_35demuxEPKhmPPh, @function
+_ZNK11Dst_First_35demuxEPKhmPPh:
 .LFB1015:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
-	cmpl	$2048, %edx
+	cmpq	$2048, %rdx
 	jne	.L91
 	xorl	%edi, %edi
 	.p2align 5
 .L79:
-	movl	%edi, %edx
+	leaq	(%rsi,%rdi), %rdx
 	xorl	%eax, %eax
 	.p2align 5
 .L80:
-	movl	%edx, %r9d
+	movzbl	(%rdx), %r11d
 	movq	(%rcx,%rdi,8), %r10
-	leal	32(%rdx), %r8d
-	movzbl	(%rsi,%r9), %r11d
 	movb	%r11b, (%r10,%rax)
-	movzbl	(%rsi,%r8), %r9d
-	leal	64(%rdx), %r10d
-	movq	(%rcx,%rdi,8), %r11
-	movb	%r9b, 1(%r11,%rax)
-	movzbl	(%rsi,%r10), %r8d
-	leal	96(%rdx), %r9d
-	movq	(%rcx,%rdi,8), %r11
-	movb	%r8b, 2(%r11,%rax)
-	movzbl	(%rsi,%r9), %r10d
-	leal	128(%rdx), %r11d
+	movzbl	32(%rdx), %r9d
 	movq	(%rcx,%rdi,8), %r8
-	movb	%r10b, 3(%r8,%rax)
-	movzbl	(%rsi,%r11), %r9d
-	leal	160(%rdx), %r8d
+	movb	%r9b, 1(%r8,%rax)
+	movzbl	64(%rdx), %r11d
 	movq	(%rcx,%rdi,8), %r10
-	movb	%r9b, 4(%r10,%rax)
-	movzbl	(%rsi,%r8), %r11d
-	leal	192(%rdx), %r9d
+	movb	%r11b, 2(%r10,%rax)
+	movzbl	96(%rdx), %r9d
+	movq	(%rcx,%rdi,8), %r8
+	movb	%r9b, 3(%r8,%rax)
+	movzbl	128(%rdx), %r11d
 	movq	(%rcx,%rdi,8), %r10
-	movb	%r11b, 5(%r10,%rax)
-	movzbl	(%rsi,%r9), %r8d
-	leal	224(%rdx), %r10d
-	movq	(%rcx,%rdi,8), %r11
-	addl	$256, %edx
-	movb	%r8b, 6(%r11,%rax)
-	movzbl	(%rsi,%r10), %r9d
+	movb	%r11b, 4(%r10,%rax)
+	movzbl	160(%rdx), %r9d
+	movq	(%rcx,%rdi,8), %r8
+	movb	%r9b, 5(%r8,%rax)
+	movzbl	192(%rdx), %r11d
+	movq	(%rcx,%rdi,8), %r10
+	movb	%r11b, 6(%r10,%rax)
+	movzbl	224(%rdx), %r9d
+	addq	$256, %rdx
 	movq	(%rcx,%rdi,8), %r8
 	movb	%r9b, 7(%r8,%rax)
 	addq	$8, %rax
@@ -11413,128 +10614,113 @@ _ZNK11Dst_First_35demuxEPKhjPPh:
 	ret
 .L91:
 	.cfi_restore_state
-	movl	$_ZZNK11Dst_First_35demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$_ZZNK11Dst_First_35demuxEPKhmPPhE19__PRETTY_FUNCTION__, %ecx
 	movl	$138, %edx
 	movl	$.LC0, %esi
 	movl	$.LC1, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1015:
-	.size	_ZNK11Dst_First_35demuxEPKhjPPh, .-_ZNK11Dst_First_35demuxEPKhjPPh
-	.section	.text._ZNK11Dst_First_25demuxEPKhjPPh,"axG",@progbits,_ZNK11Dst_First_25demuxEPKhjPPh,comdat
+	.size	_ZNK11Dst_First_35demuxEPKhmPPh, .-_ZNK11Dst_First_35demuxEPKhmPPh
+	.section	.text._ZNK11Dst_First_25demuxEPKhmPPh,"axG",@progbits,_ZNK11Dst_First_25demuxEPKhmPPh,comdat
 	.align 2
 	.p2align 5,,31
-	.weak	_ZNK11Dst_First_25demuxEPKhjPPh
-	.type	_ZNK11Dst_First_25demuxEPKhjPPh, @function
-_ZNK11Dst_First_25demuxEPKhjPPh:
+	.weak	_ZNK11Dst_First_25demuxEPKhmPPh
+	.type	_ZNK11Dst_First_25demuxEPKhmPPh, @function
+_ZNK11Dst_First_25demuxEPKhmPPh:
 .LFB1014:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
 	testb	$31, %dl
 	jne	.L128
-	shrl	$5, %edx
+	shrq	$5, %rdx
 	xorl	%r10d, %r10d
 	.p2align 5
 .L96:
-	testl	%edx, %edx
+	testq	%rdx, %rdx
 	movq	(%rcx,%r10,8), %r8
 	je	.L94
-	movl	%r10d, %edi
-	leal	-1(%rdx), %r9d
-	movl	%r10d, %r11d
-	movzbl	(%rsi,%rdi), %eax
-	leal	32(%r11), %edi
+	leaq	(%rsi,%r10), %r11
+	leaq	-1(%rdx), %r9
+	movzbl	(%r11), %eax
 	andl	$7, %r9d
-	cmpl	$1, %edx
+	leaq	32(%r11), %rdi
 	movb	%al, (%r8)
 	movl	$1, %eax
-	jbe	.L94
-	testl	%r9d, %r9d
+	cmpq	%rdx, %rax
+	je	.L94
+	testq	%r9, %r9
 	je	.L95
-	cmpl	$1, %r9d
+	cmpq	$1, %r9
 	je	.L122
-	cmpl	$2, %r9d
+	cmpq	$2, %r9
 	je	.L123
-	cmpl	$3, %r9d
+	cmpq	$3, %r9
 	je	.L124
-	cmpl	$4, %r9d
+	cmpq	$4, %r9
 	je	.L125
-	cmpl	$5, %r9d
+	cmpq	$5, %r9
 	je	.L126
-	cmpl	$6, %r9d
+	cmpq	$6, %r9
 	je	.L127
-	movzbl	(%rsi,%rdi), %eax
-	leal	64(%r11), %edi
-	movb	%al, 1(%r8)
+	movzbl	32(%r11), %edi
 	movl	$2, %eax
+	movb	%dil, 1(%r8)
+	leaq	64(%r11), %rdi
 .L127:
-	movl	%edi, %r11d
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r9d
+	movzbl	(%rdi), %r9d
+	addq	$32, %rdi
 	movb	%r9b, (%r8,%rax)
 	addq	$1, %rax
 .L126:
-	movl	%edi, %r11d
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r9d
-	movb	%r9b, (%r8,%rax)
+	movzbl	(%rdi), %r11d
+	addq	$32, %rdi
+	movb	%r11b, (%r8,%rax)
 	addq	$1, %rax
 .L125:
-	movl	%edi, %r11d
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r9d
+	movzbl	(%rdi), %r9d
+	addq	$32, %rdi
 	movb	%r9b, (%r8,%rax)
 	addq	$1, %rax
 .L124:
-	movl	%edi, %r11d
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r9d
-	movb	%r9b, (%r8,%rax)
+	movzbl	(%rdi), %r11d
+	addq	$32, %rdi
+	movb	%r11b, (%r8,%rax)
 	addq	$1, %rax
 .L123:
-	movl	%edi, %r11d
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r9d
+	movzbl	(%rdi), %r9d
+	addq	$32, %rdi
 	movb	%r9b, (%r8,%rax)
 	addq	$1, %rax
 .L122:
-	movl	%edi, %r11d
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r9d
-	movb	%r9b, (%r8,%rax)
+	movzbl	(%rdi), %r11d
+	addq	$32, %rdi
+	movb	%r11b, (%r8,%rax)
 	addq	$1, %rax
-	cmpl	%eax, %edx
-	jbe	.L94
+	cmpq	%rdx, %rax
+	je	.L94
 .L95:
-	movl	%edi, %r11d
-	movzbl	(%rsi,%r11), %r9d
-	leal	32(%rdi), %r11d
-	movb	%r9b, (%r8,%rax)
-	movzbl	(%rsi,%r11), %r9d
-	leal	64(%rdi), %r11d
+	movzbl	(%rdi), %r11d
+	movb	%r11b, (%r8,%rax)
+	movzbl	32(%rdi), %r9d
 	movb	%r9b, 1(%r8,%rax)
-	movzbl	(%rsi,%r11), %r9d
-	leal	96(%rdi), %r11d
-	movb	%r9b, 2(%r8,%rax)
-	movzbl	(%rsi,%r11), %r9d
-	leal	128(%rdi), %r11d
+	movzbl	64(%rdi), %r11d
+	movb	%r11b, 2(%r8,%rax)
+	movzbl	96(%rdi), %r9d
 	movb	%r9b, 3(%r8,%rax)
-	movzbl	(%rsi,%r11), %r9d
-	leal	160(%rdi), %r11d
-	movb	%r9b, 4(%r8,%rax)
-	movzbl	(%rsi,%r11), %r9d
-	leal	192(%rdi), %r11d
+	movzbl	128(%rdi), %r11d
+	movb	%r11b, 4(%r8,%rax)
+	movzbl	160(%rdi), %r9d
 	movb	%r9b, 5(%r8,%rax)
-	movzbl	(%rsi,%r11), %r9d
-	leal	224(%rdi), %r11d
-	addl	$256, %edi
-	movb	%r9b, 6(%r8,%rax)
-	movzbl	(%rsi,%r11), %r9d
+	movzbl	192(%rdi), %r11d
+	movb	%r11b, 6(%r8,%rax)
+	movzbl	224(%rdi), %r9d
+	addq	$256, %rdi
 	movb	%r9b, 7(%r8,%rax)
 	addq	$8, %rax
-	cmpl	%eax, %edx
-	ja	.L95
+	cmpq	%rdx, %rax
+	jne	.L95
 .L94:
 	addq	$1, %r10
 	cmpq	$32, %r10
@@ -11545,143 +10731,128 @@ _ZNK11Dst_First_25demuxEPKhjPPh:
 	ret
 .L128:
 	.cfi_restore_state
-	movl	$_ZZNK11Dst_First_25demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$_ZZNK11Dst_First_25demuxEPKhmPPhE19__PRETTY_FUNCTION__, %ecx
 	movl	$119, %edx
 	movl	$.LC0, %esi
 	movl	$.LC2, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1014:
-	.size	_ZNK11Dst_First_25demuxEPKhjPPh, .-_ZNK11Dst_First_25demuxEPKhjPPh
-	.section	.text._ZNK11Dst_First_15demuxEPKhjPPh,"axG",@progbits,_ZNK11Dst_First_15demuxEPKhjPPh,comdat
+	.size	_ZNK11Dst_First_25demuxEPKhmPPh, .-_ZNK11Dst_First_25demuxEPKhmPPh
+	.section	.text._ZNK11Dst_First_15demuxEPKhmPPh,"axG",@progbits,_ZNK11Dst_First_15demuxEPKhmPPh,comdat
 	.align 2
 	.p2align 5,,31
-	.weak	_ZNK11Dst_First_15demuxEPKhjPPh
-	.type	_ZNK11Dst_First_15demuxEPKhjPPh, @function
-_ZNK11Dst_First_15demuxEPKhjPPh:
+	.weak	_ZNK11Dst_First_15demuxEPKhmPPh
+	.type	_ZNK11Dst_First_15demuxEPKhmPPh, @function
+_ZNK11Dst_First_15demuxEPKhmPPh:
 .LFB1013:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
 	testb	$31, %dl
 	jne	.L130
-	shrl	$5, %edx
+	shrq	$5, %rdx
 	xorl	%r8d, %r8d
 	.p2align 5
 .L131:
-	testl	%edx, %edx
-	movl	%r8d, %r10d
+	testq	%rdx, %rdx
 	je	.L134
-	movl	%r10d, %r11d
+	leaq	(%rsi,%r8), %r10
 	movq	(%rcx,%r8,8), %rax
-	leal	-1(%rdx), %r9d
-	movzbl	(%rsi,%r11), %edi
+	leaq	-1(%rdx), %r9
+	movzbl	(%r10), %edi
 	andl	$7, %r9d
-	cmpl	$1, %edx
 	movb	%dil, (%rax)
 	movl	$1, %eax
-	leal	32(%r10), %edi
-	jbe	.L134
-	testl	%r9d, %r9d
-	je	.L136
-	cmpl	$1, %r9d
+	leaq	32(%r10), %rdi
+	cmpq	%rdx, %rax
+	je	.L134
+	testq	%r9, %r9
+	je	.L132
+	cmpq	$1, %r9
+	je	.L159
+	cmpq	$2, %r9
+	je	.L160
+	cmpq	$3, %r9
 	je	.L161
-	cmpl	$2, %r9d
+	cmpq	$4, %r9
 	je	.L162
-	cmpl	$3, %r9d
+	cmpq	$5, %r9
 	je	.L163
-	cmpl	$4, %r9d
+	cmpq	$6, %r9
 	je	.L164
-	cmpl	$5, %r9d
-	je	.L165
-	cmpl	$6, %r9d
-	je	.L166
-	movzbl	(%rsi,%rdi), %edi
-	movq	(%rcx,%r8,8), %rax
-	movb	%dil, 1(%rax)
-	leal	64(%r10), %edi
+	movzbl	32(%r10), %r11d
+	movq	(%rcx,%r8,8), %r9
+	leaq	64(%r10), %rdi
 	movl	$2, %eax
-.L166:
-	movl	%edi, %r11d
-	movq	(%rcx,%r8,8), %r9
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r10d
-	movb	%r10b, (%r9,%rax)
-	addq	$1, %rax
-.L165:
-	movl	%edi, %r11d
-	movq	(%rcx,%r8,8), %r9
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r10d
-	movb	%r10b, (%r9,%rax)
-	addq	$1, %rax
+	movb	%r11b, 1(%r9)
 .L164:
-	movl	%edi, %r11d
+	movzbl	(%rdi), %r10d
 	movq	(%rcx,%r8,8), %r9
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r10d
+	addq	$32, %rdi
 	movb	%r10b, (%r9,%rax)
 	addq	$1, %rax
 .L163:
-	movl	%edi, %r11d
-	movq	(%rcx,%r8,8), %r9
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r10d
-	movb	%r10b, (%r9,%rax)
+	movzbl	(%rdi), %r9d
+	movq	(%rcx,%r8,8), %r11
+	addq	$32, %rdi
+	movb	%r9b, (%r11,%rax)
 	addq	$1, %rax
 .L162:
-	movl	%edi, %r11d
-	movq	(%rcx,%r8,8), %r9
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r10d
-	movb	%r10b, (%r9,%rax)
+	movzbl	(%rdi), %r10d
+	movq	(%rcx,%r8,8), %r11
+	addq	$32, %rdi
+	movb	%r10b, (%r11,%rax)
 	addq	$1, %rax
 .L161:
-	movl	%edi, %r11d
+	movzbl	(%rdi), %r11d
 	movq	(%rcx,%r8,8), %r9
-	addl	$32, %edi
-	movzbl	(%rsi,%r11), %r10d
+	addq	$32, %rdi
+	movb	%r11b, (%r9,%rax)
+	addq	$1, %rax
+.L160:
+	movzbl	(%rdi), %r10d
+	movq	(%rcx,%r8,8), %r9
+	addq	$32, %rdi
 	movb	%r10b, (%r9,%rax)
 	addq	$1, %rax
-	cmpl	%eax, %edx
-	jbe	.L134
-.L136:
-	movl	%edi, %r11d
+.L159:
+	movzbl	(%rdi), %r9d
+	movq	(%rcx,%r8,8), %r11
+	addq	$32, %rdi
+	movb	%r9b, (%r11,%rax)
+	addq	$1, %rax
+	cmpq	%rdx, %rax
+	je	.L134
+.L132:
+	movzbl	(%rdi), %r11d
 	movq	(%rcx,%r8,8), %r9
-	movzbl	(%rsi,%r11), %r10d
-	leal	32(%rdi), %r11d
-	movb	%r10b, (%r9,%rax)
-	movzbl	(%rsi,%r11), %r10d
-	leal	64(%rdi), %r11d
-	movq	(%rcx,%r8,8), %r9
-	movb	%r10b, 1(%r9,%rax)
-	movzbl	(%rsi,%r11), %r10d
-	leal	96(%rdi), %r11d
-	movq	(%rcx,%r8,8), %r9
-	movb	%r10b, 2(%r9,%rax)
-	movzbl	(%rsi,%r11), %r10d
-	leal	128(%rdi), %r11d
+	movb	%r11b, (%r9,%rax)
+	movzbl	32(%rdi), %r10d
+	movq	(%rcx,%r8,8), %r11
+	movb	%r10b, 1(%r11,%rax)
+	movzbl	64(%rdi), %r9d
+	movq	(%rcx,%r8,8), %r11
+	movb	%r9b, 2(%r11,%rax)
+	movzbl	96(%rdi), %r10d
 	movq	(%rcx,%r8,8), %r9
 	movb	%r10b, 3(%r9,%rax)
-	movzbl	(%rsi,%r11), %r10d
-	leal	160(%rdi), %r11d
+	movzbl	128(%rdi), %r11d
 	movq	(%rcx,%r8,8), %r9
-	movb	%r10b, 4(%r9,%rax)
-	movzbl	(%rsi,%r11), %r10d
-	leal	192(%rdi), %r11d
-	movq	(%rcx,%r8,8), %r9
-	movb	%r10b, 5(%r9,%rax)
-	movzbl	(%rsi,%r11), %r10d
-	leal	224(%rdi), %r11d
-	movq	(%rcx,%r8,8), %r9
-	addl	$256, %edi
-	movb	%r10b, 6(%r9,%rax)
-	movzbl	(%rsi,%r11), %r10d
+	movb	%r11b, 4(%r9,%rax)
+	movzbl	160(%rdi), %r10d
+	movq	(%rcx,%r8,8), %r11
+	movb	%r10b, 5(%r11,%rax)
+	movzbl	192(%rdi), %r9d
+	movq	(%rcx,%r8,8), %r11
+	movb	%r9b, 6(%r11,%rax)
+	movzbl	224(%rdi), %r10d
+	addq	$256, %rdi
 	movq	(%rcx,%r8,8), %r9
 	movb	%r10b, 7(%r9,%rax)
 	addq	$8, %rax
-	cmpl	%eax, %edx
-	ja	.L136
+	cmpq	%rdx, %rax
+	jne	.L132
 .L134:
 	addq	$1, %r8
 	cmpq	$32, %r8
@@ -11692,167 +10863,162 @@ _ZNK11Dst_First_15demuxEPKhjPPh:
 	ret
 .L130:
 	.cfi_restore_state
-	movl	$_ZZNK11Dst_First_15demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$_ZZNK11Dst_First_15demuxEPKhmPPhE19__PRETTY_FUNCTION__, %ecx
 	movl	$104, %edx
 	movl	$.LC0, %esi
 	movl	$.LC2, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1013:
-	.size	_ZNK11Dst_First_15demuxEPKhjPPh, .-_ZNK11Dst_First_15demuxEPKhjPPh
-	.section	.text._ZNK11Src_First_35demuxEPKhjPPh,"axG",@progbits,_ZNK11Src_First_35demuxEPKhjPPh,comdat
+	.size	_ZNK11Dst_First_15demuxEPKhmPPh, .-_ZNK11Dst_First_15demuxEPKhmPPh
+	.section	.text._ZNK11Src_First_35demuxEPKhmPPh,"axG",@progbits,_ZNK11Src_First_35demuxEPKhmPPh,comdat
 	.align 2
 	.p2align 5,,31
-	.weak	_ZNK11Src_First_35demuxEPKhjPPh
-	.type	_ZNK11Src_First_35demuxEPKhjPPh, @function
-_ZNK11Src_First_35demuxEPKhjPPh:
+	.weak	_ZNK11Src_First_35demuxEPKhmPPh
+	.type	_ZNK11Src_First_35demuxEPKhmPPh, @function
+_ZNK11Src_First_35demuxEPKhmPPh:
 .LFB1012:
 	.cfi_startproc
+	movq	%rdx, %rax
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
-	testb	$31, %dl
-	jne	.L168
-	testl	%edx, %edx
-	je	.L167
-	xorl	%eax, %eax
+	andl	$31, %eax
+	jne	.L166
+	testq	%rdx, %rdx
+	je	.L165
 	movzbl	(%rsi), %r9d
-	leal	-1(%rdx), %edi
 	movq	(%rcx,%rax,8), %r8
+	leaq	-1(%rdx), %rdi
 	andl	$7, %edi
-	cmpl	$1, %edx
 	movb	%r9b, (%r8,%rax)
-	movb	$1, %al
-	jbe	.L167
-	testl	%edi, %edi
-	je	.L172
-	cmpl	$1, %edi
+	movl	$1, %eax
+	cmpq	%rdx, %rax
+	je	.L165
+	testq	%rdi, %rdi
+	je	.L170
+	cmpq	$1, %rdi
+	je	.L196
+	cmpq	$2, %rdi
+	je	.L197
+	cmpq	$3, %rdi
 	je	.L198
-	cmpl	$2, %edi
-	.p2align 4,,3
+	cmpq	$4, %rdi
 	je	.L199
-	cmpl	$3, %edi
-	.p2align 4,,2
+	cmpq	$5, %rdi
 	je	.L200
-	cmpl	$4, %edi
-	.p2align 4,,2
+	cmpq	$6, %rdi
 	je	.L201
-	cmpl	$5, %edi
-	.p2align 4,,2
-	je	.L202
-	cmpl	$6, %edi
-	.p2align 4,,2
-	je	.L203
 	movq	%rax, %r9
 	movzbl	(%rsi,%rax), %r11d
-	movl	%eax, %r10d
+	movq	%rax, %r10
 	andl	$31, %r9d
-	shrl	$5, %r10d
+	shrq	$5, %r10
 	addq	$1, %rax
 	movq	(%rcx,%r9,8), %r8
 	movb	%r11b, (%r8,%r10)
-.L203:
+.L201:
 	movq	%rax, %r8
 	movzbl	(%rsi,%rax), %r11d
-	movl	%eax, %edi
+	movq	%rax, %rdi
 	andl	$31, %r8d
-	shrl	$5, %edi
+	shrq	$5, %rdi
 	addq	$1, %rax
 	movq	(%rcx,%r8,8), %r10
 	movb	%r11b, (%r10,%rdi)
-.L202:
+.L200:
 	movq	%rax, %r11
 	movzbl	(%rsi,%rax), %r9d
-	movl	%eax, %edi
+	movq	%rax, %rdi
 	andl	$31, %r11d
-	shrl	$5, %edi
+	shrq	$5, %rdi
 	addq	$1, %rax
 	movq	(%rcx,%r11,8), %r10
 	movb	%r9b, (%r10,%rdi)
-.L201:
+.L199:
 	movq	%rax, %r9
 	movzbl	(%rsi,%rax), %r10d
-	movl	%eax, %edi
+	movq	%rax, %rdi
 	andl	$31, %r9d
-	shrl	$5, %edi
+	shrq	$5, %rdi
 	addq	$1, %rax
 	movq	(%rcx,%r9,8), %r8
 	movb	%r10b, (%r8,%rdi)
-.L200:
+.L198:
 	movq	%rax, %r8
 	movzbl	(%rsi,%rax), %r10d
-	movl	%eax, %r11d
+	movq	%rax, %r11
 	andl	$31, %r8d
-	shrl	$5, %r11d
+	shrq	$5, %r11
 	addq	$1, %rax
 	movq	(%rcx,%r8,8), %rdi
 	movb	%r10b, (%rdi,%r11)
-.L199:
+.L197:
 	movq	%rax, %r10
 	movzbl	(%rsi,%rax), %r9d
-	movl	%eax, %r11d
+	movq	%rax, %r11
 	andl	$31, %r10d
-	shrl	$5, %r11d
+	shrq	$5, %r11
 	addq	$1, %rax
 	movq	(%rcx,%r10,8), %rdi
 	movb	%r9b, (%rdi,%r11)
-.L198:
+.L196:
 	movq	%rax, %r9
 	movzbl	(%rsi,%rax), %edi
-	movl	%eax, %r11d
+	movq	%rax, %r11
 	andl	$31, %r9d
 	addq	$1, %rax
-	shrl	$5, %r11d
+	shrq	$5, %r11
 	movq	(%rcx,%r9,8), %r8
-	cmpl	%eax, %edx
+	cmpq	%rdx, %rax
 	movb	%dil, (%r8,%r11)
-	jbe	.L167
-.L172:
+	je	.L165
+.L170:
 	movq	%rax, %rdi
 	movzbl	(%rsi,%rax), %r9d
-	movl	%eax, %r10d
+	movq	%rax, %r10
 	andl	$31, %edi
-	shrl	$5, %r10d
+	shrq	$5, %r10
 	movq	(%rcx,%rdi,8), %r11
 	movb	%r9b, (%r11,%r10)
 	leaq	1(%rax), %r10
 	movzbl	1(%rsi,%rax), %edi
 	movq	%r10, %r8
-	shrl	$5, %r10d
+	shrq	$5, %r10
 	andl	$31, %r8d
 	movq	(%rcx,%r8,8), %r11
 	movb	%dil, (%r11,%r10)
 	leaq	2(%rax), %r11
 	movzbl	2(%rsi,%rax), %edi
 	movq	%r11, %r9
-	shrl	$5, %r11d
+	shrq	$5, %r11
 	andl	$31, %r9d
 	movq	(%rcx,%r9,8), %r8
 	movb	%dil, (%r8,%r11)
 	leaq	3(%rax), %r11
 	movzbl	3(%rsi,%rax), %r9d
 	movq	%r11, %r10
-	shrl	$5, %r11d
+	shrq	$5, %r11
 	andl	$31, %r10d
 	movq	(%rcx,%r10,8), %rdi
 	movb	%r9b, (%rdi,%r11)
 	leaq	4(%rax), %r11
 	movzbl	4(%rsi,%rax), %r10d
 	movq	%r11, %r8
-	shrl	$5, %r11d
+	shrq	$5, %r11
 	andl	$31, %r8d
 	movq	(%rcx,%r8,8), %rdi
 	movb	%r10b, (%rdi,%r11)
 	leaq	5(%rax), %rdi
 	movzbl	5(%rsi,%rax), %r10d
 	movq	%rdi, %r9
-	shrl	$5, %edi
+	shrq	$5, %rdi
 	andl	$31, %r9d
 	movq	(%rcx,%r9,8), %r8
 	movb	%r10b, (%r8,%rdi)
 	leaq	6(%rax), %rdi
 	movzbl	6(%rsi,%rax), %r9d
 	movq	%rdi, %r11
-	shrl	$5, %edi
+	shrq	$5, %rdi
 	andl	$31, %r11d
 	movq	(%rcx,%r11,8), %r10
 	movb	%r9b, (%r10,%rdi)
@@ -11860,465 +11026,391 @@ _ZNK11Src_First_35demuxEPKhjPPh:
 	movzbl	7(%rsi,%rax), %r11d
 	addq	$8, %rax
 	movq	%rdi, %r8
-	shrl	$5, %edi
+	shrq	$5, %rdi
 	andl	$31, %r8d
-	cmpl	%eax, %edx
+	cmpq	%rdx, %rax
 	movq	(%rcx,%r8,8), %r10
 	movb	%r11b, (%r10,%rdi)
-	ja	.L172
-.L167:
+	jne	.L170
+.L165:
 	addq	$8, %rsp
 	.cfi_remember_state
 	.cfi_def_cfa_offset 8
 	ret
-.L168:
+.L166:
 	.cfi_restore_state
-	movl	$_ZZNK11Src_First_35demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$_ZZNK11Src_First_35demuxEPKhmPPhE19__PRETTY_FUNCTION__, %ecx
 	movl	$91, %edx
 	movl	$.LC0, %esi
 	movl	$.LC2, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1012:
-	.size	_ZNK11Src_First_35demuxEPKhjPPh, .-_ZNK11Src_First_35demuxEPKhjPPh
-	.section	.text._ZNK11Src_First_25demuxEPKhjPPh,"axG",@progbits,_ZNK11Src_First_25demuxEPKhjPPh,comdat
+	.size	_ZNK11Src_First_35demuxEPKhmPPh, .-_ZNK11Src_First_35demuxEPKhmPPh
+	.section	.text._ZNK11Src_First_25demuxEPKhmPPh,"axG",@progbits,_ZNK11Src_First_25demuxEPKhmPPh,comdat
 	.align 2
 	.p2align 5,,31
-	.weak	_ZNK11Src_First_25demuxEPKhjPPh
-	.type	_ZNK11Src_First_25demuxEPKhjPPh, @function
-_ZNK11Src_First_25demuxEPKhjPPh:
+	.weak	_ZNK11Src_First_25demuxEPKhmPPh
+	.type	_ZNK11Src_First_25demuxEPKhmPPh, @function
+_ZNK11Src_First_25demuxEPKhmPPh:
 .LFB1011:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
 	testb	$31, %dl
-	jne	.L205
-	shrl	$5, %edx
+	jne	.L203
+	shrq	$5, %rdx
 	xorl	%edi, %edi
-	testl	%edx, %edx
-	je	.L204
+	testq	%rdx, %rdx
+	je	.L202
 	.p2align 5
-.L210:
-	movl	%edi, %r8d
-	xorl	%eax, %eax
-	sall	$5, %r8d
 .L208:
-	leal	(%r8,%rax), %r9d
-	movq	(%rcx,%rax,8), %r11
-	movzbl	(%rsi,%r9), %r10d
-	movb	%r10b, (%r11,%rdi)
-	leaq	1(%rax), %r11
-	leal	(%r8,%r11), %r9d
-	movzbl	(%rsi,%r9), %r10d
-	movq	(%rcx,%r11,8), %r9
-	movb	%r10b, (%r9,%rdi)
-	leaq	2(%rax), %r9
-	leal	(%r8,%r9), %r11d
-	movzbl	(%rsi,%r11), %r10d
-	movq	(%rcx,%r9,8), %r11
-	movb	%r10b, (%r11,%rdi)
-	leaq	3(%rax), %r11
-	leal	(%r8,%r11), %r9d
-	movzbl	(%rsi,%r9), %r10d
-	movq	(%rcx,%r11,8), %r9
-	movb	%r10b, (%r9,%rdi)
-	leaq	4(%rax), %r9
-	leal	(%r8,%r9), %r11d
-	movzbl	(%rsi,%r11), %r10d
-	movq	(%rcx,%r9,8), %r11
-	movb	%r10b, (%r11,%rdi)
-	leaq	5(%rax), %r11
-	leal	(%r8,%r11), %r9d
-	movzbl	(%rsi,%r9), %r10d
-	movq	(%rcx,%r11,8), %r9
-	movb	%r10b, (%r9,%rdi)
-	leaq	6(%rax), %r9
-	leal	(%r8,%r9), %r11d
-	movzbl	(%rsi,%r11), %r10d
-	movq	(%rcx,%r9,8), %r11
-	movb	%r10b, (%r11,%rdi)
-	leaq	7(%rax), %r11
+	xorl	%eax, %eax
+.L206:
+	movzbl	(%rsi,%rax), %r11d
+	movq	(%rcx,%rax,8), %r10
+	movb	%r11b, (%r10,%rdi)
+	movzbl	1(%rsi,%rax), %r9d
+	movq	8(%rcx,%rax,8), %r8
+	movb	%r9b, (%r8,%rdi)
+	movzbl	2(%rsi,%rax), %r11d
+	movq	16(%rcx,%rax,8), %r10
+	movb	%r11b, (%r10,%rdi)
+	movzbl	3(%rsi,%rax), %r9d
+	movq	24(%rcx,%rax,8), %r8
+	movb	%r9b, (%r8,%rdi)
+	movzbl	4(%rsi,%rax), %r11d
+	movq	32(%rcx,%rax,8), %r10
+	movb	%r11b, (%r10,%rdi)
+	movzbl	5(%rsi,%rax), %r9d
+	movq	40(%rcx,%rax,8), %r8
+	movb	%r9b, (%r8,%rdi)
+	movzbl	6(%rsi,%rax), %r11d
+	movq	48(%rcx,%rax,8), %r10
+	movb	%r11b, (%r10,%rdi)
+	movzbl	7(%rsi,%rax), %r9d
+	movq	56(%rcx,%rax,8), %r8
 	addq	$8, %rax
 	cmpq	$32, %rax
-	leal	(%r8,%r11), %r9d
-	movzbl	(%rsi,%r9), %r10d
-	movq	(%rcx,%r11,8), %r9
-	movb	%r10b, (%r9,%rdi)
-	jne	.L208
+	movb	%r9b, (%r8,%rdi)
+	jne	.L206
 	addq	$1, %rdi
-	cmpl	%edi, %edx
-	ja	.L210
-.L204:
+	addq	$32, %rsi
+	cmpq	%rdx, %rdi
+	jne	.L208
+.L202:
 	addq	$8, %rsp
 	.cfi_remember_state
 	.cfi_def_cfa_offset 8
 	ret
-.L205:
+.L203:
 	.cfi_restore_state
-	movl	$_ZZNK11Src_First_25demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$_ZZNK11Src_First_25demuxEPKhmPPhE19__PRETTY_FUNCTION__, %ecx
 	movl	$76, %edx
 	movl	$.LC0, %esi
 	movl	$.LC2, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1011:
-	.size	_ZNK11Src_First_25demuxEPKhjPPh, .-_ZNK11Src_First_25demuxEPKhjPPh
-	.section	.text._ZNK11Src_First_15demuxEPKhjPPh,"axG",@progbits,_ZNK11Src_First_15demuxEPKhjPPh,comdat
+	.size	_ZNK11Src_First_25demuxEPKhmPPh, .-_ZNK11Src_First_25demuxEPKhmPPh
+	.section	.text._ZNK11Src_First_15demuxEPKhmPPh,"axG",@progbits,_ZNK11Src_First_15demuxEPKhmPPh,comdat
 	.align 2
 	.p2align 5,,31
-	.weak	_ZNK11Src_First_15demuxEPKhjPPh
-	.type	_ZNK11Src_First_15demuxEPKhjPPh, @function
-_ZNK11Src_First_15demuxEPKhjPPh:
+	.weak	_ZNK11Src_First_15demuxEPKhmPPh
+	.type	_ZNK11Src_First_15demuxEPKhmPPh, @function
+_ZNK11Src_First_15demuxEPKhmPPh:
 .LFB1010:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
 	testb	$31, %dl
-	jne	.L221
-	xorl	%r10d, %r10d
+	jne	.L219
 	xorl	%edi, %edi
-	testl	%edx, %edx
-	je	.L220
+	xorl	%r11d, %r11d
+	testq	%rdx, %rdx
+	je	.L218
 	.p2align 5
-.L234:
-	movl	%r10d, %r8d
+.L232:
+	leaq	(%rsi,%r11), %r8
 	xorl	%eax, %eax
-.L224:
-	leal	(%rdi,%rax), %r9d
-	movzbl	(%rsi,%r9), %r11d
+.L222:
+	movzbl	(%r8,%rax), %r10d
 	movq	(%rcx,%rax,8), %r9
-	movb	%r11b, (%r9,%r8)
-	leaq	1(%rax), %r9
-	leal	(%rdi,%r9), %r11d
-	movq	(%rcx,%r9,8), %r9
-	movzbl	(%rsi,%r11), %r11d
-	movb	%r11b, (%r9,%r8)
-	leaq	2(%rax), %r9
-	leal	(%rdi,%r9), %r11d
-	movq	(%rcx,%r9,8), %r9
-	movzbl	(%rsi,%r11), %r11d
-	movb	%r11b, (%r9,%r8)
-	leaq	3(%rax), %r9
-	leal	(%rdi,%r9), %r11d
-	movq	(%rcx,%r9,8), %r9
-	movzbl	(%rsi,%r11), %r11d
-	movb	%r11b, (%r9,%r8)
-	leaq	4(%rax), %r9
-	leal	(%rdi,%r9), %r11d
-	movq	(%rcx,%r9,8), %r9
-	movzbl	(%rsi,%r11), %r11d
-	movb	%r11b, (%r9,%r8)
-	leaq	5(%rax), %r9
-	leal	(%rdi,%r9), %r11d
-	movq	(%rcx,%r9,8), %r9
-	movzbl	(%rsi,%r11), %r11d
-	movb	%r11b, (%r9,%r8)
-	leaq	6(%rax), %r9
-	leal	(%rdi,%r9), %r11d
-	movq	(%rcx,%r9,8), %r9
-	movzbl	(%rsi,%r11), %r11d
-	movb	%r11b, (%r9,%r8)
-	leaq	7(%rax), %r9
+	movb	%r10b, (%r9,%rdi)
+	movzbl	1(%rax,%r8), %r10d
+	movq	8(%rcx,%rax,8), %r9
+	movb	%r10b, (%r9,%rdi)
+	movzbl	2(%rax,%r8), %r10d
+	movq	16(%rcx,%rax,8), %r9
+	movb	%r10b, (%r9,%rdi)
+	movzbl	3(%rax,%r8), %r10d
+	movq	24(%rcx,%rax,8), %r9
+	movb	%r10b, (%r9,%rdi)
+	movzbl	4(%rax,%r8), %r10d
+	movq	32(%rcx,%rax,8), %r9
+	movb	%r10b, (%r9,%rdi)
+	movzbl	5(%rax,%r8), %r10d
+	movq	40(%rcx,%rax,8), %r9
+	movb	%r10b, (%r9,%rdi)
+	movzbl	6(%rax,%r8), %r10d
+	movq	48(%rcx,%rax,8), %r9
+	movb	%r10b, (%r9,%rdi)
+	movzbl	7(%rax,%r8), %r10d
+	movq	56(%rcx,%rax,8), %r9
 	addq	$8, %rax
 	cmpq	$32, %rax
-	leal	(%rdi,%r9), %r11d
-	movq	(%rcx,%r9,8), %r9
-	movzbl	(%rsi,%r11), %r11d
-	movb	%r11b, (%r9,%r8)
-	jne	.L224
-	addl	$32, %edi
-	addl	$1, %r10d
-	cmpl	%edi, %edx
-	ja	.L234
-.L220:
+	movb	%r10b, (%r9,%rdi)
+	jne	.L222
+	addq	$32, %r11
+	addq	$1, %rdi
+	cmpq	%r11, %rdx
+	ja	.L232
+.L218:
 	addq	$8, %rsp
 	.cfi_remember_state
 	.cfi_def_cfa_offset 8
 	ret
-.L221:
+.L219:
 	.cfi_restore_state
-	movl	$_ZZNK11Src_First_15demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	movl	$_ZZNK11Src_First_15demuxEPKhmPPhE19__PRETTY_FUNCTION__, %ecx
 	movl	$58, %edx
 	movl	$.LC0, %esi
 	movl	$.LC2, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1010:
-	.size	_ZNK11Src_First_15demuxEPKhjPPh, .-_ZNK11Src_First_15demuxEPKhjPPh
-	.section	.text._ZNK9Reference5demuxEPKhjPPh,"axG",@progbits,_ZNK9Reference5demuxEPKhjPPh,comdat
+	.size	_ZNK11Src_First_15demuxEPKhmPPh, .-_ZNK11Src_First_15demuxEPKhmPPh
+	.section	.text._ZNK9Reference5demuxEPKhmPPh,"axG",@progbits,_ZNK9Reference5demuxEPKhmPPh,comdat
 	.align 2
 	.p2align 5,,31
-	.weak	_ZNK9Reference5demuxEPKhjPPh
-	.type	_ZNK9Reference5demuxEPKhjPPh, @function
-_ZNK9Reference5demuxEPKhjPPh:
+	.weak	_ZNK9Reference5demuxEPKhmPPh
+	.type	_ZNK9Reference5demuxEPKhmPPh, @function
+_ZNK9Reference5demuxEPKhmPPh:
 .LFB1009:
 	.cfi_startproc
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 16
 	testb	$31, %dl
-	jne	.L236
-	testl	%edx, %edx
-	je	.L235
+	jne	.L234
+	testq	%rdx, %rdx
+	je	.L233
 	movzbl	(%rsi), %edi
 	movq	(%rcx), %rax
-	subl	$1, %edx
-	movq	%rdx, %r9
+	leaq	-1(%rdx), %r9
 	xorl	%r8d, %r8d
 	movb	%dil, (%rax)
 	xorl	%edi, %edi
 	andl	$7, %r9d
 	movl	$1, %eax
-	je	.L241
-	movzbl	1(%rsi), %r10d
+	je	.L290
+	movzbl	(%rsi,%rax), %r10d
 	movq	8(%rcx), %r11
 	cmpq	$1, %r9
-	movl	$2, %eax
-	movb	%r10b, (%r11,%r8)
 	movl	$1, %r8d
-	je	.L241
+	movl	$2, %eax
+	movb	%r10b, (%r11)
+	je	.L290
 	cmpq	$2, %r9
-	je	.L277
-	cmpq	$3, %r9
-	je	.L278
-	cmpq	$4, %r9
 	je	.L279
-	cmpq	$5, %r9
+	cmpq	$3, %r9
 	je	.L280
-	cmpq	$6, %r9
+	cmpq	$4, %r9
 	je	.L281
+	cmpq	$5, %r9
+	je	.L282
+	cmpq	$6, %r9
+	je	.L283
 	movzbl	1(%rsi,%r8), %r11d
-	movl	%eax, %r10d
-	movl	%edi, %r9d
-	movq	(%rcx,%r10,8), %r10
-	addl	$1, %eax
+	movq	(%rcx,%rax,8), %r9
 	addq	$1, %r8
-	movb	%r11b, (%r10,%r9)
+	addq	$1, %rax
+	movb	%r11b, (%r9,%rdi)
+.L283:
+	addq	$1, %r8
+	movq	(%rcx,%rax,8), %r9
+	addq	$1, %rax
+	movzbl	(%rsi,%r8), %r10d
+	cmpq	$32, %rax
+	movb	%r10b, (%r9,%rdi)
+	je	.L295
+.L282:
+	addq	$1, %r8
+	movq	(%rcx,%rax,8), %r11
+	addq	$1, %rax
+	movzbl	(%rsi,%r8), %r9d
+	cmpq	$32, %rax
+	movb	%r9b, (%r11,%rdi)
+	je	.L296
 .L281:
-	movl	%eax, %r10d
-	movzbl	1(%rsi,%r8), %r11d
-	addl	$1, %eax
-	movq	(%rcx,%r10,8), %r10
-	movl	%edi, %r9d
-	cmpl	$32, %eax
-	movb	%r11b, (%r10,%r9)
-	je	.L284
-.L248:
 	addq	$1, %r8
+	movq	(%rcx,%rax,8), %r11
+	addq	$1, %rax
+	movzbl	(%rsi,%r8), %r10d
+	cmpq	$32, %rax
+	movb	%r10b, (%r11,%rdi)
+	je	.L297
 .L280:
-	movl	%eax, %r10d
-	movzbl	1(%rsi,%r8), %r11d
-	addl	$1, %eax
-	movq	(%rcx,%r10,8), %r10
-	movl	%edi, %r9d
-	cmpl	$32, %eax
-	movb	%r11b, (%r10,%r9)
-	je	.L285
-.L251:
 	addq	$1, %r8
+	movq	(%rcx,%rax,8), %r9
+	addq	$1, %rax
+	movzbl	(%rsi,%r8), %r11d
+	cmpq	$32, %rax
+	movb	%r11b, (%r9,%rdi)
+	je	.L298
 .L279:
-	movl	%eax, %r10d
-	movzbl	1(%rsi,%r8), %r11d
-	addl	$1, %eax
-	movq	(%rcx,%r10,8), %r10
-	movl	%edi, %r9d
-	cmpl	$32, %eax
-	movb	%r11b, (%r10,%r9)
-	je	.L286
-.L254:
 	addq	$1, %r8
-.L278:
-	movl	%eax, %r10d
-	movzbl	1(%rsi,%r8), %r11d
-	addl	$1, %eax
-	movq	(%rcx,%r10,8), %r10
-	movl	%edi, %r9d
-	cmpl	$32, %eax
-	movb	%r11b, (%r10,%r9)
-	je	.L287
-.L257:
-	addq	$1, %r8
-.L277:
-	movl	%eax, %r10d
-	movzbl	1(%rsi,%r8), %r11d
-	addl	$1, %eax
-	movq	(%rcx,%r10,8), %r10
-	movl	%edi, %r9d
-	cmpl	$32, %eax
-	movb	%r11b, (%r10,%r9)
-	je	.L288
-.L260:
-	addq	$1, %r8
-	cmpq	%rdx, %r8
-	jne	.L240
-.L235:
+	movzbl	(%rsi,%r8), %r10d
+.L294:
+	movq	(%rcx,%rax,8), %r9
+	addq	$1, %rax
+	cmpq	$32, %rax
+	movb	%r10b, (%r9,%rdi)
+	je	.L299
+.L290:
+	leaq	1(%r8), %r9
+	cmpq	%rdx, %r9
+	je	.L233
+	movzbl	1(%rsi,%r8), %r10d
+	movq	(%rcx,%rax,8), %r8
+	addq	$1, %rax
+	cmpq	$32, %rax
+	movb	%r10b, (%r8,%rdi)
+	je	.L300
+.L276:
+	movzbl	1(%rsi,%r9), %r10d
+	movq	(%rcx,%rax,8), %r8
+	addq	$1, %rax
+	cmpq	$32, %rax
+	movb	%r10b, (%r8,%rdi)
+	je	.L301
+.L284:
+	movzbl	2(%rsi,%r9), %r8d
+	movq	(%rcx,%rax,8), %r11
+	addq	$1, %rax
+	cmpq	$32, %rax
+	movb	%r8b, (%r11,%rdi)
+	je	.L302
+.L285:
+	movzbl	3(%rsi,%r9), %r10d
+	movq	(%rcx,%rax,8), %r11
+	addq	$1, %rax
+	cmpq	$32, %rax
+	movb	%r10b, (%r11,%rdi)
+	je	.L303
+.L286:
+	movzbl	4(%rsi,%r9), %r11d
+	movq	(%rcx,%rax,8), %r8
+	addq	$1, %rax
+	cmpq	$32, %rax
+	movb	%r11b, (%r8,%rdi)
+	je	.L304
+.L287:
+	movzbl	5(%rsi,%r9), %r10d
+	movq	(%rcx,%rax,8), %r8
+	addq	$1, %rax
+	cmpq	$32, %rax
+	movb	%r10b, (%r8,%rdi)
+	je	.L305
+.L288:
+	movzbl	6(%rsi,%r9), %r8d
+	movq	(%rcx,%rax,8), %r11
+	addq	$1, %rax
+	cmpq	$32, %rax
+	movb	%r8b, (%r11,%rdi)
+	je	.L306
+.L289:
+	leaq	7(%r9), %r8
+	movzbl	7(%rsi,%r9), %r10d
+	jmp	.L294
+	.p2align 4,,10
+	.p2align 3
+.L233:
 	addq	$8, %rsp
 	.cfi_remember_state
 	.cfi_def_cfa_offset 8
 	ret
-.L297:
+	.p2align 4,,10
+	.p2align 3
+.L299:
 	.cfi_restore_state
-	addl	$1, %edi
+	addq	$1, %rdi
 	xorb	%al, %al
-.L266:
-	movl	%eax, %r10d
-	movzbl	3(%rsi,%r8), %r11d
-	addl	$1, %eax
-	movq	(%rcx,%r10,8), %r10
-	movl	%edi, %r9d
-	cmpl	$32, %eax
-	movb	%r11b, (%r10,%r9)
-	je	.L289
-.L268:
-	movl	%eax, %r10d
-	movzbl	4(%rsi,%r8), %r11d
-	addl	$1, %eax
-	movq	(%rcx,%r10,8), %r10
-	movl	%edi, %r9d
-	cmpl	$32, %eax
-	movb	%r11b, (%r10,%r9)
-	je	.L290
-.L270:
-	movl	%eax, %r10d
-	movzbl	5(%rsi,%r8), %r11d
-	addl	$1, %eax
-	movq	(%rcx,%r10,8), %r10
-	movl	%edi, %r9d
-	cmpl	$32, %eax
-	movb	%r11b, (%r10,%r9)
-	je	.L291
-.L272:
-	movl	%eax, %r10d
-	movzbl	6(%rsi,%r8), %r11d
-	addl	$1, %eax
-	movq	(%rcx,%r10,8), %r10
-	movl	%edi, %r9d
-	cmpl	$32, %eax
-	movb	%r11b, (%r10,%r9)
-	je	.L292
-.L274:
-	movl	%eax, %r10d
-	movzbl	7(%rsi,%r8), %r11d
-	addl	$1, %eax
-	movq	(%rcx,%r10,8), %r10
-	movl	%edi, %r9d
-	cmpl	$32, %eax
-	movb	%r11b, (%r10,%r9)
-	je	.L293
-.L276:
-	addq	$7, %r8
-.L241:
-	cmpq	%rdx, %r8
-	je	.L235
-.L240:
-	movl	%eax, %r10d
-	movzbl	1(%rsi,%r8), %r11d
-	addl	$1, %eax
-	movq	(%rcx,%r10,8), %r10
-	movl	%edi, %r9d
-	cmpl	$32, %eax
-	movb	%r11b, (%r10,%r9)
-	je	.L294
-.L239:
-	addq	$1, %r8
-	movl	%eax, %r10d
-	addl	$1, %eax
-	movzbl	1(%rsi,%r8), %r11d
-	movq	(%rcx,%r10,8), %r10
-	movl	%edi, %r9d
-	cmpl	$32, %eax
-	movb	%r11b, (%r10,%r9)
-	je	.L295
-.L264:
-	movl	%eax, %r10d
-	movzbl	2(%rsi,%r8), %r11d
-	addl	$1, %eax
-	movq	(%rcx,%r10,8), %r10
-	movl	%edi, %r9d
-	cmpl	$32, %eax
-	movb	%r11b, (%r10,%r9)
-	jne	.L266
-	jmp	.L297
+	jmp	.L290
 	.p2align 4,,10
 	.p2align 3
-.L295:
-	addl	$1, %edi
-	xorl	%eax, %eax
-	jmp	.L264
-	.p2align 4,,10
-	.p2align 3
-.L294:
-	addl	$1, %edi
-	xorb	%al, %al
-	jmp	.L239
-	.p2align 4,,10
-	.p2align 3
-.L293:
-	addl	$1, %edi
+.L300:
+	addq	$1, %rdi
 	xorb	%al, %al
 	jmp	.L276
 	.p2align 4,,10
 	.p2align 3
-.L292:
-	addl	$1, %edi
+.L306:
+	addq	$1, %rdi
 	xorb	%al, %al
-	jmp	.L274
+	jmp	.L289
 	.p2align 4,,10
 	.p2align 3
-.L291:
-	addl	$1, %edi
+.L305:
+	addq	$1, %rdi
 	xorb	%al, %al
-	jmp	.L272
+	jmp	.L288
 	.p2align 4,,10
 	.p2align 3
-.L290:
-	addl	$1, %edi
+.L304:
+	addq	$1, %rdi
 	xorb	%al, %al
-	jmp	.L270
+	jmp	.L287
 	.p2align 4,,10
 	.p2align 3
-.L289:
-	addl	$1, %edi
+.L303:
+	addq	$1, %rdi
 	xorb	%al, %al
-	jmp	.L268
+	jmp	.L286
 	.p2align 4,,10
 	.p2align 3
-.L288:
-	addl	$1, %edi
+.L302:
+	addq	$1, %rdi
 	xorb	%al, %al
-	jmp	.L260
+	jmp	.L285
 	.p2align 4,,10
 	.p2align 3
-.L287:
-	addl	$1, %edi
+.L301:
+	addq	$1, %rdi
 	xorb	%al, %al
-	jmp	.L257
+	jmp	.L284
 	.p2align 4,,10
 	.p2align 3
-.L284:
-	addl	$1, %edi
+.L298:
+	addq	$1, %rdi
 	xorb	%al, %al
-	jmp	.L248
+	jmp	.L279
 	.p2align 4,,10
 	.p2align 3
-.L286:
-	addl	$1, %edi
+.L297:
+	addq	$1, %rdi
 	xorb	%al, %al
-	jmp	.L254
+	jmp	.L280
 	.p2align 4,,10
 	.p2align 3
-.L285:
-	addl	$1, %edi
+.L296:
+	addq	$1, %rdi
 	xorb	%al, %al
-	jmp	.L251
-.L236:
-	movl	$_ZZNK9Reference5demuxEPKhjPPhE19__PRETTY_FUNCTION__, %ecx
+	jmp	.L281
+	.p2align 4,,10
+	.p2align 3
+.L295:
+	addq	$1, %rdi
+	xorb	%al, %al
+	jmp	.L282
+.L234:
+	movl	$_ZZNK9Reference5demuxEPKhmPPhE19__PRETTY_FUNCTION__, %ecx
 	movl	$39, %edx
 	movl	$.LC0, %esi
 	movl	$.LC2, %edi
 	call	__assert_fail
 	.cfi_endproc
 .LFE1009:
-	.size	_ZNK9Reference5demuxEPKhjPPh, .-_ZNK9Reference5demuxEPKhjPPh
+	.size	_ZNK9Reference5demuxEPKhmPPh, .-_ZNK9Reference5demuxEPKhmPPh
 	.text
 	.p2align 5,,31
 	.globl	_Z8generatev
@@ -12341,7 +11433,7 @@ _Z8generatev:
 	movq	%rax, %rbx
 	call	srand
 	.p2align 5
-.L299:
+.L308:
 	call	rand
 	movl	%eax, %r11d
 	sarl	$31, %r11d
@@ -12408,7 +11500,7 @@ _Z8generatev:
 	movb	%al, 7(%rbx,%rbp)
 	addq	$8, %rbp
 	cmpq	$2048, %rbp
-	jne	.L299
+	jne	.L308
 	addq	$8, %rsp
 	.cfi_def_cfa_offset 24
 	movq	%rbx, %rax
@@ -12426,52 +11518,60 @@ _Z8generatev:
 _Z12allocate_dstv:
 .LFB1025:
 	.cfi_startproc
-	pushq	%rbp
+	pushq	%r12
 	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
+	.cfi_offset 12, -16
 	movl	$256, %edi
-	pushq	%rbx
+	pushq	%rbp
 	.cfi_def_cfa_offset 24
-	.cfi_offset 3, -24
-	xorl	%ebx, %ebx
-	subq	$8, %rsp
+	.cfi_offset 6, -24
+	pushq	%rbx
 	.cfi_def_cfa_offset 32
+	.cfi_offset 3, -32
+	xorl	%ebx, %ebx
 	call	_Znam
 	movq	%rax, %rbp
-.L309:
+.L318:
+	leaq	1(%rbx), %r12
 	movl	$64, %edi
 	call	_Znam
 	movl	$64, %edi
-	movq	%rax, 0(%rbp,%rbx)
+	movq	%rax, 0(%rbp,%rbx,8)
+	call	_Znam
+	movq	%rax, 0(%rbp,%r12,8)
+	leaq	2(%rbx), %r12
+	movl	$64, %edi
+	call	_Znam
+	movq	%rax, 0(%rbp,%r12,8)
+	leaq	3(%rbx), %r12
+	movl	$64, %edi
+	call	_Znam
+	movq	%rax, 0(%rbp,%r12,8)
+	leaq	4(%rbx), %r12
+	movl	$64, %edi
+	call	_Znam
+	movq	%rax, 0(%rbp,%r12,8)
+	leaq	5(%rbx), %r12
+	movl	$64, %edi
+	call	_Znam
+	movq	%rax, 0(%rbp,%r12,8)
+	leaq	6(%rbx), %r12
+	movl	$64, %edi
 	call	_Znam
 	movl	$64, %edi
-	movq	%rax, 8(%rbp,%rbx)
+	movq	%rax, 0(%rbp,%r12,8)
+	leaq	7(%rbx), %r12
+	addq	$8, %rbx
 	call	_Znam
-	movl	$64, %edi
-	movq	%rax, 16(%rbp,%rbx)
-	call	_Znam
-	movl	$64, %edi
-	movq	%rax, 24(%rbp,%rbx)
-	call	_Znam
-	movl	$64, %edi
-	movq	%rax, 32(%rbp,%rbx)
-	call	_Znam
-	movl	$64, %edi
-	movq	%rax, 40(%rbp,%rbx)
-	call	_Znam
-	movl	$64, %edi
-	movq	%rax, 48(%rbp,%rbx)
-	call	_Znam
-	movq	%rax, 56(%rbp,%rbx)
-	addq	$64, %rbx
-	cmpq	$256, %rbx
-	jne	.L309
-	addq	$8, %rsp
+	cmpq	$32, %rbx
+	movq	%rax, 0(%rbp,%r12,8)
+	jne	.L318
+	popq	%rbx
 	.cfi_def_cfa_offset 24
 	movq	%rbp, %rax
-	popq	%rbx
-	.cfi_def_cfa_offset 16
 	popq	%rbp
+	.cfi_def_cfa_offset 16
+	popq	%r12
 	.cfi_def_cfa_offset 8
 	ret
 	.cfi_endproc
@@ -12493,26 +11593,26 @@ _Z10delete_dstPPh:
 	xorl	%ebx, %ebx
 	subq	$8, %rsp
 	.cfi_def_cfa_offset 32
-.L319:
-	movq	0(%rbp,%rbx), %rdi
+.L328:
+	movq	0(%rbp,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	8(%rbp,%rbx), %rdi
+	movq	8(%rbp,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	16(%rbp,%rbx), %rdi
+	movq	16(%rbp,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	24(%rbp,%rbx), %rdi
+	movq	24(%rbp,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	32(%rbp,%rbx), %rdi
+	movq	32(%rbp,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	40(%rbp,%rbx), %rdi
+	movq	40(%rbp,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	48(%rbp,%rbx), %rdi
+	movq	48(%rbp,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	56(%rbp,%rbx), %rdi
-	addq	$64, %rbx
+	movq	56(%rbp,%rbx,8), %rdi
+	addq	$8, %rbx
 	call	_ZdlPv
-	cmpq	$256, %rbx
-	jne	.L319
+	cmpq	$32, %rbx
+	jne	.L328
 	addq	$8, %rsp
 	.cfi_def_cfa_offset 24
 	movq	%rbp, %rdi
@@ -12534,30 +11634,35 @@ _Z10delete_dstPPh:
 _Z5checkRK5Demux:
 .LFB1027:
 	.cfi_startproc
-	pushq	%r14
+	pushq	%r15
 	.cfi_def_cfa_offset 16
-	.cfi_offset 14, -16
-	pushq	%r13
+	.cfi_offset 15, -16
+	pushq	%r14
 	.cfi_def_cfa_offset 24
-	.cfi_offset 13, -24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
 	movq	%rdi, %r13
 	movl	$2048, %edi
 	pushq	%r12
-	.cfi_def_cfa_offset 32
-	.cfi_offset 12, -32
-	pushq	%rbp
 	.cfi_def_cfa_offset 40
-	.cfi_offset 6, -40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
 	xorl	%ebp, %ebp
 	pushq	%rbx
-	.cfi_def_cfa_offset 48
-	.cfi_offset 3, -48
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$8, %rsp
+	.cfi_def_cfa_offset 64
 	call	_Znam
 	xorl	%edi, %edi
 	movq	%rax, %rbx
 	call	srand
 	.p2align 5
-.L329:
+.L338:
 	call	rand
 	movl	%eax, %r11d
 	sarl	$31, %r11d
@@ -12624,320 +11729,365 @@ _Z5checkRK5Demux:
 	movb	%al, 7(%rbx,%rbp)
 	addq	$8, %rbp
 	cmpq	$2048, %rbp
-	jne	.L329
+	jne	.L338
 	movl	$256, %edi
 	xorl	%r12d, %r12d
 	call	_Znam
 	movq	%rax, %rbp
-.L330:
+.L339:
+	leaq	1(%r12), %r14
 	movl	$64, %edi
+	leaq	2(%r12), %r15
 	call	_Znam
 	movl	$64, %edi
-	movq	%rax, 0(%rbp,%r12)
+	movq	%rax, 0(%rbp,%r12,8)
 	call	_Znam
 	movl	$64, %edi
-	movq	%rax, 8(%rbp,%r12)
+	movq	%rax, 0(%rbp,%r14,8)
+	leaq	3(%r12), %r14
 	call	_Znam
 	movl	$64, %edi
-	movq	%rax, 16(%rbp,%r12)
+	movq	%rax, 0(%rbp,%r15,8)
+	leaq	4(%r12), %r15
 	call	_Znam
 	movl	$64, %edi
-	movq	%rax, 24(%rbp,%r12)
+	movq	%rax, 0(%rbp,%r14,8)
+	leaq	5(%r12), %r14
 	call	_Znam
 	movl	$64, %edi
-	movq	%rax, 32(%rbp,%r12)
+	movq	%rax, 0(%rbp,%r15,8)
+	leaq	6(%r12), %r15
 	call	_Znam
 	movl	$64, %edi
-	movq	%rax, 40(%rbp,%r12)
+	movq	%rax, 0(%rbp,%r14,8)
+	leaq	7(%r12), %r14
 	call	_Znam
+	addq	$8, %r12
+	movq	%rax, 0(%rbp,%r15,8)
 	movl	$64, %edi
-	movq	%rax, 48(%rbp,%r12)
 	call	_Znam
-	movq	%rax, 56(%rbp,%r12)
-	addq	$64, %r12
-	cmpq	$256, %r12
-	jne	.L330
+	cmpq	$32, %r12
+	movq	%rax, 0(%rbp,%r14,8)
+	jne	.L339
 	movl	$256, %edi
 	xorl	%r14d, %r14d
 	call	_Znam
 	movq	%rax, %r12
-.L331:
+.L340:
+	leaq	1(%r14), %r15
 	movl	$64, %edi
 	call	_Znam
 	movl	$64, %edi
-	movq	%rax, (%r12,%r14)
+	movq	%rax, (%r12,%r14,8)
+	call	_Znam
+	movq	%rax, (%r12,%r15,8)
+	leaq	2(%r14), %r15
+	movl	$64, %edi
+	call	_Znam
+	movq	%rax, (%r12,%r15,8)
+	leaq	3(%r14), %r15
+	movl	$64, %edi
+	call	_Znam
+	movq	%rax, (%r12,%r15,8)
+	leaq	4(%r14), %r15
+	movl	$64, %edi
+	call	_Znam
+	movq	%rax, (%r12,%r15,8)
+	leaq	5(%r14), %r15
+	movl	$64, %edi
+	call	_Znam
+	movq	%rax, (%r12,%r15,8)
+	leaq	6(%r14), %r15
+	movl	$64, %edi
 	call	_Znam
 	movl	$64, %edi
-	movq	%rax, 8(%r12,%r14)
+	movq	%rax, (%r12,%r15,8)
+	leaq	7(%r14), %r15
+	addq	$8, %r14
 	call	_Znam
-	movl	$64, %edi
-	movq	%rax, 16(%r12,%r14)
-	call	_Znam
-	movl	$64, %edi
-	movq	%rax, 24(%r12,%r14)
-	call	_Znam
-	movl	$64, %edi
-	movq	%rax, 32(%r12,%r14)
-	call	_Znam
-	movl	$64, %edi
-	movq	%rax, 40(%r12,%r14)
-	call	_Znam
-	movl	$64, %edi
-	movq	%rax, 48(%r12,%r14)
-	call	_Znam
-	movq	%rax, 56(%r12,%r14)
-	addq	$64, %r14
-	cmpq	$256, %r14
-	jne	.L331
-	movzbl	(%rbx), %r9d
+	cmpq	$32, %r14
+	movq	%rax, (%r12,%r15,8)
+	jne	.L340
+	movzbl	(%rbx), %esi
 	movq	0(%rbp), %rax
-	movb	%r9b, (%rax)
-	movzbl	1(%rbx), %r8d
+	movb	%sil, (%rax)
+	movzbl	1(%rbx), %ecx
 	xorl	%eax, %eax
 	movq	8(%rbp), %rdx
-	movb	%r8b, (%rdx)
-	movl	$1, %edx
-	movq	16(%rbp), %rdi
-	movzbl	1(%rbx,%rdx), %esi
-	movb	%sil, (%rdi)
-	movzbl	2(%rbx,%rdx), %ecx
-	addq	$2, %rdx
-	movq	24(%rbp), %r14
-	movb	%cl, (%r14)
-	movl	$4, %ecx
-	jmp	.L334
-	.p2align 4,,10
-	.p2align 3
-.L333:
-	addq	$1, %rdx
-	movl	%ecx, %r10d
-	addl	$1, %ecx
-	movzbl	1(%rbx,%rdx), %r8d
-	movq	0(%rbp,%r10,8), %r9
-	movl	%eax, %esi
-	cmpl	$32, %ecx
-	movb	%r8b, (%r9,%rsi)
-	je	.L417
-.L380:
-	movl	%ecx, %edi
-	movzbl	2(%rbx,%rdx), %esi
-	addl	$1, %ecx
-	movq	0(%rbp,%rdi,8), %r14
-	movl	%eax, %r11d
-	cmpl	$32, %ecx
-	movb	%sil, (%r14,%r11)
-	je	.L418
-.L382:
-	movl	%ecx, %r11d
+	movl	$1, %esi
+	movb	%cl, (%rdx)
+	movl	$2, %ecx
+.L438:
+	leaq	1(%rsi), %rdx
+	cmpq	$2048, %rdx
+	je	.L441
+.L343:
+	movzbl	1(%rbx,%rsi), %edi
+	movq	0(%rbp,%rcx,8), %r8
+	addq	$1, %rcx
+	cmpq	$32, %rcx
+	movb	%dil, (%r8,%rax)
+	je	.L442
+.L428:
+	movzbl	1(%rbx,%rdx), %r11d
+	movq	0(%rbp,%rcx,8), %r10
+	addq	$1, %rcx
+	cmpq	$32, %rcx
+	movb	%r11b, (%r10,%rax)
+	je	.L443
+.L429:
+	movzbl	2(%rbx,%rdx), %r15d
+	movq	0(%rbp,%rcx,8), %r14
+	addq	$1, %rcx
+	cmpq	$32, %rcx
+	movb	%r15b, (%r14,%rax)
+	je	.L444
+.L430:
 	movzbl	3(%rbx,%rdx), %r8d
-	addl	$1, %ecx
-	movq	0(%rbp,%r11,8), %r10
-	movl	%eax, %r9d
-	cmpl	$32, %ecx
-	movb	%r8b, (%r10,%r9)
-	je	.L419
-.L384:
-	movl	%ecx, %edi
-	movzbl	4(%rbx,%rdx), %r9d
-	addl	$1, %ecx
-	movq	0(%rbp,%rdi,8), %rsi
-	movl	%eax, %r14d
-	cmpl	$32, %ecx
-	movb	%r9b, (%rsi,%r14)
-	je	.L420
-.L386:
-	movl	%ecx, %r14d
-	movzbl	5(%rbx,%rdx), %r8d
-	addl	$1, %ecx
-	movq	0(%rbp,%r14,8), %r11
-	movl	%eax, %r10d
-	cmpl	$32, %ecx
-	movb	%r8b, (%r11,%r10)
-	je	.L421
-.L388:
-	movl	%ecx, %edi
-	movzbl	6(%rbx,%rdx), %r10d
-	addl	$1, %ecx
-	movq	0(%rbp,%rdi,8), %r9
-	movl	%eax, %esi
-	cmpl	$32, %ecx
-	movb	%r10b, (%r9,%rsi)
-	je	.L422
-.L390:
-	addq	$6, %rdx
-	cmpq	$2047, %rdx
-	je	.L423
-.L334:
-	movl	%ecx, %edi
-	movzbl	1(%rbx,%rdx), %r14d
-	addl	$1, %ecx
-	movq	0(%rbp,%rdi,8), %r11
-	movl	%eax, %r10d
-	cmpl	$32, %ecx
-	movb	%r14b, (%r11,%r10)
-	jne	.L333
-	addl	$1, %eax
+	movq	0(%rbp,%rcx,8), %rsi
+	addq	$1, %rcx
+	cmpq	$32, %rcx
+	movb	%r8b, (%rsi,%rax)
+	je	.L445
+.L431:
+	movzbl	4(%rbx,%rdx), %edi
+	movq	0(%rbp,%rcx,8), %r9
+	addq	$1, %rcx
+	cmpq	$32, %rcx
+	movb	%dil, (%r9,%rax)
+	je	.L446
+.L432:
+	movzbl	5(%rbx,%rdx), %r11d
+	movq	0(%rbp,%rcx,8), %r10
+	addq	$1, %rcx
+	cmpq	$32, %rcx
+	movb	%r11b, (%r10,%rax)
+	je	.L447
+.L433:
+	movzbl	6(%rbx,%rdx), %r15d
+	movq	0(%rbp,%rcx,8), %r14
+	addq	$1, %rcx
+	cmpq	$32, %rcx
+	movb	%r15b, (%r14,%rax)
+	je	.L448
+.L434:
+	movzbl	7(%rbx,%rdx), %r8d
+	movq	0(%rbp,%rcx,8), %rsi
+	addq	$1, %rcx
+	cmpq	$32, %rcx
+	movb	%r8b, (%rsi,%rax)
+	je	.L449
+.L435:
+	movzbl	8(%rbx,%rdx), %edi
+	movq	0(%rbp,%rcx,8), %r9
+	addq	$1, %rcx
+	cmpq	$32, %rcx
+	movb	%dil, (%r9,%rax)
+	je	.L450
+.L436:
+	movzbl	9(%rbx,%rdx), %r11d
+	movq	0(%rbp,%rcx,8), %r10
+	addq	$1, %rcx
+	cmpq	$32, %rcx
+	movb	%r11b, (%r10,%rax)
+	je	.L451
+.L437:
+	movzbl	10(%rbx,%rdx), %r14d
+	leaq	10(%rdx), %rsi
+	movq	0(%rbp,%rcx,8), %rdx
+	addq	$1, %rcx
+	cmpq	$32, %rcx
+	movb	%r14b, (%rdx,%rax)
+	jne	.L438
+	leaq	1(%rsi), %rdx
+	addq	$1, %rax
 	xorb	%cl, %cl
-	jmp	.L333
-	.p2align 4,,10
-	.p2align 3
-.L423:
-	movq	0(%r13), %rax
+	cmpq	$2048, %rdx
+	jne	.L343
+.L441:
+	movq	0(%r13), %r9
 	movq	%r13, %rdi
 	xorl	%r13d, %r13d
 	movq	%r12, %rcx
-	movl	$2048, %edx
 	movq	%rbx, %rsi
-	call	*(%rax)
-.L336:
+	call	*(%r9)
+.L345:
 	movq	(%r12,%r13), %rsi
 	movq	0(%rbp,%r13), %rdi
 	movl	$64, %edx
 	call	memcmp
 	testl	%eax, %eax
-	jne	.L414
+	jne	.L439
 	movq	8(%r12,%r13), %rsi
 	movq	8(%rbp,%r13), %rdi
 	movl	$64, %edx
 	call	memcmp
 	testl	%eax, %eax
-	jne	.L414
+	jne	.L439
 	movq	16(%r12,%r13), %rsi
 	movq	16(%rbp,%r13), %rdi
 	movl	$64, %edx
 	call	memcmp
 	testl	%eax, %eax
-	jne	.L414
+	jne	.L439
 	movq	24(%r12,%r13), %rsi
 	movq	24(%rbp,%r13), %rdi
 	movl	$64, %edx
 	call	memcmp
 	testl	%eax, %eax
-	jne	.L414
+	jne	.L439
 	movq	32(%r12,%r13), %rsi
 	movq	32(%rbp,%r13), %rdi
 	movl	$64, %edx
 	call	memcmp
 	testl	%eax, %eax
-	jne	.L414
+	jne	.L439
 	movq	40(%r12,%r13), %rsi
 	movq	40(%rbp,%r13), %rdi
 	movl	$64, %edx
 	call	memcmp
 	testl	%eax, %eax
-	jne	.L414
+	jne	.L439
 	movq	48(%r12,%r13), %rsi
 	movq	48(%rbp,%r13), %rdi
 	movl	$64, %edx
 	call	memcmp
 	testl	%eax, %eax
-	jne	.L414
+	jne	.L439
 	movq	56(%r12,%r13), %rsi
 	movq	56(%rbp,%r13), %rdi
 	movl	$64, %edx
 	call	memcmp
 	testl	%eax, %eax
-	jne	.L414
+	jne	.L439
 	addq	$64, %r13
 	cmpq	$256, %r13
-	jne	.L336
+	jne	.L345
 	movq	%rbx, %rdi
 	xorl	%ebx, %ebx
 	call	_ZdlPv
-.L337:
-	movq	0(%rbp,%rbx), %rdi
+.L346:
+	movq	0(%rbp,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	8(%rbp,%rbx), %rdi
+	movq	8(%rbp,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	16(%rbp,%rbx), %rdi
+	movq	16(%rbp,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	24(%rbp,%rbx), %rdi
+	movq	24(%rbp,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	32(%rbp,%rbx), %rdi
+	movq	32(%rbp,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	40(%rbp,%rbx), %rdi
+	movq	40(%rbp,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	48(%rbp,%rbx), %rdi
+	movq	48(%rbp,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	56(%rbp,%rbx), %rdi
-	addq	$64, %rbx
+	movq	56(%rbp,%rbx,8), %rdi
+	addq	$8, %rbx
 	call	_ZdlPv
-	cmpq	$256, %rbx
-	jne	.L337
+	cmpq	$32, %rbx
+	jne	.L346
 	movq	%rbp, %rdi
-	xorw	%bx, %bx
+	xorb	%bl, %bl
 	call	_ZdlPv
-.L338:
-	movq	(%r12,%rbx), %rdi
+.L347:
+	movq	(%r12,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	8(%r12,%rbx), %rdi
+	movq	8(%r12,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	16(%r12,%rbx), %rdi
+	movq	16(%r12,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	24(%r12,%rbx), %rdi
+	movq	24(%r12,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	32(%r12,%rbx), %rdi
+	movq	32(%r12,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	40(%r12,%rbx), %rdi
+	movq	40(%r12,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	48(%r12,%rbx), %rdi
+	movq	48(%r12,%rbx,8), %rdi
 	call	_ZdlPv
-	movq	56(%r12,%rbx), %rdi
-	addq	$64, %rbx
+	movq	56(%r12,%rbx,8), %rdi
+	addq	$8, %rbx
 	call	_ZdlPv
-	cmpq	$256, %rbx
-	jne	.L338
-	popq	%rbx
+	cmpq	$32, %rbx
+	jne	.L347
+	addq	$8, %rsp
 	.cfi_remember_state
-	.cfi_def_cfa_offset 40
-	popq	%rbp
-	.cfi_def_cfa_offset 32
+	.cfi_def_cfa_offset 56
 	movq	%r12, %rdi
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
 	popq	%r12
-	.cfi_def_cfa_offset 24
+	.cfi_def_cfa_offset 32
 	popq	%r13
-	.cfi_def_cfa_offset 16
+	.cfi_def_cfa_offset 24
 	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
 	.cfi_def_cfa_offset 8
 	jmp	_ZdlPv
 	.p2align 4,,10
 	.p2align 3
-.L422:
+.L451:
 	.cfi_restore_state
-	addl	$1, %eax
+	addq	$1, %rax
 	xorb	%cl, %cl
-	jmp	.L390
+	jmp	.L437
 	.p2align 4,,10
 	.p2align 3
-.L421:
-	addl	$1, %eax
+.L450:
+	addq	$1, %rax
 	xorb	%cl, %cl
-	jmp	.L388
+	jmp	.L436
 	.p2align 4,,10
 	.p2align 3
-.L420:
-	addl	$1, %eax
+.L449:
+	addq	$1, %rax
 	xorb	%cl, %cl
-	jmp	.L386
+	jmp	.L435
 	.p2align 4,,10
 	.p2align 3
-.L419:
-	addl	$1, %eax
+.L448:
+	addq	$1, %rax
 	xorb	%cl, %cl
-	jmp	.L384
+	jmp	.L434
 	.p2align 4,,10
 	.p2align 3
-.L418:
-	addl	$1, %eax
+.L447:
+	addq	$1, %rax
 	xorb	%cl, %cl
-	jmp	.L382
+	jmp	.L433
 	.p2align 4,,10
 	.p2align 3
-.L417:
-	addl	$1, %eax
-	xorl	%ecx, %ecx
-	jmp	.L380
-.L414:
+.L446:
+	addq	$1, %rax
+	xorb	%cl, %cl
+	jmp	.L432
+	.p2align 4,,10
+	.p2align 3
+.L445:
+	addq	$1, %rax
+	xorb	%cl, %cl
+	jmp	.L431
+	.p2align 4,,10
+	.p2align 3
+.L444:
+	addq	$1, %rax
+	xorb	%cl, %cl
+	jmp	.L430
+	.p2align 4,,10
+	.p2align 3
+.L443:
+	addq	$1, %rax
+	xorb	%cl, %cl
+	jmp	.L429
+	.p2align 4,,10
+	.p2align 3
+.L442:
+	addq	$1, %rax
+	xorb	%cl, %cl
+	jmp	.L428
+.L439:
 	movl	$_ZSt4cout, %edi
 	movl	$18, %edx
 	movl	$.LC3, %esi
@@ -12980,12 +12130,12 @@ _Z7measureRK5Demux:
 	cvtsi2sdq	%rax, %xmm0
 	addsd	%xmm1, %xmm0
 	ucomisd	.LC5(%rip), %xmm0
-	jae	.L425
+	jae	.L453
 	cvttsd2siq	%xmm0, %rbp
-.L426:
+.L454:
 	movl	$1000000, %r12d
 	.p2align 5
-.L427:
+.L455:
 	movq	(%rbx), %r10
 	movq	dst(%rip), %rcx
 	movl	$2048, %edx
@@ -13035,7 +12185,7 @@ _Z7measureRK5Demux:
 	movq	%rbx, %rdi
 	call	*(%r8)
 	subl	$8, %r12d
-	jne	.L427
+	jne	.L455
 	xorl	%edi, %edi
 	movq	%rsp, %rsi
 	call	clock_gettime
@@ -13046,9 +12196,9 @@ _Z7measureRK5Demux:
 	cvtsi2sdq	%rsi, %xmm0
 	addsd	%xmm2, %xmm0
 	ucomisd	.LC5(%rip), %xmm0
-	jae	.L428
+	jae	.L456
 	cvttsd2siq	%xmm0, %rax
-.L429:
+.L457:
 	movq	(%rbx), %rcx
 	subq	%rbp, %rax
 	movq	%rax, %rbp
@@ -13058,14 +12208,14 @@ _Z7measureRK5Demux:
 	cmpb	$42, (%rdx)
 	sete	%bl
 	addq	%rdx, %rbx
-	je	.L444
+	je	.L472
 	movq	%rbx, %rdi
 	call	strlen
 	movq	%rbx, %rsi
 	movq	%rax, %rdx
 	movl	$_ZSt4cout, %edi
 	call	_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
-.L432:
+.L460:
 	movl	$2, %edx
 	movl	$.LC6, %esi
 	movl	$_ZSt4cout, %edi
@@ -13078,11 +12228,11 @@ _Z7measureRK5Demux:
 	movq	-24(%rax), %rbp
 	movq	240(%rbx,%rbp), %rbp
 	testq	%rbp, %rbp
-	je	.L445
+	je	.L473
 	cmpb	$0, 56(%rbp)
-	je	.L434
+	je	.L462
 	movzbl	67(%rbp), %eax
-.L435:
+.L463:
 	movq	%rbx, %rdi
 	movsbl	%al, %esi
 	call	_ZNSo3putEc
@@ -13100,40 +12250,40 @@ _Z7measureRK5Demux:
 	ret
 	.p2align 4,,10
 	.p2align 3
-.L425:
+.L453:
 	.cfi_restore_state
 	subsd	.LC5(%rip), %xmm0
 	movabsq	$-9223372036854775808, %rcx
 	cvttsd2siq	%xmm0, %rbp
 	xorq	%rcx, %rbp
-	jmp	.L426
+	jmp	.L454
 	.p2align 4,,10
 	.p2align 3
-.L428:
+.L456:
 	subsd	.LC5(%rip), %xmm0
 	movabsq	$-9223372036854775808, %r12
 	cvttsd2siq	%xmm0, %rax
 	xorq	%r12, %rax
-	jmp	.L429
+	jmp	.L457
 	.p2align 4,,10
 	.p2align 3
-.L434:
+.L462:
 	movq	%rbp, %rdi
 	call	_ZNKSt5ctypeIcE13_M_widen_initEv
 	movq	0(%rbp), %r12
 	movl	$10, %esi
 	movq	%rbp, %rdi
 	call	*48(%r12)
-	jmp	.L435
-.L444:
+	jmp	.L463
+.L472:
 	movq	_ZSt4cout(%rip), %r11
 	movq	-24(%r11), %rdi
 	addq	$_ZSt4cout, %rdi
 	movl	32(%rdi), %esi
 	orl	$1, %esi
 	call	_ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate
-	jmp	.L432
-.L445:
+	jmp	.L460
+.L473:
 	call	_ZSt16__throw_bad_castv
 	.cfi_endproc
 .LFE1034:
@@ -13245,13 +12395,13 @@ src:
 _ZTV9Reference:
 	.quad	0
 	.quad	_ZTI9Reference
-	.quad	_ZNK9Reference5demuxEPKhjPPh
+	.quad	_ZNK9Reference5demuxEPKhmPPh
 	.section	.rodata
 	.align 32
-	.type	_ZZNK9Reference5demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK9Reference5demuxEPKhjPPhE19__PRETTY_FUNCTION__, 71
-_ZZNK9Reference5demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Reference::demux(const byte*, unsigned int, byte**) const"
+	.type	_ZZNK9Reference5demuxEPKhmPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK9Reference5demuxEPKhmPPhE19__PRETTY_FUNCTION__, 65
+_ZZNK9Reference5demuxEPKhmPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Reference::demux(const byte*, size_t, byte**) const"
 	.weak	_ZTV11Src_First_1
 	.section	.rodata._ZTV11Src_First_1,"aG",@progbits,_ZTV11Src_First_1,comdat
 	.align 16
@@ -13260,7 +12410,7 @@ _ZZNK9Reference5demuxEPKhjPPhE19__PRETTY_FUNCTION__:
 _ZTV11Src_First_1:
 	.quad	0
 	.quad	_ZTI11Src_First_1
-	.quad	_ZNK11Src_First_15demuxEPKhjPPh
+	.quad	_ZNK11Src_First_15demuxEPKhmPPh
 	.weak	_ZTV11Src_First_2
 	.section	.rodata._ZTV11Src_First_2,"aG",@progbits,_ZTV11Src_First_2,comdat
 	.align 16
@@ -13269,7 +12419,7 @@ _ZTV11Src_First_1:
 _ZTV11Src_First_2:
 	.quad	0
 	.quad	_ZTI11Src_First_2
-	.quad	_ZNK11Src_First_25demuxEPKhjPPh
+	.quad	_ZNK11Src_First_25demuxEPKhmPPh
 	.weak	_ZTV11Src_First_3
 	.section	.rodata._ZTV11Src_First_3,"aG",@progbits,_ZTV11Src_First_3,comdat
 	.align 16
@@ -13278,7 +12428,7 @@ _ZTV11Src_First_2:
 _ZTV11Src_First_3:
 	.quad	0
 	.quad	_ZTI11Src_First_3
-	.quad	_ZNK11Src_First_35demuxEPKhjPPh
+	.quad	_ZNK11Src_First_35demuxEPKhmPPh
 	.weak	_ZTV11Dst_First_1
 	.section	.rodata._ZTV11Dst_First_1,"aG",@progbits,_ZTV11Dst_First_1,comdat
 	.align 16
@@ -13287,7 +12437,7 @@ _ZTV11Src_First_3:
 _ZTV11Dst_First_1:
 	.quad	0
 	.quad	_ZTI11Dst_First_1
-	.quad	_ZNK11Dst_First_15demuxEPKhjPPh
+	.quad	_ZNK11Dst_First_15demuxEPKhmPPh
 	.weak	_ZTV11Dst_First_2
 	.section	.rodata._ZTV11Dst_First_2,"aG",@progbits,_ZTV11Dst_First_2,comdat
 	.align 16
@@ -13296,7 +12446,7 @@ _ZTV11Dst_First_1:
 _ZTV11Dst_First_2:
 	.quad	0
 	.quad	_ZTI11Dst_First_2
-	.quad	_ZNK11Dst_First_25demuxEPKhjPPh
+	.quad	_ZNK11Dst_First_25demuxEPKhmPPh
 	.weak	_ZTV11Dst_First_3
 	.section	.rodata._ZTV11Dst_First_3,"aG",@progbits,_ZTV11Dst_First_3,comdat
 	.align 16
@@ -13305,7 +12455,7 @@ _ZTV11Dst_First_2:
 _ZTV11Dst_First_3:
 	.quad	0
 	.quad	_ZTI11Dst_First_3
-	.quad	_ZNK11Dst_First_35demuxEPKhjPPh
+	.quad	_ZNK11Dst_First_35demuxEPKhmPPh
 	.weak	_ZTV12Dst_First_1a
 	.section	.rodata._ZTV12Dst_First_1a,"aG",@progbits,_ZTV12Dst_First_1a,comdat
 	.align 16
@@ -13314,7 +12464,7 @@ _ZTV11Dst_First_3:
 _ZTV12Dst_First_1a:
 	.quad	0
 	.quad	_ZTI12Dst_First_1a
-	.quad	_ZNK12Dst_First_1a5demuxEPKhjPPh
+	.quad	_ZNK12Dst_First_1a5demuxEPKhmPPh
 	.weak	_ZTV12Dst_First_3a
 	.section	.rodata._ZTV12Dst_First_3a,"aG",@progbits,_ZTV12Dst_First_3a,comdat
 	.align 16
@@ -13323,7 +12473,7 @@ _ZTV12Dst_First_1a:
 _ZTV12Dst_First_3a:
 	.quad	0
 	.quad	_ZTI12Dst_First_3a
-	.quad	_ZNK12Dst_First_3a5demuxEPKhjPPh
+	.quad	_ZNK12Dst_First_3a5demuxEPKhmPPh
 	.weak	_ZTV10Unrolled_1
 	.section	.rodata._ZTV10Unrolled_1,"aG",@progbits,_ZTV10Unrolled_1,comdat
 	.align 16
@@ -13332,7 +12482,7 @@ _ZTV12Dst_First_3a:
 _ZTV10Unrolled_1:
 	.quad	0
 	.quad	_ZTI10Unrolled_1
-	.quad	_ZNK10Unrolled_15demuxEPKhjPPh
+	.quad	_ZNK10Unrolled_15demuxEPKhmPPh
 	.weak	_ZTV12Unrolled_1_2
 	.section	.rodata._ZTV12Unrolled_1_2,"aG",@progbits,_ZTV12Unrolled_1_2,comdat
 	.align 16
@@ -13341,7 +12491,7 @@ _ZTV10Unrolled_1:
 _ZTV12Unrolled_1_2:
 	.quad	0
 	.quad	_ZTI12Unrolled_1_2
-	.quad	_ZNK12Unrolled_1_25demuxEPKhjPPh
+	.quad	_ZNK12Unrolled_1_25demuxEPKhmPPh
 	.weak	_ZTV12Unrolled_1_4
 	.section	.rodata._ZTV12Unrolled_1_4,"aG",@progbits,_ZTV12Unrolled_1_4,comdat
 	.align 16
@@ -13350,7 +12500,7 @@ _ZTV12Unrolled_1_2:
 _ZTV12Unrolled_1_4:
 	.quad	0
 	.quad	_ZTI12Unrolled_1_4
-	.quad	_ZNK12Unrolled_1_45demuxEPKhjPPh
+	.quad	_ZNK12Unrolled_1_45demuxEPKhmPPh
 	.weak	_ZTV12Unrolled_1_8
 	.section	.rodata._ZTV12Unrolled_1_8,"aG",@progbits,_ZTV12Unrolled_1_8,comdat
 	.align 16
@@ -13359,7 +12509,7 @@ _ZTV12Unrolled_1_4:
 _ZTV12Unrolled_1_8:
 	.quad	0
 	.quad	_ZTI12Unrolled_1_8
-	.quad	_ZNK12Unrolled_1_85demuxEPKhjPPh
+	.quad	_ZNK12Unrolled_1_85demuxEPKhmPPh
 	.weak	_ZTV13Unrolled_1_16
 	.section	.rodata._ZTV13Unrolled_1_16,"aG",@progbits,_ZTV13Unrolled_1_16,comdat
 	.align 16
@@ -13368,7 +12518,7 @@ _ZTV12Unrolled_1_8:
 _ZTV13Unrolled_1_16:
 	.quad	0
 	.quad	_ZTI13Unrolled_1_16
-	.quad	_ZNK13Unrolled_1_165demuxEPKhjPPh
+	.quad	_ZNK13Unrolled_1_165demuxEPKhmPPh
 	.weak	_ZTV15Unrolled_2_Full
 	.section	.rodata._ZTV15Unrolled_2_Full,"aG",@progbits,_ZTV15Unrolled_2_Full,comdat
 	.align 16
@@ -13377,80 +12527,80 @@ _ZTV13Unrolled_1_16:
 _ZTV15Unrolled_2_Full:
 	.quad	0
 	.quad	_ZTI15Unrolled_2_Full
-	.quad	_ZNK15Unrolled_2_Full5demuxEPKhjPPh
+	.quad	_ZNK15Unrolled_2_Full5demuxEPKhmPPh
 	.section	.rodata
 	.align 32
-	.type	_ZZNK15Unrolled_2_Full5demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK15Unrolled_2_Full5demuxEPKhjPPhE19__PRETTY_FUNCTION__, 77
-_ZZNK15Unrolled_2_Full5demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Unrolled_2_Full::demux(const byte*, unsigned int, byte**) const"
+	.type	_ZZNK15Unrolled_2_Full5demuxEPKhmPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK15Unrolled_2_Full5demuxEPKhmPPhE19__PRETTY_FUNCTION__, 71
+_ZZNK15Unrolled_2_Full5demuxEPKhmPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Unrolled_2_Full::demux(const byte*, size_t, byte**) const"
 	.local	_ZStL8__ioinit
 	.comm	_ZStL8__ioinit,1,1
 	.align 32
-	.type	_ZZNK13Unrolled_1_165demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK13Unrolled_1_165demuxEPKhjPPhE19__PRETTY_FUNCTION__, 75
-_ZZNK13Unrolled_1_165demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Unrolled_1_16::demux(const byte*, unsigned int, byte**) const"
+	.type	_ZZNK13Unrolled_1_165demuxEPKhmPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK13Unrolled_1_165demuxEPKhmPPhE19__PRETTY_FUNCTION__, 69
+_ZZNK13Unrolled_1_165demuxEPKhmPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Unrolled_1_16::demux(const byte*, size_t, byte**) const"
 	.align 32
-	.type	_ZZNK12Unrolled_1_85demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK12Unrolled_1_85demuxEPKhjPPhE19__PRETTY_FUNCTION__, 74
-_ZZNK12Unrolled_1_85demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Unrolled_1_8::demux(const byte*, unsigned int, byte**) const"
+	.type	_ZZNK12Unrolled_1_85demuxEPKhmPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK12Unrolled_1_85demuxEPKhmPPhE19__PRETTY_FUNCTION__, 68
+_ZZNK12Unrolled_1_85demuxEPKhmPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Unrolled_1_8::demux(const byte*, size_t, byte**) const"
 	.align 32
-	.type	_ZZNK12Unrolled_1_45demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK12Unrolled_1_45demuxEPKhjPPhE19__PRETTY_FUNCTION__, 74
-_ZZNK12Unrolled_1_45demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Unrolled_1_4::demux(const byte*, unsigned int, byte**) const"
+	.type	_ZZNK12Unrolled_1_45demuxEPKhmPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK12Unrolled_1_45demuxEPKhmPPhE19__PRETTY_FUNCTION__, 68
+_ZZNK12Unrolled_1_45demuxEPKhmPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Unrolled_1_4::demux(const byte*, size_t, byte**) const"
 	.align 32
-	.type	_ZZNK12Unrolled_1_25demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK12Unrolled_1_25demuxEPKhjPPhE19__PRETTY_FUNCTION__, 74
-_ZZNK12Unrolled_1_25demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Unrolled_1_2::demux(const byte*, unsigned int, byte**) const"
+	.type	_ZZNK12Unrolled_1_25demuxEPKhmPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK12Unrolled_1_25demuxEPKhmPPhE19__PRETTY_FUNCTION__, 68
+_ZZNK12Unrolled_1_25demuxEPKhmPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Unrolled_1_2::demux(const byte*, size_t, byte**) const"
 	.align 32
-	.type	_ZZNK10Unrolled_15demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK10Unrolled_15demuxEPKhjPPhE19__PRETTY_FUNCTION__, 72
-_ZZNK10Unrolled_15demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Unrolled_1::demux(const byte*, unsigned int, byte**) const"
+	.type	_ZZNK10Unrolled_15demuxEPKhmPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK10Unrolled_15demuxEPKhmPPhE19__PRETTY_FUNCTION__, 66
+_ZZNK10Unrolled_15demuxEPKhmPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Unrolled_1::demux(const byte*, size_t, byte**) const"
 	.align 32
-	.type	_ZZNK12Dst_First_3a5demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK12Dst_First_3a5demuxEPKhjPPhE19__PRETTY_FUNCTION__, 74
-_ZZNK12Dst_First_3a5demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Dst_First_3a::demux(const byte*, unsigned int, byte**) const"
+	.type	_ZZNK12Dst_First_3a5demuxEPKhmPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK12Dst_First_3a5demuxEPKhmPPhE19__PRETTY_FUNCTION__, 68
+_ZZNK12Dst_First_3a5demuxEPKhmPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Dst_First_3a::demux(const byte*, size_t, byte**) const"
 	.align 32
-	.type	_ZZNK12Dst_First_1a5demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK12Dst_First_1a5demuxEPKhjPPhE19__PRETTY_FUNCTION__, 74
-_ZZNK12Dst_First_1a5demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Dst_First_1a::demux(const byte*, unsigned int, byte**) const"
+	.type	_ZZNK12Dst_First_1a5demuxEPKhmPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK12Dst_First_1a5demuxEPKhmPPhE19__PRETTY_FUNCTION__, 68
+_ZZNK12Dst_First_1a5demuxEPKhmPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Dst_First_1a::demux(const byte*, size_t, byte**) const"
 	.align 32
-	.type	_ZZNK11Dst_First_35demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK11Dst_First_35demuxEPKhjPPhE19__PRETTY_FUNCTION__, 73
-_ZZNK11Dst_First_35demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Dst_First_3::demux(const byte*, unsigned int, byte**) const"
+	.type	_ZZNK11Dst_First_35demuxEPKhmPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK11Dst_First_35demuxEPKhmPPhE19__PRETTY_FUNCTION__, 67
+_ZZNK11Dst_First_35demuxEPKhmPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Dst_First_3::demux(const byte*, size_t, byte**) const"
 	.align 32
-	.type	_ZZNK11Dst_First_25demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK11Dst_First_25demuxEPKhjPPhE19__PRETTY_FUNCTION__, 73
-_ZZNK11Dst_First_25demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Dst_First_2::demux(const byte*, unsigned int, byte**) const"
+	.type	_ZZNK11Dst_First_25demuxEPKhmPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK11Dst_First_25demuxEPKhmPPhE19__PRETTY_FUNCTION__, 67
+_ZZNK11Dst_First_25demuxEPKhmPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Dst_First_2::demux(const byte*, size_t, byte**) const"
 	.align 32
-	.type	_ZZNK11Dst_First_15demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK11Dst_First_15demuxEPKhjPPhE19__PRETTY_FUNCTION__, 73
-_ZZNK11Dst_First_15demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Dst_First_1::demux(const byte*, unsigned int, byte**) const"
+	.type	_ZZNK11Dst_First_15demuxEPKhmPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK11Dst_First_15demuxEPKhmPPhE19__PRETTY_FUNCTION__, 67
+_ZZNK11Dst_First_15demuxEPKhmPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Dst_First_1::demux(const byte*, size_t, byte**) const"
 	.align 32
-	.type	_ZZNK11Src_First_35demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK11Src_First_35demuxEPKhjPPhE19__PRETTY_FUNCTION__, 73
-_ZZNK11Src_First_35demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Src_First_3::demux(const byte*, unsigned int, byte**) const"
+	.type	_ZZNK11Src_First_35demuxEPKhmPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK11Src_First_35demuxEPKhmPPhE19__PRETTY_FUNCTION__, 67
+_ZZNK11Src_First_35demuxEPKhmPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Src_First_3::demux(const byte*, size_t, byte**) const"
 	.align 32
-	.type	_ZZNK11Src_First_25demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK11Src_First_25demuxEPKhjPPhE19__PRETTY_FUNCTION__, 73
-_ZZNK11Src_First_25demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Src_First_2::demux(const byte*, unsigned int, byte**) const"
+	.type	_ZZNK11Src_First_25demuxEPKhmPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK11Src_First_25demuxEPKhmPPhE19__PRETTY_FUNCTION__, 67
+_ZZNK11Src_First_25demuxEPKhmPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Src_First_2::demux(const byte*, size_t, byte**) const"
 	.align 32
-	.type	_ZZNK11Src_First_15demuxEPKhjPPhE19__PRETTY_FUNCTION__, @object
-	.size	_ZZNK11Src_First_15demuxEPKhjPPhE19__PRETTY_FUNCTION__, 73
-_ZZNK11Src_First_15demuxEPKhjPPhE19__PRETTY_FUNCTION__:
-	.string	"virtual void Src_First_1::demux(const byte*, unsigned int, byte**) const"
+	.type	_ZZNK11Src_First_15demuxEPKhmPPhE19__PRETTY_FUNCTION__, @object
+	.size	_ZZNK11Src_First_15demuxEPKhmPPhE19__PRETTY_FUNCTION__, 67
+_ZZNK11Src_First_15demuxEPKhmPPhE19__PRETTY_FUNCTION__:
+	.string	"virtual void Src_First_1::demux(const byte*, size_t, byte**) const"
 	.weak	_ZTI9Reference
 	.section	.rodata._ZTI9Reference,"aG",@progbits,_ZTI9Reference,comdat
 	.align 16
