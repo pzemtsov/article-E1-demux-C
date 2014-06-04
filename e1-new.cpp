@@ -5,6 +5,7 @@
      Revision 5: Added Read4_Write4_SSE
      Revision 6: Added Read4_Write16_SSE
      Revision 7: Improved Read4_Write16_SSE
+     Revision 8: Added Read8_Write16_SSE (normal and unrolled versions)
   */
 
 #include <cassert>
@@ -278,6 +279,124 @@ public:
     }
 };
 
+uint32_t low (uint64_t x)
+{
+    return (uint32_t) x;
+}
+
+uint32_t high (uint64_t x)
+{
+    return (uint32_t) (x >> 32);
+}
+
+class Read8_Write16_SSE : public Demux
+{
+public:
+    void demux (const byte * src, size_t src_length, byte ** dst) const
+    {
+        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
+        assert (DST_SIZE % 16 == 0);
+        assert (NUM_TIMESLOTS % 8 == 0);
+
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; dst_num += 8) {
+            byte * d0 = dst [dst_num + 0];
+            byte * d1 = dst [dst_num + 1];
+            byte * d2 = dst [dst_num + 2];
+            byte * d3 = dst [dst_num + 3];
+            byte * d4 = dst [dst_num + 4];
+            byte * d5 = dst [dst_num + 5];
+            byte * d6 = dst [dst_num + 6];
+            byte * d7 = dst [dst_num + 7];
+            for (size_t dst_pos = 0; dst_pos < DST_SIZE; dst_pos += 16) {
+#define LOAD32(m0, m1, dst_pos) do {\
+                    uint64_t w0 = * (uint64_t*) &src [(dst_pos + 0) * NUM_TIMESLOTS + dst_num];\
+                    uint64_t w1 = * (uint64_t*) &src [(dst_pos + 1) * NUM_TIMESLOTS + dst_num];\
+                    uint64_t w2 = * (uint64_t*) &src [(dst_pos + 2) * NUM_TIMESLOTS + dst_num];\
+                    uint64_t w3 = * (uint64_t*) &src [(dst_pos + 3) * NUM_TIMESLOTS + dst_num];\
+                    m0 = _mm_setr_epi32 (low  (w0), low  (w1), low  (w2), low  (w3));\
+                    m1 = _mm_setr_epi32 (high (w0), high (w1), high (w2), high (w3));\
+                    m0 = transpose_4x4 (m0);\
+                    m1 = transpose_4x4 (m1);\
+                } while (0)
+
+                __m128i a0, a1, a2, a3, b0, b1, b2, b3;
+                LOAD32 (a0, b0, dst_pos);
+                LOAD32 (a1, b1, dst_pos + 4);
+                LOAD32 (a2, b2, dst_pos + 8);
+                LOAD32 (a3, b3, dst_pos + 12);
+                transpose_4x4_dwords (a0, a1, a2, a3);
+                _128i_store (&d0 [dst_pos], a0);
+                _128i_store (&d1 [dst_pos], a1);
+                _128i_store (&d2 [dst_pos], a2);
+                _128i_store (&d3 [dst_pos], a3);
+                transpose_4x4_dwords (b0, b1, b2, b3);
+                _128i_store (&d4 [dst_pos], b0);
+                _128i_store (&d5 [dst_pos], b1);
+                _128i_store (&d6 [dst_pos], b2);
+                _128i_store (&d7 [dst_pos], b3);
+#undef LOAD32
+            }
+        }
+    }
+};
+
+class Read8_Write16_SSE_Unroll : public Demux
+{
+public:
+    void demux (const byte * src, size_t src_length, byte ** dst) const
+    {
+        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
+        assert (DST_SIZE == 64);
+        assert (NUM_TIMESLOTS % 8 == 0);
+
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; dst_num += 8) {
+            byte * d0 = dst [dst_num + 0];
+            byte * d1 = dst [dst_num + 1];
+            byte * d2 = dst [dst_num + 2];
+            byte * d3 = dst [dst_num + 3];
+            byte * d4 = dst [dst_num + 4];
+            byte * d5 = dst [dst_num + 5];
+            byte * d6 = dst [dst_num + 6];
+            byte * d7 = dst [dst_num + 7];
+#define LOAD32(m0, m1, dst_pos) do {\
+                    uint64_t w0 = * (uint64_t*) &src [(dst_pos + 0) * NUM_TIMESLOTS + dst_num];\
+                    uint64_t w1 = * (uint64_t*) &src [(dst_pos + 1) * NUM_TIMESLOTS + dst_num];\
+                    uint64_t w2 = * (uint64_t*) &src [(dst_pos + 2) * NUM_TIMESLOTS + dst_num];\
+                    uint64_t w3 = * (uint64_t*) &src [(dst_pos + 3) * NUM_TIMESLOTS + dst_num];\
+                    m0 = _mm_setr_epi32 (low  (w0), low  (w1), low  (w2), low  (w3));\
+                    m1 = _mm_setr_epi32 (high (w0), high (w1), high (w2), high (w3));\
+                    m0 = transpose_4x4 (m0);\
+                    m1 = transpose_4x4 (m1);\
+                } while (0)
+
+#define MOVE128(dst_pos) do {\
+                __m128i a0, a1, a2, a3, b0, b1, b2, b3;\
+                LOAD32 (a0, b0, dst_pos);\
+                LOAD32 (a1, b1, dst_pos + 4);\
+                LOAD32 (a2, b2, dst_pos + 8);\
+                LOAD32 (a3, b3, dst_pos + 12);\
+                transpose_4x4_dwords (a0, a1, a2, a3);\
+                _128i_store (&d0 [dst_pos], a0);\
+                _128i_store (&d1 [dst_pos], a1);\
+                _128i_store (&d2 [dst_pos], a2);\
+                _128i_store (&d3 [dst_pos], a3);\
+                transpose_4x4_dwords (b0, b1, b2, b3);\
+                _128i_store (&d4 [dst_pos], b0);\
+                _128i_store (&d5 [dst_pos], b1);\
+                _128i_store (&d6 [dst_pos], b2);\
+                _128i_store (&d7 [dst_pos], b3);\
+            } while (0)
+
+            MOVE128 (0);
+            MOVE128 (16);
+            MOVE128 (32);
+            MOVE128 (48);
+#undef LOAD32
+#undef MOVE128
+        }
+    }
+};
+
 byte * generate ()
 {
     byte * buf = new byte [SRC_SIZE];
@@ -350,6 +469,8 @@ int main (void)
     measure (Read4_Write4_Unroll ());
     measure (Read4_Write4_SSE ());
     measure (Read4_Write16_SSE ());
+    measure (Read8_Write16_SSE ());
+    measure (Read8_Write16_SSE_Unroll ());
 
     return 0;
 }
