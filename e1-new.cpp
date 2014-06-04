@@ -1,4 +1,5 @@
 /**  Revision 1: Created. Added version Write4
+     Revision 2: Added Write8
   */
 
 #include <cassert>
@@ -74,6 +75,41 @@ public:
     }
 };
 
+inline uint64_t make_64 (byte b0, byte b1, byte b2, byte b3, byte b4, byte b5, byte b6, byte b7)
+{
+    return (uint64_t) make_32 (b0, b1, b2, b3)
+         | ((uint64_t) b4 << 32)
+         | ((uint64_t) b5 << 40)
+         | ((uint64_t) b6 << 48)
+         | ((uint64_t) b7 << 56);
+}
+
+class Write8 : public Demux
+{
+public:
+    void demux (const byte * src, size_t src_length, byte ** dst) const
+    {
+        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
+        assert (DST_SIZE % 8 == 0);
+
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; ++ dst_num) {
+            byte * d = dst [dst_num];
+            for (size_t dst_pos = 0; dst_pos < DST_SIZE; dst_pos += 8) {
+                byte b0 = src [(dst_pos + 0) * NUM_TIMESLOTS + dst_num];
+                byte b1 = src [(dst_pos + 1) * NUM_TIMESLOTS + dst_num];
+                byte b2 = src [(dst_pos + 2) * NUM_TIMESLOTS + dst_num];
+                byte b3 = src [(dst_pos + 3) * NUM_TIMESLOTS + dst_num];
+                byte b4 = src [(dst_pos + 4) * NUM_TIMESLOTS + dst_num];
+                byte b5 = src [(dst_pos + 5) * NUM_TIMESLOTS + dst_num];
+                byte b6 = src [(dst_pos + 6) * NUM_TIMESLOTS + dst_num];
+                byte b7 = src [(dst_pos + 7) * NUM_TIMESLOTS + dst_num];
+                * (uint64_t*) & d [dst_pos] = make_64 (b0, b1, b2, b3, b4, b5, b6, b7);
+            }
+        }
+    }
+};
+
+
 byte * generate ()
 {
     byte * buf = new byte [SRC_SIZE];
@@ -141,6 +177,7 @@ int main (void)
 
     measure (Reference ());
     measure (Write4 ());
+    measure (Write8 ());
 
     return 0;
 }
