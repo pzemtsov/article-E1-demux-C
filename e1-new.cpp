@@ -4,6 +4,7 @@
      Revision 4: Unrolled Read4_Write4
      Revision 5: Added Read4_Write4_SSE
      Revision 6: Added Read4_Write16_SSE
+     Revision 7: Improved Read4_Write16_SSE
   */
 
 #include <cassert>
@@ -266,16 +267,16 @@ public:
                 LOAD16 (m1, dst_pos + 4);
                 LOAD16 (m2, dst_pos + 8);
                 LOAD16 (m3, dst_pos + 12);
-                _128i_store (&d0 [dst_pos], combine_sse<0> (m0, m1, m2, m3));
-                _128i_store (&d1 [dst_pos], combine_sse<1> (m0, m1, m2, m3));
-                _128i_store (&d2 [dst_pos], combine_sse<2> (m0, m1, m2, m3));
-                _128i_store (&d3 [dst_pos], combine_sse<3> (m0, m1, m2, m3));
+                transpose_4x4_dwords (m0, m1, m2, m3);
+                _128i_store (&d0 [dst_pos], m0);
+                _128i_store (&d1 [dst_pos], m1);
+                _128i_store (&d2 [dst_pos], m2);
+                _128i_store (&d3 [dst_pos], m3);
 #undef LOAD16
             }
         }
     }
 };
-
 
 byte * generate ()
 {
