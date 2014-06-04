@@ -2,6 +2,7 @@
      Revision 2: Added Write8
      Revision 3: Added Read4_Write4
      Revision 4: Unrolled Read4_Write4
+     Revision 5: Added Read4_Write4_SSE 
   */
 
 #include <cassert>
@@ -13,6 +14,7 @@
 
 #include "timer.h"
 #include "mymacros.h"
+#include "sse.h"
 
 typedef unsigned char byte;
 
@@ -204,6 +206,36 @@ public:
     }
 };
 
+class Read4_Write4_SSE : public Demux
+{
+public:
+    void demux (const byte * src, size_t src_length, byte ** dst) const
+    {
+        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
+        assert (DST_SIZE % 4 == 0);
+        assert (NUM_TIMESLOTS % 4 == 0);
+
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; dst_num += 4) {
+            byte * d0 = dst [dst_num + 0];
+            byte * d1 = dst [dst_num + 1];
+            byte * d2 = dst [dst_num + 2];
+            byte * d3 = dst [dst_num + 3];
+            for (size_t dst_pos = 0; dst_pos < DST_SIZE; dst_pos += 4) {
+                uint32_t w0 = * (uint32_t*) &src [(dst_pos + 0) * NUM_TIMESLOTS + dst_num];
+                uint32_t w1 = * (uint32_t*) &src [(dst_pos + 1) * NUM_TIMESLOTS + dst_num];
+                uint32_t w2 = * (uint32_t*) &src [(dst_pos + 2) * NUM_TIMESLOTS + dst_num];
+                uint32_t w3 = * (uint32_t*) &src [(dst_pos + 3) * NUM_TIMESLOTS + dst_num];
+                __m128i m = _mm_setr_epi32 (w0, w1, w2, w3);
+                m = transpose_4x4 (m);
+                * (uint32_t*) &d0 [dst_pos] = (uint32_t) _mm_extract_epi32 (m, 0);
+                * (uint32_t*) &d1 [dst_pos] = (uint32_t) _mm_extract_epi32 (m, 1);
+                * (uint32_t*) &d2 [dst_pos] = (uint32_t) _mm_extract_epi32 (m, 2);
+                * (uint32_t*) &d3 [dst_pos] = (uint32_t) _mm_extract_epi32 (m, 3);
+            }
+        }
+    }
+};
+
 byte * generate ()
 {
     byte * buf = new byte [SRC_SIZE];
@@ -274,6 +306,7 @@ int main (void)
     measure (Write8 ());
     measure (Read4_Write4 ());
     measure (Read4_Write4_Unroll ());
+    measure (Read4_Write4_SSE ());
 
     return 0;
 }
