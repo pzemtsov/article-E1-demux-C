@@ -9,6 +9,7 @@
      Revision 9: Improved Read8_Write16_SSE (normal and unrolled version)
      Revision 10: Added Read16_Write16_SSE (normal and unrolled versions)
      Revision 11: Added Read4_Write32_AVX
+     Revision 12: Improved Read4_Write32_AVX
   */
 
 #include <cassert>
@@ -597,19 +598,23 @@ public:
                 LOAD16 (a1, dst_pos + 4);
                 LOAD16 (a2, dst_pos + 8);
                 LOAD16 (a3, dst_pos + 12);
-                transpose_4x4_dwords (a0, a1, a2, a3);
 
                 __m128i b0, b1, b2, b3;
                 LOAD16 (b0, dst_pos + 16);
                 LOAD16 (b1, dst_pos + 20);
                 LOAD16 (b2, dst_pos + 24);
                 LOAD16 (b3, dst_pos + 28);
-                transpose_4x4_dwords (b0, b1, b2, b3);
 
-                _256i_store (&d0 [dst_pos], _256i_combine_lo_hi (a0, b0));
-                _256i_store (&d1 [dst_pos], _256i_combine_lo_hi (a1, b1));
-                _256i_store (&d2 [dst_pos], _256i_combine_lo_hi (a2, b2));
-                _256i_store (&d3 [dst_pos], _256i_combine_lo_hi (a3, b3));
+                __m256i w0 = _256i_combine_lo_hi (a0, b0);
+                __m256i w1 = _256i_combine_lo_hi (a1, b1);
+                __m256i w2 = _256i_combine_lo_hi (a2, b2);
+                __m256i w3 = _256i_combine_lo_hi (a3, b3);
+
+                transpose_avx_4x4_dwords (w0, w1, w2, w3);
+                _256i_store (&d0 [dst_pos], w0);
+                _256i_store (&d1 [dst_pos], w1);
+                _256i_store (&d2 [dst_pos], w2);
+                _256i_store (&d3 [dst_pos], w3);
 #undef LOAD16
             }
         }

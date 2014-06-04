@@ -85,6 +85,30 @@ inline void _256i_store (unsigned char * p, __m256i x)
   */
 #define _128i_shuffle(x, y, n0, n1, n2, n3) _mm_castps_si128(_128_shuffle(_mm_castsi128_ps(x), _mm_castsi128_ps(y), n0, n1, n2, n3))
 
+/** shuffles two 256-bit registers according to four 2-bit constants defining positions.
+  * An operation is performed as two parallel identical operations on two 128-bit halves of the registers.
+  * @param x   A0    A1    A2    A3    B0    B1    B2    B3     (each element a 32-bit float)
+  * @param y   C0    C1    C2    C3    D0    D1    D2    D3     (each element a 32-bit float)
+  * @return    A[n0] A[n1] C[n2] C[n3] B[n0] B[n1] D[n2] D[n3]
+  * Note that positions 0, 1, 4, 5 are only filled with data from x, positions 2, 3, 6, 7 only with data from y.
+  * Also note that data is never transferred between halves of AVX registers.
+  * Operation is identical to _256_permute when x==y
+  * (see __mm256_shuffle_ps intrinsic and VSHUFPS instruction)
+  */
+#define _256_shuffle(x, y, n0, n1, n2, n3) _mm256_shuffle_ps(x, y, combine_4_2bits (n0, n1, n2, n3))
+
+/** shuffles two 256-bit integer registers according to four 2-bit constants defining positions.
+  * An operation is performed as two parallel identical operations on two 128-bit halves of the registers.
+  * @param x   A0    A1    A2    A3    B0    B1    B2    B3     (each element a 32-bit int)
+  * @param y   C0    C1    C2    C3    D0    D1    D2    D3     (each element a 32-bit int)
+  * @return     A[n0] A[n1] C[n2] C[n3] B[n0] B[n1] D[n2] D[n3]
+  * Note that positions 0, 1, 4, 5 are only filled with data from x, positions 2, 3, 6, 7 only with data from y.
+  * Also note that data is never transferred between halves of AVX registers.
+  * The actual generated code is the same as for _256_shuffle, but this macro allows integer registers to pass type control
+  * (see __mm256_shuffle_ps intrinsic and VSHUFPS instruction)
+  */
+#define _256i_shuffle(x, y, n0, n1, n2, n3) _mm256_castps_si256 (_256_shuffle (_mm256_castsi256_ps (x), _mm256_castsi256_ps (y), n0, n1, n2, n3))
+
 /** Combine two 128-bit values (4 dwords each) into one 256-bit value (8 dwords)
   * @param lo ABCD     (each element is a dword)
   * @param hi EFGH     (each element is a dword)
@@ -190,4 +214,22 @@ inline void transpose_4x4_dwords (__m128i w0, __m128i w1, __m128i w2, __m128i w3
     r1 = _128i_shuffle (x0, x2, 1, 3, 1, 3);
     r2 = _128i_shuffle (x1, x3, 0, 2, 0, 2);
     r3 = _128i_shuffle (x1, x3, 1, 3, 1, 3);
+}
+
+inline void transpose_avx_4x4_dwords (__m256i &w0, __m256i &w1, __m256i &w2, __m256i &w3)
+{
+    // 0  1  2  3
+    // 4  5  6  7
+    // 8  9  10 11
+    // 12 13 14 15
+
+    __m256i x0 = _256i_shuffle (w0, w1, 0, 1, 0, 1); // 0 1 4 5
+    __m256i x1 = _256i_shuffle (w0, w1, 2, 3, 2, 3); // 2 3 6 7
+    __m256i x2 = _256i_shuffle (w2, w3, 0, 1, 0, 1); // 8 9 12 13
+    __m256i x3 = _256i_shuffle (w2, w3, 2, 3, 2, 3); // 10 11 14 15
+
+    w0 = _256i_shuffle (x0, x2, 0, 2, 0, 2);
+    w1 = _256i_shuffle (x0, x2, 1, 3, 1, 3);
+    w2 = _256i_shuffle (x1, x3, 0, 2, 0, 2);
+    w3 = _256i_shuffle (x1, x3, 1, 3, 1, 3);
 }
