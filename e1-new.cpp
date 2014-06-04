@@ -10,6 +10,7 @@
      Revision 10: Added Read16_Write16_SSE (normal and unrolled versions)
      Revision 11: Added Read4_Write32_AVX
      Revision 12: Improved Read4_Write32_AVX
+     Revision 13: Added Read8_Write32_AVX (normal and unrolled versions)
   */
 
 #include <cassert>
@@ -621,6 +622,152 @@ public:
     }
 };
 
+class Read8_Write32_AVX : public Demux
+{
+public:
+    void demux (const byte * src, size_t src_length, byte ** dst) const
+    {
+        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
+        assert (DST_SIZE % 32 == 0);
+        assert (NUM_TIMESLOTS % 8 == 0);
+
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; dst_num += 8) {
+            byte * d0 = dst [dst_num + 0];
+            byte * d1 = dst [dst_num + 1];
+            byte * d2 = dst [dst_num + 2];
+            byte * d3 = dst [dst_num + 3];
+            byte * d4 = dst [dst_num + 4];
+            byte * d5 = dst [dst_num + 5];
+            byte * d6 = dst [dst_num + 6];
+            byte * d7 = dst [dst_num + 7];
+            for (size_t dst_pos = 0; dst_pos < DST_SIZE; dst_pos += 32) {
+
+#define LOAD32(m0, m1, dst_pos) do {\
+                    __m64 w0 = * (__m64 *) &src [(dst_pos + 0) * NUM_TIMESLOTS + dst_num];\
+                    __m64 w1 = * (__m64 *) &src [(dst_pos + 1) * NUM_TIMESLOTS + dst_num];\
+                    __m64 w2 = * (__m64 *) &src [(dst_pos + 2) * NUM_TIMESLOTS + dst_num];\
+                    __m64 w3 = * (__m64 *) &src [(dst_pos + 3) * NUM_TIMESLOTS + dst_num];\
+                    __m128i x0 = _mm_setr_epi64 (w0, w1);\
+                    __m128i x1 = _mm_setr_epi64 (w2, w3);\
+                    m0 = _128i_shuffle (x0, x1, 0, 2, 0, 2);\
+                    m1 = _128i_shuffle (x0, x1, 1, 3, 1, 3);\
+                    m0 = transpose_4x4 (m0);\
+                    m1 = transpose_4x4 (m1);\
+                } while (0)
+
+                __m128i a0, a1, a2, a3, b0, b1, b2, b3;
+                LOAD32 (a0, b0, dst_pos);
+                LOAD32 (a1, b1, dst_pos + 4);
+                LOAD32 (a2, b2, dst_pos + 8);
+                LOAD32 (a3, b3, dst_pos + 12);
+
+                __m128i c0, c1, c2, c3, e0, e1, e2, e3;
+                LOAD32 (c0, e0, dst_pos + 16);
+                LOAD32 (c1, e1, dst_pos + 20);
+                LOAD32 (c2, e2, dst_pos + 24);
+                LOAD32 (c3, e3, dst_pos + 28);
+
+                __m256i w0 = _256i_combine_lo_hi (a0, c0);
+                __m256i w1 = _256i_combine_lo_hi (a1, c1);
+                __m256i w2 = _256i_combine_lo_hi (a2, c2);
+                __m256i w3 = _256i_combine_lo_hi (a3, c3);
+                __m256i w4 = _256i_combine_lo_hi (b0, e0);
+                __m256i w5 = _256i_combine_lo_hi (b1, e1);
+                __m256i w6 = _256i_combine_lo_hi (b2, e2);
+                __m256i w7 = _256i_combine_lo_hi (b3, e3);
+
+                transpose_avx_4x4_dwords (w0, w1, w2, w3);
+                _256i_store (&d0 [dst_pos], w0);
+                _256i_store (&d1 [dst_pos], w1);
+                _256i_store (&d2 [dst_pos], w2);
+                _256i_store (&d3 [dst_pos], w3);
+
+                transpose_avx_4x4_dwords (w4, w5, w6, w7);
+                _256i_store (&d4 [dst_pos], w4);
+                _256i_store (&d5 [dst_pos], w5);
+                _256i_store (&d6 [dst_pos], w6);
+                _256i_store (&d7 [dst_pos], w7);
+#undef LOAD32
+            }
+        }
+    }
+};
+
+class Read8_Write32_AVX_Unroll : public Demux
+{
+public:
+    void demux (const byte * src, size_t src_length, byte ** dst) const
+    {
+        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
+        assert (DST_SIZE == 64);
+        assert (NUM_TIMESLOTS % 8 == 0);
+
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; dst_num += 8) {
+            byte * d0 = dst [dst_num + 0];
+            byte * d1 = dst [dst_num + 1];
+            byte * d2 = dst [dst_num + 2];
+            byte * d3 = dst [dst_num + 3];
+            byte * d4 = dst [dst_num + 4];
+            byte * d5 = dst [dst_num + 5];
+            byte * d6 = dst [dst_num + 6];
+            byte * d7 = dst [dst_num + 7];
+
+#define LOAD32(m0, m1, dst_pos) do {\
+                    __m64 w0 = * (__m64 *) &src [(dst_pos + 0) * NUM_TIMESLOTS + dst_num];\
+                    __m64 w1 = * (__m64 *) &src [(dst_pos + 1) * NUM_TIMESLOTS + dst_num];\
+                    __m64 w2 = * (__m64 *) &src [(dst_pos + 2) * NUM_TIMESLOTS + dst_num];\
+                    __m64 w3 = * (__m64 *) &src [(dst_pos + 3) * NUM_TIMESLOTS + dst_num];\
+                    __m128i x0 = _mm_setr_epi64 (w0, w1);\
+                    __m128i x1 = _mm_setr_epi64 (w2, w3);\
+                    m0 = _128i_shuffle (x0, x1, 0, 2, 0, 2);\
+                    m1 = _128i_shuffle (x0, x1, 1, 3, 1, 3);\
+                    m0 = transpose_4x4 (m0);\
+                    m1 = transpose_4x4 (m1);\
+                } while (0)
+
+#define MOVE256(dst_pos) do {\
+                __m128i a0, a1, a2, a3, b0, b1, b2, b3;\
+                LOAD32 (a0, b0, dst_pos);\
+                LOAD32 (a1, b1, dst_pos + 4);\
+                LOAD32 (a2, b2, dst_pos + 8);\
+                LOAD32 (a3, b3, dst_pos + 12);\
+\
+                __m128i c0, c1, c2, c3, e0, e1, e2, e3;\
+                LOAD32 (c0, e0, dst_pos + 16);\
+                LOAD32 (c1, e1, dst_pos + 20);\
+                LOAD32 (c2, e2, dst_pos + 24);\
+                LOAD32 (c3, e3, dst_pos + 28);\
+\
+                __m256i w0 = _256i_combine_lo_hi (a0, c0);\
+                __m256i w1 = _256i_combine_lo_hi (a1, c1);\
+                __m256i w2 = _256i_combine_lo_hi (a2, c2);\
+                __m256i w3 = _256i_combine_lo_hi (a3, c3);\
+                __m256i w4 = _256i_combine_lo_hi (b0, e0);\
+                __m256i w5 = _256i_combine_lo_hi (b1, e1);\
+                __m256i w6 = _256i_combine_lo_hi (b2, e2);\
+                __m256i w7 = _256i_combine_lo_hi (b3, e3);\
+\
+                transpose_avx_4x4_dwords (w0, w1, w2, w3);\
+                _256i_store (&d0 [dst_pos], w0);\
+                _256i_store (&d1 [dst_pos], w1);\
+                _256i_store (&d2 [dst_pos], w2);\
+                _256i_store (&d3 [dst_pos], w3);\
+\
+                transpose_avx_4x4_dwords (w4, w5, w6, w7);\
+                _256i_store (&d4 [dst_pos], w4);\
+                _256i_store (&d5 [dst_pos], w5);\
+                _256i_store (&d6 [dst_pos], w6);\
+                _256i_store (&d7 [dst_pos], w7);\
+            } while (0)
+
+            MOVE256 (0);
+            MOVE256 (32);
+#undef LOAD32
+#undef MOVE256
+        }
+    }
+};
+
 byte * generate ()
 {
     byte * buf = new byte [SRC_SIZE];
@@ -698,6 +845,8 @@ int main (void)
     measure (Read16_Write16_SSE ());
     measure (Read16_Write16_SSE_Unroll ());
     measure (Read4_Write32_AVX ());
+    measure (Read8_Write32_AVX ());
+    measure (Read8_Write32_AVX_Unroll ());
 
     return 0;
 }
