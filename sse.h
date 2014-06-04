@@ -137,3 +137,33 @@ inline void transpose_4x4_dwords (__m128i &w0, __m128i &w1, __m128i &w2, __m128i
     w2 = _128i_shuffle (x1, x3, 0, 2, 0, 2); //  2  6 10 14
     w3 = _128i_shuffle (x1, x3, 1, 3, 1, 3); //  3  7 11 15
 }
+
+/** transposes a 4x4 matrix of doublewords stored in four 128-bit registers and returns result in four other registers
+  * At input:
+  * @param w0: w00 w01 w02 w03
+  * @param w1: w10 w11 w12 w13
+  * @param w2: w20 w21 w22 w23
+  * @param w3: w30 w31 w32 w33
+  * At output:
+  *        r0: w00 w10 w20 w30
+  *        r1: w01 w11 w21 w31
+  *        r2: w02 w12 w22 w32
+  *        r3: w03 w13 w23 w33
+  */
+inline void transpose_4x4_dwords (__m128i w0, __m128i w1, __m128i w2, __m128i w3, __m128i &r0, __m128i &r1, __m128i &r2, __m128i &r3)
+{
+    // 0  1  2  3
+    // 4  5  6  7
+    // 8  9  10 11
+    // 12 13 14 15
+
+    __m128i x0 = _128i_shuffle (w0, w1, 0, 1, 0, 1); // 0 1 4 5
+    __m128i x1 = _128i_shuffle (w0, w1, 2, 3, 2, 3); // 2 3 6 7
+    __m128i x2 = _128i_shuffle (w2, w3, 0, 1, 0, 1); // 8 9 12 13
+    __m128i x3 = _128i_shuffle (w2, w3, 2, 3, 2, 3); // 10 11 14 15
+
+    r0 = _128i_shuffle (x0, x2, 0, 2, 0, 2);
+    r1 = _128i_shuffle (x0, x2, 1, 3, 1, 3);
+    r2 = _128i_shuffle (x1, x3, 0, 2, 0, 2);
+    r3 = _128i_shuffle (x1, x3, 1, 3, 1, 3);
+}

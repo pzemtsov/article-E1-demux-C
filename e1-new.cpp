@@ -7,6 +7,7 @@
      Revision 7: Improved Read4_Write16_SSE
      Revision 8: Added Read8_Write16_SSE (normal and unrolled versions)
      Revision 9: Improved Read8_Write16_SSE (normal and unrolled version)
+     Revision 10: Added Read16_Write16_SSE (normal and unrolled versions)
   */
 
 #include <cassert>
@@ -394,6 +395,177 @@ public:
     }
 };
 
+inline void transpose_16x16 (
+                __m128i&  x0, __m128i&  x1, __m128i&  x2, __m128i&  x3,
+                __m128i&  x4, __m128i&  x5, __m128i&  x6, __m128i&  x7,
+                __m128i&  x8, __m128i&  x9, __m128i& x10, __m128i& x11,
+                __m128i& x12, __m128i& x13, __m128i& x14, __m128i& x15)
+{
+    __m128i m00, m01, m02, m03;
+    __m128i m10, m11, m12, m13;
+    __m128i m20, m21, m22, m23;
+    __m128i m30, m31, m32, m33;
+
+    transpose_4x4_dwords ( x0,  x1,  x2,  x3, m00, m01, m02, m03);
+    transpose_4x4_dwords ( x4,  x5,  x6,  x7, m10, m11, m12, m13);
+    transpose_4x4_dwords ( x8,  x9, x10, x11, m20, m21, m22, m23);
+    transpose_4x4_dwords (x12, x13, x14, x15, m30, m31, m32, m33);
+    m00 = transpose_4x4 (m00);
+    m01 = transpose_4x4 (m01);
+    m02 = transpose_4x4 (m02);
+    m03 = transpose_4x4 (m03);
+    m10 = transpose_4x4 (m10);
+    m11 = transpose_4x4 (m11);
+    m12 = transpose_4x4 (m12);
+    m13 = transpose_4x4 (m13);
+    m20 = transpose_4x4 (m20);
+    m21 = transpose_4x4 (m21);
+    m22 = transpose_4x4 (m22);
+    m23 = transpose_4x4 (m23);
+    m30 = transpose_4x4 (m30);
+    m31 = transpose_4x4 (m31);
+    m32 = transpose_4x4 (m32);
+    m33 = transpose_4x4 (m33);
+    transpose_4x4_dwords (m00, m10, m20, m30,  x0,  x1,  x2, x3);
+    transpose_4x4_dwords (m01, m11, m21, m31,  x4,  x5,  x6, x7);
+    transpose_4x4_dwords (m02, m12, m22, m32,  x8,  x9, x10, x11);
+    transpose_4x4_dwords (m03, m13, m23, m33, x12, x13, x14, x15);
+}
+
+class Read16_Write16_SSE : public Demux
+{
+public:
+    void demux (const byte * src, size_t src_length, byte ** dst) const
+    {
+        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
+        assert (DST_SIZE % 16 == 0);
+        assert (NUM_TIMESLOTS % 16 == 0);
+
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; dst_num += 16) {
+            byte * d0 = dst [dst_num + 0];
+            byte * d1 = dst [dst_num + 1];
+            byte * d2 = dst [dst_num + 2];
+            byte * d3 = dst [dst_num + 3];
+            byte * d4 = dst [dst_num + 4];
+            byte * d5 = dst [dst_num + 5];
+            byte * d6 = dst [dst_num + 6];
+            byte * d7 = dst [dst_num + 7];
+            byte * d8 = dst [dst_num + 8];
+            byte * d9 = dst [dst_num + 9];
+            byte * d10= dst [dst_num +10];
+            byte * d11= dst [dst_num +11];
+            byte * d12= dst [dst_num +12];
+            byte * d13= dst [dst_num +13];
+            byte * d14= dst [dst_num +14];
+            byte * d15= dst [dst_num +15];
+            for (size_t dst_pos = 0; dst_pos < DST_SIZE; dst_pos += 16) {
+
+#define LOADREG(i) __m128i w##i = _128i_load (&src [(dst_pos + i) * NUM_TIMESLOTS + dst_num])
+#define STOREREG(i) _128i_store (&d##i [dst_pos], w##i)
+
+                LOADREG (0);  LOADREG (1);  LOADREG (2);  LOADREG (3);
+                LOADREG (4);  LOADREG (5);  LOADREG (6);  LOADREG (7);
+                LOADREG (8);  LOADREG (9);  LOADREG (10); LOADREG (11);
+                LOADREG (12); LOADREG (13); LOADREG (14); LOADREG (15);
+                transpose_16x16 (w0, w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w14, w15);
+                STOREREG (0);  STOREREG (1);  STOREREG (2);  STOREREG (3);
+                STOREREG (4);  STOREREG (5);  STOREREG (6);  STOREREG (7);
+                STOREREG (8);  STOREREG (9);  STOREREG (10); STOREREG (11);
+                STOREREG (12); STOREREG (13); STOREREG (14); STOREREG (15);
+#undef LOADREG
+#undef STOREREG 
+           }
+        }
+    }
+};
+
+// a macro version of transpose_16x16. The original function is so big that the compiler does not always
+// inline it; only defining it as a macro inlines it reliably.
+
+#define _transpose_16x16(x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15) do {\
+    __m128i m00, m01, m02, m03;\
+    __m128i m10, m11, m12, m13;\
+    __m128i m20, m21, m22, m23;\
+    __m128i m30, m31, m32, m33;\
+    transpose_4x4_dwords ( x0,  x1,  x2,  x3, m00, m01, m02, m03);\
+    transpose_4x4_dwords ( x4,  x5,  x6,  x7, m10, m11, m12, m13);\
+    transpose_4x4_dwords ( x8,  x9, x10, x11, m20, m21, m22, m23);\
+    transpose_4x4_dwords (x12, x13, x14, x15, m30, m31, m32, m33);\
+    m00 = transpose_4x4 (m00);\
+    m01 = transpose_4x4 (m01);\
+    m02 = transpose_4x4 (m02);\
+    m03 = transpose_4x4 (m03);\
+    m10 = transpose_4x4 (m10);\
+    m11 = transpose_4x4 (m11);\
+    m12 = transpose_4x4 (m12);\
+    m13 = transpose_4x4 (m13);\
+    m20 = transpose_4x4 (m20);\
+    m21 = transpose_4x4 (m21);\
+    m22 = transpose_4x4 (m22);\
+    m23 = transpose_4x4 (m23);\
+    m30 = transpose_4x4 (m30);\
+    m31 = transpose_4x4 (m31);\
+    m32 = transpose_4x4 (m32);\
+    m33 = transpose_4x4 (m33);\
+    transpose_4x4_dwords (m00, m10, m20, m30,  x0,  x1,  x2, x3);\
+    transpose_4x4_dwords (m01, m11, m21, m31,  x4,  x5,  x6, x7);\
+    transpose_4x4_dwords (m02, m12, m22, m32,  x8,  x9, x10, x11);\
+    transpose_4x4_dwords (m03, m13, m23, m33, x12, x13, x14, x15);\
+} while (0)
+
+class Read16_Write16_SSE_Unroll : public Demux
+{
+public:
+    void demux (const byte * src, size_t src_length, byte ** dst) const
+    {
+        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
+        assert (DST_SIZE == 64);
+        assert (NUM_TIMESLOTS % 16 == 0);
+
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; dst_num += 16) {
+            byte * d0 = dst [dst_num + 0];
+            byte * d1 = dst [dst_num + 1];
+            byte * d2 = dst [dst_num + 2];
+            byte * d3 = dst [dst_num + 3];
+            byte * d4 = dst [dst_num + 4];
+            byte * d5 = dst [dst_num + 5];
+            byte * d6 = dst [dst_num + 6];
+            byte * d7 = dst [dst_num + 7];
+            byte * d8 = dst [dst_num + 8];
+            byte * d9 = dst [dst_num + 9];
+            byte * d10= dst [dst_num +10];
+            byte * d11= dst [dst_num +11];
+            byte * d12= dst [dst_num +12];
+            byte * d13= dst [dst_num +13];
+            byte * d14= dst [dst_num +14];
+            byte * d15= dst [dst_num +15];
+
+#define LOADREG(dst_pos, i) __m128i w##i = _128i_load (&src [(dst_pos + i) * NUM_TIMESLOTS + dst_num])
+#define STOREREG(dst_pos, i) _128i_store (&d##i [dst_pos], w##i)
+
+#define MOVE256(dst_pos) do {\
+                LOADREG (dst_pos, 0);  LOADREG (dst_pos, 1);  LOADREG (dst_pos, 2);  LOADREG (dst_pos, 3);\
+                LOADREG (dst_pos, 4);  LOADREG (dst_pos, 5);  LOADREG (dst_pos, 6);  LOADREG (dst_pos, 7);\
+                LOADREG (dst_pos, 8);  LOADREG (dst_pos, 9);  LOADREG (dst_pos, 10); LOADREG (dst_pos, 11);\
+                LOADREG (dst_pos, 12); LOADREG (dst_pos, 13); LOADREG (dst_pos, 14); LOADREG (dst_pos, 15);\
+                _transpose_16x16 (w0, w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w14, w15);\
+                STOREREG (dst_pos, 0);  STOREREG (dst_pos, 1);  STOREREG (dst_pos, 2);  STOREREG (dst_pos, 3);\
+                STOREREG (dst_pos, 4);  STOREREG (dst_pos, 5);  STOREREG (dst_pos, 6);  STOREREG (dst_pos, 7);\
+                STOREREG (dst_pos, 8);  STOREREG (dst_pos, 9);  STOREREG (dst_pos, 10); STOREREG (dst_pos, 11);\
+                STOREREG (dst_pos, 12); STOREREG (dst_pos, 13); STOREREG (dst_pos, 14); STOREREG (dst_pos, 15);\
+            } while (0)
+
+            MOVE256 (0);
+            MOVE256 (16);
+            MOVE256 (32);
+            MOVE256 (48);
+#undef MOVE256
+#undef LOADREG
+#undef STOREREG 
+        }
+    }
+};
+
 byte * generate ()
 {
     byte * buf = new byte [SRC_SIZE];
@@ -468,6 +640,8 @@ int main (void)
     measure (Read4_Write16_SSE ());
     measure (Read8_Write16_SSE ());
     measure (Read8_Write16_SSE_Unroll ());
+    measure (Read16_Write16_SSE ());
+    measure (Read16_Write16_SSE_Unroll ());
 
     return 0;
 }
