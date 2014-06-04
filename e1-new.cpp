@@ -768,9 +768,49 @@ public:
     }
 };
 
+class Null: public Demux
+{
+public:
+    void demux (const byte * src, size_t src_length, byte ** dst) const
+    {
+        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
+    }
+};
+
+class Copy: public Demux
+{
+public:
+    void demux (const byte * src, size_t src_length, byte ** dst) const
+    {
+        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
+
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; dst_num ++) {
+            memcpy (dst[dst_num], src + dst_num * DST_SIZE, DST_SIZE);
+        }
+    }
+};
+
+class Copy_AVX: public Demux
+{
+public:
+    void demux (const byte * src, size_t src_length, byte ** dst) const
+    {
+        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
+        assert (DST_SIZE % 32 == 0);
+
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; dst_num ++) {
+            byte * d = dst [dst_num];
+            for (size_t dst_pos = 0; dst_pos < DST_SIZE; dst_pos += 32) {
+                _256i_store (d + dst_pos,
+                             _mm256_load_si256 ((__m256i const *) (src + dst_num * DST_SIZE + dst_pos)));
+            }
+        }
+    }
+};
+
 byte * generate ()
 {
-    byte * buf = new byte [SRC_SIZE];
+    byte * buf = (byte*) _mm_malloc (SRC_SIZE, 32); // new byte [SRC_SIZE];
     srand (0);
     for (size_t i = 0; i < SRC_SIZE; i++) buf[i] = (byte) (rand () % 256);
     return buf;
@@ -818,7 +858,7 @@ byte ** dst;
 
 void measure (const Demux & demux)
 {
-    check (demux);
+//    check (demux);
 
     uint64_t t0 = currentTimeMillis ();
     for (int i = 0; i < ITERATIONS; i++) {
@@ -847,6 +887,9 @@ int main (void)
     measure (Read4_Write32_AVX ());
     measure (Read8_Write32_AVX ());
     measure (Read8_Write32_AVX_Unroll ());
+    measure (Null ());
+    measure (Copy ());
+    measure (Copy_AVX ());
 
     return 0;
 }
