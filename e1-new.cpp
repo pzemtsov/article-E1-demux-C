@@ -1,5 +1,6 @@
 /**  Revision 1: Created. Added version Write4
      Revision 2: Added Write8
+     Revision 3: Added Read4_Write4
   */
 
 #include <cassert>
@@ -109,6 +110,53 @@ public:
     }
 };
 
+inline byte byte0 (uint32_t x) 
+{
+    return (byte) x;
+}
+
+inline byte byte1 (uint32_t x) 
+{
+    return (byte) (x >> 8);
+}
+
+inline byte byte2 (uint32_t x) 
+{
+    return (byte) (x >> 16);
+}
+
+inline byte byte3 (uint32_t x) 
+{
+    return (byte) (x >> 24);
+}
+
+class Read4_Write4 : public Demux
+{
+public:
+    void demux (const byte * src, size_t src_length, byte ** dst) const
+    {
+        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
+        assert (DST_SIZE % 4 == 0);
+        assert (NUM_TIMESLOTS % 4 == 0);
+
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; dst_num += 4) {
+            byte * d0 = dst [dst_num + 0];
+            byte * d1 = dst [dst_num + 1];
+            byte * d2 = dst [dst_num + 2];
+            byte * d3 = dst [dst_num + 3];
+            for (size_t dst_pos = 0; dst_pos < DST_SIZE; dst_pos += 4) {
+                uint32_t w0 = * (uint32_t*) &src [(dst_pos + 0) * NUM_TIMESLOTS + dst_num];
+                uint32_t w1 = * (uint32_t*) &src [(dst_pos + 1) * NUM_TIMESLOTS + dst_num];
+                uint32_t w2 = * (uint32_t*) &src [(dst_pos + 2) * NUM_TIMESLOTS + dst_num];
+                uint32_t w3 = * (uint32_t*) &src [(dst_pos + 3) * NUM_TIMESLOTS + dst_num];
+                * (uint32_t*) &d0 [dst_pos] = make_32 (byte0 (w0), byte0 (w1), byte0 (w2), byte0 (w3));
+                * (uint32_t*) &d1 [dst_pos] = make_32 (byte1 (w0), byte1 (w1), byte1 (w2), byte1 (w3));
+                * (uint32_t*) &d2 [dst_pos] = make_32 (byte2 (w0), byte2 (w1), byte2 (w2), byte2 (w3));
+                * (uint32_t*) &d3 [dst_pos] = make_32 (byte3 (w0), byte3 (w1), byte3 (w2), byte3 (w3));
+            }
+        }
+    }
+};
 
 byte * generate ()
 {
@@ -178,6 +226,7 @@ int main (void)
     measure (Reference ());
     measure (Write4 ());
     measure (Write8 ());
+    measure (Read4_Write4 ());
 
     return 0;
 }
