@@ -12,6 +12,28 @@
   * lack of type checking
   */
 
+// ------- loads and stores
+
+/** Load 128-bit integer value from the unsigned char pointer
+  * @param p  a pointer to read 128 bits from
+  * @return a 128-bit integer value read
+  * This is just a convenience routine that takes away pointer cast from the user code.
+  */
+inline __m128i _128i_load (const unsigned char * p)
+{
+    return _mm_load_si128 ((const __m128i *) p);
+}
+
+/** Store 128-bit integer value to the unsigned char pointer
+  * @param p  a pointer to write 128 bits to
+  * @param x  a 128-bit integer value to write
+  * This is just a convenience routine that takes away pointer cast from the user code.
+  */
+inline void _128i_store (unsigned char * p, __m128i x)
+{
+    _mm_store_si128 ((__m128i *) p, x);
+}
+
 /** Combine together two fields of 4 bits each, in lower to high order.
   * Used in permute2f128
   * @param n0 constant integer value of size 4 bits (not checked)
@@ -70,3 +92,19 @@ inline __m128i transpose_4x4 (__m128i m)
 {
     return _mm_shuffle_epi8 (m, _mm_setr_epi8 (0, 4, 8, 12, 1, 5, 9, 13, 2, 6, 10, 14, 3, 7, 11, 15));
 }
+
+/** Combines together 4-byte portions of the four given 128-bit registers
+  * @param i  position of portions to combine (a constant)
+  * @param m0  m00 m01 m02 m03
+  * @param m1  m10 m11 m12 m13
+  * @param m2  m20 m21 m22 m23
+  * @param m3  m30 m31 m32 m33
+  * Result: m0[i] m1[i] m2[i] m3[i]
+  */
+template<unsigned i> inline __m128i combine_sse (__m128i m0, __m128i m1, __m128i m2, __m128i m3)
+{
+    __m128i x = _128i_shuffle (m0, m1, i, i, i, i);  // m0[i] m0[i] m1[i] m1[i]
+    __m128i y = _128i_shuffle (m2, m3, i, i, i, i);  // m2[i] m2[i] m3[i] m3[i]
+    return _128i_shuffle (x, y, 0, 2, 0, 2);
+}
+

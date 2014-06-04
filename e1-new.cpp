@@ -2,7 +2,8 @@
      Revision 2: Added Write8
      Revision 3: Added Read4_Write4
      Revision 4: Unrolled Read4_Write4
-     Revision 5: Added Read4_Write4_SSE 
+     Revision 5: Added Read4_Write4_SSE
+     Revision 6: Added Read4_Write16_SSE
   */
 
 #include <cassert>
@@ -236,6 +237,46 @@ public:
     }
 };
 
+class Read4_Write16_SSE : public Demux
+{
+public:
+    void demux (const byte * src, size_t src_length, byte ** dst) const
+    {
+        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
+        assert (DST_SIZE % 16 == 0);
+        assert (NUM_TIMESLOTS % 4 == 0);
+
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; dst_num += 4) {
+            byte * d0 = dst [dst_num + 0];
+            byte * d1 = dst [dst_num + 1];
+            byte * d2 = dst [dst_num + 2];
+            byte * d3 = dst [dst_num + 3];
+            for (size_t dst_pos = 0; dst_pos < DST_SIZE; dst_pos += 16) {
+#define LOAD16(m, dst_pos) do {\
+                    uint32_t w0 = * (uint32_t*) &src [(dst_pos + 0) * NUM_TIMESLOTS + dst_num];\
+                    uint32_t w1 = * (uint32_t*) &src [(dst_pos + 1) * NUM_TIMESLOTS + dst_num];\
+                    uint32_t w2 = * (uint32_t*) &src [(dst_pos + 2) * NUM_TIMESLOTS + dst_num];\
+                    uint32_t w3 = * (uint32_t*) &src [(dst_pos + 3) * NUM_TIMESLOTS + dst_num];\
+                    m = _mm_setr_epi32 (w0, w1, w2, w3);\
+                    m = transpose_4x4 (m);\
+                } while (0)
+
+                __m128i m0, m1, m2, m3;
+                LOAD16 (m0, dst_pos);
+                LOAD16 (m1, dst_pos + 4);
+                LOAD16 (m2, dst_pos + 8);
+                LOAD16 (m3, dst_pos + 12);
+                _128i_store (&d0 [dst_pos], combine_sse<0> (m0, m1, m2, m3));
+                _128i_store (&d1 [dst_pos], combine_sse<1> (m0, m1, m2, m3));
+                _128i_store (&d2 [dst_pos], combine_sse<2> (m0, m1, m2, m3));
+                _128i_store (&d3 [dst_pos], combine_sse<3> (m0, m1, m2, m3));
+#undef LOAD16
+            }
+        }
+    }
+};
+
+
 byte * generate ()
 {
     byte * buf = new byte [SRC_SIZE];
@@ -248,7 +289,7 @@ byte ** allocate_dst ()
 {
     byte ** result = new byte * [NUM_TIMESLOTS];
     for (size_t i = 0; i < NUM_TIMESLOTS; i++) {
-        result [i] = new byte [DST_SIZE];
+        result [i] = (byte *) _mm_malloc (DST_SIZE, 32); // new byte [DST_SIZE];
         memset (result [i], 0, DST_SIZE);
     }
     return result;
@@ -257,7 +298,7 @@ byte ** allocate_dst ()
 void delete_dst (byte ** dst)
 {
     for (size_t i = 0; i < NUM_TIMESLOTS; i++) {
-        delete dst [i];
+        _mm_free (dst [i]); // delete dst [i];
     }
     delete dst;
 }
@@ -307,6 +348,7 @@ int main (void)
     measure (Read4_Write4 ());
     measure (Read4_Write4_Unroll ());
     measure (Read4_Write4_SSE ());
+    measure (Read4_Write16_SSE ());
 
     return 0;
 }
