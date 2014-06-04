@@ -6,6 +6,7 @@
      Revision 6: Added Read4_Write16_SSE
      Revision 7: Improved Read4_Write16_SSE
      Revision 8: Added Read8_Write16_SSE (normal and unrolled versions)
+     Revision 9: Improved Read8_Write16_SSE (normal and unrolled version)
   */
 
 #include <cassert>
@@ -279,16 +280,6 @@ public:
     }
 };
 
-uint32_t low (uint64_t x)
-{
-    return (uint32_t) x;
-}
-
-uint32_t high (uint64_t x)
-{
-    return (uint32_t) (x >> 32);
-}
-
 class Read8_Write16_SSE : public Demux
 {
 public:
@@ -308,13 +299,16 @@ public:
             byte * d6 = dst [dst_num + 6];
             byte * d7 = dst [dst_num + 7];
             for (size_t dst_pos = 0; dst_pos < DST_SIZE; dst_pos += 16) {
+
 #define LOAD32(m0, m1, dst_pos) do {\
-                    uint64_t w0 = * (uint64_t*) &src [(dst_pos + 0) * NUM_TIMESLOTS + dst_num];\
-                    uint64_t w1 = * (uint64_t*) &src [(dst_pos + 1) * NUM_TIMESLOTS + dst_num];\
-                    uint64_t w2 = * (uint64_t*) &src [(dst_pos + 2) * NUM_TIMESLOTS + dst_num];\
-                    uint64_t w3 = * (uint64_t*) &src [(dst_pos + 3) * NUM_TIMESLOTS + dst_num];\
-                    m0 = _mm_setr_epi32 (low  (w0), low  (w1), low  (w2), low  (w3));\
-                    m1 = _mm_setr_epi32 (high (w0), high (w1), high (w2), high (w3));\
+                    __m64 w0 = * (__m64 *) &src [(dst_pos + 0) * NUM_TIMESLOTS + dst_num];\
+                    __m64 w1 = * (__m64 *) &src [(dst_pos + 1) * NUM_TIMESLOTS + dst_num];\
+                    __m64 w2 = * (__m64 *) &src [(dst_pos + 2) * NUM_TIMESLOTS + dst_num];\
+                    __m64 w3 = * (__m64 *) &src [(dst_pos + 3) * NUM_TIMESLOTS + dst_num];\
+                    __m128i x0 = _mm_setr_epi64 (w0, w1);\
+                    __m128i x1 = _mm_setr_epi64 (w2, w3);\
+                    m0 = _128i_shuffle (x0, x1, 0, 2, 0, 2);\
+                    m1 = _128i_shuffle (x0, x1, 1, 3, 1, 3);\
                     m0 = transpose_4x4 (m0);\
                     m1 = transpose_4x4 (m1);\
                 } while (0)
@@ -358,13 +352,16 @@ public:
             byte * d5 = dst [dst_num + 5];
             byte * d6 = dst [dst_num + 6];
             byte * d7 = dst [dst_num + 7];
+
 #define LOAD32(m0, m1, dst_pos) do {\
-                    uint64_t w0 = * (uint64_t*) &src [(dst_pos + 0) * NUM_TIMESLOTS + dst_num];\
-                    uint64_t w1 = * (uint64_t*) &src [(dst_pos + 1) * NUM_TIMESLOTS + dst_num];\
-                    uint64_t w2 = * (uint64_t*) &src [(dst_pos + 2) * NUM_TIMESLOTS + dst_num];\
-                    uint64_t w3 = * (uint64_t*) &src [(dst_pos + 3) * NUM_TIMESLOTS + dst_num];\
-                    m0 = _mm_setr_epi32 (low  (w0), low  (w1), low  (w2), low  (w3));\
-                    m1 = _mm_setr_epi32 (high (w0), high (w1), high (w2), high (w3));\
+                    __m64 w0 = * (__m64 *) &src [(dst_pos + 0) * NUM_TIMESLOTS + dst_num];\
+                    __m64 w1 = * (__m64 *) &src [(dst_pos + 1) * NUM_TIMESLOTS + dst_num];\
+                    __m64 w2 = * (__m64 *) &src [(dst_pos + 2) * NUM_TIMESLOTS + dst_num];\
+                    __m64 w3 = * (__m64 *) &src [(dst_pos + 3) * NUM_TIMESLOTS + dst_num];\
+                    __m128i x0 = _mm_setr_epi64 (w0, w1);\
+                    __m128i x1 = _mm_setr_epi64 (w2, w3);\
+                    m0 = _128i_shuffle (x0, x1, 0, 2, 0, 2);\
+                    m1 = _128i_shuffle (x0, x1, 1, 3, 1, 3);\
                     m0 = transpose_4x4 (m0);\
                     m1 = transpose_4x4 (m1);\
                 } while (0)
