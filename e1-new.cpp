@@ -8,6 +8,7 @@
      Revision 8: Added Read8_Write16_SSE (normal and unrolled versions)
      Revision 9: Improved Read8_Write16_SSE (normal and unrolled version)
      Revision 10: Added Read16_Write16_SSE (normal and unrolled versions)
+     Revision 11: Added Read4_Write32_AVX
   */
 
 #include <cassert>
@@ -566,6 +567,55 @@ public:
     }
 };
 
+class Read4_Write32_AVX : public Demux
+{
+public:
+    void demux (const byte * src, size_t src_length, byte ** dst) const
+    {
+        assert (src_length == NUM_TIMESLOTS * DST_SIZE);
+        assert (DST_SIZE % 32 == 0);
+        assert (NUM_TIMESLOTS % 4 == 0);
+
+        for (size_t dst_num = 0; dst_num < NUM_TIMESLOTS; dst_num += 4) {
+            byte * d0 = dst [dst_num + 0];
+            byte * d1 = dst [dst_num + 1];
+            byte * d2 = dst [dst_num + 2];
+            byte * d3 = dst [dst_num + 3];
+            for (size_t dst_pos = 0; dst_pos < DST_SIZE; dst_pos += 32) {
+
+#define LOAD16(m, dst_pos) do {\
+                    uint32_t w0 = * (uint32_t*) &src [(dst_pos + 0) * NUM_TIMESLOTS + dst_num];\
+                    uint32_t w1 = * (uint32_t*) &src [(dst_pos + 1) * NUM_TIMESLOTS + dst_num];\
+                    uint32_t w2 = * (uint32_t*) &src [(dst_pos + 2) * NUM_TIMESLOTS + dst_num];\
+                    uint32_t w3 = * (uint32_t*) &src [(dst_pos + 3) * NUM_TIMESLOTS + dst_num];\
+                    m = _mm_setr_epi32 (w0, w1, w2, w3);\
+                    m = transpose_4x4 (m);\
+                } while (0)
+
+                __m128i a0, a1, a2, a3;
+                LOAD16 (a0, dst_pos);
+                LOAD16 (a1, dst_pos + 4);
+                LOAD16 (a2, dst_pos + 8);
+                LOAD16 (a3, dst_pos + 12);
+                transpose_4x4_dwords (a0, a1, a2, a3);
+
+                __m128i b0, b1, b2, b3;
+                LOAD16 (b0, dst_pos + 16);
+                LOAD16 (b1, dst_pos + 20);
+                LOAD16 (b2, dst_pos + 24);
+                LOAD16 (b3, dst_pos + 28);
+                transpose_4x4_dwords (b0, b1, b2, b3);
+
+                _256i_store (&d0 [dst_pos], _256i_combine_lo_hi (a0, b0));
+                _256i_store (&d1 [dst_pos], _256i_combine_lo_hi (a1, b1));
+                _256i_store (&d2 [dst_pos], _256i_combine_lo_hi (a2, b2));
+                _256i_store (&d3 [dst_pos], _256i_combine_lo_hi (a3, b3));
+#undef LOAD16
+            }
+        }
+    }
+};
+
 byte * generate ()
 {
     byte * buf = new byte [SRC_SIZE];
@@ -642,6 +692,7 @@ int main (void)
     measure (Read8_Write16_SSE_Unroll ());
     measure (Read16_Write16_SSE ());
     measure (Read16_Write16_SSE_Unroll ());
+    measure (Read4_Write32_AVX ());
 
     return 0;
 }

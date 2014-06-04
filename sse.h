@@ -3,6 +3,7 @@
 #include <tmmintrin.h>
 #include <smmintrin.h>
 #include <emmintrin.h>
+#include <immintrin.h>
 
 /** Many functions here are defined as macros. The reason for this is that the SSE/AVX shuffle/permute instructions
   * require compile-time constant arguments, and there is no way to provide such requirements in C
@@ -32,6 +33,16 @@ inline __m128i _128i_load (const unsigned char * p)
 inline void _128i_store (unsigned char * p, __m128i x)
 {
     _mm_store_si128 ((__m128i *) p, x);
+}
+
+/** Store 256-bit integer value to the unsigned char pointer
+  * @param p  a pointer to write 256 bits to
+  * @param x  a 256-bit integer value to write
+  * This is just a convenience routine that takes away pointer cast from the user code.
+  */
+inline void _256i_store (unsigned char * p, __m256i x)
+{
+    _mm256_store_si256 ( (__m256i *) p, x);
 }
 
 /** Combine together two fields of 4 bits each, in lower to high order.
@@ -73,6 +84,19 @@ inline void _128i_store (unsigned char * p, __m128i x)
   * (see __mm_shuffle_ps intrinsic and SHUFPS instruction)
   */
 #define _128i_shuffle(x, y, n0, n1, n2, n3) _mm_castps_si128(_128_shuffle(_mm_castsi128_ps(x), _mm_castsi128_ps(y), n0, n1, n2, n3))
+
+/** Combine two 128-bit values (4 dwords each) into one 256-bit value (8 dwords)
+  * @param lo ABCD     (each element is a dword)
+  * @param hi EFGH     (each element is a dword)
+  * @return   ABCDEFGH
+  */
+inline __m256i _256i_combine_lo_hi (__m128i lo, __m128i hi)
+{
+    __m256i a = _mm256_setzero_si256 ();
+    a = _mm256_insertf128_si256 (a, lo, 0);
+    a = _mm256_insertf128_si256 (a, hi, 1);
+    return a;
+}
 
 // ------ More specific permutations
 
